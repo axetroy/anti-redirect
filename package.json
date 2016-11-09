@@ -1,0 +1,34 @@
+{
+  "name": "bd_fuck",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/bd_fuck.user.js",
+  "scripts": {
+    "test": "mocha ./test/*.test.ts -r ts-node/register --color",
+    "test:watch": "gulp test:watch",
+    "build": "webpack --display-error-details --progress --colors",
+    "watch": "webpack --display-error-details --progress --colors --watch",
+    "coverage": "istanbul cover ./**/*.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^3.4.34",
+    "@types/core-js": "^0.9.34",
+    "@types/node": "^6.0.46",
+    "@types/rx": "^2.5.33",
+    "@types/underscore": "^1.7.33",
+    "coveralls": "^2.11.14",
+    "istanbul": "^0.4.5",
+    "ts-loader": "^0.9.5",
+    "ts-node": "^1.6.1",
+    "typescript": "^2.0.6",
+    "webpack": "^1.13.2"
+  },
+  "dependencies": {
+    "in-view": "^0.6.0",
+    "q": "^1.4.1",
+    "rxjs": "^5.0.0-rc.2",
+    "underscore": "^1.8.3"
+  }
+}
