@@ -8,14 +8,16 @@ var path = require('path');
 // webpack.config.js
 module.exports = {
   entry: {
-    "bd_fuck": path.join(__dirname, 'index.ts')
+    "bd_fuck": path.join(__dirname, 'index.ts'),
+    "bd_fuck.min": path.join(__dirname, 'index.ts')
   },
   output: {
     path: path.join(__dirname, '/dist'),
     filename: '[name].user.js'
   },
   resolve: {
-    extensions: ['', '.coffee', '.js', '.ts']
+    modules: ['node_modules'],
+    extensions: ['.coffee', '.js', '.ts']
   },
   module: {
     loaders: [
@@ -23,8 +25,17 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.BannerPlugin(
-`// ==UserScript==
+    new webpack.LoaderOptionsPlugin({
+      minimize: true,
+      debug: false
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {warnings: false},
+      sourceMap: false,
+      test: /\.min\.user\.js$/
+    }),
+    new webpack.BannerPlugin({
+      banner: `// ==UserScript==
 // @name              remove the jump link in BAIDU (typescript)
 // @author            axetroy
 // @collaborator      axetroy
@@ -44,6 +55,9 @@ module.exports = {
 
 // Github源码:https://github.com/axetroy/bd-fuck
 
-`, {entryOnly: true, raw: true})
+`, entryOnly: true, raw: true
+    })
   ]
 };
+
+// {entryOnly: true, raw: true}
