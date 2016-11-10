@@ -1,9 +1,10 @@
 declare function GM_xmlhttpRequest(agm: any): any;
 
 import * as _ from 'underscore';
-const Q = require('q');
+import {Observable} from 'rxjs';
 
 interface Response$ {
+  response: string,
   readyState: number,
   responseHeaders: any,
   responseText: string,
@@ -104,57 +105,54 @@ class Http {
   constructor(private options?: DefaultRequestOptions$) {
   }
 
-  request(requestOptions: RequestOptions$): Promise<Response$> {
+  request(requestOptions: RequestOptions$): Observable<Response$> {
     let options: Options$ = _.extend({}, this.options, requestOptions);
-    let deferred = Q.defer();
     let {onreadystatechange, onerror, onabort, ontimeout} = options;
 
-    options.synchronous = true;   // async
+    return Observable.create(function (observer) {
 
-    options.onreadystatechange = function (response: Response$) {
-      _.isFunction(onreadystatechange) && onreadystatechange.call(this, response);
-      if (response.readyState !== 4) return;
-      if (/^(2|3)/.test(response.status + '') || response.finalUrl) {
-        deferred.resolve(response);
-      }
-      else {
-        deferred.reject(response);
-      }
-    };
+      // options.synchronous = true;   // async
+      options.onreadystatechange = function (response: Response$) {
+        _.isFunction(onreadystatechange) && onreadystatechange.call(this, response);
+        if (response.readyState !== 4) return;
+        response.status >= 200 && response.status < 400 && response.finalUrl ? observer.next(response) : observer.error(response);
+        observer.complete();
+      };
 
-    options.onerror = function (response: Response$) {
-      _.isFunction(onerror) && onerror.call(this, response);
-      deferred.reject(response);
-    };
+      options.onerror = function (response: Response$) {
+        _.isFunction(onerror) && onerror.call(this, response);
+        observer.error(response);
+        observer.complete();
+      };
 
-    options.onabort = function (response: Response$) {
-      _.isFunction(onabort) && onabort.call(this, response);
-      deferred.reject(response);
-    };
+      options.onabort = function (response: Response$) {
+        _.isFunction(onabort) && onabort.call(this, response);
+        observer.error(response);
+        observer.complete();
+      };
 
-    options.ontimeout = function (response: Response$) {
-      _.isFunction(ontimeout) && ontimeout.call(this, response);
-      deferred.reject(response);
-    };
+      options.ontimeout = function (response: Response$) {
+        _.isFunction(ontimeout) && ontimeout.call(this, response);
+        observer.error(response);
+        observer.complete();
+      };
 
-    const distOptions = _.extend({}, options);
-
-    GM_xmlhttpRequest(distOptions);
-    return deferred.promise;
+      GM_xmlhttpRequest(_.extend({}, options));
+    });
   }
 
-  get(url: string, options?: GetOptions$): Promise<Response$> {
+  get(url: string, options?: GetOptions$): Observable<Response$> {
     const requestOptions: RequestOptions$ = _.extend(options || {}, {url, method: 'GET'});
     return this.request(requestOptions);
   }
 
-  post(url: string, data, options?: PostOptions$): Promise<Response$> {
+  post(url: string, data, options?: PostOptions$): Observable<Response$> {
     return this.request(_.extend(options || {}, {url, method: 'POST', data}));
   }
 
-  head(url: string, options?: HeadOptions$): Promise<Response$> {
+  head(url: string, options?: HeadOptions$): Observable<Response$> {
     return this.request(_.extend(options || {}, {url, method: 'HEAD'}));
   }
 }
 
-export default Http;
+export {Http, Response$};
