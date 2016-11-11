@@ -40,7 +40,7 @@ module.exports = {
 // @author            axetroy
 // @collaborator      axetroy
 // @description       去除百度搜索跳转链接
-// @version           2016.11.10
+// @version           2016.11.11
 // @grant             GM_xmlhttpRequest
 // @include           *www.baidu.com*
 // @connect           *
