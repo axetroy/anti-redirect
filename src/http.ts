@@ -1,7 +1,7 @@
 declare function GM_xmlhttpRequest(agm: any): any;
 
 import * as _ from 'underscore';
-import {Observable} from 'rxjs';
+import {Observable} from 'rxjs/Observable';
 
 interface Response$ {
   response: string,
