@@ -9,8 +9,8 @@ var moment = require('moment');
 // webpack.config.js
 module.exports = {
   entry: {
-    "unredirect": path.join(__dirname, 'index.ts'),
-    "unredirect.min": path.join(__dirname, 'index.ts')
+    "anti-redirect": path.join(__dirname, 'index.ts'),
+    "anti-redirect.min": path.join(__dirname, 'index.ts')
   },
   output: {
     path: path.join(__dirname, '/dist'),
