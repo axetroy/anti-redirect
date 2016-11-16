@@ -2,7 +2,7 @@
 
 原脚本：[https://github.com/axetroy/GMscript](https://github.com/axetroy/GMscript)
 
-[点击立即安装](https://github.com/axetroy/bd-fuck/raw/master/dist/bd_fuck.min.user.js)
+[点击立即安装](https://github.com/axetroy/anti-redirect/raw/master/dist/anti-redirect.min.user.js)
 
 ### LICENSE
 
