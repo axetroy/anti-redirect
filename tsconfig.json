@@ -2,13 +2,14 @@
   "compilerOptions": {
     "module": "commonjs",
     "target": "es5",
+    "lib": [
+      "es6",
+      "dom"
+    ],
     "moduleResolution": "node",
     "sourceMap": true,
-    "types": [
-      "node",
-      "typescript",
-      "core-js",
-      "rx"
+    "typeRoots": [
+      "node_modules/@types"
     ]
   },
   "exclude": [

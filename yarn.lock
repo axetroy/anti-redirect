@@ -4,10 +4,6 @@
   version "3.4.34"
   resolved "http://registry.npm.taobao.org/@types/chai/download/@types/chai-3.4.34.tgz#d5335792823bb09cddd5e38c3d211b709183854d"
 
-"@types/core-js@^0.9.34":
-  version "0.9.34"
-  resolved "http://registry.npm.taobao.org/@types/core-js/download/@types/core-js-0.9.34.tgz#72c521d8e59fdaa8b65f76db71fa53c82c7c21c5"
-
 "@types/node@^6.0.46":
   version "6.0.46"
   resolved "http://registry.npm.taobao.org/@types/node/download/@types/node-6.0.46.tgz#8d9e48572831f05b11cc4c793754d43437219d62"
@@ -1226,6 +1222,10 @@ mkdirp@^0.5.1, "mkdirp@>=0.5 0", mkdirp@~0.5.0, mkdirp@~0.5.1, mkdirp@0.5.x:
   resolved "http://registry.npm.taobao.org/mkdirp/download/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
   dependencies:
     minimist "0.0.8"
+
+moment:
+  version "2.16.0"
+  resolved "http://registry.npm.taobao.org/moment/download/moment-2.16.0.tgz#f38f2c97c9889b0ee18fc6cc392e1e443ad2da8e"
 
 ms@0.7.1:
   version "0.7.1"

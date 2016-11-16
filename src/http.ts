@@ -155,4 +155,7 @@ class Http {
   }
 }
 
-export {Http, Response$};
+const timeout = 2000;
+let http = new Http({timeout});
+
+export {http, Response$, timeout};

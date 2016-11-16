@@ -4,12 +4,13 @@
 
 var webpack = require('webpack');
 var path = require('path');
+var moment = require('moment');
 
 // webpack.config.js
 module.exports = {
   entry: {
-    "bd_fuck": path.join(__dirname, 'index.ts'),
-    "bd_fuck.min": path.join(__dirname, 'index.ts')
+    "unredirect": path.join(__dirname, 'index.ts'),
+    "unredirect.min": path.join(__dirname, 'index.ts')
   },
   output: {
     path: path.join(__dirname, '/dist'),
@@ -36,13 +37,17 @@ module.exports = {
     }),
     new webpack.BannerPlugin({
       banner: `// ==UserScript==
-// @name              remove the jump link in BAIDU (typescript)
+// @name              anti-redirect (typescript)
 // @author            axetroy
 // @collaborator      axetroy
-// @description       去除百度搜索跳转链接
-// @version           2016.11.11
+// @description       反重定向
+// @version           ${moment().format('YYYY.MM.DD.ms')}
 // @grant             GM_xmlhttpRequest
 // @include           *www.baidu.com*
+// @include           *www.google.*
+// @include           *www.so.com*
+// @include           *www.zhihu.com*
+// @include           *daily.zhihu.com*
 // @connect           *
 // @compatible        chrome  完美运行
 // @compatible        firefox  完美运行
@@ -53,7 +58,7 @@ module.exports = {
 // @license           The MIT License (MIT); http://opensource.org/licenses/MIT
 // ==/UserScript==
 
-// Github源码:https://github.com/axetroy/bd-fuck
+// Github源码:https://github.com/axetroy/anti-redirect
 
 `, entryOnly: true, raw: true
     })

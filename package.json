@@ -14,12 +14,12 @@
   "license": "ISC",
   "devDependencies": {
     "@types/chai": "^3.4.34",
-    "@types/core-js": "^0.9.34",
     "@types/node": "^6.0.46",
     "@types/rx": "^2.5.33",
     "@types/underscore": "^1.7.33",
     "coveralls": "^2.11.14",
     "istanbul": "^0.4.5",
+    "moment": "^2.16.0",
     "ts-loader": "^0.9.5",
     "ts-node": "^1.6.1",
     "typescript": "^2.0.6",
