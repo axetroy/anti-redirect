@@ -23,10 +23,6 @@ class GoogleRedirect extends RedirectOnUrl {
       });
   }
 
-  log() {
-    console.log('bootstrap google');
-  }
-
 }
 
 export default new GoogleRedirect(

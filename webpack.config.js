@@ -48,6 +48,8 @@ module.exports = {
 // @include           *www.so.com*
 // @include           *www.zhihu.com*
 // @include           *daily.zhihu.com*
+// @include           *weibo.com*
+// @include           *twitter.com*
 // @connect           *
 // @compatible        chrome  完美运行
 // @compatible        firefox  完美运行

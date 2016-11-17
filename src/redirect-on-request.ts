@@ -1,4 +1,5 @@
 import {Observable} from 'rxjs/Observable';
+import * as _ from 'underscore';
 import {http, Response$, timeout} from './http';
 import {CONFIG} from './config';
 
@@ -14,6 +15,7 @@ class RedirectOnRequest {
   public match: boolean;
   public DEBUG = DEBUG;
   public status: any = status;
+  public logCount: number = 0;
 
   constructor(public domainTester, public urlTester, public matcher, public ASelector = 'a') {
     this.match = domainTester.test(document.domain);
@@ -80,8 +82,17 @@ class RedirectOnRequest {
       .filter((ele: HTMLAnchorElement)=>ele.nodeName === 'A');
   }
 
-  log(str?: string): void {
-    console.log(str || 'boostrap anti-redirect');
+  log(project?: string): void {
+    if (this.logCount < 1) {
+      console.log(
+        "%c Anti-Redirect %c Copyright \xa9 2015-%s %s",
+        'font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;font-size:64px;color:#00bbee;-webkit-text-fill-color:#00bbee;-webkit-text-stroke: 1px #00bbee;',
+        "font-size:12px;color:#999999;",
+        (new Date).getFullYear(),
+        '\n' + (project || '')
+      );
+      this.logCount++;
+    }
   }
 
   bootstrap(): void {
@@ -107,8 +118,6 @@ class RedirectOnRequest {
       })
       .subscribe(()=> {
 
-        this.log();
-
         this.scroll().subscribe(()=> {
           this.handlerOneEleOneByOne();
         });
@@ -119,6 +128,8 @@ class RedirectOnRequest {
 
         this.handlerAll();
         this.handlerOneEleOneByOne();
+
+        this.log();
 
       });
   }

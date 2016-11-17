@@ -7,6 +7,7 @@ import 'rxjs/add/operator/throttle';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/filter';
 import 'rxjs/add/operator/debounce';
+import 'rxjs/add/operator/debounceTime';
 import 'rxjs/add/operator/do';
 import 'rxjs/add/operator/mergeMap';
 import 'rxjs/add/operator/retry';
@@ -15,12 +16,16 @@ import 'rxjs/add/operator/delay';
 
 import baiduRedirect from './src/baidu';
 import googleRedirect from './src/google';
+import weboRedirect from './src/weibo';
+import twitterRedirect from './src/twitter';
 import soRedirect from './src/so';
 import zhihuRedirect from './src/zhihu';
 import zhihuDailyRedirect from './src/zhihu-daily';
 
 baiduRedirect.bootstrap();
 googleRedirect.bootstrap();
+weboRedirect.bootstrap();
+twitterRedirect.bootstrap();
 soRedirect.bootstrap();
 zhihuRedirect.bootstrap();
 zhihuDailyRedirect.bootstrap();

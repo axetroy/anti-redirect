@@ -11,18 +11,52 @@ function getText(htmlElement: HTMLElement): string {
   return htmlElement.innerText || htmlElement.textContent;
 }
 
+class Query {
+  object: any = {};
+
+  constructor(public queryStr: String) {
+    this.object = this.toObject(queryStr.replace(/^\?+/, ''));
+  }
+
+  toObject(queryStr: String) {
+    let obj = {};
+    queryStr.split('&').forEach((item)=> {
+      let arr = item.split('=') || [];
+      let key = arr[0] || '';
+      obj[key] = arr[1] || '';
+    });
+    return obj;
+  }
+
+  public toString(): String {
+    let arr = [];
+    for (let key in this.object) {
+      if (this.object.hasOwnProperty(key)) {
+        let value = this.object[key];
+        arr.push(key + '=' + value);
+      }
+    }
+    return '?' + arr.join('&');
+  }
+
+}
+
 class BaiduRedirect extends RedirectOnRequest {
   constructor(domainTester, urlTester, matcher, ASelector = 'a') {
     super(domainTester, urlTester, matcher, ASelector);
   }
 
   handlerAll(): void {
-    let skipArray: any[] = location.search.match(/pn=(\d+)/) || [''];
-    let skip: number = skipArray.length === 2 ? +skipArray[1] : 0;
-    const href: string = window.top.location.href;
-    if (!/www\.baidu\.com\/s/.test(href)) return;
-    let url: string = href.replace(/(\&)(tn=\w+)(\&)/img, '$1' + 'tn=baidulocal' + '$3') + `&timestamp=${new Date().getTime()}`;
-    if (url.indexOf('tn=baidulocal') === -1) url += '&tn=baidulocal';
+    if (!/www\.baidu\.com\/s/.test(window.top.location.href)) return;
+    const query = new Query(window.top.location.search);
+    const skip = query.object.pn || 0;
+
+    query.object.tn = 'baidulocal';
+    query.object.timestamp = new Date().getTime();
+    query.object.rn = 50;
+
+    const url: string = `${location.protocol}://${location.host + location.pathname + query}`;
+
     Observable.forkJoin(
       http.get(url),
       http.get(url.replace(/pn=(\d+)/, `pn=${skip + 10}`))
@@ -56,10 +90,6 @@ class BaiduRedirect extends RedirectOnRequest {
             this.DEBUG && (item.local.style.backgroundColor = 'red');
           })
       });
-  }
-
-  log(): void {
-    console.log('bootstrap baidu');
   }
 
 }

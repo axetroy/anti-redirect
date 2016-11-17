@@ -4,9 +4,6 @@ class SoRedirect extends RedirectOnUrl {
   constructor(domainTester, urlTester, matcher) {
     super(domainTester, urlTester, matcher);
   }
-  log() {
-    console.log('bootstrap 360 so');
-  }
 }
 
 export default new SoRedirect(

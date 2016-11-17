@@ -4,8 +4,10 @@ const DEBUG = CONFIG.debug;
 
 class RedirectOnUrl {
   public match: boolean = false;
+  public DEBUG: boolean = DEBUG;
+  public logCount: number = 0;
 
-  constructor(private domainTester, private urlTester, private matcher, private ASelector = 'a') {
+  constructor(public domainTester, public urlTester, public matcher, public ASelector = 'a') {
     this.match = domainTester.test(document.domain);
   }
 
@@ -25,48 +27,54 @@ class RedirectOnUrl {
       })
   }
 
-  scroll(): Observable<any> {
-    return Observable.fromEvent(document, 'mousemove')
-      .debounce(()=>Observable.timer(500))
+  scroll() {
+    return Observable.fromEvent(document, 'scroll')
+      .debounceTime(500)
       .flatMap(()=>Observable.from([].slice.call(document.querySelectorAll(this.ASelector))))
-      .do((aEle: HTMLAnchorElement)=> {
+      .subscribe((aEle: HTMLAnchorElement)=> {
         this.handlerOneEle(aEle).subscribe(function () {
         });
-      })
+      });
   }
 
   mouseover(): Observable<HTMLAnchorElement> {
     return Observable.fromEvent(document, 'mousemove')
-      .throttle(()=>Observable.timer(100))
+      .debounce(()=>Observable.timer(100))
       .map(function (event: any): HTMLElement {
         let target = event.target;
         return target.nodeName === 'A' ? target : target.parentNode.nodeName === 'A' ? target.parentNode : target;
       })
       .filter(function (ele: HTMLElement) {
-        return ele.nodeName === 'A'
-      })
-      .flatMap((aEle: HTMLAnchorElement)=>this.handlerOneEle(aEle))
+        return ele.nodeName === 'A';
+      });
   }
 
-  log(str?: string): void {
-    console.log(str || 'boostrap anti-redirect');
+  log(project?: string): void {
+    if (this.logCount < 1) {
+      console.log(
+        "%c Anti-Redirect %c Copyright \xa9 2015-%s %s",
+        'font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;font-size:64px;color:#00bbee;-webkit-text-fill-color:#00bbee;-webkit-text-stroke: 1px #00bbee;',
+        "font-size:12px;color:#999999;",
+        (new Date).getFullYear(),
+        '\n' + (project || '')
+      );
+      this.logCount++;
+    }
   }
 
   bootstrap(): void {
     if (!this.match) return;
     Observable.fromEvent(document, 'DOMContentLoaded')
-      .flatMap(()=>Observable.timer(1000))
+      .delay(300)
       .subscribe(()=> {
 
-        this.log();
+        this.scroll();
 
-        this.scroll().subscribe(function () {
-
+        this.mouseover().subscribe((aEle: HTMLAnchorElement)=> {
+          this.handlerOneEle(aEle)
         });
 
-        this.mouseover().subscribe(function () {
-
-        })
+        this.log();
 
       });
   }
