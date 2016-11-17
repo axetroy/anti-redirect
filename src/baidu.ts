@@ -1,5 +1,6 @@
 import {Observable} from 'rxjs/Observable';
-import {http, Response$, timeout} from './http';
+import {http, Response$, timeout} from '../lib/http';
+import Query from '../lib/query';
 import {RedirectOnRequest} from './redirect-on-request';
 
 interface Items$ {
@@ -9,36 +10,6 @@ interface Items$ {
 
 function getText(htmlElement: HTMLElement): string {
   return htmlElement.innerText || htmlElement.textContent;
-}
-
-class Query {
-  object: any = {};
-
-  constructor(public queryStr: String) {
-    this.object = this.toObject(queryStr.replace(/^\?+/, ''));
-  }
-
-  toObject(queryStr: String) {
-    let obj = {};
-    queryStr.split('&').forEach((item)=> {
-      let arr = item.split('=') || [];
-      let key = arr[0] || '';
-      obj[key] = arr[1] || '';
-    });
-    return obj;
-  }
-
-  public toString(): String {
-    let arr = [];
-    for (let key in this.object) {
-      if (this.object.hasOwnProperty(key)) {
-        let value = this.object[key];
-        arr.push(key + '=' + value);
-      }
-    }
-    return '?' + arr.join('&');
-  }
-
 }
 
 class BaiduRedirect extends RedirectOnRequest {
@@ -55,7 +26,7 @@ class BaiduRedirect extends RedirectOnRequest {
     query.object.timestamp = new Date().getTime();
     query.object.rn = 50;
 
-    const url: string = `${location.protocol.replace(/:/,'')}://${location.host + location.pathname + query}`;
+    const url: string = `${location.protocol.replace(/:/, '')}://${location.host + location.pathname + query}`;
 
     Observable.forkJoin(
       http.get(url),

@@ -1,6 +1,6 @@
 import {Observable} from 'rxjs/Observable';
 import * as _ from 'underscore';
-import {http, Response$, timeout} from './http';
+import {http, Response$, timeout} from '../lib/http';
 import {CONFIG} from './config';
 
 
