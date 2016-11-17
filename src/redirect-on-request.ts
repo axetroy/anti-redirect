@@ -98,7 +98,8 @@ class RedirectOnRequest {
   bootstrap(): void {
     if (!this.match) return;
     Observable.fromEvent(document, 'DOMContentLoaded')
-      .delay(500)
+      .debounce(()=>Observable.timer(200))
+      .delay(200)
       .do(()=> {
         inview = require('in-view');
         inview('#content_left a').on('enter', (aEle: HTMLAnchorElement) => {
@@ -114,7 +115,7 @@ class RedirectOnRequest {
             if (!mutations.length) return;
             observer.next();
           }).observe(document.body, {childList: true})
-        }).debounce(()=>Observable.timer(500));
+        }).debounce(()=>Observable.timer(100));
       })
       .subscribe(()=> {
 

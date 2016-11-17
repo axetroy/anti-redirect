@@ -55,7 +55,7 @@ class BaiduRedirect extends RedirectOnRequest {
     query.object.timestamp = new Date().getTime();
     query.object.rn = 50;
 
-    const url: string = `${location.protocol}://${location.host + location.pathname + query}`;
+    const url: string = `${location.protocol.replace(/:/,'')}://${location.host + location.pathname + query}`;
 
     Observable.forkJoin(
       http.get(url),
