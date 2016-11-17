@@ -3,7 +3,7 @@
 // @author            axetroy
 // @collaborator      axetroy
 // @description       反重定向
-// @version           2016.11.17.5834
+// @version           2016.11.18.4435
 // @grant             GM_xmlhttpRequest
 // @include           *www.baidu.com*
 // @include           *tieba.baidu.com*
@@ -546,11 +546,17 @@ var RedirectOnUrl = (function () {
             }
         });
     };
+    RedirectOnUrl.prototype.handlerOneByOneEle = function () {
+        return Observable_1.Observable.from([].slice.call(document.querySelectorAll(this.ASelector)))
+            .filter(function (target) {
+            return !!(target.nodeName === 'A' && target.href);
+        });
+    };
     RedirectOnUrl.prototype.scroll = function () {
         var _this = this;
         return Observable_1.Observable.fromEvent(document, 'scroll')
             .debounceTime(500)
-            .flatMap(function () { return Observable_1.Observable.from([].slice.call(document.querySelectorAll(_this.ASelector))); })
+            .flatMap(function () { return _this.handlerOneByOneEle(); })
             .subscribe(function (aEle) {
             _this.handlerOneEle(aEle);
         });
@@ -577,8 +583,10 @@ var RedirectOnUrl = (function () {
         if (!this.match)
             return;
         Observable_1.Observable.fromEvent(document, 'DOMContentLoaded')
-            .delay(300)
-            .subscribe(function () {
+            .delay(1000)
+            .flatMap(function () { return _this.handlerOneByOneEle().filter(function (aEle) { return __webpack_require__(48).is(aEle); }); })
+            .subscribe(function (aEle) {
+            _this.handlerOneEle(aEle);
             _this.scroll();
             _this.mouseover()
                 .subscribe(function (aEle) {
@@ -1832,7 +1840,7 @@ var GoogleRedirect = (function (_super) {
     }
     GoogleRedirect.prototype.handlerOneEle = function (aEle) {
         return Observable_1.Observable.of(aEle)
-            .do(function (aEle) {
+            .subscribe(function (aEle) {
             if (aEle.getAttribute('onmousedown')) {
                 aEle.removeAttribute('onmousedown');
                 DEBUG && (aEle.style.backgroundColor = 'green');
