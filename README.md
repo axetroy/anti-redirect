@@ -8,6 +8,7 @@
 
 ```javascript
 // @include           *www.baidu.com*
+// @include           *tieba.baidu.com*
 // @include           *www.google.*
 // @include           *www.so.com*
 // @include           *www.zhihu.com*
