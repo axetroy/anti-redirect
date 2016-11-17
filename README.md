@@ -4,6 +4,27 @@
 
 [点击立即安装](https://github.com/axetroy/anti-redirect/raw/master/dist/anti-redirect.min.user.js)
 
+### Supports
+
+```javascript
+// @include           *www.baidu.com*
+// @include           *www.google.*
+// @include           *www.so.com*
+// @include           *www.zhihu.com*
+// @include           *daily.zhihu.com*
+// @include           *weibo.com*
+// @include           *twitter.com*
+```
+
+### Contribute
+
+```bash
+
+yarn #or run 'npm install'
+
+npm run watch
+```
+
 ### LICENSE
 
 The MIT License (MIT)
