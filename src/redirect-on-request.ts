@@ -1,5 +1,4 @@
 import {Observable} from 'rxjs/Observable';
-import * as _ from 'underscore';
 import {http, Response$, timeout} from '../lib/http';
 import {CONFIG} from './config';
 
@@ -22,22 +21,20 @@ class RedirectOnRequest {
     this.match = domainTester.test(document.domain);
   }
 
+  resHandler(res: Response$) {
+    return res;
+  }
+
   handlerOneEle(aElement: HTMLAnchorElement): void {
     if (!this.urlTester.test(aElement.href) || aElement.getAttribute(status.ing) || aElement.getAttribute(status.done)) return;
-    let url: string = aElement.href.replace(/^https?/, 'https') + `&timestamp=${new Date().getTime()}`;
+    let url: string = aElement.href.replace(/^https?/, location.protocol.replace(/:$/, '')) + `&timestamp=${new Date().getTime()}`;
     aElement.style.cursor = 'progress';
     aElement.setAttribute(status.ing, '1');
     http.get(url)
       .retry(2)
       .timeout(timeout)
-      .map((res: Response$)=> {
-        if (this.urlTester.test(res.finalUrl)) {
-          if (!res.response || /<\/noscript>$/.test(res.response.trim())) throw res;
-          let url = res.response.match(/URL=\'?https?:\/\/[^'"]+/).join('').match(/https?:\/\/[^'"]+/)[0];
-          if (!url || !/^https?/.test(url) || this.urlTester.test(url)) throw res;
-          res.finalUrl = url;
-        }
-        return res;
+      .map((res: Response$): Response$=> {
+        return this.resHandler(res);
       })
       .subscribe(function (res: Response$): void {
         aElement.href = res.finalUrl;
@@ -54,7 +51,7 @@ class RedirectOnRequest {
   }
 
   handlerOneEleOneByOne() {
-    Observable.from([].slice.call(document.querySelectorAll('#content_left a')))
+    Observable.from([].slice.call(document.querySelectorAll(this.ASelector)))
       .subscribe((aElement: HTMLAnchorElement): void => {
         inview && inview.is(aElement) && this.handlerOneEle(aElement);
       })
@@ -68,19 +65,25 @@ class RedirectOnRequest {
 
   }
 
-  scroll(): Observable<any> {
+  scroll() {
     return Observable.fromEvent(window, 'scroll')
       .debounce(()=>Observable.timer(200))
+      .subscribe(()=> {
+        this.handlerOneEleOneByOne();
+      });
   }
 
-  mouseover(): Observable<HTMLAnchorElement> {
+  mouseover() {
     return Observable.fromEvent(document, 'mousemove')
       .throttle(()=>Observable.timer(100))
       .map((event: any): HTMLAnchorElement=> {
         let target = event.toElement;
         return target.nodeName === 'A' ? target : target.parentNode.nodeName === 'A' ? target.parentNode : target;
       })
-      .filter((ele: HTMLAnchorElement)=>ele.nodeName === 'A');
+      .filter((ele: HTMLAnchorElement)=>ele.nodeName === 'A')
+      .subscribe((aEle)=> {
+        this.handlerOneEle(aEle);
+      });
   }
 
   log(project?: string): void {
@@ -101,15 +104,6 @@ class RedirectOnRequest {
     Observable.fromEvent(document, 'DOMContentLoaded')
       .debounce(()=>Observable.timer(200))
       .delay(200)
-      .do(()=> {
-        inview = require('in-view');
-        inview('#content_left a').on('enter', (aEle: HTMLAnchorElement) => {
-          this.handlerOneEle(aEle);
-        });
-      })
-      .do(()=> {
-        this.handlerAll();
-      })
       .flatMap((): Observable<void>=> {
         return Observable.create((observer) => {
           new MutationObserver((mutations = [])=> {
@@ -120,13 +114,15 @@ class RedirectOnRequest {
       })
       .subscribe(()=> {
 
-        this.scroll().subscribe(()=> {
-          this.handlerOneEleOneByOne();
-        });
+        inview = require('in-view');
+        inview(this.ASelector)
+          .on('enter', (aEle: HTMLAnchorElement) => {
+            this.handlerOneEle(aEle);
+          });
 
-        this.mouseover().subscribe((aEle)=> {
-          this.handlerOneEle(aEle);
-        });
+        this.scroll();
+
+        this.mouseover();
 
         this.handlerAll();
         this.handlerOneEleOneByOne();

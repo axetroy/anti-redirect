@@ -2,7 +2,7 @@
  * Created by axetroy on 16-11-12.
  */
 const CONFIG = {
-  debug: false
+  debug: true
 };
 
 export {CONFIG};

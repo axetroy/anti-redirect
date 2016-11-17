@@ -45,6 +45,7 @@ module.exports = {
 // @grant             GM_xmlhttpRequest
 // @include           *www.baidu.com*
 // @include           *tieba.baidu.com*
+// @include           *v.baidu.com*
 // @include           *www.google.*
 // @include           *www.so.com*
 // @include           *www.zhihu.com*

@@ -17,6 +17,16 @@ class BaiduRedirect extends RedirectOnRequest {
     super(domainTester, urlTester, matcher, ASelector);
   }
 
+  resHandler(res) {
+    if (this.urlTester.test(res.finalUrl)) {
+      if (!res.response || /<\/noscript>$/.test(res.response.trim())) throw res;
+      let url = res.response.match(/URL=\'?https?:\/\/[^'"]+/).join('').match(/https?:\/\/[^'"]+/)[0];
+      if (!url || !/^https?/.test(url) || this.urlTester.test(url)) throw res;
+      res.finalUrl = url;
+    }
+    return res;
+  }
+
   handlerAll(): void {
     if (!/www\.baidu\.com\/s/.test(window.top.location.href)) return;
     const query = new Query(window.top.location.search);

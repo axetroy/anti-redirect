@@ -16,6 +16,7 @@ import 'rxjs/add/operator/delay';
 
 import baiduRedirect from './src/baidu';
 import baiduTiebaRedirect from './src/tieba';
+import baiduVideoRedirect from './src/baidu-video';
 import googleRedirect from './src/google';
 import weboRedirect from './src/weibo';
 import twitterRedirect from './src/twitter';
@@ -25,6 +26,7 @@ import zhihuDailyRedirect from './src/zhihu-daily';
 
 baiduRedirect.bootstrap();
 baiduTiebaRedirect.bootstrap();
+baiduVideoRedirect.bootstrap();
 googleRedirect.bootstrap();
 weboRedirect.bootstrap();
 twitterRedirect.bootstrap();
