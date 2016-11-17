@@ -1,4 +1,5 @@
 import {Observable} from 'rxjs/Observable';
+import {Subscription} from 'rxjs/Subscription';
 import {RedirectOnUrl} from './redirect-on-url';
 
 class WeiboRedirect extends RedirectOnUrl {
@@ -6,7 +7,7 @@ class WeiboRedirect extends RedirectOnUrl {
     super(domainTester, urlTester, matcher);
   }
 
-  handlerOneEle(aEle: HTMLAnchorElement) {
+  handlerOneEle(aEle: HTMLAnchorElement):Subscription {
     return Observable.of(aEle)
       .filter((ele: HTMLAnchorElement)=> {
         return this.urlTester.test(ele.href) && /^https?:\/\//.test(ele.title);

@@ -1,4 +1,5 @@
 import {Observable} from 'rxjs/Observable';
+import {Subscription} from 'rxjs/Subscription';
 import {CONFIG} from './config';
 const DEBUG = CONFIG.debug;
 
@@ -12,7 +13,7 @@ class RedirectOnUrl {
     this.match = domainTester.test(document.domain);
   }
 
-  handlerOneEle(aEle: HTMLAnchorElement): any {
+  handlerOneEle(aEle: HTMLAnchorElement): Subscription {
     return Observable.of(aEle)
       .filter((ele: HTMLAnchorElement)=> {
         return this.urlTester.test(ele.href)
@@ -33,10 +34,17 @@ class RedirectOnUrl {
       })
   }
 
+  handlerOneByOneEle(): Observable<HTMLAnchorElement> {
+    return Observable.from([].slice.call(document.querySelectorAll(this.ASelector)))
+      .filter((target: HTMLAnchorElement): boolean=> {
+        return !!(target.nodeName === 'A' && target.href);
+      });
+  }
+
   scroll() {
     return Observable.fromEvent(document, 'scroll')
       .debounceTime(500)
-      .flatMap(()=>Observable.from([].slice.call(document.querySelectorAll(this.ASelector))))
+      .flatMap(()=>this.handlerOneByOneEle())
       .subscribe((aEle: HTMLAnchorElement)=> {
         this.handlerOneEle(aEle);
       });
@@ -70,8 +78,11 @@ class RedirectOnUrl {
   bootstrap(): void {
     if (!this.match) return;
     Observable.fromEvent(document, 'DOMContentLoaded')
-      .delay(300)
-      .subscribe(()=> {
+      .delay(1000)
+      .flatMap(()=>this.handlerOneByOneEle().filter((aEle: HTMLAnchorElement)=>require('in-view').is(aEle)))
+      .subscribe((aEle: HTMLAnchorElement)=> {
+
+        this.handlerOneEle(aEle);
 
         this.scroll();
 

@@ -1,4 +1,5 @@
 import {Observable} from 'rxjs/Observable';
+import {Subscription} from 'rxjs/Subscription';
 import {CONFIG} from './config';
 const DEBUG = CONFIG.debug;
 
@@ -9,9 +10,9 @@ class GoogleRedirect extends RedirectOnUrl {
     super(domainTester, urlTester, matcher);
   }
 
-  handlerOneEle(aEle: HTMLAnchorElement): Observable<any> {
+  handlerOneEle(aEle: HTMLAnchorElement): Subscription {
     return Observable.of(aEle)
-      .do(function (aEle: HTMLAnchorElement) {
+      .subscribe(function (aEle: HTMLAnchorElement) {
         if (aEle.getAttribute('onmousedown')) {
           aEle.removeAttribute('onmousedown');
           DEBUG && (aEle.style.backgroundColor = 'green');
