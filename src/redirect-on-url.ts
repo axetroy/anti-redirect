@@ -7,19 +7,25 @@ class RedirectOnUrl {
   public DEBUG: boolean = DEBUG;
   public logCount: number = 0;
 
-  constructor(public domainTester, public urlTester, public matcher, public ASelector = 'a') {
+  constructor(public domainTester: RegExp, public urlTester: RegExp, public matcher: RegExp, public ASelector?: string) {
+    this.ASelector = this.ASelector || 'a';
     this.match = domainTester.test(document.domain);
   }
 
-  handlerOneEle(aEle: HTMLAnchorElement): Observable<any> {
+  handlerOneEle(aEle: HTMLAnchorElement): any {
     return Observable.of(aEle)
       .filter((ele: HTMLAnchorElement)=> {
         return this.urlTester.test(ele.href)
       })
-      .do((aEle: HTMLAnchorElement)=> {
+      .subscribe((aEle: HTMLAnchorElement)=> {
         let matcher: string[] = this.matcher.exec(aEle.href);
         if (!matcher || !matcher.length || !matcher[1]) return;
-        let url: string = decodeURIComponent(matcher[1]);
+        let url: string = '';
+        try {
+          url = decodeURIComponent(matcher[1]);
+        } catch (e) {
+          url = /https?:\/\//.test(matcher[1]) ? matcher[1] : '';
+        }
         if (url) {
           aEle.href = url;
           DEBUG && (aEle.style.backgroundColor = 'green');
@@ -32,8 +38,7 @@ class RedirectOnUrl {
       .debounceTime(500)
       .flatMap(()=>Observable.from([].slice.call(document.querySelectorAll(this.ASelector))))
       .subscribe((aEle: HTMLAnchorElement)=> {
-        this.handlerOneEle(aEle).subscribe(function () {
-        });
+        this.handlerOneEle(aEle);
       });
   }
 
@@ -70,9 +75,10 @@ class RedirectOnUrl {
 
         this.scroll();
 
-        this.mouseover().subscribe((aEle: HTMLAnchorElement)=> {
-          this.handlerOneEle(aEle)
-        });
+        this.mouseover()
+          .subscribe((aEle: HTMLAnchorElement)=> {
+            this.handlerOneEle(aEle);
+          });
 
         this.log();
 

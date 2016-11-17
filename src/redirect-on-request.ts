@@ -17,7 +17,8 @@ class RedirectOnRequest {
   public status: any = status;
   public logCount: number = 0;
 
-  constructor(public domainTester, public urlTester, public matcher, public ASelector = 'a') {
+  constructor(public domainTester: RegExp, public urlTester: RegExp, public matcher: RegExp, public ASelector?: string) {
+    this.ASelector = this.ASelector || 'a';
     this.match = domainTester.test(document.domain);
   }
 

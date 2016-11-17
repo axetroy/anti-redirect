@@ -44,6 +44,7 @@ module.exports = {
 // @version           ${moment().format('YYYY.MM.DD.ms')}
 // @grant             GM_xmlhttpRequest
 // @include           *www.baidu.com*
+// @include           *tieba.baidu.com*
 // @include           *www.google.*
 // @include           *www.so.com*
 // @include           *www.zhihu.com*
