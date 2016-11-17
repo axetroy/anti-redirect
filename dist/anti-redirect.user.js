@@ -1764,7 +1764,7 @@ var BaiduRedirect = (function (_super) {
         query.object.tn = 'baidulocal';
         query.object.timestamp = new Date().getTime();
         query.object.rn = 50;
-        var url = location.protocol + "://" + (location.host + location.pathname + query);
+        var url = location.protocol.replace(/:/, '') + "://" + (location.host + location.pathname + query);
         Observable_1.Observable.forkJoin(http_1.http.get(url), http_1.http.get(url.replace(/pn=(\d+)/, "pn=" + (skip + 10)))).retry(2)
             .timeout(http_1.timeout)
             .subscribe(function (resList) {
@@ -4611,7 +4611,8 @@ var RedirectOnRequest = (function () {
         if (!this.match)
             return;
         Observable_1.Observable.fromEvent(document, 'DOMContentLoaded')
-            .delay(500)
+            .debounce(function () { return Observable_1.Observable.timer(200); })
+            .delay(200)
             .do(function () {
             inview = __webpack_require__(47);
             inview('#content_left a').on('enter', function (aEle) {
@@ -4629,7 +4630,7 @@ var RedirectOnRequest = (function () {
                         return;
                     observer.next();
                 }).observe(document.body, { childList: true });
-            }).debounce(function () { return Observable_1.Observable.timer(500); });
+            }).debounce(function () { return Observable_1.Observable.timer(100); });
         })
             .subscribe(function () {
             _this.scroll().subscribe(function () {
