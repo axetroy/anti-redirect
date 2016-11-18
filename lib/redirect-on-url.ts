@@ -1,7 +1,7 @@
 import {Observable} from 'rxjs/Observable';
 import {Subscription} from 'rxjs/Subscription';
-import {log} from '../lib/log';
-import {CONFIG} from './config';
+import {log} from './log';
+import {CONFIG} from '../config';
 const DEBUG = CONFIG.debug;
 
 
@@ -35,12 +35,8 @@ class RedirectOnUrl {
 
   public handlerOne(aEle: HTMLAnchorElement): Subscription {
     return Observable.of(aEle)
-      .filter((ele: HTMLAnchorElement)=> {
-        return this.urlTester.test(ele.href)
-      })
-      .subscribe((aEle: HTMLAnchorElement)=> {
-        this.handler(aEle);
-      });
+      .filter((ele: HTMLAnchorElement)=> this.urlTester.test(ele.href))
+      .subscribe((aEle: HTMLAnchorElement)=>this.handler(aEle));
   }
 
   private handlerOneByOne(): Observable<HTMLAnchorElement> {
@@ -50,7 +46,7 @@ class RedirectOnUrl {
 
   private scroll(): Subscription {
     return Observable.fromEvent(document, 'scroll')
-      .debounceTime(500)
+      .debounceTime(200)
       .flatMap(()=>this.handlerOneByOne())
       .subscribe((aEle: HTMLAnchorElement)=> this.handlerOne(aEle));
   }

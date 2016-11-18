@@ -1,4 +1,4 @@
-import {RedirectOnUrl} from './redirect-on-url';
+import {RedirectOnUrl} from '../lib/redirect-on-url';
 
 class ZhihuRedirect extends RedirectOnUrl {
   constructor(domainTester, urlTester, matcher) {

@@ -1,6 +1,6 @@
 import {Observable} from 'rxjs/Observable';
 import {Subscription} from 'rxjs/Subscription';
-import {RedirectOnUrl} from './redirect-on-url';
+import {RedirectOnUrl} from '../lib/redirect-on-url';
 
 class BaiduTiebaRedirect extends RedirectOnUrl {
   constructor(domainTester: RegExp, urlTester: RegExp, matcher?: RegExp) {

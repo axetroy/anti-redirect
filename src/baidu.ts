@@ -2,7 +2,7 @@ import {Observable} from 'rxjs/Observable';
 import {Subscription} from 'rxjs/Subscription';
 import {http, Response$, timeout} from '../lib/http';
 import Query from '../lib/query';
-import {RedirectOnRequest} from './redirect-on-request';
+import {RedirectOnRequest} from '../lib/redirect-on-request';
 
 interface Items$ {
   local: HTMLAnchorElement,

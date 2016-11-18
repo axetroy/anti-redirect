@@ -1,7 +1,7 @@
 import {Observable} from 'rxjs/Observable';
 import {Subscription} from 'rxjs/Subscription';
 
-import {RedirectOnUrl} from './redirect-on-url';
+import {RedirectOnUrl} from '../lib/redirect-on-url';
 
 class GoogleRedirect extends RedirectOnUrl {
   constructor(domainTester, urlTester, matcher) {

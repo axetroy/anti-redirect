@@ -1,4 +1,4 @@
-import {RedirectOnRequest} from './redirect-on-request';
+import {RedirectOnRequest} from '../lib/redirect-on-request';
 import {Response$} from '../lib/http';
 
 class BaiduVideoRedirect extends RedirectOnRequest {

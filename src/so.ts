@@ -1,4 +1,4 @@
-import {RedirectOnUrl} from './redirect-on-url';
+import {RedirectOnUrl} from '../lib/redirect-on-url';
 
 class SoRedirect extends RedirectOnUrl {
   constructor(domainTester, urlTester, matcher) {

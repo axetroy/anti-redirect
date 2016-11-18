@@ -1,6 +1,6 @@
 import {Observable} from 'rxjs/Observable';
 import {Subscription} from 'rxjs/Subscription';
-import {RedirectOnUrl} from './redirect-on-url';
+import {RedirectOnUrl} from '../lib/redirect-on-url';
 
 class TwitterRedirect extends RedirectOnUrl {
   constructor(domainTester, urlTester, matcher) {
@@ -9,16 +9,14 @@ class TwitterRedirect extends RedirectOnUrl {
 
   public handlerOne(aEle: HTMLAnchorElement): Subscription {
     return Observable.of(aEle)
-      .filter((ele: HTMLAnchorElement): boolean=> {
-        return this.urlTester.test(ele.href) && /^https?:\/\//.test(ele.title);
-      })
+      .filter((ele: HTMLAnchorElement): boolean=> this.urlTester.test(ele.href) && /^https?:\/\//.test(ele.title))
       .subscribe((aEle: HTMLAnchorElement)=> {
         let url: string = decodeURIComponent(aEle.title);
         if (url) {
           aEle.href = url;
           this.DEBUG && (aEle.style.backgroundColor = 'green');
         }
-      })
+      });
   }
 
 }

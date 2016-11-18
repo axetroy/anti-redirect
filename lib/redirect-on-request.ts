@@ -1,8 +1,8 @@
 import {Observable} from 'rxjs/Observable';
 import {Subscription} from 'rxjs/Subscription';
-import {http, Response$, timeout} from '../lib/http';
-import {log} from '../lib/log';
-import {CONFIG} from './config';
+import {http, Response$, timeout} from './http';
+import {log} from './log';
+import {CONFIG} from '../config';
 
 
 const DEBUG = CONFIG.debug;
@@ -67,7 +67,7 @@ class RedirectOnRequest {
 
   private scroll(): Subscription {
     return Observable.fromEvent(window, 'scroll')
-      .debounce(()=>Observable.timer(200))
+      .debounceTime(200)
       .subscribe(()=> {
         this.handlerOneByOne();
       });
@@ -103,7 +103,7 @@ class RedirectOnRequest {
         Observable.create((observer) => {
           new MutationObserver((mutations = [])=> observer.next())
             .observe(document.body, {childList: true})
-        }).debounce(()=>Observable.timer(100))
+        }).debounceTime(100)
           .subscribe(()=> {
             this.onInit();
             this.handlerOneByOne();
