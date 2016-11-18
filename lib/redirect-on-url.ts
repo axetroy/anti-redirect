@@ -53,7 +53,7 @@ class RedirectOnUrl {
 
   private mouseover(): Observable<HTMLAnchorElement> {
     return Observable.fromEvent(document, 'mousemove')
-      .throttle(()=>Observable.timer(100))
+      .throttleTime(100)
       .map((event: any): HTMLElement => {
         let target = event.target;
         return target.nodeName === 'A' ? target : target.parentNode.nodeName === 'A' ? target.parentNode : target;

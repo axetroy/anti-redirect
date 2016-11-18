@@ -75,7 +75,7 @@ class RedirectOnRequest {
 
   private mouseover(): Subscription {
     return Observable.fromEvent(document, 'mousemove')
-      .throttle(()=>Observable.timer(100))
+      .throttleTime(100)
       .map((event: any): HTMLAnchorElement=> {
         let target = event.toElement;
         return target.nodeName === 'A' ? target : target.parentNode.nodeName === 'A' ? target.parentNode : target;
@@ -89,7 +89,7 @@ class RedirectOnRequest {
   public bootstrap(): void {
     if (!this.match) return;
     Observable.fromEvent(document, 'DOMContentLoaded')
-      .throttle(()=>Observable.timer(200))
+      .throttleTime(200)
       .subscribe(()=> {
 
         this.onInit();
