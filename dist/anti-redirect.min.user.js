@@ -1,12 +1,10 @@
 // ==UserScript==
 // @name              anti-redirect (typescript)
-// @name:en           anti-redirect (typescript)
-// @name:tw           anti-redirect (typescript)
 // @author            axetroy
 // @collaborator      axetroy
 // @description       反重定向
 // @version           1.0.0
-// @update            2016-11-18 12:04:41
+// @update            2016-11-18 12:06:53
 // @grant             GM_xmlhttpRequest
 // @include           *www.baidu.com*
 // @include           *tieba.baidu.com*
