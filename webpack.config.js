@@ -38,8 +38,6 @@ module.exports = {
     new webpack.BannerPlugin({
       banner: `// ==UserScript==
 // @name              anti-redirect (typescript)
-// @name:en           anti-redirect (typescript)
-// @name:tw           anti-redirect (typescript)
 // @author            axetroy
 // @collaborator      axetroy
 // @description       反重定向
