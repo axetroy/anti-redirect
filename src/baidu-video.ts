@@ -6,7 +6,7 @@ class BaiduVideoRedirect extends RedirectOnRequest {
     super(domainTester, urlTester, matcher, ASelector);
   }
 
-  resHandler(res: Response$) {
+  handlerOneResponse(res: Response$) {
     let url: string[] = res.response.match(/URL='(.*)'/);
     if (url.length && url[1]) {
       res.finalUrl = url[1];
