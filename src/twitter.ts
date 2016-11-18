@@ -7,9 +7,9 @@ class TwitterRedirect extends RedirectOnUrl {
     super(domainTester, urlTester, matcher);
   }
 
-  handlerOneEle(aEle: HTMLAnchorElement):Subscription {
+  public handlerOne(aEle: HTMLAnchorElement): Subscription {
     return Observable.of(aEle)
-      .filter((ele: HTMLAnchorElement)=> {
+      .filter((ele: HTMLAnchorElement): boolean=> {
         return this.urlTester.test(ele.href) && /^https?:\/\//.test(ele.title);
       })
       .subscribe((aEle: HTMLAnchorElement)=> {

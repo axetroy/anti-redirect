@@ -7,7 +7,7 @@ class WeiboRedirect extends RedirectOnUrl {
     super(domainTester, urlTester, matcher);
   }
 
-  handlerOneEle(aEle: HTMLAnchorElement):Subscription {
+  handlerOne(aEle: HTMLAnchorElement):Subscription {
     return Observable.of(aEle)
       .filter((ele: HTMLAnchorElement)=> {
         return this.urlTester.test(ele.href) && /^https?:\/\//.test(ele.title);

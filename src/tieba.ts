@@ -7,16 +7,14 @@ class BaiduTiebaRedirect extends RedirectOnUrl {
     super(domainTester, urlTester, matcher);
   }
 
-  handlerOneEle(aEle: HTMLAnchorElement): Subscription {
+  handlerOne(aEle: HTMLAnchorElement): Subscription {
     return Observable.of(aEle)
-      .filter((ele: HTMLAnchorElement)=> {
-        return this.urlTester.test(ele.href);
-      })
+      .filter((ele: HTMLAnchorElement): boolean=> this.urlTester.test(ele.href))
       .subscribe((aEle: HTMLAnchorElement)=> {
         let url: string = '';
-        let text = aEle.innerText || aEle.textContent;
+        let text: string = aEle.innerText || aEle.textContent || '';
         try {
-          url = decodeURIComponent(aEle.innerText || aEle.textContent);
+          url = decodeURIComponent(text);
         } catch (e) {
           url = /https?:\/\//.test(text) ? text : '';
         }

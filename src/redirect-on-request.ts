@@ -1,5 +1,7 @@
 import {Observable} from 'rxjs/Observable';
+import {Subscription} from 'rxjs/Subscription';
 import {http, Response$, timeout} from '../lib/http';
+import {log} from '../lib/log';
 import {CONFIG} from './config';
 
 
@@ -14,34 +16,35 @@ class RedirectOnRequest {
   public match: boolean;
   public DEBUG = DEBUG;
   public status: any = status;
-  public logCount: number = 0;
 
   constructor(public domainTester: RegExp, public urlTester: RegExp, public matcher: RegExp, public ASelector?: string) {
     this.ASelector = this.ASelector || 'a';
     this.match = domainTester.test(document.domain);
   }
 
-  resHandler(res: Response$) {
+  public handlerOneResponse(res: Response$): any {
     return res;
   }
 
-  handlerOneEle(aElement: HTMLAnchorElement): void {
+  private handlerOne(aElement: HTMLAnchorElement): Subscription {
     if (!this.urlTester.test(aElement.href) || aElement.getAttribute(status.ing) || aElement.getAttribute(status.done)) return;
-    let url: string = aElement.href.replace(/^https?/, location.protocol.replace(/:$/, '')) + `&timestamp=${new Date().getTime()}`;
+    let protocol: string = location.protocol.replace(/:$/, '');   // in chrome[:http], but in firefox is:[http:]
+    let url: string = aElement.href.replace(/^https?/, protocol) + `&timestamp=${new Date().getTime()}`;
     aElement.style.cursor = 'progress';
     aElement.setAttribute(status.ing, '1');
-    http.get(url)
+    return http.get(url)
       .retry(2)
       .timeout(timeout)
-      .map((res: Response$): Response$=> {
-        return this.resHandler(res);
+      .map((res: Response$): Response$=> this.handlerOneResponse(res))
+      .do((res: Response$)=> {
+        if (this.urlTester.test(res.finalUrl)) throw new Error('invalid final url');
       })
       .subscribe(function (res: Response$): void {
         aElement.href = res.finalUrl;
         aElement.removeAttribute(status.ing);
         aElement.setAttribute(status.done, '1');
         DEBUG && (aElement.style.backgroundColor = 'green');
-      }, function (err: Response$): void {
+      }, function (): void {
         aElement.style.cursor = null;
         aElement.removeAttribute(status.ing);
       }, function (): void {
@@ -50,56 +53,39 @@ class RedirectOnRequest {
       });
   }
 
-  handlerOneEleOneByOne() {
-    Observable.from([].slice.call(document.querySelectorAll(this.ASelector)))
+  private handlerOneByOne(): Subscription {
+    return Observable.from([].slice.call(document.querySelectorAll(this.ASelector)))
       .subscribe((aElement: HTMLAnchorElement): void => {
-        inview && inview.is(aElement) && this.handlerOneEle(aElement);
-      })
-  }
-
-  handlerAll(...agm): void {
-
-  }
-
-  handlerAllOne(...agm): void {
-
-  }
-
-  scroll() {
-    return Observable.fromEvent(window, 'scroll')
-      .debounce(()=>Observable.timer(200))
-      .subscribe(()=> {
-        this.handlerOneEleOneByOne();
+        inview && inview.is(aElement) && this.handlerOne(aElement);
       });
   }
 
-  mouseover() {
+  public onInit(...agm): any {
+
+  }
+
+  private scroll(): Subscription {
+    return Observable.fromEvent(window, 'scroll')
+      .debounce(()=>Observable.timer(200))
+      .subscribe(()=> {
+        this.handlerOneByOne();
+      });
+  }
+
+  private mouseover(): Subscription {
     return Observable.fromEvent(document, 'mousemove')
       .throttle(()=>Observable.timer(100))
       .map((event: any): HTMLAnchorElement=> {
         let target = event.toElement;
         return target.nodeName === 'A' ? target : target.parentNode.nodeName === 'A' ? target.parentNode : target;
       })
-      .filter((ele: HTMLAnchorElement)=>ele.nodeName === 'A')
+      .filter((ele: HTMLAnchorElement): boolean=>ele.nodeName === 'A')
       .subscribe((aEle)=> {
-        this.handlerOneEle(aEle);
+        this.handlerOne(aEle);
       });
   }
 
-  log(project?: string): void {
-    if (this.logCount < 1) {
-      console.log(
-        "%c Anti-Redirect %c Copyright \xa9 2015-%s %s",
-        'font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;font-size:64px;color:#00bbee;-webkit-text-fill-color:#00bbee;-webkit-text-stroke: 1px #00bbee;',
-        "font-size:12px;color:#999999;",
-        (new Date).getFullYear(),
-        '\n' + (project || '')
-      );
-      this.logCount++;
-    }
-  }
-
-  bootstrap(): void {
+  public bootstrap(): void {
     if (!this.match) return;
     Observable.fromEvent(document, 'DOMContentLoaded')
       .debounce(()=>Observable.timer(200))
@@ -114,20 +100,18 @@ class RedirectOnRequest {
       })
       .subscribe(()=> {
 
+        this.onInit();
+
         inview = require('in-view');
-        inview(this.ASelector)
-          .on('enter', (aEle: HTMLAnchorElement) => {
-            this.handlerOneEle(aEle);
-          });
+        inview(this.ASelector).on('enter', (aEle: HTMLAnchorElement) => this.handlerOne(aEle));
 
         this.scroll();
 
         this.mouseover();
 
-        this.handlerAll();
-        this.handlerOneEleOneByOne();
+        this.handlerOneByOne();
 
-        this.log();
+        log();
 
       });
   }
