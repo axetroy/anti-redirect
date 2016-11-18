@@ -56,6 +56,7 @@ class RedirectOnRequest {
   private handlerOneByOne(): Subscription {
     return Observable.from([].slice.call(document.querySelectorAll(this.ASelector)))
       .subscribe((aElement: HTMLAnchorElement): void => {
+        inview = require('in-view');
         inview && inview.is(aElement) && this.handlerOne(aElement);
       });
   }
@@ -88,28 +89,25 @@ class RedirectOnRequest {
   public bootstrap(): void {
     if (!this.match) return;
     Observable.fromEvent(document, 'DOMContentLoaded')
-      .debounce(()=>Observable.timer(200))
-      .delay(200)
-      .flatMap((): Observable<void>=> {
-        return Observable.create((observer) => {
-          new MutationObserver((mutations = [])=> {
-            if (!mutations.length) return;
-            observer.next();
-          }).observe(document.body, {childList: true})
-        }).debounce(()=>Observable.timer(100));
-      })
+      .throttle(()=>Observable.timer(200))
       .subscribe(()=> {
 
         this.onInit();
-
-        inview = require('in-view');
-        inview(this.ASelector).on('enter', (aEle: HTMLAnchorElement) => this.handlerOne(aEle));
 
         this.scroll();
 
         this.mouseover();
 
         this.handlerOneByOne();
+
+        Observable.create((observer) => {
+          new MutationObserver((mutations = [])=> observer.next())
+            .observe(document.body, {childList: true})
+        }).debounce(()=>Observable.timer(100))
+          .subscribe(()=> {
+            this.onInit();
+            this.handlerOneByOne();
+          });
 
         log();
 
