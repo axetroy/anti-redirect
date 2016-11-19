@@ -989,9 +989,9 @@ ieee754@^1.1.4:
   version "1.1.8"
   resolved "http://registry.npm.taobao.org/ieee754/download/ieee754-1.1.8.tgz#be33d40ac10ef1926701f6f08a2d86fbfd1ad3e4"
 
-in-view@^0.6.0:
-  version "0.6.0"
-  resolved "http://registry.npm.taobao.org/in-view/download/in-view-0.6.0.tgz#67c3f151e03c863cb9f8cdba5418e01b9ab3b5a7"
+in-view@^0.6.1:
+  version "0.6.1"
+  resolved "http://registry.npm.taobao.org/in-view/download/in-view-0.6.1.tgz#f9f99b5d5a6fe01359d9e19c570302a3121baf42"
   dependencies:
     lodash "^4.15.0"
 

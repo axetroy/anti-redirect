@@ -1,4 +1,4 @@
-import {RedirectOnRequest} from './redirect-on-request';
+import {RedirectOnRequest} from '../lib/redirect-on-request';
 import {Response$} from '../lib/http';
 
 class BaiduVideoRedirect extends RedirectOnRequest {
@@ -6,7 +6,7 @@ class BaiduVideoRedirect extends RedirectOnRequest {
     super(domainTester, urlTester, matcher, ASelector);
   }
 
-  resHandler(res: Response$) {
+  handlerOneResponse(res: Response$) {
     let url: string[] = res.response.match(/URL='(.*)'/);
     if (url.length && url[1]) {
       res.finalUrl = url[1];

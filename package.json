@@ -27,7 +27,7 @@
     "webpack-bundle-analyzer": "^1.5.3"
   },
   "dependencies": {
-    "in-view": "^0.6.0",
+    "in-view": "^0.6.1",
     "q": "^1.4.1",
     "rxjs": "^5.0.0-rc.2",
     "underscore": "^1.8.3"

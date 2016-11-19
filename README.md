@@ -8,6 +8,7 @@
 
 ```javascript
 // @include           *www.baidu.com*
+// @include           *v.baidu.com*
 // @include           *tieba.baidu.com*
 // @include           *www.google.*
 // @include           *www.so.com*
@@ -20,9 +21,13 @@
 ### Contribute
 
 ```bash
+git clone https://github.com/axetroy/anti-redirect.git
 
-yarn #or run 'npm install'
+yarn
+yarn run watch
 
+# or 
+npm install
 npm run watch
 ```
 

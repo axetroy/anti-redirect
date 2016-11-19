@@ -43,7 +43,8 @@ module.exports = {
 // @author            axetroy
 // @collaborator      axetroy
 // @description       反重定向
-// @version           ${moment().format('YYYY.MM.DD.ms')}
+// @version           1.0.0
+// @update            ${moment().format('YYYY-MM-DD HH:mm:ss')}
 // @grant             GM_xmlhttpRequest
 // @include           *www.baidu.com*
 // @include           *tieba.baidu.com*
@@ -60,6 +61,7 @@ module.exports = {
 // @supportURL        http://www.burningall.com
 // @run-at            document-start
 // @contributionURL   troy450409405@gmail.com|alipay.com
+// @downloadURL       https://github.com/axetroy/anti-redirect/raw/master/dist/anti-redirect.min.user.js
 // @namespace         https://greasyfork.org/zh-CN/users/3400-axetroy
 // @license           The MIT License (MIT); http://opensource.org/licenses/MIT
 // ==/UserScript==
