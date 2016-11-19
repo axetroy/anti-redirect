@@ -23,7 +23,8 @@
     "ts-loader": "^0.9.5",
     "ts-node": "^1.6.1",
     "typescript": "^2.0.6",
-    "webpack": "2.1.0-beta.25"
+    "webpack": "2.1.0-beta.25",
+    "webpack-bundle-analyzer": "^1.5.3"
   },
   "dependencies": {
     "in-view": "^0.6.0",

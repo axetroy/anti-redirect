@@ -3,7 +3,7 @@
 // @author            axetroy
 // @collaborator      axetroy
 // @description       反重定向
-// @version           2016.11.18.2728
+// @version           2016.11.19.5949
 // @grant             GM_xmlhttpRequest
 // @include           *www.baidu.com*
 // @include           *tieba.baidu.com*
