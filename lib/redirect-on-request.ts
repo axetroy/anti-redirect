@@ -39,7 +39,8 @@ class RedirectOnRequest {
       .do((res: Response$)=> {
         if (this.urlTester.test(res.finalUrl)) throw new Error('invalid final url');
       })
-      .subscribe(function (res: Response$): void {
+      .subscribe((res: Response$): void=> {
+        this.urlTester.test(aElement.href) && aElement.setAttribute('origin-href', aElement.href);
         aElement.href = res.finalUrl;
         aElement.removeAttribute(status.ing);
         aElement.setAttribute(status.done, '1');

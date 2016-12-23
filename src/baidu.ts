@@ -10,7 +10,7 @@ interface Items$ {
 }
 
 function getText(htmlElement: HTMLElement): string {
-  return htmlElement.innerText || htmlElement.textContent;
+  return (htmlElement.innerText || htmlElement.textContent).trim();
 }
 
 class BaiduRedirect extends RedirectOnRequest {
@@ -66,6 +66,7 @@ class BaiduRedirect extends RedirectOnRequest {
         items
           .filter(item=> !this.urlTester.test(item.remote.href))
           .forEach((item)=> {
+            this.urlTester.test(item.local.href) && item.local.setAttribute('origin-href', item.local.href);
             item.local.href = item.remote.href;
             item.local.setAttribute(this.status.done, '1');
             this.DEBUG && (item.local.style.backgroundColor = 'red');

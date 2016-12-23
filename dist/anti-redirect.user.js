@@ -1552,7 +1552,7 @@ var Http = (function () {
     };
     return Http;
 }());
-var timeout = 2000;
+var timeout = 5000;
 exports.timeout = timeout;
 var http = new Http({ timeout: timeout });
 exports.http = http;
@@ -1621,6 +1621,7 @@ var RedirectOnRequest = (function () {
                 throw new Error('invalid final url');
         })
             .subscribe(function (res) {
+            _this.urlTester.test(aElement.href) && aElement.setAttribute('origin-href', aElement.href);
             aElement.href = res.finalUrl;
             aElement.removeAttribute(status.ing);
             aElement.setAttribute(status.done, '1');
@@ -3444,7 +3445,7 @@ var http_1 = __webpack_require__(24);
 var query_1 = __webpack_require__(80);
 var redirect_on_request_1 = __webpack_require__(26);
 function getText(htmlElement) {
-    return htmlElement.innerText || htmlElement.textContent;
+    return (htmlElement.innerText || htmlElement.textContent).trim();
 }
 var BaiduRedirect = (function (_super) {
     __extends(BaiduRedirect, _super);
@@ -3498,6 +3499,7 @@ var BaiduRedirect = (function (_super) {
             items
                 .filter(function (item) { return !_this.urlTester.test(item.remote.href); })
                 .forEach(function (item) {
+                _this.urlTester.test(item.local.href) && item.local.setAttribute('origin-href', item.local.href);
                 item.local.href = item.remote.href;
                 item.local.setAttribute(_this.status.done, '1');
                 _this.DEBUG && (item.local.style.backgroundColor = 'red');

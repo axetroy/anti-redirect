@@ -2,8 +2,8 @@
   "errors": [],
   "warnings": [],
   "version": "2.1.0-beta.25",
-  "hash": "a8d55869131ceb9eaa09",
-  "time": 3429,
+  "hash": "7e3962f3cf273c3f1bc6",
+  "time": 1447,
   "publicPath": "",
   "assetsByChunkName": {
     "anti-redirect": "anti-redirect.user.js",
@@ -12,7 +12,7 @@
   "assets": [
     {
       "name": "anti-redirect.user.js",
-      "size": 217885,
+      "size": 218112,
       "chunks": [
         0,
         1
@@ -24,7 +24,7 @@
     },
     {
       "name": "anti-redirect.min.user.js",
-      "size": 75866,
+      "size": 76018,
       "chunks": [
         1,
         0
@@ -60,14 +60,14 @@
       "initial": true,
       "entry": true,
       "extraAsync": false,
-      "size": 207806,
+      "size": 208033,
       "names": [
         "anti-redirect"
       ],
       "files": [
         "anti-redirect.user.js"
       ],
-      "hash": "c6844e1fffac236d063a",
+      "hash": "ef6d9580c437311adb29",
       "parents": [],
       "origins": [
         {
@@ -87,14 +87,14 @@
       "initial": true,
       "entry": true,
       "extraAsync": false,
-      "size": 207806,
+      "size": 208033,
       "names": [
         "anti-redirect.min"
       ],
       "files": [
         "anti-redirect.min.user.js"
       ],
-      "hash": "a89964d21e990df5c79b",
+      "hash": "654e762a1ce583a63a6d",
       "parents": [],
       "origins": [
         {
@@ -118,7 +118,7 @@
       "index2": 14,
       "size": 5166,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -126,9 +126,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/src/baidu.ts",
-      "issuerId": 42,
-      "issuerName": "./src/baidu.ts",
+      "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/add/observable/from.js",
+      "issuerId": 29,
+      "issuerName": "./~/rxjs/add/observable/from.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -434,7 +434,7 @@
       "index2": 11,
       "size": 8870,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -570,7 +570,7 @@
       "index2": 1,
       "size": 470,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -670,7 +670,7 @@
       "index2": 73,
       "size": 3595,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -761,7 +761,7 @@
       "index2": 54,
       "size": 225,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -825,7 +825,7 @@
       "index2": 3,
       "size": 146,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -889,7 +889,7 @@
       "index2": 8,
       "size": 5992,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -944,7 +944,7 @@
       "index2": 20,
       "size": 2708,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -999,7 +999,7 @@
       "index2": 17,
       "size": 1258,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1054,7 +1054,7 @@
       "index2": 13,
       "size": 631,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1109,7 +1109,7 @@
       "index2": 5,
       "size": 177,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1164,7 +1164,7 @@
       "index2": 2,
       "size": 148,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1219,7 +1219,7 @@
       "index2": 70,
       "size": 5310,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1227,9 +1227,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/lib/redirect-on-request.ts",
-      "issuerId": 26,
-      "issuerName": "./lib/redirect-on-request.ts",
+      "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/lib/redirect-on-url.ts",
+      "issuerId": 3,
+      "issuerName": "./lib/redirect-on-url.ts",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -1250,7 +1250,7 @@
           "moduleName": "./lib/redirect-on-request.ts",
           "type": "cjs require",
           "userRequest": "in-view",
-          "loc": "59:21-39"
+          "loc": "60:21-39"
         }
       ],
       "usedExports": true,
@@ -1265,7 +1265,7 @@
       "index2": 24,
       "size": 4747,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1311,7 +1311,7 @@
       "index2": 9,
       "size": 193,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1357,7 +1357,7 @@
       "index2": 36,
       "size": 1107,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1403,7 +1403,7 @@
       "index2": 22,
       "size": 4573,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1449,7 +1449,7 @@
       "index2": 19,
       "size": 1879,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1495,7 +1495,7 @@
       "index2": 10,
       "size": 270,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1541,7 +1541,7 @@
       "index2": 55,
       "size": 152,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1587,7 +1587,7 @@
       "index2": 15,
       "size": 207,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1633,7 +1633,7 @@
       "index2": 35,
       "size": 2631,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1679,7 +1679,7 @@
       "index2": 6,
       "size": 422,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1725,7 +1725,7 @@
       "index2": 69,
       "size": 117,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1733,9 +1733,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/lib/redirect-on-request.ts",
-      "issuerId": 26,
-      "issuerName": "./lib/redirect-on-request.ts",
+      "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/lib/redirect-on-url.ts",
+      "issuerId": 3,
+      "issuerName": "./lib/redirect-on-url.ts",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -1771,7 +1771,7 @@
       "index2": 66,
       "size": 2352,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1779,9 +1779,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/src/baidu.ts",
-      "issuerId": 42,
-      "issuerName": "./src/baidu.ts",
+      "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/lib/redirect-on-request.ts",
+      "issuerId": 26,
+      "issuerName": "./lib/redirect-on-request.ts",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -1807,7 +1807,7 @@
       ],
       "usedExports": true,
       "providedExports": null,
-      "source": "\"use strict\";\nvar _ = require(\"underscore\");\nvar Observable_1 = require(\"rxjs/Observable\");\nvar Http = (function () {\n    function Http(options) {\n        this.options = options;\n    }\n    Http.prototype.request = function (requestOptions) {\n        var options = _.extend({}, this.options, requestOptions);\n        var onreadystatechange = options.onreadystatechange, onerror = options.onerror, onabort = options.onabort, ontimeout = options.ontimeout;\n        return Observable_1.Observable.create(function (observer) {\n            // options.synchronous = true;   // async\n            options.onreadystatechange = function (response) {\n                _.isFunction(onreadystatechange) && onreadystatechange.call(this, response);\n                if (response.readyState !== 4)\n                    return;\n                response.status >= 200 && response.status < 400 && response.finalUrl ? observer.next(response) : observer.error(response);\n                observer.complete();\n            };\n            options.onerror = function (response) {\n                _.isFunction(onerror) && onerror.call(this, response);\n                observer.error(response);\n                observer.complete();\n            };\n            options.onabort = function (response) {\n                _.isFunction(onabort) && onabort.call(this, response);\n                observer.error(response);\n                observer.complete();\n            };\n            options.ontimeout = function (response) {\n                _.isFunction(ontimeout) && ontimeout.call(this, response);\n                observer.error(response);\n                observer.complete();\n            };\n            GM_xmlhttpRequest(_.extend({}, options));\n        });\n    };\n    Http.prototype.get = function (url, options) {\n        var requestOptions = _.extend(options || {}, { url: url, method: 'GET' });\n        return this.request(requestOptions);\n    };\n    Http.prototype.post = function (url, data, options) {\n        return this.request(_.extend(options || {}, { url: url, method: 'POST', data: data }));\n    };\n    Http.prototype.head = function (url, options) {\n        return this.request(_.extend(options || {}, { url: url, method: 'HEAD' }));\n    };\n    return Http;\n}());\nvar timeout = 2000;\nexports.timeout = timeout;\nvar http = new Http({ timeout: timeout });\nexports.http = http;\n"
+      "source": "\"use strict\";\nvar _ = require(\"underscore\");\nvar Observable_1 = require(\"rxjs/Observable\");\nvar Http = (function () {\n    function Http(options) {\n        this.options = options;\n    }\n    Http.prototype.request = function (requestOptions) {\n        var options = _.extend({}, this.options, requestOptions);\n        var onreadystatechange = options.onreadystatechange, onerror = options.onerror, onabort = options.onabort, ontimeout = options.ontimeout;\n        return Observable_1.Observable.create(function (observer) {\n            // options.synchronous = true;   // async\n            options.onreadystatechange = function (response) {\n                _.isFunction(onreadystatechange) && onreadystatechange.call(this, response);\n                if (response.readyState !== 4)\n                    return;\n                response.status >= 200 && response.status < 400 && response.finalUrl ? observer.next(response) : observer.error(response);\n                observer.complete();\n            };\n            options.onerror = function (response) {\n                _.isFunction(onerror) && onerror.call(this, response);\n                observer.error(response);\n                observer.complete();\n            };\n            options.onabort = function (response) {\n                _.isFunction(onabort) && onabort.call(this, response);\n                observer.error(response);\n                observer.complete();\n            };\n            options.ontimeout = function (response) {\n                _.isFunction(ontimeout) && ontimeout.call(this, response);\n                observer.error(response);\n                observer.complete();\n            };\n            GM_xmlhttpRequest(_.extend({}, options));\n        });\n    };\n    Http.prototype.get = function (url, options) {\n        var requestOptions = _.extend(options || {}, { url: url, method: 'GET' });\n        return this.request(requestOptions);\n    };\n    Http.prototype.post = function (url, data, options) {\n        return this.request(_.extend(options || {}, { url: url, method: 'POST', data: data }));\n    };\n    Http.prototype.head = function (url, options) {\n        return this.request(_.extend(options || {}, { url: url, method: 'HEAD' }));\n    };\n    return Http;\n}());\nvar timeout = 5000;\nexports.timeout = timeout;\nvar http = new Http({ timeout: timeout });\nexports.http = http;\n"
     },
     {
       "id": 25,
@@ -1817,7 +1817,7 @@
       "index2": 68,
       "size": 456,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1825,9 +1825,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/lib/redirect-on-request.ts",
-      "issuerId": 26,
-      "issuerName": "./lib/redirect-on-request.ts",
+      "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/lib/redirect-on-url.ts",
+      "issuerId": 3,
+      "issuerName": "./lib/redirect-on-url.ts",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -1861,9 +1861,9 @@
       "name": "./lib/redirect-on-request.ts",
       "index": 70,
       "index2": 71,
-      "size": 4563,
+      "size": 4667,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1871,9 +1871,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/src/baidu.ts",
-      "issuerId": 42,
-      "issuerName": "./src/baidu.ts",
+      "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/src/baidu-video.ts",
+      "issuerId": 41,
+      "issuerName": "./src/baidu-video.ts",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -1899,7 +1899,7 @@
       ],
       "usedExports": true,
       "providedExports": null,
-      "source": "\"use strict\";\nvar Observable_1 = require(\"rxjs/Observable\");\nvar http_1 = require(\"./http\");\nvar log_1 = require(\"./log\");\nvar config_1 = require(\"../config\");\nvar DEBUG = config_1.CONFIG.debug;\nvar status = {\n    ing: 'redirect-ing',\n    done: 'redirect-done'\n};\nvar inview;\nvar RedirectOnRequest = (function () {\n    function RedirectOnRequest(domainTester, urlTester, matcher, ASelector) {\n        this.domainTester = domainTester;\n        this.urlTester = urlTester;\n        this.matcher = matcher;\n        this.ASelector = ASelector;\n        this.DEBUG = DEBUG;\n        this.status = status;\n        this.ASelector = this.ASelector || 'a';\n        this.match = domainTester.test(document.domain);\n    }\n    RedirectOnRequest.prototype.handlerOneResponse = function (res) {\n        return res;\n    };\n    RedirectOnRequest.prototype.handlerOne = function (aElement) {\n        var _this = this;\n        if (!this.urlTester.test(aElement.href) || aElement.getAttribute(status.ing) || aElement.getAttribute(status.done))\n            return;\n        var protocol = location.protocol.replace(/:$/, ''); // in chrome[:http], but in firefox is:[http:]\n        var url = aElement.href.replace(/^https?/, protocol) + (\"&timestamp=\" + new Date().getTime());\n        aElement.style.cursor = 'progress';\n        aElement.setAttribute(status.ing, '1');\n        return http_1.http.get(url)\n            .retry(2)\n            .timeout(http_1.timeout)\n            .map(function (res) { return _this.handlerOneResponse(res); })\n            .do(function (res) {\n            if (_this.urlTester.test(res.finalUrl))\n                throw new Error('invalid final url');\n        })\n            .subscribe(function (res) {\n            aElement.href = res.finalUrl;\n            aElement.removeAttribute(status.ing);\n            aElement.setAttribute(status.done, '1');\n            DEBUG && (aElement.style.backgroundColor = 'green');\n        }, function () {\n            aElement.style.cursor = null;\n            aElement.removeAttribute(status.ing);\n        }, function () {\n            aElement.style.cursor = null;\n            aElement.removeAttribute(status.ing);\n        });\n    };\n    RedirectOnRequest.prototype.handlerOneByOne = function () {\n        var _this = this;\n        return Observable_1.Observable.from([].slice.call(document.querySelectorAll(this.ASelector)))\n            .subscribe(function (aElement) {\n            inview = require('in-view');\n            inview && inview.is(aElement) && _this.handlerOne(aElement);\n        });\n    };\n    RedirectOnRequest.prototype.onInit = function () {\n        var agm = [];\n        for (var _i = 0; _i < arguments.length; _i++) {\n            agm[_i - 0] = arguments[_i];\n        }\n    };\n    RedirectOnRequest.prototype.scroll = function () {\n        var _this = this;\n        return Observable_1.Observable.fromEvent(window, 'scroll')\n            .debounceTime(200)\n            .subscribe(function () {\n            _this.handlerOneByOne();\n        });\n    };\n    RedirectOnRequest.prototype.mouseover = function () {\n        var _this = this;\n        return Observable_1.Observable.fromEvent(document, 'mousemove')\n            .throttleTime(100)\n            .map(function (event) {\n            var target = event.toElement;\n            return target.nodeName === 'A' ? target : target.parentNode.nodeName === 'A' ? target.parentNode : target;\n        })\n            .filter(function (ele) { return ele.nodeName === 'A'; })\n            .subscribe(function (aEle) {\n            _this.handlerOne(aEle);\n        });\n    };\n    RedirectOnRequest.prototype.bootstrap = function () {\n        var _this = this;\n        if (!this.match)\n            return;\n        Observable_1.Observable.fromEvent(document, 'DOMContentLoaded')\n            .throttleTime(200)\n            .subscribe(function () {\n            _this.onInit();\n            _this.scroll();\n            _this.mouseover();\n            _this.handlerOneByOne();\n            Observable_1.Observable.create(function (observer) {\n                new MutationObserver(function (mutations) {\n                    if (mutations === void 0) { mutations = []; }\n                    return observer.next();\n                })\n                    .observe(document.body, { childList: true });\n            }).debounceTime(100)\n                .subscribe(function () {\n                _this.onInit();\n                _this.handlerOneByOne();\n            });\n            log_1.log();\n        });\n    };\n    return RedirectOnRequest;\n}());\nexports.RedirectOnRequest = RedirectOnRequest;\n"
+      "source": "\"use strict\";\nvar Observable_1 = require(\"rxjs/Observable\");\nvar http_1 = require(\"./http\");\nvar log_1 = require(\"./log\");\nvar config_1 = require(\"../config\");\nvar DEBUG = config_1.CONFIG.debug;\nvar status = {\n    ing: 'redirect-ing',\n    done: 'redirect-done'\n};\nvar inview;\nvar RedirectOnRequest = (function () {\n    function RedirectOnRequest(domainTester, urlTester, matcher, ASelector) {\n        this.domainTester = domainTester;\n        this.urlTester = urlTester;\n        this.matcher = matcher;\n        this.ASelector = ASelector;\n        this.DEBUG = DEBUG;\n        this.status = status;\n        this.ASelector = this.ASelector || 'a';\n        this.match = domainTester.test(document.domain);\n    }\n    RedirectOnRequest.prototype.handlerOneResponse = function (res) {\n        return res;\n    };\n    RedirectOnRequest.prototype.handlerOne = function (aElement) {\n        var _this = this;\n        if (!this.urlTester.test(aElement.href) || aElement.getAttribute(status.ing) || aElement.getAttribute(status.done))\n            return;\n        var protocol = location.protocol.replace(/:$/, ''); // in chrome[:http], but in firefox is:[http:]\n        var url = aElement.href.replace(/^https?/, protocol) + (\"&timestamp=\" + new Date().getTime());\n        aElement.style.cursor = 'progress';\n        aElement.setAttribute(status.ing, '1');\n        return http_1.http.get(url)\n            .retry(2)\n            .timeout(http_1.timeout)\n            .map(function (res) { return _this.handlerOneResponse(res); })\n            .do(function (res) {\n            if (_this.urlTester.test(res.finalUrl))\n                throw new Error('invalid final url');\n        })\n            .subscribe(function (res) {\n            _this.urlTester.test(aElement.href) && aElement.setAttribute('origin-href', aElement.href);\n            aElement.href = res.finalUrl;\n            aElement.removeAttribute(status.ing);\n            aElement.setAttribute(status.done, '1');\n            DEBUG && (aElement.style.backgroundColor = 'green');\n        }, function () {\n            aElement.style.cursor = null;\n            aElement.removeAttribute(status.ing);\n        }, function () {\n            aElement.style.cursor = null;\n            aElement.removeAttribute(status.ing);\n        });\n    };\n    RedirectOnRequest.prototype.handlerOneByOne = function () {\n        var _this = this;\n        return Observable_1.Observable.from([].slice.call(document.querySelectorAll(this.ASelector)))\n            .subscribe(function (aElement) {\n            inview = require('in-view');\n            inview && inview.is(aElement) && _this.handlerOne(aElement);\n        });\n    };\n    RedirectOnRequest.prototype.onInit = function () {\n        var agm = [];\n        for (var _i = 0; _i < arguments.length; _i++) {\n            agm[_i - 0] = arguments[_i];\n        }\n    };\n    RedirectOnRequest.prototype.scroll = function () {\n        var _this = this;\n        return Observable_1.Observable.fromEvent(window, 'scroll')\n            .debounceTime(200)\n            .subscribe(function () {\n            _this.handlerOneByOne();\n        });\n    };\n    RedirectOnRequest.prototype.mouseover = function () {\n        var _this = this;\n        return Observable_1.Observable.fromEvent(document, 'mousemove')\n            .throttleTime(100)\n            .map(function (event) {\n            var target = event.toElement;\n            return target.nodeName === 'A' ? target : target.parentNode.nodeName === 'A' ? target.parentNode : target;\n        })\n            .filter(function (ele) { return ele.nodeName === 'A'; })\n            .subscribe(function (aEle) {\n            _this.handlerOne(aEle);\n        });\n    };\n    RedirectOnRequest.prototype.bootstrap = function () {\n        var _this = this;\n        if (!this.match)\n            return;\n        Observable_1.Observable.fromEvent(document, 'DOMContentLoaded')\n            .throttleTime(200)\n            .subscribe(function () {\n            _this.onInit();\n            _this.scroll();\n            _this.mouseover();\n            _this.handlerOneByOne();\n            Observable_1.Observable.create(function (observer) {\n                new MutationObserver(function (mutations) {\n                    if (mutations === void 0) { mutations = []; }\n                    return observer.next();\n                })\n                    .observe(document.body, { childList: true });\n            }).debounceTime(100)\n                .subscribe(function () {\n                _this.onInit();\n                _this.handlerOneByOne();\n            });\n            log_1.log();\n        });\n    };\n    return RedirectOnRequest;\n}());\nexports.RedirectOnRequest = RedirectOnRequest;\n"
     },
     {
       "id": 27,
@@ -1909,7 +1909,7 @@
       "index2": 65,
       "size": 52915,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1917,9 +1917,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/lib/http.ts",
-      "issuerId": 24,
-      "issuerName": "./lib/http.ts",
+      "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/lib/log.ts",
+      "issuerId": 25,
+      "issuerName": "./lib/log.ts",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -1955,7 +1955,7 @@
       "index2": 39,
       "size": 209,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1992,7 +1992,7 @@
       "index2": 28,
       "size": 185,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2029,7 +2029,7 @@
       "index2": 33,
       "size": 215,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2066,7 +2066,7 @@
       "index2": 30,
       "size": 173,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2103,7 +2103,7 @@
       "index2": 64,
       "size": 241,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2140,7 +2140,7 @@
       "index2": 60,
       "size": 199,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2177,7 +2177,7 @@
       "index2": 45,
       "size": 232,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2214,7 +2214,7 @@
       "index2": 43,
       "size": 205,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2251,7 +2251,7 @@
       "index2": 41,
       "size": 187,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2288,7 +2288,7 @@
       "index2": 47,
       "size": 282,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2325,7 +2325,7 @@
       "index2": 49,
       "size": 199,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2362,7 +2362,7 @@
       "index2": 62,
       "size": 241,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2399,7 +2399,7 @@
       "index2": 58,
       "size": 211,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2436,7 +2436,7 @@
       "index2": 75,
       "size": 1118,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2471,7 +2471,7 @@
       "name": "./src/baidu.ts",
       "index": 66,
       "index2": 72,
-      "size": 3666,
+      "size": 3789,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -2500,7 +2500,7 @@
       ],
       "usedExports": true,
       "providedExports": null,
-      "source": "\"use strict\";\nvar __extends = (this && this.__extends) || function (d, b) {\n    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];\n    function __() { this.constructor = d; }\n    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n};\nvar Observable_1 = require(\"rxjs/Observable\");\nvar http_1 = require(\"../lib/http\");\nvar query_1 = require(\"../lib/query\");\nvar redirect_on_request_1 = require(\"../lib/redirect-on-request\");\nfunction getText(htmlElement) {\n    return htmlElement.innerText || htmlElement.textContent;\n}\nvar BaiduRedirect = (function (_super) {\n    __extends(BaiduRedirect, _super);\n    function BaiduRedirect(domainTester, urlTester, matcher, ASelector) {\n        if (ASelector === void 0) { ASelector = 'a'; }\n        return _super.call(this, domainTester, urlTester, matcher, ASelector) || this;\n    }\n    BaiduRedirect.prototype.handlerOneResponse = function (res) {\n        if (this.urlTester.test(res.finalUrl)) {\n            if (!res.response || /<\\/noscript>$/.test(res.response.trim()))\n                throw res;\n            var url = res.response.match(/URL=\\'?https?:\\/\\/[^'\"]+/).join('').match(/https?:\\/\\/[^'\"]+/)[0];\n            if (!url || !/^https?/.test(url) || this.urlTester.test(url))\n                throw res;\n            res.finalUrl = url;\n        }\n        return res;\n    };\n    BaiduRedirect.prototype.onInit = function () {\n        var _this = this;\n        if (!/www\\.baidu\\.com\\/s/.test(window.top.location.href))\n            return;\n        var query = new query_1.default(window.top.location.search);\n        var skip = query.object.pn || 0;\n        query.object.tn = 'baidulocal';\n        query.object.timestamp = new Date().getTime();\n        query.object.rn = 50;\n        var url = location.protocol.replace(/:$/, '') + \"://\" + (location.host + location.pathname + query);\n        return Observable_1.Observable.forkJoin(http_1.http.get(url), http_1.http.get(url.replace(/pn=(\\d+)/, \"pn=\" + (skip + 10)))).retry(2)\n            .timeout(http_1.timeout)\n            .subscribe(function (resList) {\n            if (!resList || !resList.length)\n                return;\n            resList.forEach(function (res) {\n                return _this.handlerOneRequestPage(res);\n            });\n        });\n    };\n    BaiduRedirect.prototype.handlerOneRequestPage = function (res) {\n        var _this = this;\n        var responseText = res.responseText.replace(/(src=[^>]*|link=[^>])/g, '');\n        var html = document.createElement('html');\n        html.innerHTML = responseText;\n        Observable_1.Observable.of(html.querySelectorAll('.f>a'))\n            .map(function (nodeList) { return [].slice.call(nodeList).map(function (ele) {\n            var local = [].slice.call(document.querySelectorAll('.t>a')).find(function (remoteEle) { return getText(remoteEle) === getText(ele); });\n            return local ? { local: local, remote: ele } : void 0;\n        })\n            .filter(function (v) { return !!v; }); })\n            .subscribe(function (items) {\n            items\n                .filter(function (item) { return !_this.urlTester.test(item.remote.href); })\n                .forEach(function (item) {\n                item.local.href = item.remote.href;\n                item.local.setAttribute(_this.status.done, '1');\n                _this.DEBUG && (item.local.style.backgroundColor = 'red');\n            });\n        });\n    };\n    return BaiduRedirect;\n}(redirect_on_request_1.RedirectOnRequest));\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.default = new BaiduRedirect(/www\\.baidu\\.com/, /www\\.baidu\\.com\\/link\\?url=/, null, '#content_left a');\n"
+      "source": "\"use strict\";\nvar __extends = (this && this.__extends) || function (d, b) {\n    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];\n    function __() { this.constructor = d; }\n    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n};\nvar Observable_1 = require(\"rxjs/Observable\");\nvar http_1 = require(\"../lib/http\");\nvar query_1 = require(\"../lib/query\");\nvar redirect_on_request_1 = require(\"../lib/redirect-on-request\");\nfunction getText(htmlElement) {\n    return (htmlElement.innerText || htmlElement.textContent).trim();\n}\nvar BaiduRedirect = (function (_super) {\n    __extends(BaiduRedirect, _super);\n    function BaiduRedirect(domainTester, urlTester, matcher, ASelector) {\n        if (ASelector === void 0) { ASelector = 'a'; }\n        return _super.call(this, domainTester, urlTester, matcher, ASelector) || this;\n    }\n    BaiduRedirect.prototype.handlerOneResponse = function (res) {\n        if (this.urlTester.test(res.finalUrl)) {\n            if (!res.response || /<\\/noscript>$/.test(res.response.trim()))\n                throw res;\n            var url = res.response.match(/URL=\\'?https?:\\/\\/[^'\"]+/).join('').match(/https?:\\/\\/[^'\"]+/)[0];\n            if (!url || !/^https?/.test(url) || this.urlTester.test(url))\n                throw res;\n            res.finalUrl = url;\n        }\n        return res;\n    };\n    BaiduRedirect.prototype.onInit = function () {\n        var _this = this;\n        if (!/www\\.baidu\\.com\\/s/.test(window.top.location.href))\n            return;\n        var query = new query_1.default(window.top.location.search);\n        var skip = query.object.pn || 0;\n        query.object.tn = 'baidulocal';\n        query.object.timestamp = new Date().getTime();\n        query.object.rn = 50;\n        var url = location.protocol.replace(/:$/, '') + \"://\" + (location.host + location.pathname + query);\n        return Observable_1.Observable.forkJoin(http_1.http.get(url), http_1.http.get(url.replace(/pn=(\\d+)/, \"pn=\" + (skip + 10)))).retry(2)\n            .timeout(http_1.timeout)\n            .subscribe(function (resList) {\n            if (!resList || !resList.length)\n                return;\n            resList.forEach(function (res) {\n                return _this.handlerOneRequestPage(res);\n            });\n        });\n    };\n    BaiduRedirect.prototype.handlerOneRequestPage = function (res) {\n        var _this = this;\n        var responseText = res.responseText.replace(/(src=[^>]*|link=[^>])/g, '');\n        var html = document.createElement('html');\n        html.innerHTML = responseText;\n        Observable_1.Observable.of(html.querySelectorAll('.f>a'))\n            .map(function (nodeList) { return [].slice.call(nodeList).map(function (ele) {\n            var local = [].slice.call(document.querySelectorAll('.t>a')).find(function (remoteEle) { return getText(remoteEle) === getText(ele); });\n            return local ? { local: local, remote: ele } : void 0;\n        })\n            .filter(function (v) { return !!v; }); })\n            .subscribe(function (items) {\n            items\n                .filter(function (item) { return !_this.urlTester.test(item.remote.href); })\n                .forEach(function (item) {\n                _this.urlTester.test(item.local.href) && item.local.setAttribute('origin-href', item.local.href);\n                item.local.href = item.remote.href;\n                item.local.setAttribute(_this.status.done, '1');\n                _this.DEBUG && (item.local.style.backgroundColor = 'red');\n            });\n        });\n    };\n    return BaiduRedirect;\n}(redirect_on_request_1.RedirectOnRequest));\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.default = new BaiduRedirect(/www\\.baidu\\.com/, /www\\.baidu\\.com\\/link\\?url=/, null, '#content_left a');\n"
     },
     {
       "id": 43,
@@ -2510,7 +2510,7 @@
       "index2": 76,
       "size": 1378,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2547,7 +2547,7 @@
       "index2": 79,
       "size": 961,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2584,7 +2584,7 @@
       "index2": 74,
       "size": 1524,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2621,7 +2621,7 @@
       "index2": 78,
       "size": 1314,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2658,7 +2658,7 @@
       "index2": 77,
       "size": 1320,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2695,7 +2695,7 @@
       "index2": 81,
       "size": 818,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2732,7 +2732,7 @@
       "index2": 80,
       "size": 791,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2769,7 +2769,7 @@
       "index2": 34,
       "size": 1289,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2806,7 +2806,7 @@
       "index2": 52,
       "size": 1885,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2843,7 +2843,7 @@
       "index2": 23,
       "size": 2562,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2880,7 +2880,7 @@
       "index2": 37,
       "size": 4175,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2917,7 +2917,7 @@
       "index2": 31,
       "size": 5989,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2954,7 +2954,7 @@
       "index2": 26,
       "size": 4909,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2991,7 +2991,7 @@
       "index2": 18,
       "size": 5037,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3028,7 +3028,7 @@
       "index2": 16,
       "size": 4671,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3065,7 +3065,7 @@
       "index2": 38,
       "size": 177,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3102,7 +3102,7 @@
       "index2": 27,
       "size": 153,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3139,7 +3139,7 @@
       "index2": 32,
       "size": 183,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3176,7 +3176,7 @@
       "index2": 29,
       "size": 149,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3213,7 +3213,7 @@
       "index2": 63,
       "size": 4785,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3250,7 +3250,7 @@
       "index2": 59,
       "size": 5211,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3287,7 +3287,7 @@
       "index2": 44,
       "size": 2510,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3324,7 +3324,7 @@
       "index2": 42,
       "size": 1840,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3361,7 +3361,7 @@
       "index2": 40,
       "size": 3296,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3398,7 +3398,7 @@
       "index2": 46,
       "size": 4175,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3435,7 +3435,7 @@
       "index2": 25,
       "size": 2837,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3472,7 +3472,7 @@
       "index2": 48,
       "size": 2733,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3509,7 +3509,7 @@
       "index2": 61,
       "size": 3861,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3546,7 +3546,7 @@
       "index2": 57,
       "size": 3859,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3583,7 +3583,7 @@
       "index2": 50,
       "size": 1638,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3620,7 +3620,7 @@
       "index2": 51,
       "size": 5626,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3657,7 +3657,7 @@
       "index2": 53,
       "size": 1713,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3694,7 +3694,7 @@
       "index2": 56,
       "size": 776,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3731,7 +3731,7 @@
       "index2": 7,
       "size": 1068,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3768,7 +3768,7 @@
       "index2": 4,
       "size": 151,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3805,7 +3805,7 @@
       "index2": 21,
       "size": 178,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3842,7 +3842,7 @@
       "index2": 12,
       "size": 764,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3879,7 +3879,7 @@
       "index2": 67,
       "size": 1004,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3916,7 +3916,7 @@
       "index2": 0,
       "size": 506,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
