@@ -31,6 +31,22 @@ npm install
 npm run watch
 ```
 
+### Contributors
+
+[](#contributors)
+
+- @axetroy --- ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+  - 100.00%
+  - +79878
+  - -64395
+
+- @GitHub ---- ▇░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+  - 0.00%
+  - +3
+  - -1
+
+[](#contributors-end)
+
 ### LICENSE
 
 The MIT License (MIT)

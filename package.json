@@ -8,7 +8,8 @@
     "test:watch": "gulp test:watch",
     "build": "webpack --display-error-details --progress --colors",
     "watch": "webpack --display-error-details --progress --colors --watch",
-    "coverage": "istanbul cover ./**/*.js"
+    "coverage": "istanbul cover ./**/*.js",
+    "contributor": "./node_modules/.bin/contributors-stat"
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +18,7 @@
     "@types/node": "^6.0.46",
     "@types/rx": "^2.5.33",
     "@types/underscore": "^1.7.33",
+    "contributors-stat": "^0.1.1",
     "coveralls": "^2.11.14",
     "istanbul": "^0.4.5",
     "moment": "^2.16.0",
