@@ -15,6 +15,14 @@ class RedirectOnUrl {
   }
 
   /**
+   * 已经转化成功之后的元素
+   * @param aEle
+   */
+  public handlerOneCallBack(aEle: HTMLAnchorElement): void {
+
+  }
+
+  /**
    * 默认，处理一个A元素
    * @param aEle
    */
@@ -28,8 +36,10 @@ class RedirectOnUrl {
       url = /https?:\/\//.test(matcher[1]) ? matcher[1] : '';
     }
     if (url) {
+      aEle.setAttribute('origin-href', aEle.getAttribute('href'));
       aEle.href = url;
       DEBUG && (aEle.style.backgroundColor = 'green');
+      this.handlerOneCallBack(aEle);
     }
   }
 
