@@ -2,8 +2,8 @@
   "errors": [],
   "warnings": [],
   "version": "2.1.0-beta.25",
-  "hash": "451bc677d7b405dcb027",
-  "time": 1333,
+  "hash": "a8d55869131ceb9eaa09",
+  "time": 3429,
   "publicPath": "",
   "assetsByChunkName": {
     "anti-redirect": "anti-redirect.user.js",
@@ -67,7 +67,7 @@
       "files": [
         "anti-redirect.user.js"
       ],
-      "hash": "fa2926732931581cf9e0",
+      "hash": "c6844e1fffac236d063a",
       "parents": [],
       "origins": [
         {
@@ -94,7 +94,7 @@
       "files": [
         "anti-redirect.min.user.js"
       ],
-      "hash": "be32bb12e4d706a78303",
+      "hash": "a89964d21e990df5c79b",
       "parents": [],
       "origins": [
         {
@@ -118,7 +118,7 @@
       "index2": 14,
       "size": 5166,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -126,9 +126,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/add/observable/from.js",
-      "issuerId": 29,
-      "issuerName": "./~/rxjs/add/observable/from.js",
+      "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/src/baidu.ts",
+      "issuerId": 42,
+      "issuerName": "./src/baidu.ts",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -434,7 +434,7 @@
       "index2": 11,
       "size": 8870,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -570,7 +570,7 @@
       "index2": 1,
       "size": 470,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -670,7 +670,7 @@
       "index2": 73,
       "size": 3595,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -761,7 +761,7 @@
       "index2": 54,
       "size": 225,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -825,7 +825,7 @@
       "index2": 3,
       "size": 146,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -889,7 +889,7 @@
       "index2": 8,
       "size": 5992,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -944,7 +944,7 @@
       "index2": 20,
       "size": 2708,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -999,7 +999,7 @@
       "index2": 17,
       "size": 1258,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1054,7 +1054,7 @@
       "index2": 13,
       "size": 631,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1109,7 +1109,7 @@
       "index2": 5,
       "size": 177,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1164,7 +1164,7 @@
       "index2": 2,
       "size": 148,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1219,7 +1219,7 @@
       "index2": 70,
       "size": 5310,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1265,7 +1265,7 @@
       "index2": 24,
       "size": 4747,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1311,7 +1311,7 @@
       "index2": 9,
       "size": 193,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1357,7 +1357,7 @@
       "index2": 36,
       "size": 1107,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1403,7 +1403,7 @@
       "index2": 22,
       "size": 4573,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1449,7 +1449,7 @@
       "index2": 19,
       "size": 1879,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1495,7 +1495,7 @@
       "index2": 10,
       "size": 270,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1541,7 +1541,7 @@
       "index2": 55,
       "size": 152,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1587,7 +1587,7 @@
       "index2": 15,
       "size": 207,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1633,7 +1633,7 @@
       "index2": 35,
       "size": 2631,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1679,7 +1679,7 @@
       "index2": 6,
       "size": 422,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1725,7 +1725,7 @@
       "index2": 69,
       "size": 117,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1771,7 +1771,7 @@
       "index2": 66,
       "size": 2352,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1817,7 +1817,7 @@
       "index2": 68,
       "size": 456,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1863,7 +1863,7 @@
       "index2": 71,
       "size": 4563,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1909,7 +1909,7 @@
       "index2": 65,
       "size": 52915,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1955,7 +1955,7 @@
       "index2": 39,
       "size": 209,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1992,7 +1992,7 @@
       "index2": 28,
       "size": 185,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2029,7 +2029,7 @@
       "index2": 33,
       "size": 215,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2066,7 +2066,7 @@
       "index2": 30,
       "size": 173,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2103,7 +2103,7 @@
       "index2": 64,
       "size": 241,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2140,7 +2140,7 @@
       "index2": 60,
       "size": 199,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2177,7 +2177,7 @@
       "index2": 45,
       "size": 232,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2214,7 +2214,7 @@
       "index2": 43,
       "size": 205,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2251,7 +2251,7 @@
       "index2": 41,
       "size": 187,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2288,7 +2288,7 @@
       "index2": 47,
       "size": 282,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2325,7 +2325,7 @@
       "index2": 49,
       "size": 199,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2362,7 +2362,7 @@
       "index2": 62,
       "size": 241,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2399,7 +2399,7 @@
       "index2": 58,
       "size": 211,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2436,7 +2436,7 @@
       "index2": 75,
       "size": 1118,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2473,7 +2473,7 @@
       "index2": 72,
       "size": 3666,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2510,7 +2510,7 @@
       "index2": 76,
       "size": 1378,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2584,7 +2584,7 @@
       "index2": 74,
       "size": 1524,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2621,7 +2621,7 @@
       "index2": 78,
       "size": 1314,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2658,7 +2658,7 @@
       "index2": 77,
       "size": 1320,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2695,7 +2695,7 @@
       "index2": 81,
       "size": 818,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2732,7 +2732,7 @@
       "index2": 80,
       "size": 791,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2769,7 +2769,7 @@
       "index2": 34,
       "size": 1289,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2806,7 +2806,7 @@
       "index2": 52,
       "size": 1885,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2843,7 +2843,7 @@
       "index2": 23,
       "size": 2562,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2880,7 +2880,7 @@
       "index2": 37,
       "size": 4175,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2917,7 +2917,7 @@
       "index2": 31,
       "size": 5989,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2954,7 +2954,7 @@
       "index2": 26,
       "size": 4909,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2991,7 +2991,7 @@
       "index2": 18,
       "size": 5037,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3028,7 +3028,7 @@
       "index2": 16,
       "size": 4671,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3065,7 +3065,7 @@
       "index2": 38,
       "size": 177,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3102,7 +3102,7 @@
       "index2": 27,
       "size": 153,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3139,7 +3139,7 @@
       "index2": 32,
       "size": 183,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3176,7 +3176,7 @@
       "index2": 29,
       "size": 149,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3213,7 +3213,7 @@
       "index2": 63,
       "size": 4785,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3250,7 +3250,7 @@
       "index2": 59,
       "size": 5211,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3287,7 +3287,7 @@
       "index2": 44,
       "size": 2510,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3324,7 +3324,7 @@
       "index2": 42,
       "size": 1840,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3361,7 +3361,7 @@
       "index2": 40,
       "size": 3296,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3398,7 +3398,7 @@
       "index2": 46,
       "size": 4175,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3435,7 +3435,7 @@
       "index2": 25,
       "size": 2837,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3472,7 +3472,7 @@
       "index2": 48,
       "size": 2733,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3509,7 +3509,7 @@
       "index2": 61,
       "size": 3861,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3546,7 +3546,7 @@
       "index2": 57,
       "size": 3859,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3583,7 +3583,7 @@
       "index2": 50,
       "size": 1638,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3620,7 +3620,7 @@
       "index2": 51,
       "size": 5626,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3657,7 +3657,7 @@
       "index2": 53,
       "size": 1713,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3694,7 +3694,7 @@
       "index2": 56,
       "size": 776,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3731,7 +3731,7 @@
       "index2": 7,
       "size": 1068,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3768,7 +3768,7 @@
       "index2": 4,
       "size": 151,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3805,7 +3805,7 @@
       "index2": 21,
       "size": 178,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3842,7 +3842,7 @@
       "index2": 12,
       "size": 764,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3879,7 +3879,7 @@
       "index2": 67,
       "size": 1004,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3916,7 +3916,7 @@
       "index2": 0,
       "size": 506,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [

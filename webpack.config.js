@@ -43,7 +43,7 @@ module.exports = {
 // @author            axetroy
 // @collaborator      axetroy
 // @description       反重定向
-// @version           1.0.0
+// @version           1.0.1
 // @update            ${moment().format('YYYY-MM-DD HH:mm:ss')}
 // @grant             GM_xmlhttpRequest
 // @include           *www.baidu.com*

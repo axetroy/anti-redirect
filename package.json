@@ -1,8 +1,8 @@
 {
   "name": "bd_fuck",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
-  "main": "./dist/bd_fuck.user.js",
+  "main": "./dist/anti-redirect.user.js",
   "scripts": {
     "test": "mocha ./test/*.test.ts -r ts-node/register --color",
     "test:watch": "gulp test:watch",
