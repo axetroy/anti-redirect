@@ -53,6 +53,7 @@ module.exports = {
 // @include           *www.so.com*
 // @include           *www.zhihu.com*
 // @include           *daily.zhihu.com*
+// @include           *zhuanlan.zhihu.com*
 // @include           *weibo.com*
 // @include           *twitter.com*
 // @connect           *

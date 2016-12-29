@@ -24,6 +24,7 @@ import twitterRedirect from './src/twitter';
 import soRedirect from './src/so';
 import zhihuRedirect from './src/zhihu';
 import zhihuDailyRedirect from './src/zhihu-daily';
+import zhihuZhuanlanRedirect from './src/zhihu-zhuanlan';
 
 baiduRedirect.bootstrap();
 baiduTiebaRedirect.bootstrap();
@@ -34,3 +35,4 @@ twitterRedirect.bootstrap();
 soRedirect.bootstrap();
 zhihuRedirect.bootstrap();
 zhihuDailyRedirect.bootstrap();
+zhihuZhuanlanRedirect.bootstrap();
