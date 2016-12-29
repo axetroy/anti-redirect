@@ -8,14 +8,16 @@
 
 ```javascript
 // @include           *www.baidu.com*
-// @include           *v.baidu.com*
 // @include           *tieba.baidu.com*
+// @include           *v.baidu.com*
 // @include           *www.google.*
 // @include           *www.so.com*
 // @include           *www.zhihu.com*
 // @include           *daily.zhihu.com*
+// @include           *zhuanlan.zhihu.com*
 // @include           *weibo.com*
 // @include           *twitter.com*
+// @include           *www.sogou.com*
 ```
 
 ### Contribute
