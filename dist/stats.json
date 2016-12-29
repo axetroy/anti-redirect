@@ -2,8 +2,8 @@
   "errors": [],
   "warnings": [],
   "version": "2.1.0-beta.25",
-  "hash": "7e3962f3cf273c3f1bc6",
-  "time": 1447,
+  "hash": "dc0fd4435c52a77f83bb",
+  "time": 3145,
   "publicPath": "",
   "assetsByChunkName": {
     "anti-redirect": "anti-redirect.user.js",
@@ -12,7 +12,7 @@
   "assets": [
     {
       "name": "anti-redirect.user.js",
-      "size": 218112,
+      "size": 219168,
       "chunks": [
         0,
         1
@@ -24,7 +24,7 @@
     },
     {
       "name": "anti-redirect.min.user.js",
-      "size": 76018,
+      "size": 76572,
       "chunks": [
         1,
         0
@@ -60,18 +60,18 @@
       "initial": true,
       "entry": true,
       "extraAsync": false,
-      "size": 208033,
+      "size": 208975,
       "names": [
         "anti-redirect"
       ],
       "files": [
         "anti-redirect.user.js"
       ],
-      "hash": "ef6d9580c437311adb29",
+      "hash": "41abeb67286d6945a635",
       "parents": [],
       "origins": [
         {
-          "moduleId": 82,
+          "moduleId": 83,
           "module": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
           "moduleName": "./index.ts",
@@ -87,18 +87,18 @@
       "initial": true,
       "entry": true,
       "extraAsync": false,
-      "size": 208033,
+      "size": 208975,
       "names": [
         "anti-redirect.min"
       ],
       "files": [
         "anti-redirect.min.user.js"
       ],
-      "hash": "654e762a1ce583a63a6d",
+      "hash": "27077f4dba10dbd5b326",
       "parents": [],
       "origins": [
         {
-          "moduleId": 82,
+          "moduleId": 83,
           "module": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
           "moduleName": "./index.ts",
@@ -118,7 +118,7 @@
       "index2": 14,
       "size": 5166,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -126,9 +126,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/add/observable/from.js",
-      "issuerId": 29,
-      "issuerName": "./~/rxjs/add/observable/from.js",
+      "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/src/baidu.ts",
+      "issuerId": 42,
+      "issuerName": "./src/baidu.ts",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -368,7 +368,7 @@
           "loc": "7:19-45"
         },
         {
-          "moduleId": 52,
+          "moduleId": 53,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/ArrayLikeObservable.js",
           "module": "./~/rxjs/observable/ArrayLikeObservable.js",
           "moduleName": "./~/rxjs/observable/ArrayLikeObservable.js",
@@ -377,7 +377,7 @@
           "loc": "7:19-43"
         },
         {
-          "moduleId": 53,
+          "moduleId": 54,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/ForkJoinObservable.js",
           "module": "./~/rxjs/observable/ForkJoinObservable.js",
           "moduleName": "./~/rxjs/observable/ForkJoinObservable.js",
@@ -386,7 +386,7 @@
           "loc": "7:19-43"
         },
         {
-          "moduleId": 54,
+          "moduleId": 55,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/FromEventObservable.js",
           "module": "./~/rxjs/observable/FromEventObservable.js",
           "moduleName": "./~/rxjs/observable/FromEventObservable.js",
@@ -395,7 +395,7 @@
           "loc": "7:19-43"
         },
         {
-          "moduleId": 55,
+          "moduleId": 56,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/FromObservable.js",
           "module": "./~/rxjs/observable/FromObservable.js",
           "moduleName": "./~/rxjs/observable/FromObservable.js",
@@ -404,7 +404,7 @@
           "loc": "14:19-43"
         },
         {
-          "moduleId": 56,
+          "moduleId": 57,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/IteratorObservable.js",
           "module": "./~/rxjs/observable/IteratorObservable.js",
           "moduleName": "./~/rxjs/observable/IteratorObservable.js",
@@ -413,7 +413,7 @@
           "loc": "8:19-43"
         },
         {
-          "moduleId": 57,
+          "moduleId": 58,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/PromiseObservable.js",
           "module": "./~/rxjs/observable/PromiseObservable.js",
           "moduleName": "./~/rxjs/observable/PromiseObservable.js",
@@ -434,7 +434,7 @@
       "index2": 11,
       "size": 8870,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -443,7 +443,7 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/operator/map.js",
-      "issuerId": 66,
+      "issuerId": 67,
       "issuerName": "./~/rxjs/operator/map.js",
       "failed": false,
       "errors": 0,
@@ -459,7 +459,7 @@
           "loc": "7:19-42"
         },
         {
-          "moduleId": 50,
+          "moduleId": 51,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/InnerSubscriber.js",
           "module": "./~/rxjs/InnerSubscriber.js",
           "moduleName": "./~/rxjs/InnerSubscriber.js",
@@ -468,7 +468,7 @@
           "loc": "7:19-42"
         },
         {
-          "moduleId": 62,
+          "moduleId": 63,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/operator/debounceTime.js",
           "module": "./~/rxjs/operator/debounceTime.js",
           "moduleName": "./~/rxjs/operator/debounceTime.js",
@@ -477,7 +477,7 @@
           "loc": "7:19-43"
         },
         {
-          "moduleId": 63,
+          "moduleId": 64,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/operator/delay.js",
           "module": "./~/rxjs/operator/delay.js",
           "moduleName": "./~/rxjs/operator/delay.js",
@@ -486,7 +486,7 @@
           "loc": "9:19-43"
         },
         {
-          "moduleId": 64,
+          "moduleId": 65,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/operator/do.js",
           "module": "./~/rxjs/operator/do.js",
           "moduleName": "./~/rxjs/operator/do.js",
@@ -495,7 +495,7 @@
           "loc": "7:19-43"
         },
         {
-          "moduleId": 65,
+          "moduleId": 66,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/operator/filter.js",
           "module": "./~/rxjs/operator/filter.js",
           "moduleName": "./~/rxjs/operator/filter.js",
@@ -504,7 +504,7 @@
           "loc": "7:19-43"
         },
         {
-          "moduleId": 66,
+          "moduleId": 67,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/operator/map.js",
           "module": "./~/rxjs/operator/map.js",
           "moduleName": "./~/rxjs/operator/map.js",
@@ -513,7 +513,7 @@
           "loc": "7:19-43"
         },
         {
-          "moduleId": 68,
+          "moduleId": 69,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/operator/observeOn.js",
           "module": "./~/rxjs/operator/observeOn.js",
           "moduleName": "./~/rxjs/operator/observeOn.js",
@@ -522,7 +522,7 @@
           "loc": "7:19-43"
         },
         {
-          "moduleId": 69,
+          "moduleId": 70,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/operator/retry.js",
           "module": "./~/rxjs/operator/retry.js",
           "moduleName": "./~/rxjs/operator/retry.js",
@@ -531,7 +531,7 @@
           "loc": "7:19-43"
         },
         {
-          "moduleId": 70,
+          "moduleId": 71,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/operator/throttleTime.js",
           "module": "./~/rxjs/operator/throttleTime.js",
           "moduleName": "./~/rxjs/operator/throttleTime.js",
@@ -540,7 +540,7 @@
           "loc": "7:19-43"
         },
         {
-          "moduleId": 71,
+          "moduleId": 72,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/operator/timeout.js",
           "module": "./~/rxjs/operator/timeout.js",
           "moduleName": "./~/rxjs/operator/timeout.js",
@@ -549,7 +549,7 @@
           "loc": "9:19-43"
         },
         {
-          "moduleId": 79,
+          "moduleId": 80,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/util/toSubscriber.js",
           "module": "./~/rxjs/util/toSubscriber.js",
           "moduleName": "./~/rxjs/util/toSubscriber.js",
@@ -570,7 +570,7 @@
       "index2": 1,
       "size": 470,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -631,7 +631,7 @@
           "loc": "2:13-30"
         },
         {
-          "moduleId": 56,
+          "moduleId": 57,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/IteratorObservable.js",
           "module": "./~/rxjs/observable/IteratorObservable.js",
           "moduleName": "./~/rxjs/observable/IteratorObservable.js",
@@ -640,7 +640,7 @@
           "loc": "7:13-36"
         },
         {
-          "moduleId": 57,
+          "moduleId": 58,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/PromiseObservable.js",
           "module": "./~/rxjs/observable/PromiseObservable.js",
           "moduleName": "./~/rxjs/observable/PromiseObservable.js",
@@ -649,7 +649,7 @@
           "loc": "7:13-36"
         },
         {
-          "moduleId": 73,
+          "moduleId": 74,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/scheduler/AsyncAction.js",
           "module": "./~/rxjs/scheduler/AsyncAction.js",
           "moduleName": "./~/rxjs/scheduler/AsyncAction.js",
@@ -670,7 +670,7 @@
       "index2": 73,
       "size": 3595,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -741,6 +741,15 @@
         },
         {
           "moduleId": 49,
+          "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/src/zhihu-zhuanlan.ts",
+          "module": "./src/zhihu-zhuanlan.ts",
+          "moduleName": "./src/zhihu-zhuanlan.ts",
+          "type": "cjs require",
+          "userRequest": "../lib/redirect-on-url",
+          "loc": "7:24-57"
+        },
+        {
+          "moduleId": 50,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/src/zhihu.ts",
           "module": "./src/zhihu.ts",
           "moduleName": "./src/zhihu.ts",
@@ -761,7 +770,7 @@
       "index2": 54,
       "size": 225,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -770,14 +779,14 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/operator/timeout.js",
-      "issuerId": 71,
+      "issuerId": 72,
       "issuerName": "./~/rxjs/operator/timeout.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 62,
+          "moduleId": 63,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/operator/debounceTime.js",
           "module": "./~/rxjs/operator/debounceTime.js",
           "moduleName": "./~/rxjs/operator/debounceTime.js",
@@ -786,7 +795,7 @@
           "loc": "8:14-43"
         },
         {
-          "moduleId": 63,
+          "moduleId": 64,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/operator/delay.js",
           "module": "./~/rxjs/operator/delay.js",
           "moduleName": "./~/rxjs/operator/delay.js",
@@ -795,7 +804,7 @@
           "loc": "7:14-43"
         },
         {
-          "moduleId": 70,
+          "moduleId": 71,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/operator/throttleTime.js",
           "module": "./~/rxjs/operator/throttleTime.js",
           "moduleName": "./~/rxjs/operator/throttleTime.js",
@@ -804,7 +813,7 @@
           "loc": "8:14-43"
         },
         {
-          "moduleId": 71,
+          "moduleId": 72,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/operator/timeout.js",
           "module": "./~/rxjs/operator/timeout.js",
           "moduleName": "./~/rxjs/operator/timeout.js",
@@ -825,7 +834,7 @@
       "index2": 3,
       "size": 146,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -833,9 +842,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/FromObservable.js",
-      "issuerId": 55,
-      "issuerName": "./~/rxjs/observable/FromObservable.js",
+      "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/ForkJoinObservable.js",
+      "issuerId": 54,
+      "issuerName": "./~/rxjs/observable/ForkJoinObservable.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -859,7 +868,7 @@
           "loc": "3:16-36"
         },
         {
-          "moduleId": 53,
+          "moduleId": 54,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/ForkJoinObservable.js",
           "module": "./~/rxjs/observable/ForkJoinObservable.js",
           "moduleName": "./~/rxjs/observable/ForkJoinObservable.js",
@@ -868,7 +877,7 @@
           "loc": "9:16-42"
         },
         {
-          "moduleId": 55,
+          "moduleId": 56,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/FromObservable.js",
           "module": "./~/rxjs/observable/FromObservable.js",
           "moduleName": "./~/rxjs/observable/FromObservable.js",
@@ -889,7 +898,7 @@
       "index2": 8,
       "size": 5992,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -898,7 +907,7 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/FromEventObservable.js",
-      "issuerId": 54,
+      "issuerId": 55,
       "issuerName": "./~/rxjs/observable/FromEventObservable.js",
       "failed": false,
       "errors": 0,
@@ -914,7 +923,7 @@
           "loc": "8:21-46"
         },
         {
-          "moduleId": 54,
+          "moduleId": 55,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/FromEventObservable.js",
           "module": "./~/rxjs/observable/FromEventObservable.js",
           "moduleName": "./~/rxjs/observable/FromEventObservable.js",
@@ -923,7 +932,7 @@
           "loc": "11:21-47"
         },
         {
-          "moduleId": 72,
+          "moduleId": 73,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/scheduler/Action.js",
           "module": "./~/rxjs/scheduler/Action.js",
           "moduleName": "./~/rxjs/scheduler/Action.js",
@@ -944,7 +953,7 @@
       "index2": 20,
       "size": 2708,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -969,7 +978,7 @@
           "loc": "9:24-52"
         },
         {
-          "moduleId": 52,
+          "moduleId": 53,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/ArrayLikeObservable.js",
           "module": "./~/rxjs/observable/ArrayLikeObservable.js",
           "moduleName": "./~/rxjs/observable/ArrayLikeObservable.js",
@@ -978,7 +987,7 @@
           "loc": "9:24-52"
         },
         {
-          "moduleId": 53,
+          "moduleId": 54,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/ForkJoinObservable.js",
           "module": "./~/rxjs/observable/ForkJoinObservable.js",
           "moduleName": "./~/rxjs/observable/ForkJoinObservable.js",
@@ -999,7 +1008,7 @@
       "index2": 17,
       "size": 1258,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1007,9 +1016,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/FromObservable.js",
-      "issuerId": 55,
-      "issuerName": "./~/rxjs/observable/FromObservable.js",
+      "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/util/subscribeToResult.js",
+      "issuerId": 21,
+      "issuerName": "./~/rxjs/util/subscribeToResult.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -1024,7 +1033,7 @@
           "loc": "6:17-46"
         },
         {
-          "moduleId": 55,
+          "moduleId": 56,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/FromObservable.js",
           "module": "./~/rxjs/observable/FromObservable.js",
           "moduleName": "./~/rxjs/observable/FromObservable.js",
@@ -1033,7 +1042,7 @@
           "loc": "13:17-46"
         },
         {
-          "moduleId": 56,
+          "moduleId": 57,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/IteratorObservable.js",
           "module": "./~/rxjs/observable/IteratorObservable.js",
           "moduleName": "./~/rxjs/observable/IteratorObservable.js",
@@ -1054,7 +1063,7 @@
       "index2": 13,
       "size": 631,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1088,7 +1097,7 @@
           "loc": "8:19-50"
         },
         {
-          "moduleId": 55,
+          "moduleId": 56,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/FromObservable.js",
           "module": "./~/rxjs/observable/FromObservable.js",
           "moduleName": "./~/rxjs/observable/FromObservable.js",
@@ -1109,7 +1118,7 @@
       "index2": 5,
       "size": 177,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1118,7 +1127,7 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/FromEventObservable.js",
-      "issuerId": 54,
+      "issuerId": 55,
       "issuerName": "./~/rxjs/observable/FromEventObservable.js",
       "failed": false,
       "errors": 0,
@@ -1143,7 +1152,7 @@
           "loc": "2:20-44"
         },
         {
-          "moduleId": 54,
+          "moduleId": 55,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/FromEventObservable.js",
           "module": "./~/rxjs/observable/FromEventObservable.js",
           "moduleName": "./~/rxjs/observable/FromEventObservable.js",
@@ -1164,7 +1173,7 @@
       "index2": 2,
       "size": 148,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1173,7 +1182,7 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/FromEventObservable.js",
-      "issuerId": 54,
+      "issuerId": 55,
       "issuerName": "./~/rxjs/observable/FromEventObservable.js",
       "failed": false,
       "errors": 0,
@@ -1198,7 +1207,7 @@
           "loc": "4:19-47"
         },
         {
-          "moduleId": 54,
+          "moduleId": 55,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/FromEventObservable.js",
           "module": "./~/rxjs/observable/FromEventObservable.js",
           "moduleName": "./~/rxjs/observable/FromEventObservable.js",
@@ -1219,7 +1228,7 @@
       "index2": 70,
       "size": 5310,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1227,9 +1236,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/lib/redirect-on-url.ts",
-      "issuerId": 3,
-      "issuerName": "./lib/redirect-on-url.ts",
+      "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/lib/redirect-on-request.ts",
+      "issuerId": 26,
+      "issuerName": "./lib/redirect-on-request.ts",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -1265,7 +1274,7 @@
       "index2": 24,
       "size": 4747,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1274,14 +1283,14 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/operator/delay.js",
-      "issuerId": 63,
+      "issuerId": 64,
       "issuerName": "./~/rxjs/operator/delay.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 63,
+          "moduleId": 64,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/operator/delay.js",
           "module": "./~/rxjs/operator/delay.js",
           "moduleName": "./~/rxjs/operator/delay.js",
@@ -1290,7 +1299,7 @@
           "loc": "10:21-47"
         },
         {
-          "moduleId": 68,
+          "moduleId": 69,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/operator/observeOn.js",
           "module": "./~/rxjs/operator/observeOn.js",
           "moduleName": "./~/rxjs/operator/observeOn.js",
@@ -1311,7 +1320,7 @@
       "index2": 9,
       "size": 193,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1320,7 +1329,7 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/util/toSubscriber.js",
-      "issuerId": 79,
+      "issuerId": 80,
       "issuerName": "./~/rxjs/util/toSubscriber.js",
       "failed": false,
       "errors": 0,
@@ -1336,7 +1345,7 @@
           "loc": "9:17-38"
         },
         {
-          "moduleId": 79,
+          "moduleId": 80,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/util/toSubscriber.js",
           "module": "./~/rxjs/util/toSubscriber.js",
           "moduleName": "./~/rxjs/util/toSubscriber.js",
@@ -1357,7 +1366,7 @@
       "index2": 36,
       "size": 1107,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1366,14 +1375,14 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/operator/mergeMap.js",
-      "issuerId": 67,
+      "issuerId": 68,
       "issuerName": "./~/rxjs/operator/mergeMap.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 53,
+          "moduleId": 54,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/ForkJoinObservable.js",
           "module": "./~/rxjs/observable/ForkJoinObservable.js",
           "moduleName": "./~/rxjs/observable/ForkJoinObservable.js",
@@ -1382,7 +1391,7 @@
           "loc": "11:24-53"
         },
         {
-          "moduleId": 67,
+          "moduleId": 68,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/operator/mergeMap.js",
           "module": "./~/rxjs/operator/mergeMap.js",
           "moduleName": "./~/rxjs/operator/mergeMap.js",
@@ -1403,7 +1412,7 @@
       "index2": 22,
       "size": 4573,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1412,14 +1421,14 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/of.js",
-      "issuerId": 61,
+      "issuerId": 62,
       "issuerName": "./~/rxjs/observable/of.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 55,
+          "moduleId": 56,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/FromObservable.js",
           "module": "./~/rxjs/observable/FromObservable.js",
           "moduleName": "./~/rxjs/observable/FromObservable.js",
@@ -1428,7 +1437,7 @@
           "loc": "11:24-52"
         },
         {
-          "moduleId": 61,
+          "moduleId": 62,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/of.js",
           "module": "./~/rxjs/observable/of.js",
           "moduleName": "./~/rxjs/observable/of.js",
@@ -1449,7 +1458,7 @@
       "index2": 19,
       "size": 1879,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1474,7 +1483,7 @@
           "loc": "8:25-54"
         },
         {
-          "moduleId": 52,
+          "moduleId": 53,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/ArrayLikeObservable.js",
           "module": "./~/rxjs/observable/ArrayLikeObservable.js",
           "moduleName": "./~/rxjs/observable/ArrayLikeObservable.js",
@@ -1495,7 +1504,7 @@
       "index2": 10,
       "size": 270,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1504,7 +1513,7 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/util/toSubscriber.js",
-      "issuerId": 79,
+      "issuerId": 80,
       "issuerName": "./~/rxjs/util/toSubscriber.js",
       "failed": false,
       "errors": 0,
@@ -1520,7 +1529,7 @@
           "loc": "10:21-53"
         },
         {
-          "moduleId": 79,
+          "moduleId": 80,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/util/toSubscriber.js",
           "module": "./~/rxjs/util/toSubscriber.js",
           "moduleName": "./~/rxjs/util/toSubscriber.js",
@@ -1541,7 +1550,7 @@
       "index2": 55,
       "size": 152,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1550,14 +1559,14 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/operator/timeout.js",
-      "issuerId": 71,
+      "issuerId": 72,
       "issuerName": "./~/rxjs/operator/timeout.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 63,
+          "moduleId": 64,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/operator/delay.js",
           "module": "./~/rxjs/operator/delay.js",
           "moduleName": "./~/rxjs/operator/delay.js",
@@ -1566,7 +1575,7 @@
           "loc": "8:15-40"
         },
         {
-          "moduleId": 71,
+          "moduleId": 72,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/operator/timeout.js",
           "module": "./~/rxjs/operator/timeout.js",
           "moduleName": "./~/rxjs/operator/timeout.js",
@@ -1587,7 +1596,7 @@
       "index2": 15,
       "size": 207,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1595,9 +1604,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/FromObservable.js",
-      "issuerId": 55,
-      "issuerName": "./~/rxjs/observable/FromObservable.js",
+      "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/util/subscribeToResult.js",
+      "issuerId": 21,
+      "issuerName": "./~/rxjs/util/subscribeToResult.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -1612,7 +1621,7 @@
           "loc": "4:18-40"
         },
         {
-          "moduleId": 55,
+          "moduleId": 56,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/FromObservable.js",
           "module": "./~/rxjs/observable/FromObservable.js",
           "moduleName": "./~/rxjs/observable/FromObservable.js",
@@ -1633,7 +1642,7 @@
       "index2": 35,
       "size": 2631,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1642,14 +1651,14 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/operator/mergeMap.js",
-      "issuerId": 67,
+      "issuerId": 68,
       "issuerName": "./~/rxjs/operator/mergeMap.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 53,
+          "moduleId": 54,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/ForkJoinObservable.js",
           "module": "./~/rxjs/observable/ForkJoinObservable.js",
           "moduleName": "./~/rxjs/observable/ForkJoinObservable.js",
@@ -1658,7 +1667,7 @@
           "loc": "10:26-62"
         },
         {
-          "moduleId": 67,
+          "moduleId": 68,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/operator/mergeMap.js",
           "module": "./~/rxjs/operator/mergeMap.js",
           "moduleName": "./~/rxjs/operator/mergeMap.js",
@@ -1679,7 +1688,7 @@
       "index2": 6,
       "size": 422,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1688,7 +1697,7 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/FromEventObservable.js",
-      "issuerId": 54,
+      "issuerId": 55,
       "issuerName": "./~/rxjs/observable/FromEventObservable.js",
       "failed": false,
       "errors": 0,
@@ -1704,7 +1713,7 @@
           "loc": "5:17-43"
         },
         {
-          "moduleId": 54,
+          "moduleId": 55,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/FromEventObservable.js",
           "module": "./~/rxjs/observable/FromEventObservable.js",
           "moduleName": "./~/rxjs/observable/FromEventObservable.js",
@@ -1725,7 +1734,7 @@
       "index2": 69,
       "size": 117,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1733,9 +1742,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/lib/redirect-on-url.ts",
-      "issuerId": 3,
-      "issuerName": "./lib/redirect-on-url.ts",
+      "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/lib/redirect-on-request.ts",
+      "issuerId": 26,
+      "issuerName": "./lib/redirect-on-request.ts",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -1771,7 +1780,7 @@
       "index2": 66,
       "size": 2352,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1779,9 +1788,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/lib/redirect-on-request.ts",
-      "issuerId": 26,
-      "issuerName": "./lib/redirect-on-request.ts",
+      "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/src/baidu.ts",
+      "issuerId": 42,
+      "issuerName": "./src/baidu.ts",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -1817,7 +1826,7 @@
       "index2": 68,
       "size": 456,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1825,9 +1834,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/lib/redirect-on-url.ts",
-      "issuerId": 3,
-      "issuerName": "./lib/redirect-on-url.ts",
+      "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/lib/redirect-on-request.ts",
+      "issuerId": 26,
+      "issuerName": "./lib/redirect-on-request.ts",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -1863,7 +1872,7 @@
       "index2": 71,
       "size": 4667,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1871,9 +1880,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/src/baidu-video.ts",
-      "issuerId": 41,
-      "issuerName": "./src/baidu-video.ts",
+      "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/src/baidu.ts",
+      "issuerId": 42,
+      "issuerName": "./src/baidu.ts",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -1909,7 +1918,7 @@
       "index2": 65,
       "size": 52915,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1917,9 +1926,9 @@
         1
       ],
       "assets": [],
-      "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/lib/log.ts",
-      "issuerId": 25,
-      "issuerName": "./lib/log.ts",
+      "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/lib/http.ts",
+      "issuerId": 24,
+      "issuerName": "./lib/http.ts",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -1955,7 +1964,7 @@
       "index2": 39,
       "size": 209,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1964,14 +1973,14 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
-      "issuerId": 82,
+      "issuerId": 83,
       "issuerName": "./index.ts",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 82,
+          "moduleId": 83,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
           "module": "./index.ts",
           "moduleName": "./index.ts",
@@ -1992,7 +2001,7 @@
       "index2": 28,
       "size": 185,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2001,14 +2010,14 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
-      "issuerId": 82,
+      "issuerId": 83,
       "issuerName": "./index.ts",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 82,
+          "moduleId": 83,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
           "module": "./index.ts",
           "moduleName": "./index.ts",
@@ -2029,7 +2038,7 @@
       "index2": 33,
       "size": 215,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2038,14 +2047,14 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
-      "issuerId": 82,
+      "issuerId": 83,
       "issuerName": "./index.ts",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 82,
+          "moduleId": 83,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
           "module": "./index.ts",
           "moduleName": "./index.ts",
@@ -2066,7 +2075,7 @@
       "index2": 30,
       "size": 173,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2075,14 +2084,14 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
-      "issuerId": 82,
+      "issuerId": 83,
       "issuerName": "./index.ts",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 82,
+          "moduleId": 83,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
           "module": "./index.ts",
           "moduleName": "./index.ts",
@@ -2103,7 +2112,7 @@
       "index2": 64,
       "size": 241,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2112,14 +2121,14 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
-      "issuerId": 82,
+      "issuerId": 83,
       "issuerName": "./index.ts",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 82,
+          "moduleId": 83,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
           "module": "./index.ts",
           "moduleName": "./index.ts",
@@ -2140,7 +2149,7 @@
       "index2": 60,
       "size": 199,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2149,14 +2158,14 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
-      "issuerId": 82,
+      "issuerId": 83,
       "issuerName": "./index.ts",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 82,
+          "moduleId": 83,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
           "module": "./index.ts",
           "moduleName": "./index.ts",
@@ -2177,7 +2186,7 @@
       "index2": 45,
       "size": 232,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2186,14 +2195,14 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
-      "issuerId": 82,
+      "issuerId": 83,
       "issuerName": "./index.ts",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 82,
+          "moduleId": 83,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
           "module": "./index.ts",
           "moduleName": "./index.ts",
@@ -2214,7 +2223,7 @@
       "index2": 43,
       "size": 205,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2223,14 +2232,14 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
-      "issuerId": 82,
+      "issuerId": 83,
       "issuerName": "./index.ts",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 82,
+          "moduleId": 83,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
           "module": "./index.ts",
           "moduleName": "./index.ts",
@@ -2251,7 +2260,7 @@
       "index2": 41,
       "size": 187,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2260,14 +2269,14 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
-      "issuerId": 82,
+      "issuerId": 83,
       "issuerName": "./index.ts",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 82,
+          "moduleId": 83,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
           "module": "./index.ts",
           "moduleName": "./index.ts",
@@ -2288,7 +2297,7 @@
       "index2": 47,
       "size": 282,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2297,14 +2306,14 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
-      "issuerId": 82,
+      "issuerId": 83,
       "issuerName": "./index.ts",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 82,
+          "moduleId": 83,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
           "module": "./index.ts",
           "moduleName": "./index.ts",
@@ -2325,7 +2334,7 @@
       "index2": 49,
       "size": 199,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2334,14 +2343,14 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
-      "issuerId": 82,
+      "issuerId": 83,
       "issuerName": "./index.ts",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 82,
+          "moduleId": 83,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
           "module": "./index.ts",
           "moduleName": "./index.ts",
@@ -2362,7 +2371,7 @@
       "index2": 62,
       "size": 241,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2371,14 +2380,14 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
-      "issuerId": 82,
+      "issuerId": 83,
       "issuerName": "./index.ts",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 82,
+          "moduleId": 83,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
           "module": "./index.ts",
           "moduleName": "./index.ts",
@@ -2399,7 +2408,7 @@
       "index2": 58,
       "size": 211,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2408,14 +2417,14 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
-      "issuerId": 82,
+      "issuerId": 83,
       "issuerName": "./index.ts",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 82,
+          "moduleId": 83,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
           "module": "./index.ts",
           "moduleName": "./index.ts",
@@ -2436,7 +2445,7 @@
       "index2": 75,
       "size": 1118,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2445,14 +2454,14 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
-      "issuerId": 82,
+      "issuerId": 83,
       "issuerName": "./index.ts",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 82,
+          "moduleId": 83,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
           "module": "./index.ts",
           "moduleName": "./index.ts",
@@ -2482,14 +2491,14 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
-      "issuerId": 82,
+      "issuerId": 83,
       "issuerName": "./index.ts",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 82,
+          "moduleId": 83,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
           "module": "./index.ts",
           "moduleName": "./index.ts",
@@ -2510,7 +2519,7 @@
       "index2": 76,
       "size": 1378,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2519,14 +2528,14 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
-      "issuerId": 82,
+      "issuerId": 83,
       "issuerName": "./index.ts",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 82,
+          "moduleId": 83,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
           "module": "./index.ts",
           "moduleName": "./index.ts",
@@ -2547,7 +2556,7 @@
       "index2": 79,
       "size": 961,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2556,14 +2565,14 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
-      "issuerId": 82,
+      "issuerId": 83,
       "issuerName": "./index.ts",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 82,
+          "moduleId": 83,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
           "module": "./index.ts",
           "moduleName": "./index.ts",
@@ -2584,7 +2593,7 @@
       "index2": 74,
       "size": 1524,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2593,14 +2602,14 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
-      "issuerId": 82,
+      "issuerId": 83,
       "issuerName": "./index.ts",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 82,
+          "moduleId": 83,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
           "module": "./index.ts",
           "moduleName": "./index.ts",
@@ -2621,7 +2630,7 @@
       "index2": 78,
       "size": 1314,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2630,14 +2639,14 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
-      "issuerId": 82,
+      "issuerId": 83,
       "issuerName": "./index.ts",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 82,
+          "moduleId": 83,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
           "module": "./index.ts",
           "moduleName": "./index.ts",
@@ -2658,7 +2667,7 @@
       "index2": 77,
       "size": 1320,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2667,14 +2676,14 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
-      "issuerId": 82,
+      "issuerId": 83,
       "issuerName": "./index.ts",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 82,
+          "moduleId": 83,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
           "module": "./index.ts",
           "moduleName": "./index.ts",
@@ -2695,7 +2704,7 @@
       "index2": 81,
       "size": 818,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2704,14 +2713,14 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
-      "issuerId": 82,
+      "issuerId": 83,
       "issuerName": "./index.ts",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 82,
+          "moduleId": 83,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
           "module": "./index.ts",
           "moduleName": "./index.ts",
@@ -2726,13 +2735,13 @@
     },
     {
       "id": 49,
-      "identifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/src/zhihu.ts",
-      "name": "./src/zhihu.ts",
-      "index": 81,
-      "index2": 80,
-      "size": 791,
+      "identifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/src/zhihu-zhuanlan.ts",
+      "name": "./src/zhihu-zhuanlan.ts",
+      "index": 83,
+      "index2": 82,
+      "size": 848,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2741,14 +2750,51 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
-      "issuerId": 82,
+      "issuerId": 83,
       "issuerName": "./index.ts",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 82,
+          "moduleId": 83,
+          "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
+          "module": "./index.ts",
+          "moduleName": "./index.ts",
+          "type": "cjs require",
+          "userRequest": "./src/zhihu-zhuanlan",
+          "loc": "24:23-54"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "source": "\"use strict\";\nvar __extends = (this && this.__extends) || function (d, b) {\n    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];\n    function __() { this.constructor = d; }\n    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n};\nvar redirect_on_url_1 = require(\"../lib/redirect-on-url\");\nvar ZhihuZhuanlanRedirect = (function (_super) {\n    __extends(ZhihuZhuanlanRedirect, _super);\n    function ZhihuZhuanlanRedirect(domainTester, urlTester, matcher) {\n        return _super.call(this, domainTester, urlTester, matcher) || this;\n    }\n    return ZhihuZhuanlanRedirect;\n}(redirect_on_url_1.RedirectOnUrl));\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.default = new ZhihuZhuanlanRedirect(/zhuanlan\\.zhihu\\.com/, /link\\.zhihu\\.com\\/\\?target=/, /link\\.zhihu\\.com\\/\\?target=(.*)/);\n"
+    },
+    {
+      "id": 50,
+      "identifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/src/zhihu.ts",
+      "name": "./src/zhihu.ts",
+      "index": 81,
+      "index2": 80,
+      "size": 791,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0,
+        1
+      ],
+      "assets": [],
+      "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
+      "issuerId": 83,
+      "issuerName": "./index.ts",
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 83,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
           "module": "./index.ts",
           "moduleName": "./index.ts",
@@ -2762,14 +2808,14 @@
       "source": "\"use strict\";\nvar __extends = (this && this.__extends) || function (d, b) {\n    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];\n    function __() { this.constructor = d; }\n    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n};\nvar redirect_on_url_1 = require(\"../lib/redirect-on-url\");\nvar ZhihuRedirect = (function (_super) {\n    __extends(ZhihuRedirect, _super);\n    function ZhihuRedirect(domainTester, urlTester, matcher) {\n        return _super.call(this, domainTester, urlTester, matcher) || this;\n    }\n    return ZhihuRedirect;\n}(redirect_on_url_1.RedirectOnUrl));\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.default = new ZhihuRedirect(/www\\.zhihu\\.com/, /zhihu\\.com\\/\\?target=/, /zhihu\\.com\\/\\?target=(.*)/);\n"
     },
     {
-      "id": 50,
+      "id": 51,
       "identifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/InnerSubscriber.js",
       "name": "./~/rxjs/InnerSubscriber.js",
       "index": 39,
       "index2": 34,
       "size": 1289,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2799,14 +2845,14 @@
       "source": "\"use strict\";\nvar __extends = (this && this.__extends) || function (d, b) {\n    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];\n    function __() { this.constructor = d; }\n    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n};\nvar Subscriber_1 = require('./Subscriber');\n/**\n * We need this JSDoc comment for affecting ESDoc.\n * @ignore\n * @extends {Ignored}\n */\nvar InnerSubscriber = (function (_super) {\n    __extends(InnerSubscriber, _super);\n    function InnerSubscriber(parent, outerValue, outerIndex) {\n        _super.call(this);\n        this.parent = parent;\n        this.outerValue = outerValue;\n        this.outerIndex = outerIndex;\n        this.index = 0;\n    }\n    InnerSubscriber.prototype._next = function (value) {\n        this.parent.notifyNext(this.outerValue, value, this.outerIndex, this.index++, this);\n    };\n    InnerSubscriber.prototype._error = function (error) {\n        this.parent.notifyError(error, this);\n        this.unsubscribe();\n    };\n    InnerSubscriber.prototype._complete = function () {\n        this.parent.notifyComplete(this);\n        this.unsubscribe();\n    };\n    return InnerSubscriber;\n}(Subscriber_1.Subscriber));\nexports.InnerSubscriber = InnerSubscriber;\n//# sourceMappingURL=InnerSubscriber.js.map"
     },
     {
-      "id": 51,
+      "id": 52,
       "identifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/Scheduler.js",
       "name": "./~/rxjs/Scheduler.js",
       "index": 57,
       "index2": 52,
       "size": 1885,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2815,14 +2861,14 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/scheduler/AsyncScheduler.js",
-      "issuerId": 74,
+      "issuerId": 75,
       "issuerName": "./~/rxjs/scheduler/AsyncScheduler.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 74,
+          "moduleId": 75,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/scheduler/AsyncScheduler.js",
           "module": "./~/rxjs/scheduler/AsyncScheduler.js",
           "moduleName": "./~/rxjs/scheduler/AsyncScheduler.js",
@@ -2836,14 +2882,14 @@
       "source": "\"use strict\";\n/**\n * An execution context and a data structure to order tasks and schedule their\n * execution. Provides a notion of (potentially virtual) time, through the\n * `now()` getter method.\n *\n * Each unit of work in a Scheduler is called an {@link Action}.\n *\n * ```ts\n * class Scheduler {\n *   now(): number;\n *   schedule(work, delay?, state?): Subscription;\n * }\n * ```\n *\n * @class Scheduler\n */\nvar Scheduler = (function () {\n    function Scheduler(SchedulerAction, now) {\n        if (now === void 0) { now = Scheduler.now; }\n        this.SchedulerAction = SchedulerAction;\n        this.now = now;\n    }\n    /**\n     * Schedules a function, `work`, for execution. May happen at some point in\n     * the future, according to the `delay` parameter, if specified. May be passed\n     * some context object, `state`, which will be passed to the `work` function.\n     *\n     * The given arguments will be processed an stored as an Action object in a\n     * queue of actions.\n     *\n     * @param {function(state: ?T): ?Subscription} work A function representing a\n     * task, or some unit of work to be executed by the Scheduler.\n     * @param {number} [delay] Time to wait before executing the work, where the\n     * time unit is implicit and defined by the Scheduler itself.\n     * @param {T} [state] Some contextual data that the `work` function uses when\n     * called by the Scheduler.\n     * @return {Subscription} A subscription in order to be able to unsubscribe\n     * the scheduled work.\n     */\n    Scheduler.prototype.schedule = function (work, delay, state) {\n        if (delay === void 0) { delay = 0; }\n        return new this.SchedulerAction(this, work).schedule(state, delay);\n    };\n    Scheduler.now = Date.now ? Date.now : function () { return +new Date(); };\n    return Scheduler;\n}());\nexports.Scheduler = Scheduler;\n//# sourceMappingURL=Scheduler.js.map"
     },
     {
-      "id": 52,
+      "id": 53,
       "identifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/ArrayLikeObservable.js",
       "name": "./~/rxjs/observable/ArrayLikeObservable.js",
       "index": 27,
       "index2": 23,
       "size": 2562,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2852,14 +2898,14 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/FromObservable.js",
-      "issuerId": 55,
+      "issuerId": 56,
       "issuerName": "./~/rxjs/observable/FromObservable.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 55,
+          "moduleId": 56,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/FromObservable.js",
           "module": "./~/rxjs/observable/FromObservable.js",
           "moduleName": "./~/rxjs/observable/FromObservable.js",
@@ -2873,14 +2919,14 @@
       "source": "\"use strict\";\nvar __extends = (this && this.__extends) || function (d, b) {\n    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];\n    function __() { this.constructor = d; }\n    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n};\nvar Observable_1 = require('../Observable');\nvar ScalarObservable_1 = require('./ScalarObservable');\nvar EmptyObservable_1 = require('./EmptyObservable');\n/**\n * We need this JSDoc comment for affecting ESDoc.\n * @extends {Ignored}\n * @hide true\n */\nvar ArrayLikeObservable = (function (_super) {\n    __extends(ArrayLikeObservable, _super);\n    function ArrayLikeObservable(arrayLike, scheduler) {\n        _super.call(this);\n        this.arrayLike = arrayLike;\n        this.scheduler = scheduler;\n        if (!scheduler && arrayLike.length === 1) {\n            this._isScalar = true;\n            this.value = arrayLike[0];\n        }\n    }\n    ArrayLikeObservable.create = function (arrayLike, scheduler) {\n        var length = arrayLike.length;\n        if (length === 0) {\n            return new EmptyObservable_1.EmptyObservable();\n        }\n        else if (length === 1) {\n            return new ScalarObservable_1.ScalarObservable(arrayLike[0], scheduler);\n        }\n        else {\n            return new ArrayLikeObservable(arrayLike, scheduler);\n        }\n    };\n    ArrayLikeObservable.dispatch = function (state) {\n        var arrayLike = state.arrayLike, index = state.index, length = state.length, subscriber = state.subscriber;\n        if (subscriber.closed) {\n            return;\n        }\n        if (index >= length) {\n            subscriber.complete();\n            return;\n        }\n        subscriber.next(arrayLike[index]);\n        state.index = index + 1;\n        this.schedule(state);\n    };\n    ArrayLikeObservable.prototype._subscribe = function (subscriber) {\n        var index = 0;\n        var _a = this, arrayLike = _a.arrayLike, scheduler = _a.scheduler;\n        var length = arrayLike.length;\n        if (scheduler) {\n            return scheduler.schedule(ArrayLikeObservable.dispatch, 0, {\n                arrayLike: arrayLike, index: index, length: length, subscriber: subscriber\n            });\n        }\n        else {\n            for (var i = 0; i < length && !subscriber.closed; i++) {\n                subscriber.next(arrayLike[i]);\n            }\n            subscriber.complete();\n        }\n    };\n    return ArrayLikeObservable;\n}(Observable_1.Observable));\nexports.ArrayLikeObservable = ArrayLikeObservable;\n//# sourceMappingURL=ArrayLikeObservable.js.map"
     },
     {
-      "id": 53,
+      "id": 54,
       "identifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/ForkJoinObservable.js",
       "name": "./~/rxjs/observable/ForkJoinObservable.js",
       "index": 37,
       "index2": 37,
       "size": 4175,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2889,14 +2935,14 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/forkJoin.js",
-      "issuerId": 58,
+      "issuerId": 59,
       "issuerName": "./~/rxjs/observable/forkJoin.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 58,
+          "moduleId": 59,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/forkJoin.js",
           "module": "./~/rxjs/observable/forkJoin.js",
           "moduleName": "./~/rxjs/observable/forkJoin.js",
@@ -2910,14 +2956,14 @@
       "source": "\"use strict\";\nvar __extends = (this && this.__extends) || function (d, b) {\n    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];\n    function __() { this.constructor = d; }\n    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n};\nvar Observable_1 = require('../Observable');\nvar EmptyObservable_1 = require('./EmptyObservable');\nvar isArray_1 = require('../util/isArray');\nvar subscribeToResult_1 = require('../util/subscribeToResult');\nvar OuterSubscriber_1 = require('../OuterSubscriber');\n/**\n * We need this JSDoc comment for affecting ESDoc.\n * @extends {Ignored}\n * @hide true\n */\nvar ForkJoinObservable = (function (_super) {\n    __extends(ForkJoinObservable, _super);\n    function ForkJoinObservable(sources, resultSelector) {\n        _super.call(this);\n        this.sources = sources;\n        this.resultSelector = resultSelector;\n    }\n    /* tslint:enable:max-line-length */\n    /**\n     * @param sources\n     * @return {any}\n     * @static true\n     * @name forkJoin\n     * @owner Observable\n     */\n    ForkJoinObservable.create = function () {\n        var sources = [];\n        for (var _i = 0; _i < arguments.length; _i++) {\n            sources[_i - 0] = arguments[_i];\n        }\n        if (sources === null || arguments.length === 0) {\n            return new EmptyObservable_1.EmptyObservable();\n        }\n        var resultSelector = null;\n        if (typeof sources[sources.length - 1] === 'function') {\n            resultSelector = sources.pop();\n        }\n        // if the first and only other argument besides the resultSelector is an array\n        // assume it's been called with `forkJoin([obs1, obs2, obs3], resultSelector)`\n        if (sources.length === 1 && isArray_1.isArray(sources[0])) {\n            sources = sources[0];\n        }\n        if (sources.length === 0) {\n            return new EmptyObservable_1.EmptyObservable();\n        }\n        return new ForkJoinObservable(sources, resultSelector);\n    };\n    ForkJoinObservable.prototype._subscribe = function (subscriber) {\n        return new ForkJoinSubscriber(subscriber, this.sources, this.resultSelector);\n    };\n    return ForkJoinObservable;\n}(Observable_1.Observable));\nexports.ForkJoinObservable = ForkJoinObservable;\n/**\n * We need this JSDoc comment for affecting ESDoc.\n * @ignore\n * @extends {Ignored}\n */\nvar ForkJoinSubscriber = (function (_super) {\n    __extends(ForkJoinSubscriber, _super);\n    function ForkJoinSubscriber(destination, sources, resultSelector) {\n        _super.call(this, destination);\n        this.sources = sources;\n        this.resultSelector = resultSelector;\n        this.completed = 0;\n        this.haveValues = 0;\n        var len = sources.length;\n        this.total = len;\n        this.values = new Array(len);\n        for (var i = 0; i < len; i++) {\n            var source = sources[i];\n            var innerSubscription = subscribeToResult_1.subscribeToResult(this, source, null, i);\n            if (innerSubscription) {\n                innerSubscription.outerIndex = i;\n                this.add(innerSubscription);\n            }\n        }\n    }\n    ForkJoinSubscriber.prototype.notifyNext = function (outerValue, innerValue, outerIndex, innerIndex, innerSub) {\n        this.values[outerIndex] = innerValue;\n        if (!innerSub._hasValue) {\n            innerSub._hasValue = true;\n            this.haveValues++;\n        }\n    };\n    ForkJoinSubscriber.prototype.notifyComplete = function (innerSub) {\n        var destination = this.destination;\n        var _a = this, haveValues = _a.haveValues, resultSelector = _a.resultSelector, values = _a.values;\n        var len = values.length;\n        if (!innerSub._hasValue) {\n            destination.complete();\n            return;\n        }\n        this.completed++;\n        if (this.completed !== len) {\n            return;\n        }\n        if (haveValues === len) {\n            var value = resultSelector ? resultSelector.apply(this, values) : values;\n            destination.next(value);\n        }\n        destination.complete();\n    };\n    return ForkJoinSubscriber;\n}(OuterSubscriber_1.OuterSubscriber));\n//# sourceMappingURL=ForkJoinObservable.js.map"
     },
     {
-      "id": 54,
+      "id": 55,
       "identifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/FromEventObservable.js",
       "name": "./~/rxjs/observable/FromEventObservable.js",
       "index": 34,
       "index2": 31,
       "size": 5989,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2926,14 +2972,14 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/fromEvent.js",
-      "issuerId": 60,
+      "issuerId": 61,
       "issuerName": "./~/rxjs/observable/fromEvent.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 60,
+          "moduleId": 61,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/fromEvent.js",
           "module": "./~/rxjs/observable/fromEvent.js",
           "moduleName": "./~/rxjs/observable/fromEvent.js",
@@ -2947,14 +2993,14 @@
       "source": "\"use strict\";\nvar __extends = (this && this.__extends) || function (d, b) {\n    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];\n    function __() { this.constructor = d; }\n    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n};\nvar Observable_1 = require('../Observable');\nvar tryCatch_1 = require('../util/tryCatch');\nvar isFunction_1 = require('../util/isFunction');\nvar errorObject_1 = require('../util/errorObject');\nvar Subscription_1 = require('../Subscription');\nfunction isNodeStyleEventEmmitter(sourceObj) {\n    return !!sourceObj && typeof sourceObj.addListener === 'function' && typeof sourceObj.removeListener === 'function';\n}\nfunction isJQueryStyleEventEmitter(sourceObj) {\n    return !!sourceObj && typeof sourceObj.on === 'function' && typeof sourceObj.off === 'function';\n}\nfunction isNodeList(sourceObj) {\n    return !!sourceObj && sourceObj.toString() === '[object NodeList]';\n}\nfunction isHTMLCollection(sourceObj) {\n    return !!sourceObj && sourceObj.toString() === '[object HTMLCollection]';\n}\nfunction isEventTarget(sourceObj) {\n    return !!sourceObj && typeof sourceObj.addEventListener === 'function' && typeof sourceObj.removeEventListener === 'function';\n}\n/**\n * We need this JSDoc comment for affecting ESDoc.\n * @extends {Ignored}\n * @hide true\n */\nvar FromEventObservable = (function (_super) {\n    __extends(FromEventObservable, _super);\n    function FromEventObservable(sourceObj, eventName, selector, options) {\n        _super.call(this);\n        this.sourceObj = sourceObj;\n        this.eventName = eventName;\n        this.selector = selector;\n        this.options = options;\n    }\n    /* tslint:enable:max-line-length */\n    /**\n     * Creates an Observable that emits events of a specific type coming from the\n     * given event target.\n     *\n     * <span class=\"informal\">Creates an Observable from DOM events, or Node\n     * EventEmitter events or others.</span>\n     *\n     * <img src=\"./img/fromEvent.png\" width=\"100%\">\n     *\n     * Creates an Observable by attaching an event listener to an \"event target\",\n     * which may be an object with `addEventListener` and `removeEventListener`,\n     * a Node.js EventEmitter, a jQuery style EventEmitter, a NodeList from the\n     * DOM, or an HTMLCollection from the DOM. The event handler is attached when\n     * the output Observable is subscribed, and removed when the Subscription is\n     * unsubscribed.\n     *\n     * @example <caption>Emits clicks happening on the DOM document</caption>\n     * var clicks = Rx.Observable.fromEvent(document, 'click');\n     * clicks.subscribe(x => console.log(x));\n     *\n     * @see {@link from}\n     * @see {@link fromEventPattern}\n     *\n     * @param {EventTargetLike} target The DOMElement, event target, Node.js\n     * EventEmitter, NodeList or HTMLCollection to attach the event handler to.\n     * @param {string} eventName The event name of interest, being emitted by the\n     * `target`.\n     * @param {EventListenerOptions} [options] Options to pass through to addEventListener\n     * @param {SelectorMethodSignature<T>} [selector] An optional function to\n     * post-process results. It takes the arguments from the event handler and\n     * should return a single value.\n     * @return {Observable<T>}\n     * @static true\n     * @name fromEvent\n     * @owner Observable\n     */\n    FromEventObservable.create = function (target, eventName, options, selector) {\n        if (isFunction_1.isFunction(options)) {\n            selector = options;\n            options = undefined;\n        }\n        return new FromEventObservable(target, eventName, selector, options);\n    };\n    FromEventObservable.setupSubscription = function (sourceObj, eventName, handler, subscriber, options) {\n        var unsubscribe;\n        if (isNodeList(sourceObj) || isHTMLCollection(sourceObj)) {\n            for (var i = 0, len = sourceObj.length; i < len; i++) {\n                FromEventObservable.setupSubscription(sourceObj[i], eventName, handler, subscriber, options);\n            }\n        }\n        else if (isEventTarget(sourceObj)) {\n            var source_1 = sourceObj;\n            sourceObj.addEventListener(eventName, handler, options);\n            unsubscribe = function () { return source_1.removeEventListener(eventName, handler); };\n        }\n        else if (isJQueryStyleEventEmitter(sourceObj)) {\n            var source_2 = sourceObj;\n            sourceObj.on(eventName, handler);\n            unsubscribe = function () { return source_2.off(eventName, handler); };\n        }\n        else if (isNodeStyleEventEmmitter(sourceObj)) {\n            var source_3 = sourceObj;\n            sourceObj.addListener(eventName, handler);\n            unsubscribe = function () { return source_3.removeListener(eventName, handler); };\n        }\n        else {\n            throw new TypeError('Invalid event target');\n        }\n        subscriber.add(new Subscription_1.Subscription(unsubscribe));\n    };\n    FromEventObservable.prototype._subscribe = function (subscriber) {\n        var sourceObj = this.sourceObj;\n        var eventName = this.eventName;\n        var options = this.options;\n        var selector = this.selector;\n        var handler = selector ? function () {\n            var args = [];\n            for (var _i = 0; _i < arguments.length; _i++) {\n                args[_i - 0] = arguments[_i];\n            }\n            var result = tryCatch_1.tryCatch(selector).apply(void 0, args);\n            if (result === errorObject_1.errorObject) {\n                subscriber.error(errorObject_1.errorObject.e);\n            }\n            else {\n                subscriber.next(result);\n            }\n        } : function (e) { return subscriber.next(e); };\n        FromEventObservable.setupSubscription(sourceObj, eventName, handler, subscriber, options);\n    };\n    return FromEventObservable;\n}(Observable_1.Observable));\nexports.FromEventObservable = FromEventObservable;\n//# sourceMappingURL=FromEventObservable.js.map"
     },
     {
-      "id": 55,
+      "id": 56,
       "identifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/FromObservable.js",
       "name": "./~/rxjs/observable/FromObservable.js",
       "index": 18,
       "index2": 26,
       "size": 4909,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2963,14 +3009,14 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/from.js",
-      "issuerId": 59,
+      "issuerId": 60,
       "issuerName": "./~/rxjs/observable/from.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 59,
+          "moduleId": 60,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/from.js",
           "module": "./~/rxjs/observable/from.js",
           "moduleName": "./~/rxjs/observable/from.js",
@@ -2984,14 +3030,14 @@
       "source": "\"use strict\";\nvar __extends = (this && this.__extends) || function (d, b) {\n    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];\n    function __() { this.constructor = d; }\n    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n};\nvar isArray_1 = require('../util/isArray');\nvar isPromise_1 = require('../util/isPromise');\nvar PromiseObservable_1 = require('./PromiseObservable');\nvar IteratorObservable_1 = require('./IteratorObservable');\nvar ArrayObservable_1 = require('./ArrayObservable');\nvar ArrayLikeObservable_1 = require('./ArrayLikeObservable');\nvar iterator_1 = require('../symbol/iterator');\nvar Observable_1 = require('../Observable');\nvar observeOn_1 = require('../operator/observeOn');\nvar observable_1 = require('../symbol/observable');\nvar isArrayLike = (function (x) { return x && typeof x.length === 'number'; });\n/**\n * We need this JSDoc comment for affecting ESDoc.\n * @extends {Ignored}\n * @hide true\n */\nvar FromObservable = (function (_super) {\n    __extends(FromObservable, _super);\n    function FromObservable(ish, scheduler) {\n        _super.call(this, null);\n        this.ish = ish;\n        this.scheduler = scheduler;\n    }\n    /**\n     * Creates an Observable from an Array, an array-like object, a Promise, an\n     * iterable object, or an Observable-like object.\n     *\n     * <span class=\"informal\">Converts almost anything to an Observable.</span>\n     *\n     * <img src=\"./img/from.png\" width=\"100%\">\n     *\n     * Convert various other objects and data types into Observables. `from`\n     * converts a Promise or an array-like or an\n     * [iterable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#iterable)\n     * object into an Observable that emits the items in that promise or array or\n     * iterable. A String, in this context, is treated as an array of characters.\n     * Observable-like objects (contains a function named with the ES2015 Symbol\n     * for Observable) can also be converted through this operator.\n     *\n     * @example <caption>Converts an array to an Observable</caption>\n     * var array = [10, 20, 30];\n     * var result = Rx.Observable.from(array);\n     * result.subscribe(x => console.log(x));\n     *\n     * @example <caption>Convert an infinite iterable (from a generator) to an Observable</caption>\n     * function* generateDoubles(seed) {\n     *   var i = seed;\n     *   while (true) {\n     *     yield i;\n     *     i = 2 * i; // double it\n     *   }\n     * }\n     *\n     * var iterator = generateDoubles(3);\n     * var result = Rx.Observable.from(iterator).take(10);\n     * result.subscribe(x => console.log(x));\n     *\n     * @see {@link create}\n     * @see {@link fromEvent}\n     * @see {@link fromEventPattern}\n     * @see {@link fromPromise}\n     *\n     * @param {ObservableInput<T>} ish A subscribable object, a Promise, an\n     * Observable-like, an Array, an iterable or an array-like object to be\n     * converted.\n     * @param {Scheduler} [scheduler] The scheduler on which to schedule the\n     * emissions of values.\n     * @return {Observable<T>} The Observable whose values are originally from the\n     * input object that was converted.\n     * @static true\n     * @name from\n     * @owner Observable\n     */\n    FromObservable.create = function (ish, scheduler) {\n        if (ish != null) {\n            if (typeof ish[observable_1.$$observable] === 'function') {\n                if (ish instanceof Observable_1.Observable && !scheduler) {\n                    return ish;\n                }\n                return new FromObservable(ish, scheduler);\n            }\n            else if (isArray_1.isArray(ish)) {\n                return new ArrayObservable_1.ArrayObservable(ish, scheduler);\n            }\n            else if (isPromise_1.isPromise(ish)) {\n                return new PromiseObservable_1.PromiseObservable(ish, scheduler);\n            }\n            else if (typeof ish[iterator_1.$$iterator] === 'function' || typeof ish === 'string') {\n                return new IteratorObservable_1.IteratorObservable(ish, scheduler);\n            }\n            else if (isArrayLike(ish)) {\n                return new ArrayLikeObservable_1.ArrayLikeObservable(ish, scheduler);\n            }\n        }\n        throw new TypeError((ish !== null && typeof ish || ish) + ' is not observable');\n    };\n    FromObservable.prototype._subscribe = function (subscriber) {\n        var ish = this.ish;\n        var scheduler = this.scheduler;\n        if (scheduler == null) {\n            return ish[observable_1.$$observable]().subscribe(subscriber);\n        }\n        else {\n            return ish[observable_1.$$observable]().subscribe(new observeOn_1.ObserveOnSubscriber(subscriber, scheduler, 0));\n        }\n    };\n    return FromObservable;\n}(Observable_1.Observable));\nexports.FromObservable = FromObservable;\n//# sourceMappingURL=FromObservable.js.map"
     },
     {
-      "id": 56,
+      "id": 57,
       "identifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/IteratorObservable.js",
       "name": "./~/rxjs/observable/IteratorObservable.js",
       "index": 21,
       "index2": 18,
       "size": 5037,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3000,14 +3046,14 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/FromObservable.js",
-      "issuerId": 55,
+      "issuerId": 56,
       "issuerName": "./~/rxjs/observable/FromObservable.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 55,
+          "moduleId": 56,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/FromObservable.js",
           "module": "./~/rxjs/observable/FromObservable.js",
           "moduleName": "./~/rxjs/observable/FromObservable.js",
@@ -3021,14 +3067,14 @@
       "source": "\"use strict\";\nvar __extends = (this && this.__extends) || function (d, b) {\n    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];\n    function __() { this.constructor = d; }\n    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n};\nvar root_1 = require('../util/root');\nvar Observable_1 = require('../Observable');\nvar iterator_1 = require('../symbol/iterator');\n/**\n * We need this JSDoc comment for affecting ESDoc.\n * @extends {Ignored}\n * @hide true\n */\nvar IteratorObservable = (function (_super) {\n    __extends(IteratorObservable, _super);\n    function IteratorObservable(iterator, scheduler) {\n        _super.call(this);\n        this.scheduler = scheduler;\n        if (iterator == null) {\n            throw new Error('iterator cannot be null.');\n        }\n        this.iterator = getIterator(iterator);\n    }\n    IteratorObservable.create = function (iterator, scheduler) {\n        return new IteratorObservable(iterator, scheduler);\n    };\n    IteratorObservable.dispatch = function (state) {\n        var index = state.index, hasError = state.hasError, iterator = state.iterator, subscriber = state.subscriber;\n        if (hasError) {\n            subscriber.error(state.error);\n            return;\n        }\n        var result = iterator.next();\n        if (result.done) {\n            subscriber.complete();\n            return;\n        }\n        subscriber.next(result.value);\n        state.index = index + 1;\n        if (subscriber.closed) {\n            if (typeof iterator.return === 'function') {\n                iterator.return();\n            }\n            return;\n        }\n        this.schedule(state);\n    };\n    IteratorObservable.prototype._subscribe = function (subscriber) {\n        var index = 0;\n        var _a = this, iterator = _a.iterator, scheduler = _a.scheduler;\n        if (scheduler) {\n            return scheduler.schedule(IteratorObservable.dispatch, 0, {\n                index: index, iterator: iterator, subscriber: subscriber\n            });\n        }\n        else {\n            do {\n                var result = iterator.next();\n                if (result.done) {\n                    subscriber.complete();\n                    break;\n                }\n                else {\n                    subscriber.next(result.value);\n                }\n                if (subscriber.closed) {\n                    if (typeof iterator.return === 'function') {\n                        iterator.return();\n                    }\n                    break;\n                }\n            } while (true);\n        }\n    };\n    return IteratorObservable;\n}(Observable_1.Observable));\nexports.IteratorObservable = IteratorObservable;\nvar StringIterator = (function () {\n    function StringIterator(str, idx, len) {\n        if (idx === void 0) { idx = 0; }\n        if (len === void 0) { len = str.length; }\n        this.str = str;\n        this.idx = idx;\n        this.len = len;\n    }\n    StringIterator.prototype[iterator_1.$$iterator] = function () { return (this); };\n    StringIterator.prototype.next = function () {\n        return this.idx < this.len ? {\n            done: false,\n            value: this.str.charAt(this.idx++)\n        } : {\n            done: true,\n            value: undefined\n        };\n    };\n    return StringIterator;\n}());\nvar ArrayIterator = (function () {\n    function ArrayIterator(arr, idx, len) {\n        if (idx === void 0) { idx = 0; }\n        if (len === void 0) { len = toLength(arr); }\n        this.arr = arr;\n        this.idx = idx;\n        this.len = len;\n    }\n    ArrayIterator.prototype[iterator_1.$$iterator] = function () { return this; };\n    ArrayIterator.prototype.next = function () {\n        return this.idx < this.len ? {\n            done: false,\n            value: this.arr[this.idx++]\n        } : {\n            done: true,\n            value: undefined\n        };\n    };\n    return ArrayIterator;\n}());\nfunction getIterator(obj) {\n    var i = obj[iterator_1.$$iterator];\n    if (!i && typeof obj === 'string') {\n        return new StringIterator(obj);\n    }\n    if (!i && obj.length !== undefined) {\n        return new ArrayIterator(obj);\n    }\n    if (!i) {\n        throw new TypeError('object is not iterable');\n    }\n    return obj[iterator_1.$$iterator]();\n}\nvar maxSafeInteger = Math.pow(2, 53) - 1;\nfunction toLength(o) {\n    var len = +o.length;\n    if (isNaN(len)) {\n        return 0;\n    }\n    if (len === 0 || !numberIsFinite(len)) {\n        return len;\n    }\n    len = sign(len) * Math.floor(Math.abs(len));\n    if (len <= 0) {\n        return 0;\n    }\n    if (len > maxSafeInteger) {\n        return maxSafeInteger;\n    }\n    return len;\n}\nfunction numberIsFinite(value) {\n    return typeof value === 'number' && root_1.root.isFinite(value);\n}\nfunction sign(value) {\n    var valueAsNumber = +value;\n    if (valueAsNumber === 0) {\n        return valueAsNumber;\n    }\n    if (isNaN(valueAsNumber)) {\n        return valueAsNumber;\n    }\n    return valueAsNumber < 0 ? -1 : 1;\n}\n//# sourceMappingURL=IteratorObservable.js.map"
     },
     {
-      "id": 57,
+      "id": 58,
       "identifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/PromiseObservable.js",
       "name": "./~/rxjs/observable/PromiseObservable.js",
       "index": 20,
       "index2": 16,
       "size": 4671,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3037,14 +3083,14 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/FromObservable.js",
-      "issuerId": 55,
+      "issuerId": 56,
       "issuerName": "./~/rxjs/observable/FromObservable.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 55,
+          "moduleId": 56,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/FromObservable.js",
           "module": "./~/rxjs/observable/FromObservable.js",
           "moduleName": "./~/rxjs/observable/FromObservable.js",
@@ -3058,14 +3104,14 @@
       "source": "\"use strict\";\nvar __extends = (this && this.__extends) || function (d, b) {\n    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];\n    function __() { this.constructor = d; }\n    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n};\nvar root_1 = require('../util/root');\nvar Observable_1 = require('../Observable');\n/**\n * We need this JSDoc comment for affecting ESDoc.\n * @extends {Ignored}\n * @hide true\n */\nvar PromiseObservable = (function (_super) {\n    __extends(PromiseObservable, _super);\n    function PromiseObservable(promise, scheduler) {\n        _super.call(this);\n        this.promise = promise;\n        this.scheduler = scheduler;\n    }\n    /**\n     * Converts a Promise to an Observable.\n     *\n     * <span class=\"informal\">Returns an Observable that just emits the Promise's\n     * resolved value, then completes.</span>\n     *\n     * Converts an ES2015 Promise or a Promises/A+ spec compliant Promise to an\n     * Observable. If the Promise resolves with a value, the output Observable\n     * emits that resolved value as a `next`, and then completes. If the Promise\n     * is rejected, then the output Observable emits the corresponding Error.\n     *\n     * @example <caption>Convert the Promise returned by Fetch to an Observable</caption>\n     * var result = Rx.Observable.fromPromise(fetch('http://myserver.com/'));\n     * result.subscribe(x => console.log(x), e => console.error(e));\n     *\n     * @see {@link bindCallback}\n     * @see {@link from}\n     *\n     * @param {Promise<T>} promise The promise to be converted.\n     * @param {Scheduler} [scheduler] An optional Scheduler to use for scheduling\n     * the delivery of the resolved value (or the rejection).\n     * @return {Observable<T>} An Observable which wraps the Promise.\n     * @static true\n     * @name fromPromise\n     * @owner Observable\n     */\n    PromiseObservable.create = function (promise, scheduler) {\n        return new PromiseObservable(promise, scheduler);\n    };\n    PromiseObservable.prototype._subscribe = function (subscriber) {\n        var _this = this;\n        var promise = this.promise;\n        var scheduler = this.scheduler;\n        if (scheduler == null) {\n            if (this._isScalar) {\n                if (!subscriber.closed) {\n                    subscriber.next(this.value);\n                    subscriber.complete();\n                }\n            }\n            else {\n                promise.then(function (value) {\n                    _this.value = value;\n                    _this._isScalar = true;\n                    if (!subscriber.closed) {\n                        subscriber.next(value);\n                        subscriber.complete();\n                    }\n                }, function (err) {\n                    if (!subscriber.closed) {\n                        subscriber.error(err);\n                    }\n                })\n                    .then(null, function (err) {\n                    // escape the promise trap, throw unhandled errors\n                    root_1.root.setTimeout(function () { throw err; });\n                });\n            }\n        }\n        else {\n            if (this._isScalar) {\n                if (!subscriber.closed) {\n                    return scheduler.schedule(dispatchNext, 0, { value: this.value, subscriber: subscriber });\n                }\n            }\n            else {\n                promise.then(function (value) {\n                    _this.value = value;\n                    _this._isScalar = true;\n                    if (!subscriber.closed) {\n                        subscriber.add(scheduler.schedule(dispatchNext, 0, { value: value, subscriber: subscriber }));\n                    }\n                }, function (err) {\n                    if (!subscriber.closed) {\n                        subscriber.add(scheduler.schedule(dispatchError, 0, { err: err, subscriber: subscriber }));\n                    }\n                })\n                    .then(null, function (err) {\n                    // escape the promise trap, throw unhandled errors\n                    root_1.root.setTimeout(function () { throw err; });\n                });\n            }\n        }\n    };\n    return PromiseObservable;\n}(Observable_1.Observable));\nexports.PromiseObservable = PromiseObservable;\nfunction dispatchNext(arg) {\n    var value = arg.value, subscriber = arg.subscriber;\n    if (!subscriber.closed) {\n        subscriber.next(value);\n        subscriber.complete();\n    }\n}\nfunction dispatchError(arg) {\n    var err = arg.err, subscriber = arg.subscriber;\n    if (!subscriber.closed) {\n        subscriber.error(err);\n    }\n}\n//# sourceMappingURL=PromiseObservable.js.map"
     },
     {
-      "id": 58,
+      "id": 59,
       "identifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/forkJoin.js",
       "name": "./~/rxjs/observable/forkJoin.js",
       "index": 36,
       "index2": 38,
       "size": 177,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3095,14 +3141,14 @@
       "source": "\"use strict\";\nvar ForkJoinObservable_1 = require('./ForkJoinObservable');\nexports.forkJoin = ForkJoinObservable_1.ForkJoinObservable.create;\n//# sourceMappingURL=forkJoin.js.map"
     },
     {
-      "id": 59,
+      "id": 60,
       "identifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/from.js",
       "name": "./~/rxjs/observable/from.js",
       "index": 17,
       "index2": 27,
       "size": 153,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3132,14 +3178,14 @@
       "source": "\"use strict\";\nvar FromObservable_1 = require('./FromObservable');\nexports.from = FromObservable_1.FromObservable.create;\n//# sourceMappingURL=from.js.map"
     },
     {
-      "id": 60,
+      "id": 61,
       "identifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/fromEvent.js",
       "name": "./~/rxjs/observable/fromEvent.js",
       "index": 33,
       "index2": 32,
       "size": 183,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3169,14 +3215,14 @@
       "source": "\"use strict\";\nvar FromEventObservable_1 = require('./FromEventObservable');\nexports.fromEvent = FromEventObservable_1.FromEventObservable.create;\n//# sourceMappingURL=fromEvent.js.map"
     },
     {
-      "id": 61,
+      "id": 62,
       "identifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/of.js",
       "name": "./~/rxjs/observable/of.js",
       "index": 31,
       "index2": 29,
       "size": 149,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3206,14 +3252,14 @@
       "source": "\"use strict\";\nvar ArrayObservable_1 = require('./ArrayObservable');\nexports.of = ArrayObservable_1.ArrayObservable.of;\n//# sourceMappingURL=of.js.map"
     },
     {
-      "id": 62,
+      "id": 63,
       "identifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/operator/debounceTime.js",
       "name": "./~/rxjs/operator/debounceTime.js",
       "index": 65,
       "index2": 63,
       "size": 4785,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3243,14 +3289,14 @@
       "source": "\"use strict\";\nvar __extends = (this && this.__extends) || function (d, b) {\n    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];\n    function __() { this.constructor = d; }\n    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n};\nvar Subscriber_1 = require('../Subscriber');\nvar async_1 = require('../scheduler/async');\n/**\n * Emits a value from the source Observable only after a particular time span\n * has passed without another source emission.\n *\n * <span class=\"informal\">It's like {@link delay}, but passes only the most\n * recent value from each burst of emissions.</span>\n *\n * <img src=\"./img/debounceTime.png\" width=\"100%\">\n *\n * `debounceTime` delays values emitted by the source Observable, but drops\n * previous pending delayed emissions if a new value arrives on the source\n * Observable. This operator keeps track of the most recent value from the\n * source Observable, and emits that only when `dueTime` enough time has passed\n * without any other value appearing on the source Observable. If a new value\n * appears before `dueTime` silence occurs, the previous value will be dropped\n * and will not be emitted on the output Observable.\n *\n * This is a rate-limiting operator, because it is impossible for more than one\n * value to be emitted in any time window of duration `dueTime`, but it is also\n * a delay-like operator since output emissions do not occur at the same time as\n * they did on the source Observable. Optionally takes a {@link Scheduler} for\n * managing timers.\n *\n * @example <caption>Emit the most recent click after a burst of clicks</caption>\n * var clicks = Rx.Observable.fromEvent(document, 'click');\n * var result = clicks.debounceTime(1000);\n * result.subscribe(x => console.log(x));\n *\n * @see {@link auditTime}\n * @see {@link debounce}\n * @see {@link delay}\n * @see {@link sampleTime}\n * @see {@link throttleTime}\n *\n * @param {number} dueTime The timeout duration in milliseconds (or the time\n * unit determined internally by the optional `scheduler`) for the window of\n * time required to wait for emission silence before emitting the most recent\n * source value.\n * @param {Scheduler} [scheduler=async] The {@link Scheduler} to use for\n * managing the timers that handle the timeout for each value.\n * @return {Observable} An Observable that delays the emissions of the source\n * Observable by the specified `dueTime`, and may drop some values if they occur\n * too frequently.\n * @method debounceTime\n * @owner Observable\n */\nfunction debounceTime(dueTime, scheduler) {\n    if (scheduler === void 0) { scheduler = async_1.async; }\n    return this.lift(new DebounceTimeOperator(dueTime, scheduler));\n}\nexports.debounceTime = debounceTime;\nvar DebounceTimeOperator = (function () {\n    function DebounceTimeOperator(dueTime, scheduler) {\n        this.dueTime = dueTime;\n        this.scheduler = scheduler;\n    }\n    DebounceTimeOperator.prototype.call = function (subscriber, source) {\n        return source._subscribe(new DebounceTimeSubscriber(subscriber, this.dueTime, this.scheduler));\n    };\n    return DebounceTimeOperator;\n}());\n/**\n * We need this JSDoc comment for affecting ESDoc.\n * @ignore\n * @extends {Ignored}\n */\nvar DebounceTimeSubscriber = (function (_super) {\n    __extends(DebounceTimeSubscriber, _super);\n    function DebounceTimeSubscriber(destination, dueTime, scheduler) {\n        _super.call(this, destination);\n        this.dueTime = dueTime;\n        this.scheduler = scheduler;\n        this.debouncedSubscription = null;\n        this.lastValue = null;\n        this.hasValue = false;\n    }\n    DebounceTimeSubscriber.prototype._next = function (value) {\n        this.clearDebounce();\n        this.lastValue = value;\n        this.hasValue = true;\n        this.add(this.debouncedSubscription = this.scheduler.schedule(dispatchNext, this.dueTime, this));\n    };\n    DebounceTimeSubscriber.prototype._complete = function () {\n        this.debouncedNext();\n        this.destination.complete();\n    };\n    DebounceTimeSubscriber.prototype.debouncedNext = function () {\n        this.clearDebounce();\n        if (this.hasValue) {\n            this.destination.next(this.lastValue);\n            this.lastValue = null;\n            this.hasValue = false;\n        }\n    };\n    DebounceTimeSubscriber.prototype.clearDebounce = function () {\n        var debouncedSubscription = this.debouncedSubscription;\n        if (debouncedSubscription !== null) {\n            this.remove(debouncedSubscription);\n            debouncedSubscription.unsubscribe();\n            this.debouncedSubscription = null;\n        }\n    };\n    return DebounceTimeSubscriber;\n}(Subscriber_1.Subscriber));\nfunction dispatchNext(subscriber) {\n    subscriber.debouncedNext();\n}\n//# sourceMappingURL=debounceTime.js.map"
     },
     {
-      "id": 63,
+      "id": 64,
       "identifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/operator/delay.js",
       "name": "./~/rxjs/operator/delay.js",
       "index": 61,
       "index2": 59,
       "size": 5211,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3280,14 +3326,14 @@
       "source": "\"use strict\";\nvar __extends = (this && this.__extends) || function (d, b) {\n    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];\n    function __() { this.constructor = d; }\n    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n};\nvar async_1 = require('../scheduler/async');\nvar isDate_1 = require('../util/isDate');\nvar Subscriber_1 = require('../Subscriber');\nvar Notification_1 = require('../Notification');\n/**\n * Delays the emission of items from the source Observable by a given timeout or\n * until a given Date.\n *\n * <span class=\"informal\">Time shifts each item by some specified amount of\n * milliseconds.</span>\n *\n * <img src=\"./img/delay.png\" width=\"100%\">\n *\n * If the delay argument is a Number, this operator time shifts the source\n * Observable by that amount of time expressed in milliseconds. The relative\n * time intervals between the values are preserved.\n *\n * If the delay argument is a Date, this operator time shifts the start of the\n * Observable execution until the given date occurs.\n *\n * @example <caption>Delay each click by one second</caption>\n * var clicks = Rx.Observable.fromEvent(document, 'click');\n * var delayedClicks = clicks.delay(1000); // each click emitted after 1 second\n * delayedClicks.subscribe(x => console.log(x));\n *\n * @example <caption>Delay all clicks until a future date happens</caption>\n * var clicks = Rx.Observable.fromEvent(document, 'click');\n * var date = new Date('March 15, 2050 12:00:00'); // in the future\n * var delayedClicks = clicks.delay(date); // click emitted only after that date\n * delayedClicks.subscribe(x => console.log(x));\n *\n * @see {@link debounceTime}\n * @see {@link delayWhen}\n *\n * @param {number|Date} delay The delay duration in milliseconds (a `number`) or\n * a `Date` until which the emission of the source items is delayed.\n * @param {Scheduler} [scheduler=async] The Scheduler to use for\n * managing the timers that handle the time-shift for each item.\n * @return {Observable} An Observable that delays the emissions of the source\n * Observable by the specified timeout or Date.\n * @method delay\n * @owner Observable\n */\nfunction delay(delay, scheduler) {\n    if (scheduler === void 0) { scheduler = async_1.async; }\n    var absoluteDelay = isDate_1.isDate(delay);\n    var delayFor = absoluteDelay ? (+delay - scheduler.now()) : Math.abs(delay);\n    return this.lift(new DelayOperator(delayFor, scheduler));\n}\nexports.delay = delay;\nvar DelayOperator = (function () {\n    function DelayOperator(delay, scheduler) {\n        this.delay = delay;\n        this.scheduler = scheduler;\n    }\n    DelayOperator.prototype.call = function (subscriber, source) {\n        return source._subscribe(new DelaySubscriber(subscriber, this.delay, this.scheduler));\n    };\n    return DelayOperator;\n}());\n/**\n * We need this JSDoc comment for affecting ESDoc.\n * @ignore\n * @extends {Ignored}\n */\nvar DelaySubscriber = (function (_super) {\n    __extends(DelaySubscriber, _super);\n    function DelaySubscriber(destination, delay, scheduler) {\n        _super.call(this, destination);\n        this.delay = delay;\n        this.scheduler = scheduler;\n        this.queue = [];\n        this.active = false;\n        this.errored = false;\n    }\n    DelaySubscriber.dispatch = function (state) {\n        var source = state.source;\n        var queue = source.queue;\n        var scheduler = state.scheduler;\n        var destination = state.destination;\n        while (queue.length > 0 && (queue[0].time - scheduler.now()) <= 0) {\n            queue.shift().notification.observe(destination);\n        }\n        if (queue.length > 0) {\n            var delay_1 = Math.max(0, queue[0].time - scheduler.now());\n            this.schedule(state, delay_1);\n        }\n        else {\n            source.active = false;\n        }\n    };\n    DelaySubscriber.prototype._schedule = function (scheduler) {\n        this.active = true;\n        this.add(scheduler.schedule(DelaySubscriber.dispatch, this.delay, {\n            source: this, destination: this.destination, scheduler: scheduler\n        }));\n    };\n    DelaySubscriber.prototype.scheduleNotification = function (notification) {\n        if (this.errored === true) {\n            return;\n        }\n        var scheduler = this.scheduler;\n        var message = new DelayMessage(scheduler.now() + this.delay, notification);\n        this.queue.push(message);\n        if (this.active === false) {\n            this._schedule(scheduler);\n        }\n    };\n    DelaySubscriber.prototype._next = function (value) {\n        this.scheduleNotification(Notification_1.Notification.createNext(value));\n    };\n    DelaySubscriber.prototype._error = function (err) {\n        this.errored = true;\n        this.queue = [];\n        this.destination.error(err);\n    };\n    DelaySubscriber.prototype._complete = function () {\n        this.scheduleNotification(Notification_1.Notification.createComplete());\n    };\n    return DelaySubscriber;\n}(Subscriber_1.Subscriber));\nvar DelayMessage = (function () {\n    function DelayMessage(time, notification) {\n        this.time = time;\n        this.notification = notification;\n    }\n    return DelayMessage;\n}());\n//# sourceMappingURL=delay.js.map"
     },
     {
-      "id": 64,
+      "id": 65,
       "identifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/operator/do.js",
       "name": "./~/rxjs/operator/do.js",
       "index": 46,
       "index2": 44,
       "size": 2510,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3317,14 +3363,14 @@
       "source": "\"use strict\";\nvar __extends = (this && this.__extends) || function (d, b) {\n    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];\n    function __() { this.constructor = d; }\n    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n};\nvar Subscriber_1 = require('../Subscriber');\n/* tslint:disable:max-line-length */\nfunction _do(nextOrObserver, error, complete) {\n    return this.lift(new DoOperator(nextOrObserver, error, complete));\n}\nexports._do = _do;\nvar DoOperator = (function () {\n    function DoOperator(nextOrObserver, error, complete) {\n        this.nextOrObserver = nextOrObserver;\n        this.error = error;\n        this.complete = complete;\n    }\n    DoOperator.prototype.call = function (subscriber, source) {\n        return source._subscribe(new DoSubscriber(subscriber, this.nextOrObserver, this.error, this.complete));\n    };\n    return DoOperator;\n}());\n/**\n * We need this JSDoc comment for affecting ESDoc.\n * @ignore\n * @extends {Ignored}\n */\nvar DoSubscriber = (function (_super) {\n    __extends(DoSubscriber, _super);\n    function DoSubscriber(destination, nextOrObserver, error, complete) {\n        _super.call(this, destination);\n        var safeSubscriber = new Subscriber_1.Subscriber(nextOrObserver, error, complete);\n        safeSubscriber.syncErrorThrowable = true;\n        this.add(safeSubscriber);\n        this.safeSubscriber = safeSubscriber;\n    }\n    DoSubscriber.prototype._next = function (value) {\n        var safeSubscriber = this.safeSubscriber;\n        safeSubscriber.next(value);\n        if (safeSubscriber.syncErrorThrown) {\n            this.destination.error(safeSubscriber.syncErrorValue);\n        }\n        else {\n            this.destination.next(value);\n        }\n    };\n    DoSubscriber.prototype._error = function (err) {\n        var safeSubscriber = this.safeSubscriber;\n        safeSubscriber.error(err);\n        if (safeSubscriber.syncErrorThrown) {\n            this.destination.error(safeSubscriber.syncErrorValue);\n        }\n        else {\n            this.destination.error(err);\n        }\n    };\n    DoSubscriber.prototype._complete = function () {\n        var safeSubscriber = this.safeSubscriber;\n        safeSubscriber.complete();\n        if (safeSubscriber.syncErrorThrown) {\n            this.destination.error(safeSubscriber.syncErrorValue);\n        }\n        else {\n            this.destination.complete();\n        }\n    };\n    return DoSubscriber;\n}(Subscriber_1.Subscriber));\n//# sourceMappingURL=do.js.map"
     },
     {
-      "id": 65,
+      "id": 66,
       "identifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/operator/filter.js",
       "name": "./~/rxjs/operator/filter.js",
       "index": 44,
       "index2": 42,
       "size": 1840,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3354,14 +3400,14 @@
       "source": "\"use strict\";\nvar __extends = (this && this.__extends) || function (d, b) {\n    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];\n    function __() { this.constructor = d; }\n    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n};\nvar Subscriber_1 = require('../Subscriber');\n/* tslint:disable:max-line-length */\nfunction filter(predicate, thisArg) {\n    return this.lift(new FilterOperator(predicate, thisArg));\n}\nexports.filter = filter;\nvar FilterOperator = (function () {\n    function FilterOperator(predicate, thisArg) {\n        this.predicate = predicate;\n        this.thisArg = thisArg;\n    }\n    FilterOperator.prototype.call = function (subscriber, source) {\n        return source._subscribe(new FilterSubscriber(subscriber, this.predicate, this.thisArg));\n    };\n    return FilterOperator;\n}());\n/**\n * We need this JSDoc comment for affecting ESDoc.\n * @ignore\n * @extends {Ignored}\n */\nvar FilterSubscriber = (function (_super) {\n    __extends(FilterSubscriber, _super);\n    function FilterSubscriber(destination, predicate, thisArg) {\n        _super.call(this, destination);\n        this.predicate = predicate;\n        this.thisArg = thisArg;\n        this.count = 0;\n        this.predicate = predicate;\n    }\n    // the try catch block below is left specifically for\n    // optimization and perf reasons. a tryCatcher is not necessary here.\n    FilterSubscriber.prototype._next = function (value) {\n        var result;\n        try {\n            result = this.predicate.call(this.thisArg, value, this.count++);\n        }\n        catch (err) {\n            this.destination.error(err);\n            return;\n        }\n        if (result) {\n            this.destination.next(value);\n        }\n    };\n    return FilterSubscriber;\n}(Subscriber_1.Subscriber));\n//# sourceMappingURL=filter.js.map"
     },
     {
-      "id": 66,
+      "id": 67,
       "identifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/operator/map.js",
       "name": "./~/rxjs/operator/map.js",
       "index": 42,
       "index2": 40,
       "size": 3296,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3391,14 +3437,14 @@
       "source": "\"use strict\";\nvar __extends = (this && this.__extends) || function (d, b) {\n    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];\n    function __() { this.constructor = d; }\n    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n};\nvar Subscriber_1 = require('../Subscriber');\n/**\n * Applies a given `project` function to each value emitted by the source\n * Observable, and emits the resulting values as an Observable.\n *\n * <span class=\"informal\">Like [Array.prototype.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map),\n * it passes each source value through a transformation function to get\n * corresponding output values.</span>\n *\n * <img src=\"./img/map.png\" width=\"100%\">\n *\n * Similar to the well known `Array.prototype.map` function, this operator\n * applies a projection to each value and emits that projection in the output\n * Observable.\n *\n * @example <caption>Map every every click to the clientX position of that click</caption>\n * var clicks = Rx.Observable.fromEvent(document, 'click');\n * var positions = clicks.map(ev => ev.clientX);\n * positions.subscribe(x => console.log(x));\n *\n * @see {@link mapTo}\n * @see {@link pluck}\n *\n * @param {function(value: T, index: number): R} project The function to apply\n * to each `value` emitted by the source Observable. The `index` parameter is\n * the number `i` for the i-th emission that has happened since the\n * subscription, starting from the number `0`.\n * @param {any} [thisArg] An optional argument to define what `this` is in the\n * `project` function.\n * @return {Observable<R>} An Observable that emits the values from the source\n * Observable transformed by the given `project` function.\n * @method map\n * @owner Observable\n */\nfunction map(project, thisArg) {\n    if (typeof project !== 'function') {\n        throw new TypeError('argument is not a function. Are you looking for `mapTo()`?');\n    }\n    return this.lift(new MapOperator(project, thisArg));\n}\nexports.map = map;\nvar MapOperator = (function () {\n    function MapOperator(project, thisArg) {\n        this.project = project;\n        this.thisArg = thisArg;\n    }\n    MapOperator.prototype.call = function (subscriber, source) {\n        return source._subscribe(new MapSubscriber(subscriber, this.project, this.thisArg));\n    };\n    return MapOperator;\n}());\nexports.MapOperator = MapOperator;\n/**\n * We need this JSDoc comment for affecting ESDoc.\n * @ignore\n * @extends {Ignored}\n */\nvar MapSubscriber = (function (_super) {\n    __extends(MapSubscriber, _super);\n    function MapSubscriber(destination, project, thisArg) {\n        _super.call(this, destination);\n        this.project = project;\n        this.count = 0;\n        this.thisArg = thisArg || this;\n    }\n    // NOTE: This looks unoptimized, but it's actually purposefully NOT\n    // using try/catch optimizations.\n    MapSubscriber.prototype._next = function (value) {\n        var result;\n        try {\n            result = this.project.call(this.thisArg, value, this.count++);\n        }\n        catch (err) {\n            this.destination.error(err);\n            return;\n        }\n        this.destination.next(result);\n    };\n    return MapSubscriber;\n}(Subscriber_1.Subscriber));\n//# sourceMappingURL=map.js.map"
     },
     {
-      "id": 67,
+      "id": 68,
       "identifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/operator/mergeMap.js",
       "name": "./~/rxjs/operator/mergeMap.js",
       "index": 48,
       "index2": 46,
       "size": 4175,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3428,14 +3474,14 @@
       "source": "\"use strict\";\nvar __extends = (this && this.__extends) || function (d, b) {\n    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];\n    function __() { this.constructor = d; }\n    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n};\nvar subscribeToResult_1 = require('../util/subscribeToResult');\nvar OuterSubscriber_1 = require('../OuterSubscriber');\n/* tslint:disable:max-line-length */\nfunction mergeMap(project, resultSelector, concurrent) {\n    if (concurrent === void 0) { concurrent = Number.POSITIVE_INFINITY; }\n    if (typeof resultSelector === 'number') {\n        concurrent = resultSelector;\n        resultSelector = null;\n    }\n    return this.lift(new MergeMapOperator(project, resultSelector, concurrent));\n}\nexports.mergeMap = mergeMap;\nvar MergeMapOperator = (function () {\n    function MergeMapOperator(project, resultSelector, concurrent) {\n        if (concurrent === void 0) { concurrent = Number.POSITIVE_INFINITY; }\n        this.project = project;\n        this.resultSelector = resultSelector;\n        this.concurrent = concurrent;\n    }\n    MergeMapOperator.prototype.call = function (observer, source) {\n        return source._subscribe(new MergeMapSubscriber(observer, this.project, this.resultSelector, this.concurrent));\n    };\n    return MergeMapOperator;\n}());\nexports.MergeMapOperator = MergeMapOperator;\n/**\n * We need this JSDoc comment for affecting ESDoc.\n * @ignore\n * @extends {Ignored}\n */\nvar MergeMapSubscriber = (function (_super) {\n    __extends(MergeMapSubscriber, _super);\n    function MergeMapSubscriber(destination, project, resultSelector, concurrent) {\n        if (concurrent === void 0) { concurrent = Number.POSITIVE_INFINITY; }\n        _super.call(this, destination);\n        this.project = project;\n        this.resultSelector = resultSelector;\n        this.concurrent = concurrent;\n        this.hasCompleted = false;\n        this.buffer = [];\n        this.active = 0;\n        this.index = 0;\n    }\n    MergeMapSubscriber.prototype._next = function (value) {\n        if (this.active < this.concurrent) {\n            this._tryNext(value);\n        }\n        else {\n            this.buffer.push(value);\n        }\n    };\n    MergeMapSubscriber.prototype._tryNext = function (value) {\n        var result;\n        var index = this.index++;\n        try {\n            result = this.project(value, index);\n        }\n        catch (err) {\n            this.destination.error(err);\n            return;\n        }\n        this.active++;\n        this._innerSub(result, value, index);\n    };\n    MergeMapSubscriber.prototype._innerSub = function (ish, value, index) {\n        this.add(subscribeToResult_1.subscribeToResult(this, ish, value, index));\n    };\n    MergeMapSubscriber.prototype._complete = function () {\n        this.hasCompleted = true;\n        if (this.active === 0 && this.buffer.length === 0) {\n            this.destination.complete();\n        }\n    };\n    MergeMapSubscriber.prototype.notifyNext = function (outerValue, innerValue, outerIndex, innerIndex, innerSub) {\n        if (this.resultSelector) {\n            this._notifyResultSelector(outerValue, innerValue, outerIndex, innerIndex);\n        }\n        else {\n            this.destination.next(innerValue);\n        }\n    };\n    MergeMapSubscriber.prototype._notifyResultSelector = function (outerValue, innerValue, outerIndex, innerIndex) {\n        var result;\n        try {\n            result = this.resultSelector(outerValue, innerValue, outerIndex, innerIndex);\n        }\n        catch (err) {\n            this.destination.error(err);\n            return;\n        }\n        this.destination.next(result);\n    };\n    MergeMapSubscriber.prototype.notifyComplete = function (innerSub) {\n        var buffer = this.buffer;\n        this.remove(innerSub);\n        this.active--;\n        if (buffer.length > 0) {\n            this._next(buffer.shift());\n        }\n        else if (this.active === 0 && this.hasCompleted) {\n            this.destination.complete();\n        }\n    };\n    return MergeMapSubscriber;\n}(OuterSubscriber_1.OuterSubscriber));\nexports.MergeMapSubscriber = MergeMapSubscriber;\n//# sourceMappingURL=mergeMap.js.map"
     },
     {
-      "id": 68,
+      "id": 69,
       "identifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/operator/observeOn.js",
       "name": "./~/rxjs/operator/observeOn.js",
       "index": 28,
       "index2": 25,
       "size": 2837,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3444,14 +3490,14 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/FromObservable.js",
-      "issuerId": 55,
+      "issuerId": 56,
       "issuerName": "./~/rxjs/observable/FromObservable.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 55,
+          "moduleId": 56,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/observable/FromObservable.js",
           "module": "./~/rxjs/observable/FromObservable.js",
           "moduleName": "./~/rxjs/observable/FromObservable.js",
@@ -3465,14 +3511,14 @@
       "source": "\"use strict\";\nvar __extends = (this && this.__extends) || function (d, b) {\n    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];\n    function __() { this.constructor = d; }\n    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n};\nvar Subscriber_1 = require('../Subscriber');\nvar Notification_1 = require('../Notification');\n/**\n * @see {@link Notification}\n *\n * @param scheduler\n * @param delay\n * @return {Observable<R>|WebSocketSubject<T>|Observable<T>}\n * @method observeOn\n * @owner Observable\n */\nfunction observeOn(scheduler, delay) {\n    if (delay === void 0) { delay = 0; }\n    return this.lift(new ObserveOnOperator(scheduler, delay));\n}\nexports.observeOn = observeOn;\nvar ObserveOnOperator = (function () {\n    function ObserveOnOperator(scheduler, delay) {\n        if (delay === void 0) { delay = 0; }\n        this.scheduler = scheduler;\n        this.delay = delay;\n    }\n    ObserveOnOperator.prototype.call = function (subscriber, source) {\n        return source._subscribe(new ObserveOnSubscriber(subscriber, this.scheduler, this.delay));\n    };\n    return ObserveOnOperator;\n}());\nexports.ObserveOnOperator = ObserveOnOperator;\n/**\n * We need this JSDoc comment for affecting ESDoc.\n * @ignore\n * @extends {Ignored}\n */\nvar ObserveOnSubscriber = (function (_super) {\n    __extends(ObserveOnSubscriber, _super);\n    function ObserveOnSubscriber(destination, scheduler, delay) {\n        if (delay === void 0) { delay = 0; }\n        _super.call(this, destination);\n        this.scheduler = scheduler;\n        this.delay = delay;\n    }\n    ObserveOnSubscriber.dispatch = function (arg) {\n        var notification = arg.notification, destination = arg.destination;\n        notification.observe(destination);\n    };\n    ObserveOnSubscriber.prototype.scheduleMessage = function (notification) {\n        this.add(this.scheduler.schedule(ObserveOnSubscriber.dispatch, this.delay, new ObserveOnMessage(notification, this.destination)));\n    };\n    ObserveOnSubscriber.prototype._next = function (value) {\n        this.scheduleMessage(Notification_1.Notification.createNext(value));\n    };\n    ObserveOnSubscriber.prototype._error = function (err) {\n        this.scheduleMessage(Notification_1.Notification.createError(err));\n    };\n    ObserveOnSubscriber.prototype._complete = function () {\n        this.scheduleMessage(Notification_1.Notification.createComplete());\n    };\n    return ObserveOnSubscriber;\n}(Subscriber_1.Subscriber));\nexports.ObserveOnSubscriber = ObserveOnSubscriber;\nvar ObserveOnMessage = (function () {\n    function ObserveOnMessage(notification, destination) {\n        this.notification = notification;\n        this.destination = destination;\n    }\n    return ObserveOnMessage;\n}());\nexports.ObserveOnMessage = ObserveOnMessage;\n//# sourceMappingURL=observeOn.js.map"
     },
     {
-      "id": 69,
+      "id": 70,
       "identifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/operator/retry.js",
       "name": "./~/rxjs/operator/retry.js",
       "index": 50,
       "index2": 48,
       "size": 2733,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3502,14 +3548,14 @@
       "source": "\"use strict\";\nvar __extends = (this && this.__extends) || function (d, b) {\n    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];\n    function __() { this.constructor = d; }\n    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n};\nvar Subscriber_1 = require('../Subscriber');\n/**\n * Returns an Observable that mirrors the source Observable, resubscribing to it if it calls `error` and the\n * predicate returns true for that specific exception and retry count.\n * If the source Observable calls `error`, this method will resubscribe to the source Observable for a maximum of\n * count resubscriptions (given as a number parameter) rather than propagating the `error` call.\n *\n * <img src=\"./img/retry.png\" width=\"100%\">\n *\n * Any and all items emitted by the source Observable will be emitted by the resulting Observable, even those emitted\n * during failed subscriptions. For example, if an Observable fails at first but emits [1, 2] then succeeds the second\n * time and emits: [1, 2, 3, 4, 5] then the complete stream of emissions and notifications\n * would be: [1, 2, 1, 2, 3, 4, 5, `complete`].\n * @param {number} number of retry attempts before failing.\n * @return {Observable} the source Observable modified with the retry logic.\n * @method retry\n * @owner Observable\n */\nfunction retry(count) {\n    if (count === void 0) { count = -1; }\n    return this.lift(new RetryOperator(count, this));\n}\nexports.retry = retry;\nvar RetryOperator = (function () {\n    function RetryOperator(count, source) {\n        this.count = count;\n        this.source = source;\n    }\n    RetryOperator.prototype.call = function (subscriber, source) {\n        return source._subscribe(new RetrySubscriber(subscriber, this.count, this.source));\n    };\n    return RetryOperator;\n}());\n/**\n * We need this JSDoc comment for affecting ESDoc.\n * @ignore\n * @extends {Ignored}\n */\nvar RetrySubscriber = (function (_super) {\n    __extends(RetrySubscriber, _super);\n    function RetrySubscriber(destination, count, source) {\n        _super.call(this, destination);\n        this.count = count;\n        this.source = source;\n    }\n    RetrySubscriber.prototype.error = function (err) {\n        if (!this.isStopped) {\n            var _a = this, source = _a.source, count = _a.count;\n            if (count === 0) {\n                return _super.prototype.error.call(this, err);\n            }\n            else if (count > -1) {\n                this.count = count - 1;\n            }\n            this.unsubscribe();\n            this.isStopped = false;\n            this.closed = false;\n            source.subscribe(this);\n        }\n    };\n    return RetrySubscriber;\n}(Subscriber_1.Subscriber));\n//# sourceMappingURL=retry.js.map"
     },
     {
-      "id": 70,
+      "id": 71,
       "identifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/operator/throttleTime.js",
       "name": "./~/rxjs/operator/throttleTime.js",
       "index": 63,
       "index2": 61,
       "size": 3861,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3539,14 +3585,14 @@
       "source": "\"use strict\";\nvar __extends = (this && this.__extends) || function (d, b) {\n    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];\n    function __() { this.constructor = d; }\n    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n};\nvar Subscriber_1 = require('../Subscriber');\nvar async_1 = require('../scheduler/async');\n/**\n * Emits a value from the source Observable, then ignores subsequent source\n * values for `duration` milliseconds, then repeats this process.\n *\n * <span class=\"informal\">Lets a value pass, then ignores source values for the\n * next `duration` milliseconds.</span>\n *\n * <img src=\"./img/throttleTime.png\" width=\"100%\">\n *\n * `throttleTime` emits the source Observable values on the output Observable\n * when its internal timer is disabled, and ignores source values when the timer\n * is enabled. Initially, the timer is disabled. As soon as the first source\n * value arrives, it is forwarded to the output Observable, and then the timer\n * is enabled. After `duration` milliseconds (or the time unit determined\n * internally by the optional `scheduler`) has passed, the timer is disabled,\n * and this process repeats for the next source value. Optionally takes a\n * {@link Scheduler} for managing timers.\n *\n * @example <caption>Emit clicks at a rate of at most one click per second</caption>\n * var clicks = Rx.Observable.fromEvent(document, 'click');\n * var result = clicks.throttleTime(1000);\n * result.subscribe(x => console.log(x));\n *\n * @see {@link auditTime}\n * @see {@link debounceTime}\n * @see {@link delay}\n * @see {@link sampleTime}\n * @see {@link throttle}\n *\n * @param {number} duration Time to wait before emitting another value after\n * emitting the last value, measured in milliseconds or the time unit determined\n * internally by the optional `scheduler`.\n * @param {Scheduler} [scheduler=async] The {@link Scheduler} to use for\n * managing the timers that handle the sampling.\n * @return {Observable<T>} An Observable that performs the throttle operation to\n * limit the rate of emissions from the source.\n * @method throttleTime\n * @owner Observable\n */\nfunction throttleTime(duration, scheduler) {\n    if (scheduler === void 0) { scheduler = async_1.async; }\n    return this.lift(new ThrottleTimeOperator(duration, scheduler));\n}\nexports.throttleTime = throttleTime;\nvar ThrottleTimeOperator = (function () {\n    function ThrottleTimeOperator(duration, scheduler) {\n        this.duration = duration;\n        this.scheduler = scheduler;\n    }\n    ThrottleTimeOperator.prototype.call = function (subscriber, source) {\n        return source._subscribe(new ThrottleTimeSubscriber(subscriber, this.duration, this.scheduler));\n    };\n    return ThrottleTimeOperator;\n}());\n/**\n * We need this JSDoc comment for affecting ESDoc.\n * @ignore\n * @extends {Ignored}\n */\nvar ThrottleTimeSubscriber = (function (_super) {\n    __extends(ThrottleTimeSubscriber, _super);\n    function ThrottleTimeSubscriber(destination, duration, scheduler) {\n        _super.call(this, destination);\n        this.duration = duration;\n        this.scheduler = scheduler;\n    }\n    ThrottleTimeSubscriber.prototype._next = function (value) {\n        if (!this.throttled) {\n            this.add(this.throttled = this.scheduler.schedule(dispatchNext, this.duration, { subscriber: this }));\n            this.destination.next(value);\n        }\n    };\n    ThrottleTimeSubscriber.prototype.clearThrottle = function () {\n        var throttled = this.throttled;\n        if (throttled) {\n            throttled.unsubscribe();\n            this.remove(throttled);\n            this.throttled = null;\n        }\n    };\n    return ThrottleTimeSubscriber;\n}(Subscriber_1.Subscriber));\nfunction dispatchNext(arg) {\n    var subscriber = arg.subscriber;\n    subscriber.clearThrottle();\n}\n//# sourceMappingURL=throttleTime.js.map"
     },
     {
-      "id": 71,
+      "id": 72,
       "identifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/operator/timeout.js",
       "name": "./~/rxjs/operator/timeout.js",
       "index": 52,
       "index2": 57,
       "size": 3859,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3576,14 +3622,14 @@
       "source": "\"use strict\";\nvar __extends = (this && this.__extends) || function (d, b) {\n    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];\n    function __() { this.constructor = d; }\n    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n};\nvar async_1 = require('../scheduler/async');\nvar isDate_1 = require('../util/isDate');\nvar Subscriber_1 = require('../Subscriber');\nvar TimeoutError_1 = require('../util/TimeoutError');\n/**\n * @param due\n * @param errorToSend\n * @param scheduler\n * @return {Observable<R>|WebSocketSubject<T>|Observable<T>}\n * @method timeout\n * @owner Observable\n */\nfunction timeout(due, errorToSend, scheduler) {\n    if (errorToSend === void 0) { errorToSend = null; }\n    if (scheduler === void 0) { scheduler = async_1.async; }\n    var absoluteTimeout = isDate_1.isDate(due);\n    var waitFor = absoluteTimeout ? (+due - scheduler.now()) : Math.abs(due);\n    return this.lift(new TimeoutOperator(waitFor, absoluteTimeout, errorToSend, scheduler));\n}\nexports.timeout = timeout;\nvar TimeoutOperator = (function () {\n    function TimeoutOperator(waitFor, absoluteTimeout, errorToSend, scheduler) {\n        this.waitFor = waitFor;\n        this.absoluteTimeout = absoluteTimeout;\n        this.errorToSend = errorToSend;\n        this.scheduler = scheduler;\n    }\n    TimeoutOperator.prototype.call = function (subscriber, source) {\n        return source._subscribe(new TimeoutSubscriber(subscriber, this.absoluteTimeout, this.waitFor, this.errorToSend, this.scheduler));\n    };\n    return TimeoutOperator;\n}());\n/**\n * We need this JSDoc comment for affecting ESDoc.\n * @ignore\n * @extends {Ignored}\n */\nvar TimeoutSubscriber = (function (_super) {\n    __extends(TimeoutSubscriber, _super);\n    function TimeoutSubscriber(destination, absoluteTimeout, waitFor, errorToSend, scheduler) {\n        _super.call(this, destination);\n        this.absoluteTimeout = absoluteTimeout;\n        this.waitFor = waitFor;\n        this.errorToSend = errorToSend;\n        this.scheduler = scheduler;\n        this.index = 0;\n        this._previousIndex = 0;\n        this._hasCompleted = false;\n        this.scheduleTimeout();\n    }\n    Object.defineProperty(TimeoutSubscriber.prototype, \"previousIndex\", {\n        get: function () {\n            return this._previousIndex;\n        },\n        enumerable: true,\n        configurable: true\n    });\n    Object.defineProperty(TimeoutSubscriber.prototype, \"hasCompleted\", {\n        get: function () {\n            return this._hasCompleted;\n        },\n        enumerable: true,\n        configurable: true\n    });\n    TimeoutSubscriber.dispatchTimeout = function (state) {\n        var source = state.subscriber;\n        var currentIndex = state.index;\n        if (!source.hasCompleted && source.previousIndex === currentIndex) {\n            source.notifyTimeout();\n        }\n    };\n    TimeoutSubscriber.prototype.scheduleTimeout = function () {\n        var currentIndex = this.index;\n        this.scheduler.schedule(TimeoutSubscriber.dispatchTimeout, this.waitFor, { subscriber: this, index: currentIndex });\n        this.index++;\n        this._previousIndex = currentIndex;\n    };\n    TimeoutSubscriber.prototype._next = function (value) {\n        this.destination.next(value);\n        if (!this.absoluteTimeout) {\n            this.scheduleTimeout();\n        }\n    };\n    TimeoutSubscriber.prototype._error = function (err) {\n        this.destination.error(err);\n        this._hasCompleted = true;\n    };\n    TimeoutSubscriber.prototype._complete = function () {\n        this.destination.complete();\n        this._hasCompleted = true;\n    };\n    TimeoutSubscriber.prototype.notifyTimeout = function () {\n        this.error(this.errorToSend || new TimeoutError_1.TimeoutError());\n    };\n    return TimeoutSubscriber;\n}(Subscriber_1.Subscriber));\n//# sourceMappingURL=timeout.js.map"
     },
     {
-      "id": 72,
+      "id": 73,
       "identifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/scheduler/Action.js",
       "name": "./~/rxjs/scheduler/Action.js",
       "index": 55,
       "index2": 50,
       "size": 1638,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3592,14 +3638,14 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/scheduler/AsyncAction.js",
-      "issuerId": 73,
+      "issuerId": 74,
       "issuerName": "./~/rxjs/scheduler/AsyncAction.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 73,
+          "moduleId": 74,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/scheduler/AsyncAction.js",
           "module": "./~/rxjs/scheduler/AsyncAction.js",
           "moduleName": "./~/rxjs/scheduler/AsyncAction.js",
@@ -3613,14 +3659,14 @@
       "source": "\"use strict\";\nvar __extends = (this && this.__extends) || function (d, b) {\n    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];\n    function __() { this.constructor = d; }\n    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n};\nvar Subscription_1 = require('../Subscription');\n/**\n * A unit of work to be executed in a {@link Scheduler}. An action is typically\n * created from within a Scheduler and an RxJS user does not need to concern\n * themselves about creating and manipulating an Action.\n *\n * ```ts\n * class Action<T> extends Subscription {\n *   new (scheduler: Scheduler, work: (state?: T) => void);\n *   schedule(state?: T, delay: number = 0): Subscription;\n * }\n * ```\n *\n * @class Action<T>\n */\nvar Action = (function (_super) {\n    __extends(Action, _super);\n    function Action(scheduler, work) {\n        _super.call(this);\n    }\n    /**\n     * Schedules this action on its parent Scheduler for execution. May be passed\n     * some context object, `state`. May happen at some point in the future,\n     * according to the `delay` parameter, if specified.\n     * @param {T} [state] Some contextual data that the `work` function uses when\n     * called by the Scheduler.\n     * @param {number} [delay] Time to wait before executing the work, where the\n     * time unit is implicit and defined by the Scheduler.\n     * @return {void}\n     */\n    Action.prototype.schedule = function (state, delay) {\n        if (delay === void 0) { delay = 0; }\n        return this;\n    };\n    return Action;\n}(Subscription_1.Subscription));\nexports.Action = Action;\n//# sourceMappingURL=Action.js.map"
     },
     {
-      "id": 73,
+      "id": 74,
       "identifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/scheduler/AsyncAction.js",
       "name": "./~/rxjs/scheduler/AsyncAction.js",
       "index": 54,
       "index2": 51,
       "size": 5626,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3650,14 +3696,14 @@
       "source": "\"use strict\";\nvar __extends = (this && this.__extends) || function (d, b) {\n    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];\n    function __() { this.constructor = d; }\n    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n};\nvar root_1 = require('../util/root');\nvar Action_1 = require('./Action');\n/**\n * We need this JSDoc comment for affecting ESDoc.\n * @ignore\n * @extends {Ignored}\n */\nvar AsyncAction = (function (_super) {\n    __extends(AsyncAction, _super);\n    function AsyncAction(scheduler, work) {\n        _super.call(this, scheduler, work);\n        this.scheduler = scheduler;\n        this.work = work;\n        this.pending = false;\n    }\n    AsyncAction.prototype.schedule = function (state, delay) {\n        if (delay === void 0) { delay = 0; }\n        if (this.closed) {\n            return this;\n        }\n        // Always replace the current state with the new state.\n        this.state = state;\n        // Set the pending flag indicating that this action has been scheduled, or\n        // has recursively rescheduled itself.\n        this.pending = true;\n        var id = this.id;\n        var scheduler = this.scheduler;\n        //\n        // Important implementation note:\n        //\n        // Actions only execute once by default, unless rescheduled from within the\n        // scheduled callback. This allows us to implement single and repeat\n        // actions via the same code path, without adding API surface area, as well\n        // as mimic traditional recursion but across asynchronous boundaries.\n        //\n        // However, JS runtimes and timers distinguish between intervals achieved by\n        // serial `setTimeout` calls vs. a single `setInterval` call. An interval of\n        // serial `setTimeout` calls can be individually delayed, which delays\n        // scheduling the next `setTimeout`, and so on. `setInterval` attempts to\n        // guarantee the interval callback will be invoked more precisely to the\n        // interval period, regardless of load.\n        //\n        // Therefore, we use `setInterval` to schedule single and repeat actions.\n        // If the action reschedules itself with the same delay, the interval is not\n        // canceled. If the action doesn't reschedule, or reschedules with a\n        // different delay, the interval will be canceled after scheduled callback\n        // execution.\n        //\n        if (id != null) {\n            this.id = this.recycleAsyncId(scheduler, id, delay);\n        }\n        this.delay = delay;\n        // If this action has already an async Id, don't request a new one.\n        this.id = this.id || this.requestAsyncId(scheduler, this.id, delay);\n        return this;\n    };\n    AsyncAction.prototype.requestAsyncId = function (scheduler, id, delay) {\n        if (delay === void 0) { delay = 0; }\n        return root_1.root.setInterval(scheduler.flush.bind(scheduler, this), delay);\n    };\n    AsyncAction.prototype.recycleAsyncId = function (scheduler, id, delay) {\n        if (delay === void 0) { delay = 0; }\n        // If this action is rescheduled with the same delay time, don't clear the interval id.\n        if (delay !== null && this.delay === delay) {\n            return id;\n        }\n        // Otherwise, if the action's delay time is different from the current delay,\n        // clear the interval id\n        return root_1.root.clearInterval(id) && undefined || undefined;\n    };\n    /**\n     * Immediately executes this action and the `work` it contains.\n     * @return {any}\n     */\n    AsyncAction.prototype.execute = function (state, delay) {\n        if (this.closed) {\n            return new Error('executing a cancelled action');\n        }\n        this.pending = false;\n        var error = this._execute(state, delay);\n        if (error) {\n            return error;\n        }\n        else if (this.pending === false && this.id != null) {\n            // Dequeue if the action didn't reschedule itself. Don't call\n            // unsubscribe(), because the action could reschedule later.\n            // For example:\n            // ```\n            // scheduler.schedule(function doWork(counter) {\n            //   /* ... I'm a busy worker bee ... */\n            //   var originalAction = this;\n            //   /* wait 100ms before rescheduling the action */\n            //   setTimeout(function () {\n            //     originalAction.schedule(counter + 1);\n            //   }, 100);\n            // }, 1000);\n            // ```\n            this.id = this.recycleAsyncId(this.scheduler, this.id, null);\n        }\n    };\n    AsyncAction.prototype._execute = function (state, delay) {\n        var errored = false;\n        var errorValue = undefined;\n        try {\n            this.work(state);\n        }\n        catch (e) {\n            errored = true;\n            errorValue = !!e && e || new Error(e);\n        }\n        if (errored) {\n            this.unsubscribe();\n            return errorValue;\n        }\n    };\n    AsyncAction.prototype._unsubscribe = function () {\n        var id = this.id;\n        var scheduler = this.scheduler;\n        var actions = scheduler.actions;\n        var index = actions.indexOf(this);\n        this.work = null;\n        this.delay = null;\n        this.state = null;\n        this.pending = false;\n        this.scheduler = null;\n        if (index !== -1) {\n            actions.splice(index, 1);\n        }\n        if (id != null) {\n            this.id = this.recycleAsyncId(scheduler, id, null);\n        }\n    };\n    return AsyncAction;\n}(Action_1.Action));\nexports.AsyncAction = AsyncAction;\n//# sourceMappingURL=AsyncAction.js.map"
     },
     {
-      "id": 74,
+      "id": 75,
       "identifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/scheduler/AsyncScheduler.js",
       "name": "./~/rxjs/scheduler/AsyncScheduler.js",
       "index": 56,
       "index2": 53,
       "size": 1713,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3687,14 +3733,14 @@
       "source": "\"use strict\";\nvar __extends = (this && this.__extends) || function (d, b) {\n    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];\n    function __() { this.constructor = d; }\n    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n};\nvar Scheduler_1 = require('../Scheduler');\nvar AsyncScheduler = (function (_super) {\n    __extends(AsyncScheduler, _super);\n    function AsyncScheduler() {\n        _super.apply(this, arguments);\n        this.actions = [];\n        /**\n         * A flag to indicate whether the Scheduler is currently executing a batch of\n         * queued actions.\n         * @type {boolean}\n         */\n        this.active = false;\n        /**\n         * An internal ID used to track the latest asynchronous task such as those\n         * coming from `setTimeout`, `setInterval`, `requestAnimationFrame`, and\n         * others.\n         * @type {any}\n         */\n        this.scheduled = undefined;\n    }\n    AsyncScheduler.prototype.flush = function (action) {\n        var actions = this.actions;\n        if (this.active) {\n            actions.push(action);\n            return;\n        }\n        var error;\n        this.active = true;\n        do {\n            if (error = action.execute(action.state, action.delay)) {\n                break;\n            }\n        } while (action = actions.shift()); // exhaust the scheduler queue\n        this.active = false;\n        if (error) {\n            while (action = actions.shift()) {\n                action.unsubscribe();\n            }\n            throw error;\n        }\n    };\n    return AsyncScheduler;\n}(Scheduler_1.Scheduler));\nexports.AsyncScheduler = AsyncScheduler;\n//# sourceMappingURL=AsyncScheduler.js.map"
     },
     {
-      "id": 75,
+      "id": 76,
       "identifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/util/TimeoutError.js",
       "name": "./~/rxjs/util/TimeoutError.js",
       "index": 59,
       "index2": 56,
       "size": 776,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3703,14 +3749,14 @@
       ],
       "assets": [],
       "issuer": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/operator/timeout.js",
-      "issuerId": 71,
+      "issuerId": 72,
       "issuerName": "./~/rxjs/operator/timeout.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 71,
+          "moduleId": 72,
           "moduleIdentifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/operator/timeout.js",
           "module": "./~/rxjs/operator/timeout.js",
           "moduleName": "./~/rxjs/operator/timeout.js",
@@ -3724,14 +3770,14 @@
       "source": "\"use strict\";\nvar __extends = (this && this.__extends) || function (d, b) {\n    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];\n    function __() { this.constructor = d; }\n    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n};\n/**\n * An error thrown when duetime elapses.\n *\n * @see {@link timeout}\n *\n * @class TimeoutError\n */\nvar TimeoutError = (function (_super) {\n    __extends(TimeoutError, _super);\n    function TimeoutError() {\n        var err = _super.call(this, 'Timeout has occurred');\n        this.name = err.name = 'TimeoutError';\n        this.stack = err.stack;\n        this.message = err.message;\n    }\n    return TimeoutError;\n}(Error));\nexports.TimeoutError = TimeoutError;\n//# sourceMappingURL=TimeoutError.js.map"
     },
     {
-      "id": 76,
+      "id": 77,
       "identifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/util/UnsubscriptionError.js",
       "name": "./~/rxjs/util/UnsubscriptionError.js",
       "index": 13,
       "index2": 7,
       "size": 1068,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3761,14 +3807,14 @@
       "source": "\"use strict\";\nvar __extends = (this && this.__extends) || function (d, b) {\n    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];\n    function __() { this.constructor = d; }\n    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n};\n/**\n * An error thrown when one or more errors have occurred during the\n * `unsubscribe` of a {@link Subscription}.\n */\nvar UnsubscriptionError = (function (_super) {\n    __extends(UnsubscriptionError, _super);\n    function UnsubscriptionError(errors) {\n        _super.call(this);\n        this.errors = errors;\n        var err = Error.call(this, errors ?\n            errors.length + \" errors occurred during unsubscription:\\n  \" + errors.map(function (err, i) { return ((i + 1) + \") \" + err.toString()); }).join('\\n  ') : '');\n        this.name = err.name = 'UnsubscriptionError';\n        this.stack = err.stack;\n        this.message = err.message;\n    }\n    return UnsubscriptionError;\n}(Error));\nexports.UnsubscriptionError = UnsubscriptionError;\n//# sourceMappingURL=UnsubscriptionError.js.map"
     },
     {
-      "id": 77,
+      "id": 78,
       "identifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/util/isObject.js",
       "name": "./~/rxjs/util/isObject.js",
       "index": 10,
       "index2": 4,
       "size": 151,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3798,14 +3844,14 @@
       "source": "\"use strict\";\nfunction isObject(x) {\n    return x != null && typeof x === 'object';\n}\nexports.isObject = isObject;\n//# sourceMappingURL=isObject.js.map"
     },
     {
-      "id": 78,
+      "id": 79,
       "identifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/util/isScheduler.js",
       "name": "./~/rxjs/util/isScheduler.js",
       "index": 26,
       "index2": 21,
       "size": 178,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3835,14 +3881,14 @@
       "source": "\"use strict\";\nfunction isScheduler(value) {\n    return value && typeof value.schedule === 'function';\n}\nexports.isScheduler = isScheduler;\n//# sourceMappingURL=isScheduler.js.map"
     },
     {
-      "id": 79,
+      "id": 80,
       "identifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/rxjs/util/toSubscriber.js",
       "name": "./~/rxjs/util/toSubscriber.js",
       "index": 5,
       "index2": 12,
       "size": 764,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3872,14 +3918,14 @@
       "source": "\"use strict\";\nvar Subscriber_1 = require('../Subscriber');\nvar rxSubscriber_1 = require('../symbol/rxSubscriber');\nvar Observer_1 = require('../Observer');\nfunction toSubscriber(nextOrObserver, error, complete) {\n    if (nextOrObserver) {\n        if (nextOrObserver instanceof Subscriber_1.Subscriber) {\n            return nextOrObserver;\n        }\n        if (nextOrObserver[rxSubscriber_1.$$rxSubscriber]) {\n            return nextOrObserver[rxSubscriber_1.$$rxSubscriber]();\n        }\n    }\n    if (!nextOrObserver && !error && !complete) {\n        return new Subscriber_1.Subscriber(Observer_1.empty);\n    }\n    return new Subscriber_1.Subscriber(nextOrObserver, error, complete);\n}\nexports.toSubscriber = toSubscriber;\n//# sourceMappingURL=toSubscriber.js.map"
     },
     {
-      "id": 80,
+      "id": 81,
       "identifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/lib/query.ts",
       "name": "./lib/query.ts",
       "index": 69,
       "index2": 67,
       "size": 1004,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3909,14 +3955,14 @@
       "source": "/**\n * Created by axetroy on 16-11-18.\n */\n\"use strict\";\nvar Query = (function () {\n    function Query(queryStr) {\n        this.queryStr = queryStr;\n        this.object = {};\n        this.object = this.toObject(queryStr.replace(/^\\?+/, ''));\n    }\n    Query.prototype.toObject = function (queryStr) {\n        var obj = {};\n        queryStr.split('&').forEach(function (item) {\n            var arr = item.split('=') || [];\n            var key = arr[0] || '';\n            obj[key] = arr[1] || '';\n        });\n        return obj;\n    };\n    Query.prototype.toString = function () {\n        var arr = [];\n        for (var key in this.object) {\n            if (this.object.hasOwnProperty(key)) {\n                var value = this.object[key];\n                arr.push(key + '=' + value);\n            }\n        }\n        return '?' + arr.join('&');\n    };\n    return Query;\n}());\nObject.defineProperty(exports, \"__esModule\", { value: true });\n/**\n * Created by axetroy on 16-11-18.\n */\nexports.default = Query;\n"
     },
     {
-      "id": 81,
+      "id": 82,
       "identifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/webpack/buildin/global.js",
       "name": "(webpack)/buildin/global.js",
       "index": 4,
       "index2": 0,
       "size": 506,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -3946,12 +3992,12 @@
       "source": "var g;\r\n\r\n// This works in non-strict mode\r\ng = (function() { return this; })();\r\n\r\ntry {\r\n\t// This works if eval is allowed (see CSP)\r\n\tg = g || Function(\"return this\")() || (1,eval)(\"this\");\r\n} catch(e) {\r\n\t// This works if the window reference is available\r\n\tif(typeof window === \"object\")\r\n\t\tg = window;\r\n}\r\n\r\n// g can still be undefined, but nothing to do about it...\r\n// We return undefined, instead of nothing here, so it's\r\n// easier to handle this case. if(!global) { ...}\r\n\r\nmodule.exports = g;\r\n"
     },
     {
-      "id": 82,
+      "id": 83,
       "identifier": "/home/axetroy/experimemtal/anti-redirect/node_modules/ts-loader/index.js!/home/axetroy/experimemtal/anti-redirect/index.ts",
       "name": "./index.ts",
       "index": 0,
-      "index2": 82,
-      "size": 1147,
+      "index2": 83,
+      "size": 1241,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -3970,7 +4016,7 @@
       "reasons": [],
       "usedExports": true,
       "providedExports": null,
-      "source": "\"use strict\";\nrequire(\"rxjs/add/observable/from\");\nrequire(\"rxjs/add/observable/of\");\nrequire(\"rxjs/add/observable/fromEvent\");\nrequire(\"rxjs/add/observable/forkJoin\");\nrequire(\"rxjs/add/operator/map\");\nrequire(\"rxjs/add/operator/filter\");\nrequire(\"rxjs/add/operator/do\");\nrequire(\"rxjs/add/operator/mergeMap\");\nrequire(\"rxjs/add/operator/retry\");\nrequire(\"rxjs/add/operator/timeout\");\nrequire(\"rxjs/add/operator/delay\");\nrequire(\"rxjs/add/operator/throttleTime\");\nrequire(\"rxjs/add/operator/debounceTime\");\nvar baidu_1 = require(\"./src/baidu\");\nvar tieba_1 = require(\"./src/tieba\");\nvar baidu_video_1 = require(\"./src/baidu-video\");\nvar google_1 = require(\"./src/google\");\nvar weibo_1 = require(\"./src/weibo\");\nvar twitter_1 = require(\"./src/twitter\");\nvar so_1 = require(\"./src/so\");\nvar zhihu_1 = require(\"./src/zhihu\");\nvar zhihu_daily_1 = require(\"./src/zhihu-daily\");\nbaidu_1.default.bootstrap();\ntieba_1.default.bootstrap();\nbaidu_video_1.default.bootstrap();\ngoogle_1.default.bootstrap();\nweibo_1.default.bootstrap();\ntwitter_1.default.bootstrap();\nso_1.default.bootstrap();\nzhihu_1.default.bootstrap();\nzhihu_daily_1.default.bootstrap();\n"
+      "source": "\"use strict\";\nrequire(\"rxjs/add/observable/from\");\nrequire(\"rxjs/add/observable/of\");\nrequire(\"rxjs/add/observable/fromEvent\");\nrequire(\"rxjs/add/observable/forkJoin\");\nrequire(\"rxjs/add/operator/map\");\nrequire(\"rxjs/add/operator/filter\");\nrequire(\"rxjs/add/operator/do\");\nrequire(\"rxjs/add/operator/mergeMap\");\nrequire(\"rxjs/add/operator/retry\");\nrequire(\"rxjs/add/operator/timeout\");\nrequire(\"rxjs/add/operator/delay\");\nrequire(\"rxjs/add/operator/throttleTime\");\nrequire(\"rxjs/add/operator/debounceTime\");\nvar baidu_1 = require(\"./src/baidu\");\nvar tieba_1 = require(\"./src/tieba\");\nvar baidu_video_1 = require(\"./src/baidu-video\");\nvar google_1 = require(\"./src/google\");\nvar weibo_1 = require(\"./src/weibo\");\nvar twitter_1 = require(\"./src/twitter\");\nvar so_1 = require(\"./src/so\");\nvar zhihu_1 = require(\"./src/zhihu\");\nvar zhihu_daily_1 = require(\"./src/zhihu-daily\");\nvar zhihu_zhuanlan_1 = require(\"./src/zhihu-zhuanlan\");\nbaidu_1.default.bootstrap();\ntieba_1.default.bootstrap();\nbaidu_video_1.default.bootstrap();\ngoogle_1.default.bootstrap();\nweibo_1.default.bootstrap();\ntwitter_1.default.bootstrap();\nso_1.default.bootstrap();\nzhihu_1.default.bootstrap();\nzhihu_daily_1.default.bootstrap();\nzhihu_zhuanlan_1.default.bootstrap();\n"
     }
   ],
   "filteredModules": 0,
