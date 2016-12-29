@@ -56,6 +56,7 @@ module.exports = {
 // @include           *zhuanlan.zhihu.com*
 // @include           *weibo.com*
 // @include           *twitter.com*
+// @include           *www.sogou.com*
 // @connect           *
 // @compatible        chrome  完美运行
 // @compatible        firefox  完美运行

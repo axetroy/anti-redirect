@@ -25,6 +25,7 @@ import soRedirect from './src/so';
 import zhihuRedirect from './src/zhihu';
 import zhihuDailyRedirect from './src/zhihu-daily';
 import zhihuZhuanlanRedirect from './src/zhihu-zhuanlan';
+import sogouRedirect from './src/sogou';
 
 baiduRedirect.bootstrap();
 baiduTiebaRedirect.bootstrap();
@@ -36,3 +37,4 @@ soRedirect.bootstrap();
 zhihuRedirect.bootstrap();
 zhihuDailyRedirect.bootstrap();
 zhihuZhuanlanRedirect.bootstrap();
+sogouRedirect.bootstrap();
