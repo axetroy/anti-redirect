@@ -14,7 +14,14 @@ export default class Query {
     queryStr.split('&').forEach((item)=> {
       let arr = item.split('=') || [];
       let key = arr[0] || '';
-      key && (obj[key] = arr[1] || '');
+      let value = arr[1] || '';
+      try {
+        key = decodeURIComponent(arr[0] || '');
+        value = decodeURIComponent(arr[1] || '');
+      } catch (err) {
+
+      }
+      key && (obj[key] = value);
     });
     return obj;
   }
