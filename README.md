@@ -1,5 +1,7 @@
 ### GM脚本，反重定向
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/axetroy/anti-redirect.svg)](https://greenkeeper.io/)
+
 原脚本：[https://github.com/axetroy/GMscript](https://github.com/axetroy/GMscript)
 
 [点击立即安装](https://github.com/axetroy/anti-redirect/raw/master/dist/anti-redirect.min.user.js)
