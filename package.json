@@ -9,7 +9,8 @@
     "build": "webpack --display-error-details --progress --colors",
     "watch": "webpack --display-error-details --progress --colors --watch",
     "coverage": "istanbul cover ./**/*.js",
-    "contributor": "./node_modules/.bin/contributors-stat"
+    "contributor": "./node_modules/.bin/contributors-stat",
+    "generate": "all-contributors generate"
   },
   "author": "Axetroy",
   "license": "ISC",
@@ -18,6 +19,7 @@
     "@types/node": "^7.0.8",
     "@types/rx": "^4.1.1",
     "@types/underscore": "^1.7.33",
+    "all-contributors-cli": "^4.0.1",
     "contributors-stat": "^1.1.1",
     "coveralls": "^2.11.14",
     "istanbul": "^0.4.5",

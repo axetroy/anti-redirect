@@ -37,19 +37,10 @@ npm run watch
 
 ### Contributors
 
-[](#contributors)
-
-- @axetroy --- ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
-  - 100.00%
-  - +79878
-  - -64395
-
-- @GitHub ---- ▇░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-  - 0.00%
-  - +3
-  - -1
-
-[](#contributors-end)
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+| [<img src="https://avatars1.githubusercontent.com/u/9758711?v=3" width="100px;"/><br /><sub>Axetroy</sub>](http://axetroy.github.io)<br />[💻](https://github.com/gpmer/gpm.js/commits?author=axetroy) [🐛](https://github.com/gpmer/gpm.js/issues?q=author%3Aaxetroy) 🎨 |
+| :---: |
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 ### LICENSE
 

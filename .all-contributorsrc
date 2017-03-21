@@ -1,0 +1,23 @@
+
+{
+  "projectName": "gpm.js",
+  "projectOwner": "gpmer",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "contributors": [
+    {
+      "login": "axetroy",
+      "name": "Axetroy",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/9758711?v=3",
+      "profile": "http://axetroy.github.io",
+      "contributions": [
+        "code",
+        "bug",
+        "design"
+      ]
+    }
+  ]
+}
