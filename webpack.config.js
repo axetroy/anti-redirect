@@ -6,6 +6,8 @@ const webpack = require('webpack');
 const path = require('path');
 const moment = require('moment');
 
+const pkg = require('./package.json');
+
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 // webpack.config.js
@@ -39,11 +41,11 @@ module.exports = {
     }),
     new webpack.BannerPlugin({
       banner: `// ==UserScript==
-// @name              anti-redirect (typescript)
-// @author            axetroy
-// @collaborator      axetroy
-// @description       反重定向
-// @version           1.2.0
+// @name              ${pkg.name} (typescript)
+// @author            ${pkg.author}
+// @collaborator      ${pkg.author}
+// @description       ${pkg.description}
+// @version           ${pkg.version}
 // @update            ${moment().format('YYYY-MM-DD HH:mm:ss')}
 // @grant             GM_xmlhttpRequest
 // @include           *www.baidu.com*

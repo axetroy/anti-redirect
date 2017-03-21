@@ -1,7 +1,7 @@
 {
   "name": "anti-redirect",
   "version": "1.2.1",
-  "description": "",
+  "description": "GM脚本, 去除各搜索引擎/常用网站的重定向 ",
   "main": "./dist/anti-redirect.user.js",
   "scripts": {
     "test": "mocha ./test/*.test.ts -r ts-node/register --color",
@@ -11,7 +11,7 @@
     "coverage": "istanbul cover ./**/*.js",
     "contributor": "./node_modules/.bin/contributors-stat"
   },
-  "author": "",
+  "author": "Axetroy",
   "license": "ISC",
   "devDependencies": {
     "@types/chai": "^3.4.34",
