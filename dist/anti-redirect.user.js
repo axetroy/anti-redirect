@@ -4,13 +4,13 @@
 // @collaborator      Axetroy
 // @description       GM脚本, 去除各搜索引擎/常用网站的重定向 
 // @version           1.2.1
-// @update            2017-03-21 16:41:49
+// @update            2017-03-21 16:56:48
 // @grant             GM_xmlhttpRequest
 // @include           *www.baidu.com*
 // @include           *tieba.baidu.com*
 // @include           *v.baidu.com*
 // @include           *www.google.*
-// @inclide           *encrypted.google.com*
+// @include           *encrypted.google.com*
 // @include           *www.so.com*
 // @include           *www.zhihu.com*
 // @include           *daily.zhihu.com*
