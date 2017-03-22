@@ -25,7 +25,7 @@
     "istanbul": "^0.4.5",
     "moment": "^2.16.0",
     "ts-loader": "^2.0.1",
-    "ts-node": "^2.1.0",
+    "ts-node": "^3.0.1",
     "typescript": "^2.0.6",
     "webpack": "2.2.1",
     "webpack-bundle-analyzer": "^2.3.1"
