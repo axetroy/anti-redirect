@@ -1,0 +1,17 @@
+language: node_js
+sudo: false
+
+os:
+  - linux
+#  - osx
+
+node_js:
+  - '6.10.0'
+
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
+script:
+  - yarn run test
