@@ -1,18 +1,19 @@
-### GM脚本，反重定向
+### GM脚本，反重定向 [![Greenkeeper badge](https://badges.greenkeeper.io/axetroy/anti-redirect.svg)](https://greenkeeper.io/)
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/axetroy/anti-redirect.svg)](https://greenkeeper.io/)
+去除各搜索引擎/常用网站的重定向
 
-原脚本：[https://github.com/axetroy/GMscript](https://github.com/axetroy/GMscript)
+### 如果这能够帮助到你, 不妨点个start, 你的支持就是我更新的动力
 
 [点击立即安装](https://github.com/axetroy/anti-redirect/raw/master/dist/anti-redirect.min.user.js)
 
-### Supports
+### 支持的站点
 
 ```javascript
 // @include           *www.baidu.com*
 // @include           *tieba.baidu.com*
 // @include           *v.baidu.com*
 // @include           *www.google.*
+// @include           *encrypted.google.com*
 // @include           *www.so.com*
 // @include           *www.zhihu.com*
 // @include           *daily.zhihu.com*
@@ -22,27 +23,25 @@
 // @include           *www.sogou.com*
 ```
 
-### Contribute
+### 贡献代码
 
 ```bash
 git clone https://github.com/axetroy/anti-redirect.git
 
-yarn
-yarn run watch
+cd ./anti-redirect
 
-# or 
 npm install
 npm run watch
 ```
 
-### Contributors
+### 贡献者
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 | [<img src="https://avatars1.githubusercontent.com/u/9758711?v=3" width="100px;"/><br /><sub>Axetroy</sub>](http://axetroy.github.io)<br />[💻](https://github.com/gpmer/gpm.js/commits?author=axetroy) [🐛](https://github.com/gpmer/gpm.js/issues?q=author%3Aaxetroy) 🎨 |
 | :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-### LICENSE
+### 开源许可
 
 The MIT License (MIT)
 
