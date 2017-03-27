@@ -85,7 +85,7 @@ module.exports = {
       // analyzerPort: 8888,
       // Path to bundle report file that will be generated in `static` mode.
       // Relative to bundles output directory.
-      reportFilename: 'report.html',
+      reportFilename: 'index.html',
       // Automatically open report in default browser
       openAnalyzer: false,
       // If `true`, Webpack Stats JSON file will be generated in bundles output directory
