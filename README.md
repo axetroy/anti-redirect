@@ -2,9 +2,17 @@
 
 去除各搜索引擎/常用网站的重定向
 
+### 反馈地址
+
+- https://github.com/axetroy/anti-redirect/issues
+- https://github.com/axetroy/anti-redirect/issues
+- https://github.com/axetroy/anti-redirect/issues
+
 ### 如果这能够帮助到你, 不妨点个start, 你的支持就是我更新的动力
 
-[点击立即安装](https://github.com/axetroy/anti-redirect/raw/master/dist/anti-redirect.min.user.js)
+[点击从Github安装](https://github.com/axetroy/anti-redirect/raw/master/dist/anti-redirect.min.user.js)
+
+[点击从GreasyFork安装](https://greasyfork.org/scripts/11915-anti-redirect-typescript/code/anti-redirect%20(typescript).user.js)
 
 ### 支持的站点
 
