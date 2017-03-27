@@ -1,4 +1,9 @@
-### GM脚本，反重定向 [![Greenkeeper badge](https://badges.greenkeeper.io/axetroy/anti-redirect.svg)](https://greenkeeper.io/)
+### GM脚本，反重定向
+[![Build Status](https://travis-ci.org/axetroy/anti-redirect.svg?branch=master)](https://travis-ci.org/axetroy/anti-redirect)
+[![npm version](https://badge.fury.io/js/anti-redirect.svg)](https://badge.fury.io/js/anti-redirect)
+[![Greenkeeper badge](https://badges.greenkeeper.io/axetroy/anti-redirect.svg)](https://greenkeeper.io/)
+![Node](https://img.shields.io/badge/node-%3E=6.0-blue.svg?style=flat-square)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
 
 去除各搜索引擎/常用网站的重定向
 
@@ -45,7 +50,7 @@ npm run watch
 ### 贡献者
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-| [<img src="https://avatars1.githubusercontent.com/u/9758711?v=3" width="100px;"/><br /><sub>Axetroy</sub>](http://axetroy.github.io)<br />[💻](https://github.com/gpmer/gpm.js/commits?author=axetroy) [🐛](https://github.com/gpmer/gpm.js/issues?q=author%3Aaxetroy) 🎨 |
+| [<img src="https://avatars1.githubusercontent.com/u/9758711?v=3" width="100px;"/><br /><sub>Axetroy</sub>](http://axetroy.github.io)<br />[💻](https://github.com/axetroyanti-redirect/anti-redirect/commits?author=axetroy) [🐛](https://github.com/axetroyanti-redirect/anti-redirect/issues?q=author%3Aaxetroy) 🎨 |
 | :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
