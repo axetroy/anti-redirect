@@ -1804,7 +1804,7 @@ pinkie-promise@^2.0.0:
   dependencies:
     pinkie "^2.0.0"
 
-pinkie@^2.0.0, pinkie@^2.0.4:
+pinkie@^2.0.0:
   version "2.0.4"
   resolved "http://registry.npm.taobao.org/pinkie/download/pinkie-2.0.4.tgz#72556b80cfa0d48a974e80e77248e80ed4f7f870"
 
@@ -2118,9 +2118,9 @@ sntp@1.x.x:
   dependencies:
     hoek "2.x.x"
 
-source-list-map@~0.1.7:
-  version "0.1.8"
-  resolved "http://registry.npm.taobao.org/source-list-map/download/source-list-map-0.1.8.tgz#c550b2ab5427f6b3f21f5afead88c4f5587b2106"
+source-list-map@^1.1.1:
+  version "1.1.1"
+  resolved "http://registry.npm.taobao.org/source-list-map/download/source-list-map-1.1.1.tgz#1a33ac210ca144d1e561f906ebccab5669ff4cb4"
 
 source-map-support@^0.4.0:
   version "0.4.14"
@@ -2315,9 +2315,9 @@ ts-loader@^2.0.1:
     loader-utils "^1.0.2"
     semver "^5.0.1"
 
-ts-node@^2.1.0:
-  version "2.1.2"
-  resolved "http://registry.npm.taobao.org/ts-node/download/ts-node-2.1.2.tgz#45087b45e7b371b3daf04ecc470ec29a836655ea"
+ts-node@^3.0.1:
+  version "3.0.2"
+  resolved "http://registry.npm.taobao.org/ts-node/download/ts-node-3.0.2.tgz#cfc9516c831b920d7efbe16005915062b1294f8c"
   dependencies:
     arrify "^1.0.0"
     chalk "^1.1.1"
@@ -2325,11 +2325,9 @@ ts-node@^2.1.0:
     make-error "^1.1.1"
     minimist "^1.2.0"
     mkdirp "^0.5.1"
-    pinkie "^2.0.4"
     source-map-support "^0.4.0"
     tsconfig "^6.0.0"
     v8flags "^2.0.11"
-    xtend "^4.0.0"
     yn "^1.2.0"
 
 tsconfig@^6.0.0:
@@ -2374,7 +2372,7 @@ typescript@^2.0.6:
   version "2.2.1"
   resolved "http://registry.npm.taobao.org/typescript/download/typescript-2.2.1.tgz#4862b662b988a4c8ff691cc7969622d24db76ae9"
 
-uglify-js@^2.6, uglify-js@^2.7.5:
+uglify-js@^2.6, uglify-js@^2.8.5:
   version "2.8.14"
   resolved "http://registry.npm.taobao.org/uglify-js/download/uglify-js-2.8.14.tgz#25b15d1af39b21752ee33703adbf432e8bc8f77d"
   dependencies:
@@ -2456,7 +2454,7 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
-watchpack@^1.2.0:
+watchpack@^1.3.1:
   version "1.3.1"
   resolved "http://registry.npm.taobao.org/watchpack/download/watchpack-1.3.1.tgz#7d8693907b28ce6013e7f3610aa2a1acf07dad87"
   dependencies:
@@ -2479,16 +2477,16 @@ webpack-bundle-analyzer@^2.3.1:
     mkdirp "^0.5.1"
     opener "^1.4.2"
 
-webpack-sources@^0.1.4:
-  version "0.1.5"
-  resolved "http://registry.npm.taobao.org/webpack-sources/download/webpack-sources-0.1.5.tgz#aa1f3abf0f0d74db7111c40e500b84f966640750"
+webpack-sources@^0.2.3:
+  version "0.2.3"
+  resolved "http://registry.npm.taobao.org/webpack-sources/download/webpack-sources-0.2.3.tgz#17c62bfaf13c707f9d02c479e0dcdde8380697fb"
   dependencies:
-    source-list-map "~0.1.7"
+    source-list-map "^1.1.1"
     source-map "~0.5.3"
 
-webpack@2.2.1:
-  version "2.2.1"
-  resolved "http://registry.npm.taobao.org/webpack/download/webpack-2.2.1.tgz#7bb1d72ae2087dd1a4af526afec15eed17dda475"
+webpack@2.3.2:
+  version "2.3.2"
+  resolved "http://registry.npm.taobao.org/webpack/download/webpack-2.3.2.tgz#7d521e6f0777a3a58985c69425263fdfe977b458"
   dependencies:
     acorn "^4.0.4"
     acorn-dynamic-import "^2.0.0"
@@ -2506,9 +2504,9 @@ webpack@2.2.1:
     source-map "^0.5.3"
     supports-color "^3.1.0"
     tapable "~0.2.5"
-    uglify-js "^2.7.5"
-    watchpack "^1.2.0"
-    webpack-sources "^0.1.4"
+    uglify-js "^2.8.5"
+    watchpack "^1.3.1"
+    webpack-sources "^0.2.3"
     yargs "^6.0.0"
 
 which-module@^1.0.0:
