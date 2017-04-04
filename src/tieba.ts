@@ -29,6 +29,6 @@ class BaiduTiebaRedirect extends RedirectOnUrl {
 
 export default new BaiduTiebaRedirect(
   /tieba\.baidu\.com/,
-  /jump\.bdimg\.com/,
+  /jump\d*\.bdimg\.com/,
   null,
 )
