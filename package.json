@@ -22,7 +22,7 @@
   ],
   "devDependencies": {
     "@types/chai": "^3.4.34",
-    "@types/node": "^7.0.8",
+    "@types/node": "^8.0.0",
     "@types/rx": "^4.1.1",
     "@types/underscore": "^1.7.33",
     "all-contributors-cli": "^4.0.1",
