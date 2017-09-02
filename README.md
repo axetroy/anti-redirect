@@ -94,7 +94,9 @@ app
   .bootstrap();
 ```
 
-### [我想支持更多的站点](https://github.com/axetroy/anti-redirect/issues)
+### 我想支持更多的站点
+
+点击这个[链接](https://github.com/axetroy/anti-redirect/issues/new)，提交issues，说出你想要支持的站点d
 
 ### 贡献代码
 
