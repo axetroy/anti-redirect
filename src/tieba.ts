@@ -1,34 +1,22 @@
-import {Observable} from 'rxjs/Observable';
-import {Subscription} from 'rxjs/Subscription';
-import {RedirectOnUrl} from '../lib/redirect-on-url';
-
-class BaiduTiebaRedirect extends RedirectOnUrl {
-  constructor(domainTester: RegExp, urlTester: RegExp, matcher?: RegExp) {
-    super(domainTester, urlTester, matcher);
+import { Provider } from './provider';
+export class TiebaProvider extends Provider {
+  test = /jump\d*\.bdimg\.com/;
+  constructor() {
+    super();
   }
-
-  handlerOne(aEle: HTMLAnchorElement): Subscription {
-    return Observable.of(aEle)
-      .filter((ele: HTMLAnchorElement): boolean=> this.urlTester.test(ele.href))
-      .subscribe((aEle: HTMLAnchorElement)=> {
-        let url: string = '';
-        let text: string = aEle.innerText || aEle.textContent || '';
-        try {
-          url = decodeURIComponent(text);
-        } catch (e) {
-          url = /https?:\/\//.test(text) ? text : '';
-        }
-        if (url) {
-          aEle.href = url;
-          this.DEBUG && (aEle.style.backgroundColor = 'green');
-        }
-      })
+  onScroll(aElementList: HTMLAnchorElement[]) {}
+  onHover(aElement: HTMLAnchorElement) {
+    if (!this.test.test(aElement.href)) return;
+    let url: string = '';
+    let text: string = aElement.innerText || aElement.textContent || '';
+    try {
+      url = decodeURIComponent(text);
+    } catch (e) {
+      url = /https?:\/\//.test(text) ? text : '';
+    }
+    if (url) {
+      aElement.href = url;
+      this.config.debug && (aElement.style.backgroundColor = 'green');
+    }
   }
-
 }
-
-export default new BaiduTiebaRedirect(
-  /tieba\.baidu\.com/,
-  /jump\d*\.bdimg\.com/,
-  null,
-)

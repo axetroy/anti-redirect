@@ -1,13 +1,13 @@
-import {RedirectOnUrl} from '../lib/redirect-on-url';
+import { Provider } from './provider';
+import { antiRedirect } from './utils';
 
-class ZhihuDailyRedirect extends RedirectOnUrl {
-  constructor(domainTester, urlTester, matcher) {
-    super(domainTester, urlTester, matcher);
+export class ZhihuDailyProvider extends Provider {
+  test = /zhihu\.com\/\?target=(.*)/;
+  constructor() {
+    super();
+  }
+  onScroll(aElementList: HTMLAnchorElement[]) {}
+  onHover(aElement: HTMLAnchorElement) {
+    antiRedirect(aElement, this.test, this.config.debug);
   }
 }
-
-export default new ZhihuDailyRedirect(
-  /daily\.zhihu\.com/,
-  /zhihu\.com\/\?target=/,
-  /zhihu\.com\/\?target=(.*)/
-)

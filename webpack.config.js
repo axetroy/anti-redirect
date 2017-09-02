@@ -8,13 +8,14 @@ const moment = require('moment');
 
 const pkg = require('./package.json');
 
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
+  .BundleAnalyzerPlugin;
 
 // webpack.config.js
 module.exports = {
   entry: {
-    "anti-redirect": path.join(__dirname, 'index.ts'),
-    "anti-redirect.min": path.join(__dirname, 'index.ts')
+    'anti-redirect': path.join(__dirname, 'index.ts'),
+    'anti-redirect.min': path.join(__dirname, 'index.ts')
   },
   output: {
     path: path.join(__dirname, '/dist'),
@@ -25,17 +26,24 @@ module.exports = {
     extensions: ['.coffee', '.js', '.ts']
   },
   module: {
-    loaders: [
-      {test: /\.tsx?$/, loader: 'ts-loader'}
-    ]
+    loaders: [{ test: /\.tsx?$/, loader: 'ts-loader' }]
   },
   plugins: [
+    new webpack.DefinePlugin(
+      (() => {
+        const result = { 'process.env.NODE_ENV': '"development"' };
+        for (let key in process.env) {
+          result['process.env.' + key] = JSON.stringify(process.env[key]);
+        }
+        return result;
+      })()
+    ),
     new webpack.LoaderOptionsPlugin({
       minimize: true,
       debug: false
     }),
     new webpack.optimize.UglifyJsPlugin({
-      compress: {warnings: false},
+      compress: { warnings: false },
       sourceMap: false,
       test: /\.min\.user\.js$/
     }),
@@ -73,7 +81,9 @@ module.exports = {
 
 // Github源码:https://github.com/axetroy/anti-redirect
 
-`, entryOnly: true, raw: true
+`,
+      entryOnly: true,
+      raw: true
     }),
     new BundleAnalyzerPlugin({
       // Can be `server`, `static` or `disabled`.

@@ -1,22 +1,26 @@
-import {RedirectOnRequest} from '../lib/redirect-on-request';
-import {Response$} from '../lib/http';
+import http from 'gm-http';
+import { Provider } from './provider';
+import { throttleDecorator } from './utils';
 
-class BaiduVideoRedirect extends RedirectOnRequest {
-  constructor(domainTester, urlTester, matcher, ASelector = 'a') {
-    super(domainTester, urlTester, matcher, ASelector);
+export class BaiduVideoProvider extends Provider {
+  test = /v\.baidu\.com\/link\?url=/;
+  constructor() {
+    super();
   }
-
-  handlerOneResponse(res: Response$) {
-    let url: string[] = res.response.match(/URL='(.*)'/);
-    if (url.length && url[1]) {
-      res.finalUrl = url[1];
-    }
-    return res;
+  onScroll(aElementList: HTMLAnchorElement[]) {}
+  @throttleDecorator(500)
+  onHover(aElement: HTMLAnchorElement) {
+    if (!this.test.test(aElement.href)) return;
+    http
+      .get(aElement.href)
+      .then((res: Response$) => {
+        if (res.finalUrl) {
+          aElement.href = res.finalUrl;
+          this.config.debug && (aElement.style.backgroundColor = 'green');
+        }
+      })
+      .catch(err => {
+        console.error(err);
+      });
   }
 }
-
-export default new BaiduVideoRedirect(
-  /v.baidu\.com/,
-  /v\.baidu\.com\/link\?url=/,
-  null
-)

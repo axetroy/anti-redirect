@@ -1,31 +1,17 @@
-import {Observable} from 'rxjs/Observable';
-import {Subscription} from 'rxjs/Subscription';
-
-import {RedirectOnUrl} from '../lib/redirect-on-url';
-
-class GoogleRedirect extends RedirectOnUrl {
-  constructor(domainTester, urlTester, matcher) {
-    super(domainTester, urlTester, matcher);
+import { Provider } from './provider';
+export class GoogleProvider extends Provider {
+  test = /nothing/;
+  constructor() {
+    super();
   }
-
-  handlerOne(aEle: HTMLAnchorElement): Subscription {
-    return Observable.of(aEle)
-      .subscribe((aEle: HTMLAnchorElement) => {
-        if (aEle.getAttribute('onmousedown')) {
-          aEle.removeAttribute('onmousedown');
-          this.DEBUG && (aEle.style.backgroundColor = 'green');
-        }
-        if (aEle.getAttribute('data-href')) {
-          aEle.href = aEle.getAttribute('data-href');
-          this.DEBUG && (aEle.style.backgroundColor = 'green');
-        }
-      });
+  onScroll(aElementList: HTMLAnchorElement[]) {}
+  onHover(aElement: HTMLAnchorElement) {
+    if (aElement.getAttribute('onmousedown')) {
+      aElement.removeAttribute('onmousedown');
+    }
+    if (aElement.getAttribute('data-href')) {
+      aElement.href = aElement.getAttribute('data-href');
+      this.config.debug && (aElement.style.backgroundColor = 'green');
+    }
   }
-
 }
-
-export default new GoogleRedirect(
-  /www\.google\./,
-  null,
-  null
-)

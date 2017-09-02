@@ -5,8 +5,8 @@
   "main": "./dist/anti-redirect.user.js",
   "scripts": {
     "test": "echo 'Test success!'",
-    "build": "webpack --display-error-details --progress --colors",
-    "watch": "webpack --display-error-details --progress --colors --watch",
+    "build": "cross-env NODE_ENV=production webpack --display-error-details --progress --colors",
+    "watch": "cross-env NODE_ENV=development webpack --display-error-details --progress --colors --watch",
     "coverage": "istanbul cover ./**/*.js",
     "contributor": "./node_modules/.bin/contributors-stat",
     "generate": "all-contributors generate",
@@ -28,6 +28,7 @@
     "all-contributors-cli": "^4.0.1",
     "contributors-stat": "^1.1.1",
     "coveralls": "^2.11.14",
+    "cross-env": "^5.0.5",
     "gh-pages": "^1.0.0",
     "istanbul": "^0.4.5",
     "moment": "^2.16.0",
@@ -38,9 +39,10 @@
     "webpack-bundle-analyzer": "^2.3.1"
   },
   "dependencies": {
+    "gm-http": "^0.1.4",
     "in-view": "^0.6.1",
-    "q": "^1.4.1",
-    "rxjs": "^5.0.0-rc.2",
-    "underscore": "^1.8.3"
+    "lodash.debounce": "^4.0.8",
+    "lodash.throttle": "^4.1.1",
+    "reflect-metadata": "^0.1.10"
   }
 }
