@@ -1,3 +1,4 @@
+require('es6-promise/auto');
 import http from 'gm-http';
 import { App } from './src/app';
 import { ZhihuZhuanlanProvider } from './src/sites/zhihu-zhuanlan';
