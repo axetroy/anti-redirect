@@ -1,12 +1,12 @@
 import http from 'gm-http';
-import { Provider } from './provider';
+import { Provider } from '../provider';
 import {
   queryParser,
   throttleDecorator,
   getRedirect,
   increaseRedirect,
   decreaseRedirect
-} from './utils';
+} from '../utils';
 
 export class BaiduProvider extends Provider {
   test = /www\.baidu\.com\/link\?url=/;

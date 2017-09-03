@@ -1,6 +1,6 @@
 import http from 'gm-http';
-import { Provider } from './provider';
-import { throttleDecorator } from './utils';
+import { Provider } from '../provider';
+import { throttleDecorator } from '../utils';
 
 export class BaiduVideoProvider extends Provider {
   test = /v\.baidu\.com\/link\?url=/;

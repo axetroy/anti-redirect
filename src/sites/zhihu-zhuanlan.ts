@@ -1,8 +1,8 @@
-import { Provider } from './provider';
-import { antiRedirect } from './utils';
+import { Provider } from '../provider';
+import { antiRedirect } from '../utils';
 
-export class ZhihuProvider extends Provider {
-  test = /zhihu\.com\/\?target=(.*)/;
+export class ZhihuZhuanlanProvider extends Provider {
+  test = /link\.zhihu\.com\/\?target=(.*)/;
   constructor() {
     super();
   }

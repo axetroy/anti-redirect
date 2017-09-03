@@ -1,7 +1,7 @@
-import { Provider } from './provider';
+import { Provider } from '../provider';
 
-export class TwitterProvider extends Provider {
-  test = /t\.co\/\w+/;
+export class WeboProvider extends Provider {
+  test = /t\.cn\/\w+/;
   constructor() {
     super();
   }

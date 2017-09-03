@@ -1,4 +1,4 @@
-import { Provider } from './provider';
+import { Provider } from '../provider';
 export class GoogleProvider extends Provider {
   test = /nothing/;
   constructor() {

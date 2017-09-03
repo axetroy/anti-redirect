@@ -1,4 +1,4 @@
-import { Provider } from './provider';
+import { Provider } from '../provider';
 export class TiebaProvider extends Provider {
   test = /jump\d*\.bdimg\.com/;
   constructor() {

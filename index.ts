@@ -1,16 +1,16 @@
 import http from 'gm-http';
 import { App } from './src/app';
-import { ZhihuZhuanlanProvider } from './src/zhihu-zhuanlan';
-import { ZhihuDailyProvider } from './src/zhihu-daily';
-import { TiebaProvider } from './src/tieba';
-import { GoogleProvider } from './src/google';
-import { ZhihuProvider } from './src/zhihu';
-import { SoProvider } from './src/so';
-import { WeboProvider } from './src/weobo';
-import { TwitterProvider } from './src/twitter';
-import { SoGouProvider } from './src/sogou';
-import { BaiduProvider } from './src/baidu';
-import { BaiduVideoProvider } from './src/baidu-video';
+import { ZhihuZhuanlanProvider } from './src/sites/zhihu-zhuanlan';
+import { ZhihuDailyProvider } from './src/sites/zhihu-daily';
+import { TiebaProvider } from './src/sites/tieba';
+import { GoogleProvider } from './src/sites/google';
+import { ZhihuProvider } from './src/sites/zhihu';
+import { SoProvider } from './src/sites/so';
+import { WeboProvider } from './src/sites/weobo';
+import { TwitterProvider } from './src/sites/twitter';
+import { SoGouProvider } from './src/sites/sogou';
+import { BaiduProvider } from './src/sites/baidu';
+import { BaiduVideoProvider } from './src/sites/baidu-video';
 
 const app = new App();
 const isDebug: boolean = process.env.NODE_ENV !== 'production';

@@ -1,6 +1,6 @@
 import http from 'gm-http';
-import { Provider } from './provider';
-import { queryParser, getText, throttleDecorator } from './utils';
+import { Provider } from '../provider';
+import { queryParser, getText, throttleDecorator } from '../utils';
 
 export class SoGouProvider extends Provider {
   test = /www\.sogou\.com\/link\?url=/;

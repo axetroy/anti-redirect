@@ -1,5 +1,5 @@
-import { Provider } from './provider';
-import { antiRedirect } from './utils';
+import { Provider } from '../provider';
+import { antiRedirect } from '../utils';
 
 export class SoProvider extends Provider {
   test = /so\.com\/link\?url=(.*)/;
