@@ -21,6 +21,10 @@
 
 [点击从GreasyFork安装](https://greasyfork.org/scripts/11915-anti-redirect-typescript/code/anti-redirect%20(typescript).user.js)
 
+### 更新日志
+
+[https://github.com/axetroy/anti-redirect/releases](https://github.com/axetroy/anti-redirect/releases)
+
 ### 支持的站点
 
 ```typescript
