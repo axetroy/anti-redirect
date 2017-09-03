@@ -10,7 +10,7 @@
     "coverage": "istanbul cover ./**/*.js",
     "contributor": "./node_modules/.bin/contributors-stat",
     "generate": "all-contributors generate",
-    "deploy": "gh-pages -d ./dist"
+    "deploy": "npm run build && gh-pages -d ./dist"
   },
   "author": "Axetroy",
   "license": "ISC",
