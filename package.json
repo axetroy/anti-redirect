@@ -21,22 +21,19 @@
     "redirect"
   ],
   "devDependencies": {
-    "@types/chai": "^4.0.1",
     "@types/node": "^8.0.0",
-    "@types/rx": "^4.1.1",
-    "@types/underscore": "^1.7.33",
-    "all-contributors-cli": "^4.0.1",
+    "all-contributors-cli": "^4.4.0",
     "contributors-stat": "^1.1.1",
-    "coveralls": "^2.11.14",
+    "coveralls": "^2.13.1",
     "cross-env": "^5.0.5",
     "gh-pages": "^1.0.0",
     "istanbul": "^0.4.5",
-    "moment": "^2.16.0",
-    "ts-loader": "^2.0.1",
-    "ts-node": "^3.0.1",
-    "typescript": "^2.0.6",
+    "moment": "^2.18.1",
+    "ts-loader": "^2.3.4",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.5.2",
     "webpack": "3.5.3",
-    "webpack-bundle-analyzer": "^2.3.1"
+    "webpack-bundle-analyzer": "^2.9.0"
   },
   "dependencies": {
     "gm-http": "^0.1.4",
