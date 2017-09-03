@@ -26,8 +26,8 @@ export class App {
     this.config = config;
     return this;
   }
-  provide(provider: ProviderConfig$): this {
-    this.provides.push(provider);
+  provide(providers: ProviderConfig$[]): this {
+    this.provides = providers;
     return this;
   }
   private getProvider(): ProviderConfig$[] {
