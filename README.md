@@ -27,7 +27,7 @@
 
 ### 支持的站点
 
-```json
+```
 [
     {
       // 测试地址: https://www.zhihu.com/question/25258775
