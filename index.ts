@@ -5,6 +5,7 @@ import { ZhihuZhuanlanProvider } from './src/sites/zhihu-zhuanlan';
 import { ZhihuDailyProvider } from './src/sites/zhihu-daily';
 import { TiebaProvider } from './src/sites/tieba';
 import { GoogleProvider } from './src/sites/google';
+import { GoogleDocsProvider } from './src/sites/google-docs';
 import { ZhihuProvider } from './src/sites/zhihu';
 import { SoProvider } from './src/sites/so';
 import { WeboProvider } from './src/sites/weobo';
@@ -45,6 +46,11 @@ app
       name: 'Google搜索',
       test: /\w+\.google\./,
       provider: GoogleProvider
+    },
+    {
+      name: 'Google Docs',
+      test: /docs\.google\.com/,
+      provider: GoogleDocsProvider
     },
     {
       // 测试地址: https://www.so.com/s?ie=utf-8&fr=none&src=360sou_newhome&q=chrome
