@@ -48,6 +48,7 @@ app
       provider: GoogleProvider
     },
     {
+      // 测试地址: https://docs.google.com/spreadsheets/d/1TFcEXMcKrwoIAECIVyBU0GPoSmRqZ7A0VBvqeKYVSww/htmlview
       name: 'Google Docs',
       test: /docs\.google\.com/,
       provider: GoogleDocsProvider
