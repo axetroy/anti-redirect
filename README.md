@@ -30,7 +30,7 @@
 
 ### 更新日志
 
-[https://github.com/axetroy/anti-redirect/releases](https://github.com/axetroy/anti-redirect/blob/master/CHANGELOG.md)
+[https://github.com/axetroy/anti-redirect/blob/master/CHANGELOG.md](https://github.com/axetroy/anti-redirect/blob/master/CHANGELOG.md)
 
 ### 支持的站点
 
