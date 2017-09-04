@@ -15,7 +15,7 @@
 - https://github.com/axetroy/anti-redirect/issues/new
 - https://github.com/axetroy/anti-redirect/issues/new
 
-### 如果这能够帮助到你, 不妨点个start, 你的支持就是我更新的动力
+### 如果这能够帮助到你, 不妨点个star, 你的支持就是我更新的动力
 
 [点击从Github安装](https://github.com/axetroy/anti-redirect/raw/gh-pages/anti-redirect.min.user.js)
 
@@ -106,6 +106,8 @@
 
 ### 贡献代码
 
+需要通过NodeJs把TypeScript编译成javascript
+
 ```bash
 git clone https://github.com/axetroy/anti-redirect.git
 
@@ -114,6 +116,8 @@ cd ./anti-redirect
 npm install
 npm run watch
 ```
+
+**代码已经重构到简单令人发指了，欢迎各位大大PR**
 
 ### 贡献者
 
