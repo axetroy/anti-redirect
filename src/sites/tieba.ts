@@ -4,7 +4,11 @@ export class TiebaProvider extends Provider {
   constructor() {
     super();
   }
-  onScroll(aElementList: HTMLAnchorElement[]) {}
+  onScroll(aElementList: HTMLAnchorElement[]) {
+    aElementList.forEach((aElement: HTMLAnchorElement) => {
+      this.onHover(aElement);
+    });
+  }
   onHover(aElement: HTMLAnchorElement) {
     if (!this.test.test(aElement.href)) return;
     let url: string = '';
@@ -16,7 +20,7 @@ export class TiebaProvider extends Provider {
     }
     if (url) {
       aElement.href = url;
-      this.config.debug && (aElement.style.backgroundColor = 'green');
+      this.emit(this.ANTI_REDIRECT_DONE_EVENT, aElement);
     }
   }
 }

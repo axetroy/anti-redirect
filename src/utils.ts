@@ -2,21 +2,23 @@ import * as throttle from 'lodash.throttle';
 import * as debounce from 'lodash.debounce';
 import * as inView from 'in-view';
 
-export const REDIRECT_NUM = 'redirect-num';
+export const REDIRECT_NUM: string = 'redirect-count';
+
+export const REDIRECT_ORIGIN_HREF: string = 'redirect-origin-href';
 
 /**
  * 根据url上的路径匹配，去除重定向
  * @param {HTMLAnchorElement} aElement
  * @param {RegExp} tester
  * @param {boolean} debug
+ * @returns {boolean}
  */
 export function antiRedirect(
   aElement: HTMLAnchorElement,
-  tester: RegExp,
-  debug?: boolean
-) {
+  tester: RegExp
+): boolean {
   let matcher: string[] = tester.exec(aElement.href);
-  if (!matcher || !matcher.length || !matcher[1]) return;
+  if (!matcher || !matcher.length || !matcher[1]) return false;
 
   let url: string = '';
   try {
@@ -25,10 +27,11 @@ export function antiRedirect(
     url = /https?:\/\//.test(matcher[1]) ? matcher[1] : '';
   }
   if (url) {
-    aElement.setAttribute('origin-href', aElement.getAttribute('href'));
+    aElement.setAttribute(REDIRECT_ORIGIN_HREF, aElement.getAttribute('href'));
     aElement.href = url;
-    debug && (aElement.style.backgroundColor = 'green');
+    return true;
   }
+  return false;
 }
 
 class Query {
@@ -73,7 +76,7 @@ export function getText(htmlElement: HTMLElement): string {
   return (htmlElement.innerText || htmlElement.textContent).trim();
 }
 
-export function throttleDecorator(wait: number, options = {}) {
+export function throttleDecorator(wait: number, options = {}): Function {
   return function(target, name, descriptor) {
     return {
       configurable: true,
@@ -90,7 +93,7 @@ export function throttleDecorator(wait: number, options = {}) {
   };
 }
 
-export function debounceDecorator(wait: number, options = {}) {
+export function debounceDecorator(wait: number, options = {}): Function {
   return function(target, name, descriptor) {
     return {
       configurable: true,

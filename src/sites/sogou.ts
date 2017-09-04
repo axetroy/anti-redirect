@@ -1,6 +1,11 @@
 import http from 'gm-http';
 import { Provider } from '../provider';
-import { queryParser, getText, throttleDecorator } from '../utils';
+import {
+  queryParser,
+  getText,
+  throttleDecorator,
+  REDIRECT_ORIGIN_HREF
+} from '../utils';
 
 export class SoGouProvider extends Provider {
   test = /www\.sogou\.com\/link\?url=/;
@@ -16,7 +21,7 @@ export class SoGouProvider extends Provider {
       .then((res: Response$) => {
         if (res.finalUrl) {
           aElement.href = res.finalUrl;
-          this.config.debug && (aElement.style.backgroundColor = 'green');
+          this.emit(this.ANTI_REDIRECT_DONE_EVENT, aElement);
         }
       })
       .catch(err => {
@@ -57,9 +62,9 @@ export class SoGouProvider extends Provider {
         if (!localText || localText !== remoteText) return;
 
         this.test.test(localEle.href) &&
-          localEle.setAttribute('origin-href', localEle.href);
+          localEle.setAttribute(REDIRECT_ORIGIN_HREF, localEle.href);
         localEle.href = remoteEle.href;
-        this.config.debug && (localEle.style.backgroundColor = 'red');
+        this.emit(this.ANTI_REDIRECT_DONE_EVENT, localEle);
       });
     });
   }

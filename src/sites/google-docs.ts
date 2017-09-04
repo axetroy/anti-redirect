@@ -6,8 +6,13 @@ export class GoogleDocsProvider extends Provider {
   constructor() {
     super();
   }
-  onScroll(aElementList: HTMLAnchorElement[]) {}
+  onScroll(aElementList: HTMLAnchorElement[]) {
+    aElementList.forEach((aElement: HTMLAnchorElement) => {
+      this.onHover(aElement);
+    });
+  }
   onHover(aElement: HTMLAnchorElement) {
-    antiRedirect(aElement, this.test, this.config.debug);
+    const isSuccess = antiRedirect(aElement, this.test);
+    isSuccess && this.emit(this.ANTI_REDIRECT_DONE_EVENT, aElement);
   }
 }

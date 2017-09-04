@@ -1,3 +1,5 @@
+import EventEmitter from '@axetroy/event-emitter.js';
+
 export interface ProviderConstructor$ {
   new (): Provider$;
 }
@@ -18,10 +20,16 @@ export interface Provider$ {
   onInit(): this;
 }
 
-export class Provider implements Provider$ {
+export class Provider extends EventEmitter implements Provider$ {
   test = /example/;
+  ANTI_REDIRECT_DONE_EVENT = 'anti-redirect-done'; // 监听某个A标签，成功去除重定向之后
   config = { debug: false };
-  constructor() {}
+  constructor() {
+    super();
+    this.on(this.ANTI_REDIRECT_DONE_EVENT, (aElement: HTMLAnchorElement) => {
+      this.config.debug && (aElement.style.backgroundColor = 'green');
+    });
+  }
   setConfig(config: AppConfig$): this {
     this.config = config;
     return this;

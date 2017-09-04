@@ -4,14 +4,18 @@ export class GoogleProvider extends Provider {
   constructor() {
     super();
   }
-  onScroll(aElementList: HTMLAnchorElement[]) {}
+  onScroll(aElementList: HTMLAnchorElement[]) {
+    aElementList.forEach((aElement: HTMLAnchorElement) => {
+      this.onHover(aElement);
+    });
+  }
   onHover(aElement: HTMLAnchorElement) {
     if (aElement.getAttribute('onmousedown')) {
       aElement.removeAttribute('onmousedown');
     }
     if (aElement.getAttribute('data-href')) {
       aElement.href = aElement.getAttribute('data-href');
-      this.config.debug && (aElement.style.backgroundColor = 'green');
+      this.emit(this.ANTI_REDIRECT_DONE_EVENT, aElement);
     }
   }
 }

@@ -16,7 +16,7 @@ export class BaiduVideoProvider extends Provider {
       .then((res: Response$) => {
         if (res.finalUrl) {
           aElement.href = res.finalUrl;
-          this.config.debug && (aElement.style.backgroundColor = 'green');
+          this.emit(this.ANTI_REDIRECT_DONE_EVENT, aElement);
         }
       })
       .catch(err => {

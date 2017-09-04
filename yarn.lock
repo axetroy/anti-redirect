@@ -2,6 +2,10 @@
 # yarn lockfile v1
 
 
+"@axetroy/event-emitter.js@^1.2.4":
+  version "1.2.4"
+  resolved "https://registry.npmjs.org/@axetroy/event-emitter.js/-/event-emitter.js-1.2.4.tgz#6366444b146ad56a035799d3baf0fe0a8812dcaa"
+
 "@types/node@^8.0.0":
   version "8.0.26"
   resolved "https://registry.npmjs.org/@types/node/-/node-8.0.26.tgz#4d58be925306fd22b1141085535a0268b8beb189"
