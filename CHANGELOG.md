@@ -1,3 +1,15 @@
+<a name="2.2.0"></a>
+# [2.2.0](https://github.com/axetroy/anti-redirect/compare/v2.1.0...v2.2.0) (2017-09-04)
+
+
+### Features
+
+* **changelog:** support generate CHANGELOG ([bcb24ea](https://github.com/axetroy/anti-redirect/commit/bcb24ea))
+* provider继承自事件发生器，监听页面滚动，会自动去除重定向 ([168e4d8](https://github.com/axetroy/anti-redirect/commit/168e4d8))
+* 支持掘金去除重定向 ([ad55ca9](https://github.com/axetroy/anti-redirect/commit/ad55ca9))
+
+
+
 <a name="2.1.0"></a>
 # [2.1.0](https://github.com/axetroy/anti-redirect/compare/v2.0.0...v2.1.0) (2017-09-03)
 
