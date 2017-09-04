@@ -76,6 +76,11 @@ export class App {
           .onInit();
         this.onScrollHandler.push(provider.onScroll.bind(provider));
         this.onHoverHandler.push(provider.onHover.bind(provider));
+
+        // 如果页面处于初始的状态，没有滚动过，则出发一次onScroll事件
+        if (window.scrollY <= 0) {
+          this.onScroll();
+        }
       }
     });
     addEventListener('scroll', this.onScroll.bind(this));
