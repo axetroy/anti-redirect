@@ -13,6 +13,7 @@ import { TwitterProvider } from './src/sites/twitter';
 import { SoGouProvider } from './src/sites/sogou';
 import { BaiduProvider } from './src/sites/baidu';
 import { BaiduVideoProvider } from './src/sites/baidu-video';
+import { JuejinProvider } from './src/sites/juejin';
 
 const app = new App();
 const isDebug: boolean = process.env.NODE_ENV !== 'production';
@@ -91,6 +92,12 @@ app
       name: '百度贴吧',
       test: /tieba\.baidu\.com/,
       provider: TiebaProvider
+    },
+    {
+      // 测试地址: https://juejin.im/entry/59ac8fa551882524241a8802?utm_source=gold_browser_extension
+      name: '掘金',
+      test: /juejin\.im/,
+      provider: JuejinProvider
     }
   ])
   .bootstrap();

@@ -69,6 +69,7 @@ module.exports = {
 // @include           *weibo.com*
 // @include           *twitter.com*
 // @include           *www.sogou.com*
+// @include           *juejin.im*
 // @connect           *
 // @compatible        chrome  完美运行
 // @compatible        firefox  完美运行
