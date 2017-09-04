@@ -10,7 +10,6 @@ export const REDIRECT_ORIGIN_HREF: string = 'redirect-origin-href';
  * 根据url上的路径匹配，去除重定向
  * @param {HTMLAnchorElement} aElement
  * @param {RegExp} tester
- * @param {boolean} debug
  * @returns {boolean}
  */
 export function antiRedirect(
