@@ -8,7 +8,7 @@ import {
 import { isInView, debounceDecorator, getRedirect } from './utils';
 
 interface ProviderConfig$ {
-  name?: string;
+  name: string;
   test: RegExp;
   provider: ProviderConstructor$;
 }
