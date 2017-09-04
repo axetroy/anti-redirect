@@ -23,7 +23,7 @@
 
 ### 更新日志
 
-[https://github.com/axetroy/anti-redirect/releases](https://github.com/axetroy/anti-redirect/releases)
+[https://github.com/axetroy/anti-redirect/releases](https://github.com/axetroy/anti-redirect/blob/master/CHANGELOG.md)
 
 ### 支持的站点
 
@@ -51,6 +51,12 @@
       name: 'Google搜索',
       test: /\w+\.google\./,
       provider: GoogleProvider
+    },
+    {
+      // 测试地址: https://docs.google.com/spreadsheets/d/1TFcEXMcKrwoIAECIVyBU0GPoSmRqZ7A0VBvqeKYVSww/htmlview
+      name: 'Google Docs',
+      test: /docs\.google\.com/,
+      provider: GoogleDocsProvider
     },
     {
       // 测试地址: https://www.so.com/s?ie=utf-8&fr=none&src=360sou_newhome&q=chrome
