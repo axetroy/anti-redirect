@@ -1,4 +1,5 @@
 import { Provider } from '../provider';
+import { REDIRECT_ORIGIN_HREF } from '../utils';
 export class TiebaProvider extends Provider {
   test = /jump\d*\.bdimg\.com/;
   constructor() {
@@ -19,6 +20,7 @@ export class TiebaProvider extends Provider {
       url = /https?:\/\//.test(text) ? text : '';
     }
     if (url) {
+      aElement.setAttribute(REDIRECT_ORIGIN_HREF, aElement.href);
       aElement.href = url;
       this.emit(this.ANTI_REDIRECT_DONE_EVENT, aElement);
     }
