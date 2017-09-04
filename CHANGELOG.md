@@ -1,3 +1,14 @@
+<a name="2.3.0"></a>
+# [2.3.0](https://github.com/axetroy/anti-redirect/compare/v2.2.0...v2.3.0) (2017-09-04)
+
+
+### Features
+
+* 如果页面处于初始的状态，没有滚动过，则出发一次onScroll事件 ([5f112d3](https://github.com/axetroy/anti-redirect/commit/5f112d3))
+* 百度贴吧去除重定向成功之后，添加成功的标记 ([35c952a](https://github.com/axetroy/anti-redirect/commit/35c952a))
+
+
+
 <a name="2.2.0"></a>
 # [2.2.0](https://github.com/axetroy/anti-redirect/compare/v2.1.0...v2.2.0) (2017-09-04)
 
