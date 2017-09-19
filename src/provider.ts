@@ -21,14 +21,22 @@ export interface Provider$ {
 }
 
 export class Provider extends EventEmitter implements Provider$ {
-  test = /example/;
-  ANTI_REDIRECT_DONE_EVENT = 'anti-redirect-done'; // 监听某个A标签，成功去除重定向之后
-  config = { debug: false };
+  public test = /example/;
+  public ANTI_REDIRECT_DONE_EVENT = 'anti-redirect-done'; // 监听某个A标签，成功去除重定向之后
+  private ANTI_REDIRECT_ORIGIN_HREF = 'anti-redirect-origin-href';
+  public config = { debug: false };
   constructor() {
     super();
-    this.on(this.ANTI_REDIRECT_DONE_EVENT, (aElement: HTMLAnchorElement) => {
-      this.config.debug && (aElement.style.backgroundColor = 'green');
-    });
+    this.on(
+      this.ANTI_REDIRECT_DONE_EVENT,
+      (aElement: HTMLAnchorElement, realHref: string) => {
+        if (realHref) {
+          this.config.debug && (aElement.style.backgroundColor = 'green');
+          aElement.setAttribute(this.ANTI_REDIRECT_ORIGIN_HREF, aElement.href);
+          aElement.href = realHref;
+        }
+      }
+    );
   }
   setConfig(config: AppConfig$): this {
     this.config = config;

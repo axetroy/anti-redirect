@@ -1,5 +1,5 @@
 import { Provider } from '../provider';
-import { antiRedirect } from '../utils';
+import { matchLinkFromUrl } from '../utils';
 
 export class ZhihuZhuanlanProvider extends Provider {
   test = /link\.zhihu\.com\/\?target=(.*)/;
@@ -12,7 +12,10 @@ export class ZhihuZhuanlanProvider extends Provider {
     });
   }
   onHover(aElement: HTMLAnchorElement) {
-    const isSuccess: boolean = antiRedirect(aElement, this.test);
-    isSuccess && this.emit(this.ANTI_REDIRECT_DONE_EVENT, aElement);
+    this.emit(
+      this.ANTI_REDIRECT_DONE_EVENT,
+      aElement,
+      matchLinkFromUrl(aElement, this.test)
+    );
   }
 }

@@ -20,10 +20,8 @@ export class BaiduProvider extends Provider {
         this.handlerOneElement(aElement)
           .then(res => {
             decreaseRedirect(aElement);
-            this.emit(this.ANTI_REDIRECT_DONE_EVENT, aElement);
           })
           .catch(err => {
-            console.error(err);
             decreaseRedirect(aElement);
           });
       }
@@ -31,20 +29,21 @@ export class BaiduProvider extends Provider {
   }
 
   async handlerOneElement(aElement: HTMLAnchorElement): Promise<any> {
-    const res: Response$ = await http.get(aElement.href);
-    if (res.finalUrl) {
-      aElement.href = res.finalUrl;
-      this.emit(this.ANTI_REDIRECT_DONE_EVENT, aElement);
+    try {
+      const res: Response$ = await http.get(aElement.href);
+      if (res.finalUrl) {
+        this.emit(this.ANTI_REDIRECT_DONE_EVENT, aElement, res.finalUrl);
+      }
+      return res;
+    } catch (err) {
+      console.error(err);
     }
-    return res;
   }
 
   @throttleDecorator(500)
   onHover(aElement: HTMLAnchorElement, callback?: Function) {
     if (!this.test.test(aElement.href)) return;
-    this.handlerOneElement(aElement).catch(err => {
-      console.error(err);
-    });
+    this.handlerOneElement(aElement);
   }
 
   // private parsePage(res: Response$): void {}

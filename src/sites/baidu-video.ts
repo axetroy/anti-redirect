@@ -15,8 +15,7 @@ export class BaiduVideoProvider extends Provider {
       .get(aElement.href)
       .then((res: Response$) => {
         if (res.finalUrl) {
-          aElement.href = res.finalUrl;
-          this.emit(this.ANTI_REDIRECT_DONE_EVENT, aElement);
+          this.emit(this.ANTI_REDIRECT_DONE_EVENT, aElement, res.finalUrl);
         }
       })
       .catch(err => {

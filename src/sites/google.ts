@@ -14,8 +14,8 @@ export class GoogleProvider extends Provider {
       aElement.removeAttribute('onmousedown');
     }
     if (aElement.getAttribute('data-href')) {
-      aElement.href = aElement.getAttribute('data-href');
-      this.emit(this.ANTI_REDIRECT_DONE_EVENT, aElement);
+      const realUrl: string = aElement.getAttribute('data-href');
+      this.emit(this.ANTI_REDIRECT_DONE_EVENT, aElement, realUrl);
     }
   }
 }

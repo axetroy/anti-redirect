@@ -17,8 +17,7 @@ export class TwitterProvider extends Provider {
     const url: string = decodeURIComponent(aElement.title);
 
     if (url) {
-      aElement.href = url;
-      this.emit(this.ANTI_REDIRECT_DONE_EVENT, aElement);
+      this.emit(this.ANTI_REDIRECT_DONE_EVENT, aElement, url);
     }
   }
 }

@@ -18,7 +18,7 @@ export class WeboProvider extends Provider {
 
     if (url) {
       aElement.href = url;
-      this.emit(this.ANTI_REDIRECT_DONE_EVENT, aElement);
+      this.emit(this.ANTI_REDIRECT_DONE_EVENT, aElement, url);
     }
   }
 }

@@ -6,8 +6,7 @@ import {
   throttleDecorator,
   getRedirect,
   increaseRedirect,
-  decreaseRedirect,
-  REDIRECT_ORIGIN_HREF
+  decreaseRedirect
 } from '../utils';
 
 export class SoGouProvider extends Provider {
@@ -24,15 +23,11 @@ export class SoGouProvider extends Provider {
         decreaseRedirect(aElement);
         const finalUrl = res.finalUrl;
         if (finalUrl && !this.test.test(finalUrl)) {
-          aElement.setAttribute(REDIRECT_ORIGIN_HREF, aElement.href);
-          aElement.href = res.finalUrl;
-          this.emit(this.ANTI_REDIRECT_DONE_EVENT, aElement);
+          this.emit(this.ANTI_REDIRECT_DONE_EVENT, aElement, res.finalUrl);
         } else {
           const matcher = res.responseText.match(/URL=['"]([^'"]+)['"]/);
           if (matcher && matcher[1]) {
-            aElement.setAttribute(REDIRECT_ORIGIN_HREF, aElement.href);
-            aElement.href = matcher[1];
-            this.emit(this.ANTI_REDIRECT_DONE_EVENT, aElement);
+            this.emit(this.ANTI_REDIRECT_DONE_EVENT, aElement, matcher[1]);
           }
         }
       }
@@ -83,10 +78,7 @@ export class SoGouProvider extends Provider {
 
         if (!localText || localText !== remoteText) return;
 
-        this.test.test(localEle.href) &&
-          localEle.setAttribute(REDIRECT_ORIGIN_HREF, localEle.href);
-        localEle.href = remoteEle.href;
-        this.emit(this.ANTI_REDIRECT_DONE_EVENT, localEle);
+        this.emit(this.ANTI_REDIRECT_DONE_EVENT, localEle, remoteEle.href);
       });
     });
   }

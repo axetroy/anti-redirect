@@ -4,20 +4,18 @@ import * as inView from 'in-view';
 
 export const REDIRECT_NUM: string = 'redirect-count';
 
-export const REDIRECT_ORIGIN_HREF: string = 'redirect-origin-href';
-
 /**
  * 根据url上的路径匹配，去除重定向
  * @param {HTMLAnchorElement} aElement
  * @param {RegExp} tester
  * @returns {boolean}
  */
-export function antiRedirect(
+export function matchLinkFromUrl(
   aElement: HTMLAnchorElement,
   tester: RegExp
-): boolean {
+): string {
   let matcher: string[] = tester.exec(aElement.href);
-  if (!matcher || !matcher.length || !matcher[1]) return false;
+  if (!matcher || !matcher.length || !matcher[1]) return '';
 
   let url: string = '';
   try {
@@ -25,12 +23,7 @@ export function antiRedirect(
   } catch (e) {
     url = /https?:\/\//.test(matcher[1]) ? matcher[1] : '';
   }
-  if (url) {
-    aElement.setAttribute(REDIRECT_ORIGIN_HREF, aElement.getAttribute('href'));
-    aElement.href = url;
-    return true;
-  }
-  return false;
+  return url;
 }
 
 class Query {
