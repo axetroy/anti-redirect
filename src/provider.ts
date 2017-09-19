@@ -27,6 +27,11 @@ export class Provider extends EventEmitter implements Provider$ {
   public config = { debug: false };
   constructor() {
     super();
+
+    /**
+     * 在这里统一处理所有A链接的跳转
+     * provider只需要发送事件即可
+     */
     this.on(
       this.ANTI_REDIRECT_DONE_EVENT,
       (aElement: HTMLAnchorElement, realHref: string) => {
