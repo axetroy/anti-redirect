@@ -4,6 +4,9 @@ import {
   queryParser,
   getText,
   throttleDecorator,
+  getRedirect,
+  increaseRedirect,
+  decreaseRedirect,
   REDIRECT_ORIGIN_HREF
 } from '../utils';
 
@@ -12,21 +15,40 @@ export class SoGouProvider extends Provider {
   constructor() {
     super();
   }
-  onScroll(aElementList: HTMLAnchorElement[]) {}
-  @throttleDecorator(500)
-  onHover(aElement: HTMLAnchorElement) {
+  async handlerOneElement(aElement: HTMLAnchorElement): Promise<any> {
     if (!this.test.test(aElement.href)) return;
-    http
-      .get(aElement.href)
-      .then((res: Response$) => {
-        if (res.finalUrl) {
+    try {
+      if (getRedirect(aElement) <= 2 && this.test.test(aElement.href)) {
+        increaseRedirect(aElement);
+        const res = await http.get(aElement.href);
+        decreaseRedirect(aElement);
+        const finalUrl = res.finalUrl;
+        if (finalUrl && !this.test.test(finalUrl)) {
+          aElement.setAttribute(REDIRECT_ORIGIN_HREF, aElement.href);
           aElement.href = res.finalUrl;
           this.emit(this.ANTI_REDIRECT_DONE_EVENT, aElement);
+        } else {
+          const matcher = res.responseText.match(/URL=['"]([^'"]+)['"]/);
+          if (matcher && matcher[1]) {
+            aElement.setAttribute(REDIRECT_ORIGIN_HREF, aElement.href);
+            aElement.href = matcher[1];
+            this.emit(this.ANTI_REDIRECT_DONE_EVENT, aElement);
+          }
         }
-      })
-      .catch(err => {
-        console.error(err);
-      });
+      }
+    } catch (err) {
+      decreaseRedirect(aElement);
+      console.error(err);
+    }
+  }
+  onScroll(aElementList: HTMLAnchorElement[]) {
+    aElementList.forEach((aElement: HTMLAnchorElement) => {
+      this.handlerOneElement(aElement);
+    });
+  }
+  @throttleDecorator(500)
+  onHover(aElement: HTMLAnchorElement) {
+    this.handlerOneElement(aElement);
   }
   private parsePage(res: Response$): void {
     let responseText: string = res.responseText.replace(
