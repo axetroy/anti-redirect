@@ -11,7 +11,8 @@
     "contributor": "./node_modules/.bin/contributors-stat",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
     "generate": "all-contributors generate",
-    "deploy": "npm run build && gh-pages -d ./dist"
+    "deploy": "npm run build && gh-pages -d ./dist",
+    "format": "prettier --single-quote -l --write 'src/**/*.{js,css,ts,json}'"
   },
   "author": "Axetroy",
   "license": "ISC",
@@ -30,6 +31,7 @@
     "gh-pages": "^1.0.0",
     "istanbul": "^0.4.5",
     "moment": "^2.18.1",
+    "prettier": "^1.7.0",
     "ts-loader": "^2.3.4",
     "ts-node": "^3.3.0",
     "typescript": "^2.5.2",
