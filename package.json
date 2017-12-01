@@ -35,7 +35,7 @@
     "ts-loader": "^3.0.0",
     "ts-node": "^3.3.0",
     "typescript": "^2.5.2",
-    "webpack": "3.9.0",
+    "webpack": "3.9.1",
     "webpack-bundle-analyzer": "^2.9.0"
   },
   "dependencies": {
