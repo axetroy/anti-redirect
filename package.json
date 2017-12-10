@@ -33,7 +33,7 @@
     "moment": "^2.18.1",
     "prettier": "^1.7.0",
     "ts-loader": "^3.0.0",
-    "ts-node": "^3.3.0",
+    "ts-node": "^4.0.0",
     "typescript": "^2.5.2",
     "webpack": "3.10.0",
     "webpack-bundle-analyzer": "^2.9.0"
