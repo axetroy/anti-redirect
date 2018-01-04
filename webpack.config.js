@@ -59,6 +59,7 @@ module.exports = {
 // @include           *www.baidu.com*
 // @include           *tieba.baidu.com*
 // @include           *v.baidu.com*
+// @include           *xueshu.baidu.com*
 // @include           *www.google.*
 // @include           *docs.google.*
 // @include           *encrypted.google.com*

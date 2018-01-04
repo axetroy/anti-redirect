@@ -99,6 +99,11 @@
       provider: BaiduVideoProvider
     },
     {
+      name: '百度学术',
+      test: /xueshu\.baidu\.com/,
+      provider: BaiduXueshuProvider
+    },
+    {
       // 测试地址: http://tieba.baidu.com/p/5300844180
       name: '百度贴吧',
       test: /tieba\.baidu\.com/,

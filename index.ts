@@ -13,6 +13,7 @@ import { TwitterProvider } from './src/sites/twitter';
 import { SoGouProvider } from './src/sites/sogou';
 import { BaiduProvider } from './src/sites/baidu';
 import { BaiduVideoProvider } from './src/sites/baidu-video';
+import { BaiduXueshuProvider } from './src/sites/baidu-xueshu';
 import { JuejinProvider } from './src/sites/juejin';
 
 const app = new App();
@@ -86,6 +87,11 @@ app
       name: '百度视频',
       test: /v\.baidu\.com/,
       provider: BaiduVideoProvider
+    },
+    {
+      name: '百度学术',
+      test: /xueshu\.baidu\.com/,
+      provider: BaiduXueshuProvider
     },
     {
       // 测试地址: http://tieba.baidu.com/p/5300844180

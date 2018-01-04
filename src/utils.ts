@@ -103,7 +103,7 @@ export function debounceDecorator(wait: number, options = {}): Function {
 }
 
 export function isInView(element: HTMLElement): boolean {
-  return <boolean>inView.is(element);
+  return <boolean>(inView).is(element);
 }
 
 export function getRedirect(aElement: HTMLAnchorElement): number {
