@@ -1,3 +1,13 @@
+<a name="2.4.0"></a>
+# [2.4.0](https://github.com/axetroy/anti-redirect/compare/v2.3.1...v2.4.0) (2018-01-04)
+
+
+### Features
+
+* 支持百度学术 ([446f5b9](https://github.com/axetroy/anti-redirect/commit/446f5b9))
+
+
+
 <a name="2.3.1"></a>
 ## [2.3.1](https://github.com/axetroy/anti-redirect/compare/v2.3.0...v2.3.1) (2017-09-19)
 
