@@ -1,4 +1,4 @@
-import { Provider } from '../provider';
+import { Provider } from "../provider";
 
 export class BaiduXueshuProvider extends Provider {
   test = /xueshu\.baidu\.com\/\?(.*)/; // 此处无用
@@ -11,7 +11,8 @@ export class BaiduXueshuProvider extends Provider {
     });
   }
   onHover(aElement: HTMLAnchorElement) {
-    const realLink = aElement.getAttribute('data-link');
+    const realLink =
+      aElement.getAttribute("data-link") || aElement.getAttribute("data-url");
     if (realLink) {
       this.emit(
         this.ANTI_REDIRECT_DONE_EVENT,
