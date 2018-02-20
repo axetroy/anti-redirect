@@ -1,3 +1,13 @@
+<a name="2.6.0"></a>
+# [2.6.0](https://github.com/axetroy/anti-redirect/compare/v2.5.0...v2.6.0) (2018-02-20)
+
+
+### Features
+
+* 添加支持火狐浏览器扩展页面的重定向 ([51c91f7](https://github.com/axetroy/anti-redirect/commit/51c91f7))
+
+
+
 <a name="2.5.0"></a>
 # [2.5.0](https://github.com/axetroy/anti-redirect/compare/v2.4.1...v2.5.0) (2018-02-20)
 
