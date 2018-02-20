@@ -1,4 +1,5 @@
 require("es6-promise/auto");
+require("reflect-metadata");
 import http from "gm-http";
 import { App } from "./src/app";
 import { ZhihuZhuanlanProvider } from "./src/sites/zhihu-zhuanlan";
