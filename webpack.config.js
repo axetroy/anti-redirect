@@ -72,6 +72,7 @@ module.exports = {
 // @include           *www.sogou.com*
 // @include           *juejin.im*
 // @include           *mail.qq.com*
+// @include           *addons.mozilla.org*
 // @connect           *
 // @compatible        chrome  完美运行
 // @compatible        firefox  完美运行

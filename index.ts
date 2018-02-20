@@ -17,6 +17,7 @@ import { BaiduVideoProvider } from "./src/sites/baidu-video";
 import { BaiduXueshuProvider } from "./src/sites/baidu-xueshu";
 import { JuejinProvider } from "./src/sites/juejin";
 import { QQMailProvider } from "./src/sites/qq.mail";
+import { MozillaProvider } from "./src/sites/mozilla";
 
 const app = new App();
 const isDebug: boolean = process.env.NODE_ENV !== "production";
@@ -111,6 +112,12 @@ app
       name: "QQ邮箱",
       test: /mail\.qq\.com/,
       provider: QQMailProvider
+    },
+    {
+      // 测试地址: https://addons.mozilla.org/zh-CN/firefox/addon/evernote-web-clipper/
+      name: "Mozilla",
+      test: /addons\.mozilla\.org/,
+      provider: MozillaProvider
     }
   ])
   .bootstrap();
