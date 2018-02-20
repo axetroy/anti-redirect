@@ -1,4 +1,5 @@
-### GM脚本，反重定向
+### GM 脚本，反重定向
+
 [![Build Status](https://travis-ci.org/axetroy/anti-redirect.svg?branch=master)](https://travis-ci.org/axetroy/anti-redirect)
 [![npm version](https://badge.fury.io/js/anti-redirect.svg)](https://badge.fury.io/js/anti-redirect)
 [![Greenkeeper badge](https://badges.greenkeeper.io/axetroy/anti-redirect.svg)](https://greenkeeper.io/)
@@ -11,20 +12,20 @@
 
 > 反馈最好能带上出问题的网页地址
 
-- https://github.com/axetroy/anti-redirect/issues/new
-- https://github.com/axetroy/anti-redirect/issues/new
-- https://github.com/axetroy/anti-redirect/issues/new
+* https://github.com/axetroy/anti-redirect/issues/new
+* https://github.com/axetroy/anti-redirect/issues/new
+* https://github.com/axetroy/anti-redirect/issues/new
 
-### 如果这能够帮助到你, 不妨点个star, 你的支持就是我更新的动力
+### 如果这能够帮助到你, 不妨点个 star, 你的支持就是我更新的动力
 
-[点击从Github安装](https://github.com/axetroy/anti-redirect/raw/gh-pages/anti-redirect.min.user.js)
+[点击从 Github 安装](https://github.com/axetroy/anti-redirect/raw/gh-pages/anti-redirect.min.user.js)
 
-[点击从GreasyFork安装](https://greasyfork.org/scripts/11915-anti-redirect-typescript/code/anti-redirect%20(typescript).user.js)
+[点击从 GreasyFork 安装](<https://greasyfork.org/scripts/11915-anti-redirect-typescript/code/anti-redirect%20(typescript).user.js>)
 
 ### 工作原理
 
-1. 根据URL上暴露出来的跳转链接，正则匹配提取真实的地址，例如知乎，Google
-2. 如果A标签的内容为真实的地址，则替换，例如百度贴吧
+1. 根据 URL 上暴露出来的跳转链接，正则匹配提取真实的地址，例如知乎，Google
+2. 如果 A 标签的内容为真实的地址，则替换，例如百度贴吧
 3. 逐一发送请求，获取真实的地址，例如百度搜索
 4. 根据请求特殊页面，这个特殊页面没有重定向地址，然后覆盖当前页，例如百度搜索，搜狗搜索
 
@@ -114,17 +115,22 @@
       name: '掘金',
       test: /juejin\.im/,
       provider: JuejinProvider
+    },
+    {
+      name: "QQ邮箱",
+      test: /mail\.qq\.com/,
+      provider: QQMailProvider
     }
 ]
 ```
 
 ### 我想支持更多的站点
 
-点击这个[链接](https://github.com/axetroy/anti-redirect/issues/new)，提交issues，说出你想要支持的站点
+点击这个[链接](https://github.com/axetroy/anti-redirect/issues/new)，提交 issues，说出你想要支持的站点
 
 ### 贡献代码
 
-需要通过NodeJs把TypeScript编译成javascript
+需要通过 NodeJs 把 TypeScript 编译成 javascript
 
 ```bash
 git clone https://github.com/axetroy/anti-redirect.git
@@ -135,13 +141,16 @@ npm install
 npm run watch
 ```
 
-**代码已经重构到简单令人发指了，欢迎各位大大PR**
+**代码已经重构到简单令人发指了，欢迎各位大大 PR**
 
 ### 贡献者
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+
 | [<img src="https://avatars1.githubusercontent.com/u/9758711?v=3" width="100px;"/><br /><sub>Axetroy</sub>](http://axetroy.github.io)<br />[💻](https://github.com/axetroyanti-redirect/anti-redirect/commits?author=axetroy) [🐛](https://github.com/axetroyanti-redirect/anti-redirect/issues?q=author%3Aaxetroy) 🎨 |
-| :---: |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 ### 开源许可
