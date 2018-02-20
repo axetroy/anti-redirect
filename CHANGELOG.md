@@ -1,3 +1,23 @@
+<a name="2.5.0"></a>
+# [2.5.0](https://github.com/axetroy/anti-redirect/compare/v2.4.1...v2.5.0) (2018-02-20)
+
+
+### Features
+
+* 支持去除QQ邮箱重定向 ([34d0d66](https://github.com/axetroy/anti-redirect/commit/34d0d66))
+
+
+
+<a name="2.4.1"></a>
+## [2.4.1](https://github.com/axetroy/anti-redirect/compare/v2.4.0...v2.4.1) (2018-01-04)
+
+
+### Bug Fixes
+
+* 修复百度学术有部分跳转链接没有去除的问题 ([d10755a](https://github.com/axetroy/anti-redirect/commit/d10755a))
+
+
+
 <a name="2.4.0"></a>
 # [2.4.0](https://github.com/axetroy/anti-redirect/compare/v2.3.1...v2.4.0) (2018-01-04)
 
