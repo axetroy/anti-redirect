@@ -1,3 +1,18 @@
+<a name="2.6.1"></a>
+## [2.6.1](https://github.com/axetroy/anti-redirect/compare/v2.6.0...v2.6.1) (2018-03-15)
+
+
+### Bug Fixes
+
+* 修复so.com再翻页中有问题的bug ([7ae798f](https://github.com/axetroy/anti-redirect/commit/7ae798f))
+
+
+### Features
+
+* 添加支持火狐浏览器扩展页支持 ([b9f9d4d](https://github.com/axetroy/anti-redirect/commit/b9f9d4d))
+
+
+
 <a name="2.6.0"></a>
 # [2.6.0](https://github.com/axetroy/anti-redirect/compare/v2.5.0...v2.6.0) (2018-02-20)
 
