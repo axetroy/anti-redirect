@@ -14,9 +14,6 @@ export class SoProvider extends Provider {
       matchLinkFromUrl(aElement, this.test)
     );
 
-    // 额外的
-    aElement.removeAttribute('data-res'); // 去除点击追踪
-    aElement.href = aElement.href.replace(/\&(q|t|ts|src)=[^\&]*/g, '');
     const dataUrl: string = aElement.getAttribute('data-url');
     if (dataUrl) {
       aElement.href = dataUrl;
