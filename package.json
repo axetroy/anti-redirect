@@ -1,6 +1,6 @@
 {
   "name": "anti-redirect",
-  "version": "2.6.0",
+  "version": "2.6.1",
   "description": "GM脚本, 去除各搜索引擎/常用网站的重定向",
   "main": "./dist/anti-redirect.user.js",
   "scripts": {
