@@ -18,6 +18,7 @@ import { BaiduXueshuProvider } from "./src/sites/baidu-xueshu";
 import { JuejinProvider } from "./src/sites/juejin";
 import { QQMailProvider } from "./src/sites/qq.mail";
 import { MozillaProvider } from "./src/sites/mozilla";
+import { JianShuProvider } from "./src/sites/jianshu";
 
 const app = new App();
 const isDebug: boolean = process.env.NODE_ENV !== "production";
@@ -118,6 +119,12 @@ app
       name: "Mozilla",
       test: /addons\.mozilla\.org/,
       provider: MozillaProvider
+    },
+    {
+      // 测试地址: https://addons.mozilla.org/zh-CN/firefox/addon/evernote-web-clipper/
+      name: "简书",
+      test: /www\.jianshu\.com/,
+      provider: JianShuProvider
     }
   ])
   .bootstrap();
