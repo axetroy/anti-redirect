@@ -18,7 +18,7 @@
 
 ### 如果这能够帮助到你, 不妨点个 star, 你的支持就是我更新的动力
 
-[点击从 Github 安装](https://github.com/axetroy/anti-redirect/raw/gh-pages/anti-redirect.min.user.js)
+[点击从 Github 安装](https://github.com/axetroy/anti-redirect/raw/gh-pages/anti-redirect.user.js)
 
 [点击从 GreasyFork 安装](<https://greasyfork.org/scripts/11915-anti-redirect-typescript/code/anti-redirect%20(typescript).user.js>)
 
