@@ -51,6 +51,7 @@
 - [x] 掘金
 - [x] QQ邮箱
 - [x] Mozilla
+- [x] 简书
 
 ### 我想支持更多的站点
 
@@ -69,8 +70,6 @@ npm install
 npm run watch
 ```
 
-**代码已经重构到简单令人发指了，欢迎各位大大 PR**
-
 ### 贡献者
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
@@ -85,7 +84,7 @@ npm run watch
 
 The MIT License (MIT)
 
-Copyright (c) 2016 axetroy
+Copyright (c) 2018 axetroy
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
