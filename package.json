@@ -8,7 +8,7 @@
     "build": "cross-env NODE_ENV=production webpack --display-error-details --progress --colors",
     "watch": "cross-env NODE_ENV=development webpack --display-error-details --progress --colors --watch",
     "changelog": "npx conventional-changelog-cli -p angular -i CHANGELOG.md -s -r 0",
-    "deploy": "npm run build && gh-pages -d ./dist",
+    "deploy": "npm run build && npx gh-pages -d ./dist",
     "lint": "tslint -p ./ -c tslint.json"
   },
   "author": "Axetroy",
@@ -23,7 +23,6 @@
     "@types/node": "^9.6.6",
     "@types/webpack": "^4.1.4",
     "cross-env": "^5.1.4",
-    "gh-pages": "^1.1.0",
     "moment": "^2.22.1",
     "ts-loader": "^4.2.0",
     "ts-node": "^6.0.0",
