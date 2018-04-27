@@ -1,21 +1,9 @@
-import { Provider } from '../provider';
-import { matchLinkFromUrl } from '../utils';
+import { IProvider } from "../provider";
+import { matchLinkFromUrl, antiRedirect } from "../utils";
 
-export class JianShuProvider extends Provider {
-  test = /link\.jianshu\.com\/\?t=(.*)/;
-  constructor() {
-    super();
-  }
-  onScroll(aElementList: HTMLAnchorElement[]) {
-    aElementList.forEach((aElement: HTMLAnchorElement) => {
-      this.onHover(aElement);
-    });
-  }
-  onHover(aElement: HTMLAnchorElement) {
-    this.emit(
-      this.ANTI_REDIRECT_DONE_EVENT,
-      aElement,
-      matchLinkFromUrl(aElement, this.test)
-    );
+export class JianShuProvider implements IProvider {
+  public test = /link\.jianshu\.com\/\?t=(.*)/;
+  public resolve(aElement: HTMLAnchorElement) {
+    antiRedirect(aElement, matchLinkFromUrl(aElement, this.test));
   }
 }

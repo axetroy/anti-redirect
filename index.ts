@@ -1,4 +1,3 @@
-require("es6-promise/auto");
 require("reflect-metadata");
 import http from "gm-http";
 import { App } from "./src/app";
@@ -27,9 +26,9 @@ http.setConfig({ debug: isDebug });
 
 app
   .setConfig({
-    debug: isDebug
+    isDebug: isDebug
   })
-  .provide([
+  .registerProvider([
     {
       // 测试地址: https://www.zhihu.com/question/25258775
       name: "知乎",
@@ -88,11 +87,13 @@ app
       provider: BaiduProvider
     },
     {
+      // 测试: https://www.baidu.com/s?wd=chrome&pn=20&oq=chrome&tn=baiduhome_pg&ie=utf-8&usm=3&rsv_idx=2&rsv_pq=e043900d0000752d&rsv_t=6bb0UqEwp2Tle6TAMBDlU3Wg%2BSxoqvvOhZKyQgM%2BVQP8Gc54QZLhcDcj62eGfNG75aq5&rsv_page=1
       name: "百度视频",
       test: /v\.baidu\.com/,
       provider: BaiduVideoProvider
     },
     {
+      // 测试: http://xueshu.baidu.com/s?wd=paperuri%3A%28ae4d6b5da05eca552dab05aeefb966e6%29&ie=utf-8&filter=sc_long_sign&sc_ks_para=q%3D%E2%80%9C%E4%BA%92%E8%81%94%E7%BD%91%2B%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%E2%80%9D%E6%A8%A1%E5%BC%8F%E6%8E%A2%E8%AE%A8%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8&tn=SE_baiduxueshu_c1gjeupa
       name: "百度学术",
       test: /xueshu\.baidu\.com/,
       provider: BaiduXueshuProvider

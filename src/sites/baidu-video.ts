@@ -1,21 +1,15 @@
-import http from 'gm-http';
-import { Provider } from '../provider';
-import { throttleDecorator } from '../utils';
+import http from "gm-http";
+import { IProvider } from "../provider";
+import { antiRedirect } from "../utils";
 
-export class BaiduVideoProvider extends Provider {
-  test = /v\.baidu\.com\/link\?url=/;
-  constructor() {
-    super();
-  }
-  onScroll(aElementList: HTMLAnchorElement[]) {}
-  @throttleDecorator(500)
-  onHover(aElement: HTMLAnchorElement) {
-    if (!this.test.test(aElement.href)) return;
+export class BaiduVideoProvider implements IProvider {
+  public test = /v\.baidu\.com\/link\?url=/;
+  public resolve(aElement: HTMLAnchorElement) {
     http
       .get(aElement.href)
       .then((res: Response$) => {
         if (res.finalUrl) {
-          this.emit(this.ANTI_REDIRECT_DONE_EVENT, aElement, res.finalUrl);
+          antiRedirect(aElement, res.finalUrl);
         }
       })
       .catch(err => {

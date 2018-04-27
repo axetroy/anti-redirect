@@ -1,21 +1,15 @@
-import { Provider } from '../provider';
-export class GoogleProvider extends Provider {
-  test = /nothing/;
-  constructor() {
-    super();
-  }
-  onScroll(aElementList: HTMLAnchorElement[]) {
-    aElementList.forEach((aElement: HTMLAnchorElement) => {
-      this.onHover(aElement);
-    });
-  }
-  onHover(aElement: HTMLAnchorElement) {
-    if (aElement.getAttribute('onmousedown')) {
-      aElement.removeAttribute('onmousedown');
+import { IProvider } from "../provider";
+import { antiRedirect } from "../utils";
+export class GoogleProvider implements IProvider {
+  public test = true;
+  public resolve(aElement: HTMLAnchorElement) {
+    // 移除多余的事件
+    if (aElement.getAttribute("onmousedown")) {
+      aElement.removeAttribute("onmousedown");
     }
-    if (aElement.getAttribute('data-href')) {
-      const realUrl: string = aElement.getAttribute('data-href');
-      this.emit(this.ANTI_REDIRECT_DONE_EVENT, aElement, realUrl);
+    if (aElement.getAttribute("data-href")) {
+      const realUrl: string = aElement.getAttribute("data-href");
+      antiRedirect(aElement, realUrl);
     }
   }
 }

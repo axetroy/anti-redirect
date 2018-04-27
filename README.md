@@ -19,15 +19,15 @@
 
 [点击从 Github 安装](https://github.com/axetroy/anti-redirect/raw/gh-pages/anti-redirect.user.js)
 
-[点击从 GreasyFork 安装](<https://greasyfork.org/scripts/11915-anti-redirect-typescript/code/anti-redirect.user.js>)
+[点击从 GreasyFork 安装](https://greasyfork.org/scripts/11915-anti-redirect-typescript/code/anti-redirect.user.js)
 
 ### 工作原理
 
-1. 根据 URL 上暴露出来的跳转链接，正则匹配提取真实的地址，例如知乎，Google
-2. 如果 A 标签的内容为真实的地址，则替换，例如百度贴吧
-3. 逐一发送请求，获取真实的地址，例如百度搜索
-4. 根据请求特殊页面，这个特殊页面没有重定向地址，然后覆盖当前页，例如百度搜索，搜狗搜索
-5. 覆盖原本的链接点击事件，比如 qq 邮箱
+1.  根据 URL 上暴露出来的跳转链接，正则匹配提取真实的地址，例如知乎，Google
+2.  如果 A 标签的内容为真实的地址，则替换，例如百度贴吧
+3.  逐一发送请求，获取真实的地址，例如百度搜索
+4.  根据请求特殊页面，这个特殊页面没有重定向地址，然后覆盖当前页，例如百度搜索，搜狗搜索
+5.  覆盖原本的链接点击事件，比如 qq 邮箱
 
 ### 更新日志
 
@@ -35,22 +35,26 @@
 
 ### 支持的站点
 
-- [x] 知乎
-- [x] 知乎专栏
-- [x] 知乎日报
-- [x] Google搜索
-- [x] 谷歌文档
-- [x] 360搜索
-- [x] 新浪微博
-- [x] Twitter
-- [x] 搜狗搜索
-- [x] 百度搜索
-- [x] 百度视频
-- [x] 百度学术
-- [x] 掘金
-- [x] QQ邮箱
-- [x] Mozilla
-- [x] 简书
+* [x] 知乎
+* [x] 知乎专栏
+* [x] 知乎日报
+* [x] Google 搜索
+* [x] 谷歌文档
+* [x] 360 搜索
+* [x] 新浪微博
+* [x] Twitter
+* [x] 搜狗搜索
+* [x] 百度搜索
+* [x] 百度视频
+* [x] 百度学术
+* [x] 掘金
+* [x] QQ 邮箱
+* [x] Mozilla
+* [x] 简书
+
+```bash
+ls -ls
+```
 
 ### 我想支持更多的站点
 

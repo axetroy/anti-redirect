@@ -1,24 +1,13 @@
-import { Provider } from "../provider";
+import { IProvider } from "../provider";
+import { antiRedirect } from "../utils";
 
-export class BaiduXueshuProvider extends Provider {
-  test = /xueshu\.baidu\.com\/\?(.*)/; // 此处无用
-  constructor() {
-    super();
-  }
-  onScroll(aElementList: HTMLAnchorElement[]) {
-    aElementList.forEach((aElement: HTMLAnchorElement) => {
-      this.onHover(aElement);
-    });
-  }
-  onHover(aElement: HTMLAnchorElement) {
-    const realLink =
+export class BaiduXueshuProvider implements IProvider {
+  public test = /xueshu\.baidu\.com\/s?\?(.*)/; // 此处无用
+  public resolve(aElement: HTMLAnchorElement) {
+    const realHref: string =
       aElement.getAttribute("data-link") || aElement.getAttribute("data-url");
-    if (realLink) {
-      this.emit(
-        this.ANTI_REDIRECT_DONE_EVENT,
-        aElement,
-        decodeURIComponent(realLink)
-      );
+    if (realHref) {
+      antiRedirect(aElement, decodeURIComponent(realHref));
     }
   }
 }

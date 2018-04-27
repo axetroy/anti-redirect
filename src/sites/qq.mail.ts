@@ -1,16 +1,14 @@
-import { Provider } from "../provider";
+import { IProvider } from "../provider";
 
-export class QQMailProvider extends Provider {
-  test = /.*/;
+export class QQMailProvider implements IProvider {
+  public test = true;
   private container = document.querySelector("#contentDiv0");
-  constructor() {
-    super();
-  }
-  onScroll(aElementList: HTMLAnchorElement[]) {}
-  onHover(aElement: HTMLAnchorElement) {
+  public resolve(aElement: HTMLAnchorElement) {
     if (this.container && this.container.contains(aElement)) {
       if (aElement.onclick) {
-        aElement.onclick = function() {};
+        aElement.onclick = () => {
+          //
+        };
       }
     }
   }

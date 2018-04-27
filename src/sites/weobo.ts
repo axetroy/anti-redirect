@@ -1,24 +1,21 @@
-import { Provider } from '../provider';
+import { IProvider } from "../provider";
+import { antiRedirect } from "../utils";
 
-export class WeboProvider extends Provider {
-  test = /t\.cn\/\w+/;
-  constructor() {
-    super();
-  }
-  onScroll(aElementList: HTMLAnchorElement[]) {
-    aElementList.forEach((aElement: HTMLAnchorElement) => {
-      this.onHover(aElement);
-    });
-  }
-  onHover(aElement: HTMLAnchorElement) {
-    if (!this.test.test(aElement.href) || !/^https?:\/\//.test(aElement.title))
+export class WeboProvider implements IProvider {
+  public test = /t\.cn\/\w+/;
+  public resolve(aElement: HTMLAnchorElement) {
+    if (
+      !this.test.test(aElement.href) ||
+      !/^https?:\/\//.test(aElement.title)
+    ) {
       return;
+    }
 
     const url: string = decodeURIComponent(aElement.title);
 
     if (url) {
       aElement.href = url;
-      this.emit(this.ANTI_REDIRECT_DONE_EVENT, aElement, url);
+      antiRedirect(aElement, url);
     }
   }
 }

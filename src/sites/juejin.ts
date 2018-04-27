@@ -1,21 +1,9 @@
-import { Provider } from '../provider';
-import { matchLinkFromUrl } from '../utils';
+import { IProvider } from "../provider";
+import { matchLinkFromUrl, antiRedirect } from "../utils";
 
-export class JuejinProvider extends Provider {
-  test = /link\.juejin\.im\/\?target=(.*)/;
-  constructor() {
-    super();
-  }
-  onScroll(aElementList: HTMLAnchorElement[]) {
-    aElementList.forEach((aElement: HTMLAnchorElement) => {
-      this.onHover(aElement);
-    });
-  }
-  onHover(aElement: HTMLAnchorElement) {
-    this.emit(
-      this.ANTI_REDIRECT_DONE_EVENT,
-      aElement,
-      matchLinkFromUrl(aElement, this.test)
-    );
+export class JuejinProvider implements IProvider {
+  public test = /link\.juejin\.im\/\?target=(.*)/;
+  public resolve(aElement: HTMLAnchorElement) {
+    antiRedirect(aElement, matchLinkFromUrl(aElement, this.test));
   }
 }

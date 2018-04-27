@@ -8,7 +8,7 @@ import * as moment from "moment";
 const pkg = require("./package.json");
 
 // webpack.config.js
-module.exports = <webpack.Configuration>{
+const webpackConfig: webpack.Configuration = {
   entry: {
     "anti-redirect": path.join(__dirname, "index.ts")
   },
@@ -28,8 +28,10 @@ module.exports = <webpack.Configuration>{
     new webpack.DefinePlugin(
       (() => {
         const result = { "process.env.NODE_ENV": '"development"' };
-        for (let key in process.env) {
-          result["process.env." + key] = JSON.stringify(process.env[key]);
+        for (const key in process.env) {
+          if (process.env.hasOwnProperty(key)) {
+            result["process.env." + key] = JSON.stringify(process.env[key]);
+          }
         }
         return result;
       })()
@@ -76,7 +78,9 @@ module.exports = <webpack.Configuration>{
 // @license           The MIT License (MIT); http://opensource.org/licenses/MIT
 // ==/UserScript==
 
-// Github源码:https://github.com/axetroy/anti-redirect
+// Github源码: https://github.com/axetroy/anti-redirect
+// 如果这能帮助到你，欢迎在 Github 上点击 star 和 follow.
+// 你的支持就是我更新的动力
 
 `,
       entryOnly: true,
@@ -84,3 +88,5 @@ module.exports = <webpack.Configuration>{
     })
   ]
 };
+
+module.exports = webpackConfig;
