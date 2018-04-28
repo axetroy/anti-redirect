@@ -39,7 +39,9 @@
 * [x] 知乎专栏
 * [x] 知乎日报
 * [x] Google 搜索
-* [x] 谷歌文档
+* [x] Google 文档
+* [x] Google Play
+* [x] Google Gmail
 * [x] 360 搜索
 * [x] 新浪微博
 * [x] Twitter
@@ -51,10 +53,6 @@
 * [x] QQ 邮箱
 * [x] Mozilla
 * [x] 简书
-
-```bash
-ls -ls
-```
 
 ### 我想支持更多的站点
 
