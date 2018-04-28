@@ -5,6 +5,7 @@ import { App } from "./src/app";
 import { GoogleProvider } from "./src/sites/google";
 import { GmailProvider } from "./src/sites/google.gmail";
 import { GoogleDocsProvider } from "./src/sites/google.docs";
+import { GooglePlayProvider } from "./src/sites/google.play";
 import { SoGouProvider } from "./src/sites/sogou";
 import { BaiduProvider } from "./src/sites/baidu";
 import { BaiduVideoProvider } from "./src/sites/baidu.video";
@@ -62,6 +63,12 @@ app
       name: "Gmail",
       test: /mail\.google\.com/,
       provider: GmailProvider
+    },
+    {
+      // 测试地址: https://play.google.com/store/movies/details/%E7%A7%BB%E5%8B%95%E8%BF%B7%E5%AE%AE_%E6%AD%BB%E4%BA%A1%E8%A7%A3%E8%97%A5?id=YNy7gRqwtMk
+      name: "Google Play",
+      test: /play\.google\.com/,
+      provider: GooglePlayProvider
     },
     {
       // 测试地址: https://www.so.com/s?ie=utf-8&fr=none&src=360sou_newhome&q=chrome

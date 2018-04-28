@@ -56,6 +56,7 @@ const webpackConfig: webpack.Configuration = {
 // @include           *www.google.*
 // @include           *docs.google.*
 // @include           *mail.google.*
+// @include           *play.google.*
 // @include           *encrypted.google.com*
 // @include           *www.so.com*
 // @include           *www.zhihu.com*
@@ -80,7 +81,9 @@ const webpackConfig: webpack.Configuration = {
 // ==/UserScript==
 
 // Github源码: https://github.com/axetroy/anti-redirect
+
 // 如果这能帮助到你，欢迎在 Github 上点击 star 和 follow.
+
 // 你的支持就是我更新的动力
 
 `,
