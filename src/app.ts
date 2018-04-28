@@ -8,9 +8,11 @@ import {
   Marker
 } from "./utils";
 
+type tester = () => boolean;
+
 interface IProviderConfig {
   name: string;
-  test: RegExp;
+  test: RegExp | boolean | tester;
   provider: IProviderConstructor;
 }
 
@@ -29,7 +31,7 @@ export class App {
       new Date().getFullYear(),
       "\n" + "Author @Axetroy"
     );
-    console.log("[anti-redirect]: 如果发现页面重定向未去除，欢迎反馈!")
+    console.log("[anti-redirect]: 如果发现页面重定向未去除，欢迎反馈!");
   }
   private isMatchProvider(
     aElement: HTMLAnchorElement,
@@ -56,13 +58,28 @@ export class App {
   public registerProvider(providers: IProviderConfig[]): this {
     const providesOnThisPage: IProvider[] = [];
     for (const provideConfig of providers) {
-      // 匹配域名，适合正确
-      if (provideConfig.test.test(document.domain)) {
-        const provider = new provideConfig.provider();
-        provider.isDebug = this.config.isDebug;
-        this.provides.push(provider);
-        console.info(`[Anti-redirect]: 加载引擎 ${provideConfig.name}`);
+      // test 如果是 boolean
+      if (provideConfig.test instanceof Boolean && !provideConfig.test) {
+        continue;
       }
+      // test 如果是正则表达式
+      if (
+        provideConfig.test instanceof RegExp &&
+        !provideConfig.test.test(document.domain)
+      ) {
+        continue;
+      }
+      // test 如果是一个function
+      if (
+        typeof provideConfig.test === "function" &&
+        provideConfig.test() === false
+      ) {
+        continue;
+      }
+      const provider = new provideConfig.provider();
+      provider.isDebug = this.config.isDebug;
+      this.provides.push(provider);
+      console.info(`[Anti-redirect]: 加载引擎 ${provideConfig.name}`);
     }
     return this;
   }
