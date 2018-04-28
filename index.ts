@@ -1,24 +1,25 @@
 require("reflect-metadata");
 import http from "gm-http";
 import { App } from "./src/app";
-import { ZhihuZhuanlanProvider } from "./src/sites/zhihu-zhuanlan";
-import { ZhihuDailyProvider } from "./src/sites/zhihu-daily";
-import { TiebaProvider } from "./src/sites/tieba";
+
 import { GoogleProvider } from "./src/sites/google";
-import { GoogleDocsProvider } from "./src/sites/google-docs";
+import { GmailProvider } from "./src/sites/google.gmail";
+import { GoogleDocsProvider } from "./src/sites/google.docs";
+import { SoGouProvider } from "./src/sites/sogou";
+import { BaiduProvider } from "./src/sites/baidu";
+import { BaiduVideoProvider } from "./src/sites/baidu.video";
+import { BaiduXueshuProvider } from "./src/sites/baidu.xueshu";
+import { TiebaProvider } from "./src/sites/baidu.tieba";
 import { ZhihuProvider } from "./src/sites/zhihu";
+import { ZhihuZhuanlanProvider } from "./src/sites/zhihu.zhuanlan";
+import { ZhihuDailyProvider } from "./src/sites/zhihu.daily";
 import { SoProvider } from "./src/sites/so";
 import { WeboProvider } from "./src/sites/weobo";
 import { TwitterProvider } from "./src/sites/twitter";
-import { SoGouProvider } from "./src/sites/sogou";
-import { BaiduProvider } from "./src/sites/baidu";
-import { BaiduVideoProvider } from "./src/sites/baidu-video";
-import { BaiduXueshuProvider } from "./src/sites/baidu-xueshu";
 import { JuejinProvider } from "./src/sites/juejin";
 import { QQMailProvider } from "./src/sites/qq.mail";
 import { MozillaProvider } from "./src/sites/mozilla";
 import { JianShuProvider } from "./src/sites/jianshu";
-import { GmailProvider } from "./src/sites/gmail";
 
 const app = new App();
 const isDebug: boolean = process.env.NODE_ENV !== "production";
@@ -26,9 +27,7 @@ const isDebug: boolean = process.env.NODE_ENV !== "production";
 http.setConfig({ debug: isDebug });
 
 app
-  .setConfig({
-    isDebug
-  })
+  .setConfig({ isDebug })
   .registerProvider([
     {
       // 测试地址: https://www.zhihu.com/question/25258775

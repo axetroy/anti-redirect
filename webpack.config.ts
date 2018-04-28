@@ -71,7 +71,7 @@ const webpackConfig: webpack.Configuration = {
 // @connect           *
 // @compatible        chrome  完美运行
 // @compatible        firefox  完美运行
-// @supportURL        http://www.burningall.com
+// @supportURL        https://axetroy.github.io/
 // @run-at            document-start
 // @contributionURL   troy450409405@gmail.com|alipay.com
 // @downloadURL       https://github.com/axetroy/anti-redirect/raw/master/dist/anti-redirect.user.js
