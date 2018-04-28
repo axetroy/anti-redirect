@@ -55,6 +55,7 @@ const webpackConfig: webpack.Configuration = {
 // @include           *xueshu.baidu.com*
 // @include           *www.google.*
 // @include           *docs.google.*
+// @include           *mail.google.*
 // @include           *encrypted.google.com*
 // @include           *www.so.com*
 // @include           *www.zhihu.com*

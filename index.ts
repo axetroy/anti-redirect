@@ -18,6 +18,7 @@ import { JuejinProvider } from "./src/sites/juejin";
 import { QQMailProvider } from "./src/sites/qq.mail";
 import { MozillaProvider } from "./src/sites/mozilla";
 import { JianShuProvider } from "./src/sites/jianshu";
+import { GmailProvider } from "./src/sites/gmail";
 
 const app = new App();
 const isDebug: boolean = process.env.NODE_ENV !== "production";
@@ -26,7 +27,7 @@ http.setConfig({ debug: isDebug });
 
 app
   .setConfig({
-    isDebug: isDebug
+    isDebug
   })
   .registerProvider([
     {
@@ -57,6 +58,11 @@ app
       name: "Google Docs",
       test: /docs\.google\.com/,
       provider: GoogleDocsProvider
+    },
+    {
+      name: "Gmail",
+      test: /mail\.google\.com/,
+      provider: GmailProvider
     },
     {
       // 测试地址: https://www.so.com/s?ie=utf-8&fr=none&src=360sou_newhome&q=chrome
