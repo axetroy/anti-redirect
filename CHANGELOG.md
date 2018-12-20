@@ -1,4 +1,36 @@
-<a name="2.6.1"></a>
+# [2.10.0](https://github.com/axetroy/anti-redirect/compare/v2.9.0...v2.10.0) (2018-12-20)
+
+
+### Features
+
+* 支持豆瓣评分 ([b11073f](https://github.com/axetroy/anti-redirect/commit/b11073f))
+
+
+
+# [2.9.0](https://github.com/axetroy/anti-redirect/compare/v2.8.0...v2.9.0) (2018-04-28)
+
+
+### Features
+
+* support google play ([ae822b8](https://github.com/axetroy/anti-redirect/commit/ae822b8))
+* 支持gmail ([6f21f91](https://github.com/axetroy/anti-redirect/commit/6f21f91))
+* 支持使用boolean和function来定义一个provider是否应该启动 ([61dccf1](https://github.com/axetroy/anti-redirect/commit/61dccf1))
+
+
+
+# [2.8.0](https://github.com/axetroy/anti-redirect/compare/v2.7.0...v2.8.0) (2018-04-27)
+
+
+
+# [2.7.0](https://github.com/axetroy/anti-redirect/compare/v2.6.1...v2.7.0) (2018-04-25)
+
+
+### Features
+
+* 支持简书 ([df87bf8](https://github.com/axetroy/anti-redirect/commit/df87bf8))
+
+
+
 ## [2.6.1](https://github.com/axetroy/anti-redirect/compare/v2.6.0...v2.6.1) (2018-03-15)
 
 
@@ -13,7 +45,6 @@
 
 
 
-<a name="2.6.0"></a>
 # [2.6.0](https://github.com/axetroy/anti-redirect/compare/v2.5.0...v2.6.0) (2018-02-20)
 
 
@@ -23,7 +54,6 @@
 
 
 
-<a name="2.5.0"></a>
 # [2.5.0](https://github.com/axetroy/anti-redirect/compare/v2.4.1...v2.5.0) (2018-02-20)
 
 
@@ -33,7 +63,6 @@
 
 
 
-<a name="2.4.1"></a>
 ## [2.4.1](https://github.com/axetroy/anti-redirect/compare/v2.4.0...v2.4.1) (2018-01-04)
 
 
@@ -43,7 +72,6 @@
 
 
 
-<a name="2.4.0"></a>
 # [2.4.0](https://github.com/axetroy/anti-redirect/compare/v2.3.1...v2.4.0) (2018-01-04)
 
 
@@ -53,7 +81,6 @@
 
 
 
-<a name="2.3.1"></a>
 ## [2.3.1](https://github.com/axetroy/anti-redirect/compare/v2.3.0...v2.3.1) (2017-09-19)
 
 
@@ -63,7 +90,6 @@
 
 
 
-<a name="2.3.0"></a>
 # [2.3.0](https://github.com/axetroy/anti-redirect/compare/v2.2.0...v2.3.0) (2017-09-04)
 
 
@@ -74,7 +100,6 @@
 
 
 
-<a name="2.2.0"></a>
 # [2.2.0](https://github.com/axetroy/anti-redirect/compare/v2.1.0...v2.2.0) (2017-09-04)
 
 
@@ -86,7 +111,6 @@
 
 
 
-<a name="2.1.0"></a>
 # [2.1.0](https://github.com/axetroy/anti-redirect/compare/v2.0.0...v2.1.0) (2017-09-03)
 
 
@@ -97,7 +121,6 @@
 
 
 
-<a name="2.0.0"></a>
 # [2.0.0](https://github.com/axetroy/anti-redirect/compare/1.2.0...v2.0.0) (2017-09-02)
 
 
@@ -115,7 +138,6 @@
 
 
 
-<a name="1.2.0"></a>
 # [1.2.0](https://github.com/axetroy/anti-redirect/compare/1.1.0...1.2.0) (2016-12-29)
 
 
@@ -125,7 +147,6 @@
 
 
 
-<a name="1.1.0"></a>
 # [1.1.0](https://github.com/axetroy/anti-redirect/compare/1.0.1...1.1.0) (2016-12-29)
 
 
@@ -135,7 +156,6 @@
 
 
 
-<a name="1.0.1"></a>
 ## [1.0.1](https://github.com/axetroy/anti-redirect/compare/c366c51...1.0.1) (2016-12-23)
 
 
