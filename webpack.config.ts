@@ -69,6 +69,7 @@ const webpackConfig: webpack.Configuration = {
 // @include           *mail.qq.com*
 // @include           *addons.mozilla.org*
 // @include           *www.jianshu.com*
+// @include           *www.douban.com*
 // @connect           *
 // @compatible        chrome  完美运行
 // @compatible        firefox  完美运行
