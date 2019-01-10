@@ -31,7 +31,8 @@ export class App {
       new Date().getFullYear(),
       "\n" + "Author @Axetroy"
     );
-    console.log("[anti-redirect]: 如果发现页面重定向未去除，欢迎反馈!");
+    console.log("[Anti-redirect]: 如果发现页面重定向未去除，欢迎反馈!");
+    console.log(`%c[Anti-redirect]: 支付宝搜索 "%c511118132%c" 领取红包支持作者!`, "font-size: 12px;" ,"font-size: 16px;color: red", "font-size: 12px;");
   }
   private isMatchProvider(
     aElement: HTMLAnchorElement,
