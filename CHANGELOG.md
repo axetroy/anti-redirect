@@ -1,3 +1,13 @@
+## [2.10.1](https://github.com/axetroy/anti-redirect/compare/v2.10.0...v2.10.1) (2019-01-10)
+
+
+### Bug Fixes
+
+* 修复QQ邮箱失效的问题 close [#40](https://github.com/axetroy/anti-redirect/issues/40) ([ce9a6c0](https://github.com/axetroy/anti-redirect/commit/ce9a6c0))
+* 由于豆瓣的问题，暂时只支持部分页面生效去重定向 ([9b7eaed](https://github.com/axetroy/anti-redirect/commit/9b7eaed))
+
+
+
 # [2.10.0](https://github.com/axetroy/anti-redirect/compare/v2.9.0...v2.10.0) (2018-12-20)
 
 
