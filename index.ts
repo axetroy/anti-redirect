@@ -22,6 +22,7 @@ import { QQMailProvider } from "./src/sites/qq.mail";
 import { MozillaProvider } from "./src/sites/mozilla";
 import { JianShuProvider } from "./src/sites/jianshu";
 import { DouBanProvider } from "./src/sites/douban";
+import { PocketProvider } from "./src/sites/pocket";
 
 const app = new App();
 const isDebug: boolean = process.env.NODE_ENV !== "production";
@@ -148,6 +149,13 @@ app
         return /www\.douban\.com\/doulist\/\d+/.test(location.href)
       },
       provider: DouBanProvider
+    },
+    {
+      // 测试地址: https://getpocket.com/a/recommended/
+      // 需要登陆
+      name: 'Pocket',
+      test: /getpocket\.com/,
+      provider: PocketProvider
     }
   ])
   .bootstrap();

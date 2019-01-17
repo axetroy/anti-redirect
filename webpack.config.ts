@@ -70,6 +70,7 @@ const webpackConfig: webpack.Configuration = {
 // @include           *addons.mozilla.org*
 // @include           *www.jianshu.com*
 // @include           *www.douban.com*
+// @include           *getpocket.com*
 // @connect           *
 // @compatible        chrome  完美运行
 // @compatible        firefox  完美运行
