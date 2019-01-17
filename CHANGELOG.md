@@ -1,3 +1,12 @@
+# [2.11.0](https://github.com/axetroy/anti-redirect/compare/v2.10.1...v2.11.0) (2019-01-17)
+
+
+### Features
+
+* 支持去除pocket重定向, close [#47](https://github.com/axetroy/anti-redirect/issues/47) ([a259e6c](https://github.com/axetroy/anti-redirect/commit/a259e6c))
+
+
+
 ## [2.10.1](https://github.com/axetroy/anti-redirect/compare/v2.10.0...v2.10.1) (2019-01-10)
 
 
