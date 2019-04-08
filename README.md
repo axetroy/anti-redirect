@@ -1,7 +1,7 @@
 ### GM 脚本，反重定向
 
 [![Build Status](https://travis-ci.org/axetroy/anti-redirect.svg?branch=master)](https://travis-ci.org/axetroy/anti-redirect)
-[![npm version](https://badge.fury.io/js/anti-redirect.svg)](https://badge.fury.io/js/anti-redirect)
+[![npm version](https://badge.fury.io/js/anti-redirect.svg)](https://badge.fury.io/js/anti-redirect) [![Greenkeeper badge](https://badges.greenkeeper.io/axetroy/anti-redirect.svg)](https://greenkeeper.io/)
 ![Node](https://img.shields.io/badge/node-%3E=6.0-blue.svg?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
