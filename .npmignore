@@ -55,4 +55,5 @@ jspm_packages
 dist
 
 .travis.yml
-
+yarn.lock
+package-lock.json
