@@ -79,7 +79,7 @@ const webpackConfig: webpack.Configuration = {
 // @contributionURL   troy450409405@gmail.com|alipay.com
 // @downloadURL       https://github.com/axetroy/anti-redirect/raw/gh-pages/anti-redirect.user.js
 // @namespace         https://greasyfork.org/zh-CN/users/3400-axetroy
-// @license           The MIT License (MIT); http://opensource.org/licenses/MIT
+// @license           Anti 996 License; https://github.com/axetroy/anti-redirect/blob/master/LICENSE
 // ==/UserScript==
 
 // Github源码: https://github.com/axetroy/anti-redirect
