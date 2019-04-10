@@ -1,6 +1,4 @@
-export interface IProviderConstructor {
-  new (): IProvider;
-}
+export type IProviderConstructor = new () => IProvider;
 
 export type tester = (aElement: HTMLAnchorElement) => boolean;
 

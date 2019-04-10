@@ -1,7 +1,6 @@
 import http from "gm-http";
 import { IProvider } from "../provider";
 import {
-  // queryParser,
   getRedirect,
   increaseRedirect,
   decreaseRedirect,

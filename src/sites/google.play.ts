@@ -1,5 +1,5 @@
 import { IProvider } from "../provider";
-import { antiRedirect, matchLinkFromUrl } from "../utils";
+import { antiRedirect } from "../utils";
 export class GooglePlayProvider implements IProvider {
   public test = /google\.com\/url\?q=(.*)/;
   public resolve(aElement: HTMLAnchorElement) {

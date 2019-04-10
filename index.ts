@@ -144,7 +144,6 @@ app
     {
       // 测试地址: https://www.douban.com/doulist/240962/
       name: "豆瓣",
-      // FIXME: 豆瓣的程序员那么秀的咯? 再搜也页面的跳转连接也秀，暂时先这样了
       test () {
         return /www\.douban\.com\/doulist\/\d+/.test(location.href)
       },

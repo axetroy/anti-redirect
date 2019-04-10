@@ -32,7 +32,12 @@ export class App {
       "\n" + "Author @Axetroy"
     );
     console.log("[Anti-redirect]: 如果发现页面重定向未去除，欢迎反馈!");
-    console.log(`%c[Anti-redirect]: 支付宝搜索 "%c511118132%c" 领取红包支持作者!`, "font-size: 12px;" ,"font-size: 16px;color: red", "font-size: 12px;");
+    console.log(
+      `%c[Anti-redirect]: 支付宝搜索 "%c511118132%c" 领取红包支持作者!`,
+      "font-size: 12px;",
+      "font-size: 16px;color: red",
+      "font-size: 12px;"
+    );
   }
   private isMatchProvider(
     aElement: HTMLAnchorElement,
@@ -51,38 +56,6 @@ export class App {
       return false;
     }
     return true;
-  }
-  public setConfig(config: IAppConfig): this {
-    this.config = config;
-    return this;
-  }
-  public registerProvider(providers: IProviderConfig[]): this {
-    const providesOnThisPage: IProvider[] = [];
-    for (const provideConfig of providers) {
-      // test 如果是 boolean
-      if (provideConfig.test instanceof Boolean && !provideConfig.test) {
-        continue;
-      }
-      // test 如果是正则表达式
-      if (
-        provideConfig.test instanceof RegExp &&
-        !provideConfig.test.test(document.domain)
-      ) {
-        continue;
-      }
-      // test 如果是一个function
-      if (
-        typeof provideConfig.test === "function" &&
-        provideConfig.test() === false
-      ) {
-        continue;
-      }
-      const provider = new provideConfig.provider();
-      provider.isDebug = this.config.isDebug;
-      this.provides.push(provider);
-      console.info(`[Anti-redirect]: 加载引擎 ${provideConfig.name}`);
-    }
-    return this;
   }
   @throttleDecorator(50)
   private onHover(event: Event) {
@@ -125,6 +98,38 @@ export class App {
         this.onScroll();
       }
     }
+  }
+  public setConfig(config: IAppConfig): this {
+    this.config = config;
+    return this;
+  }
+  public registerProvider(providers: IProviderConfig[]): this {
+    const providesOnThisPage: IProvider[] = [];
+    for (const provideConfig of providers) {
+      // test 如果是 boolean
+      if (provideConfig.test instanceof Boolean && !provideConfig.test) {
+        continue;
+      }
+      // test 如果是正则表达式
+      if (
+        provideConfig.test instanceof RegExp &&
+        !provideConfig.test.test(document.domain)
+      ) {
+        continue;
+      }
+      // test 如果是一个function
+      if (
+        typeof provideConfig.test === "function" &&
+        provideConfig.test() === false
+      ) {
+        continue;
+      }
+      const provider = new provideConfig.provider();
+      provider.isDebug = this.config.isDebug;
+      this.provides.push(provider);
+      console.info(`[Anti-redirect]: 加载引擎 ${provideConfig.name}`);
+    }
+    return this;
   }
   public bootstrap() {
     addEventListener("scroll", this.onScroll.bind(this));
