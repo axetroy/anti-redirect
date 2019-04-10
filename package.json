@@ -5,6 +5,7 @@
   "main": "./dist/anti-redirect.user.js",
   "scripts": {
     "test": "npm run build",
+    "build:dev": "cross-env NODE_ENV=development webpack --display-error-details --progress --colors",
     "build": "cross-env NODE_ENV=production webpack --display-error-details --progress --colors",
     "watch": "cross-env NODE_ENV=development webpack --display-error-details --progress --colors --watch",
     "changelog": "npx conventional-changelog-cli -p angular -i CHANGELOG.md -s -r 0",
