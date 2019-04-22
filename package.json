@@ -25,7 +25,7 @@
     "@types/webpack": "4.4.27",
     "cross-env": "5.2.0",
     "moment": "2.24.0",
-    "ts-loader": "5.3.3",
+    "ts-loader": "5.4.0",
     "ts-node": "8.1.0",
     "tslint": "5.15.0",
     "tslint-config-prettier": "1.18.0",
