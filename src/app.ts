@@ -39,6 +39,11 @@ export class App {
       "font-size: 12px;"
     );
   }
+  /**
+   * A 标签是否匹配服务提供者
+   * @param aElement
+   * @param provider
+   */
   private isMatchProvider(
     aElement: HTMLAnchorElement,
     provider: IProvider
@@ -57,6 +62,10 @@ export class App {
     }
     return true;
   }
+  /**
+   * 当鼠标移动到 A 标签上时
+   * @param event
+   */
   @throttleDecorator(50)
   private onHover(event: Event) {
     const aElement: HTMLAnchorElement = event.target as HTMLAnchorElement;
@@ -70,15 +79,21 @@ export class App {
       }
     }
   }
+  /**
+   * 当页面滚动时
+   */
   @debounceDecorator(300)
   private onScroll() {
     // 筛选所有在可视区域内的A标签
     const visibleElements: HTMLAnchorElement[] = [].slice
-      .call(document.querySelectorAll('a[href^="http"]'))
-      .filter(
-        (aElement: HTMLAnchorElement) =>
-          isInView(aElement) && getRedirect(aElement) <= 2
-      );
+      .call(document.querySelectorAll("a[href]"))
+      .filter((aElement: HTMLAnchorElement) => {
+        return (
+          aElement.href.indexOf("http") > -1 &&
+          isInView(aElement) &&
+          getRedirect(aElement) <= 2
+        );
+      });
     // trigger scroll handler
     for (const provider of this.provides) {
       for (const aElement of visibleElements) {
@@ -88,6 +103,9 @@ export class App {
       }
     }
   }
+  /**
+   * 当页面准备就绪时，进行初始化动作
+   */
   private async pageOnReady() {
     for (const provider of this.provides) {
       if (provider.onInit) {
@@ -99,12 +117,19 @@ export class App {
       }
     }
   }
+  /**
+   * 设置配置
+   * @param config
+   */
   public setConfig(config: IAppConfig): this {
     this.config = config;
     return this;
   }
+  /**
+   * 注册服务提供者
+   * @param providers
+   */
   public registerProvider(providers: IProviderConfig[]): this {
-    const providesOnThisPage: IProvider[] = [];
     for (const provideConfig of providers) {
       // test 如果是 boolean
       if (provideConfig.test instanceof Boolean && !provideConfig.test) {
@@ -131,6 +156,9 @@ export class App {
     }
     return this;
   }
+  /**
+   * 启动应用
+   */
   public bootstrap() {
     addEventListener("scroll", this.onScroll.bind(this));
     addEventListener("mousemove", this.onHover.bind(this));

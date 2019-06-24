@@ -2,7 +2,7 @@ import * as throttle from "lodash.throttle";
 import * as debounce from "lodash.debounce";
 import * as inView from "in-view";
 
-export enum Marker{
+export enum Marker {
   RedirectCount = "redirect-count",
   RedirectStatusDone = "anti-redirect-origin-href"
 }
@@ -147,6 +147,12 @@ interface IAntiRedirectOption {
   debug: boolean;
 }
 
+/**
+ * 去除重定向
+ * @param aElement A标签元素
+ * @param realUrl 真实的地址
+ * @param options
+ */
 export function antiRedirect(
   aElement: HTMLAnchorElement,
   realUrl: string,

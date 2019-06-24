@@ -6,6 +6,7 @@ import { GoogleProvider } from "./src/sites/google";
 import { GmailProvider } from "./src/sites/google.gmail";
 import { GoogleDocsProvider } from "./src/sites/google.docs";
 import { GooglePlayProvider } from "./src/sites/google.play";
+import { YoutubeProvider } from "./src/sites/google.youtube";
 import { SoGouProvider } from "./src/sites/sogou";
 import { BaiduProvider } from "./src/sites/baidu";
 import { BaiduVideoProvider } from "./src/sites/baidu.video";
@@ -71,6 +72,12 @@ app
       name: "Google Play",
       test: /play\.google\.com/,
       provider: GooglePlayProvider
+    },
+    {
+      // 测试地址: https://www.youtube.com/watch?v=XTXSRRSv1bY
+      name: "Google Youtube",
+      test: /www\.youtube\.com/,
+      provider: YoutubeProvider
     },
     {
       // 测试地址: https://www.so.com/s?ie=utf-8&fr=none&src=360sou_newhome&q=chrome
@@ -144,15 +151,15 @@ app
     {
       // 测试地址: https://www.douban.com/doulist/240962/
       name: "豆瓣",
-      test () {
-        return /www\.douban\.com\/doulist\/\d+/.test(location.href)
+      test() {
+        return /www\.douban\.com\/doulist\/\d+/.test(location.href);
       },
       provider: DouBanProvider
     },
     {
       // 测试地址: https://getpocket.com/a/recommended/
       // 需要登陆
-      name: 'Pocket',
+      name: "Pocket",
       test: /getpocket\.com/,
       provider: PocketProvider
     }

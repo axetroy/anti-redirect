@@ -57,6 +57,7 @@ const webpackConfig: webpack.Configuration = {
 // @include           *docs.google.*
 // @include           *mail.google.*
 // @include           *play.google.*
+// @include           *youtube.com/watch?v=*
 // @include           *encrypted.google.com*
 // @include           *www.so.com*
 // @include           *www.zhihu.com*
