@@ -10,7 +10,9 @@
     "watch": "cross-env NODE_ENV=development webpack --display-error-details --progress --colors --watch",
     "changelog": "npx conventional-changelog-cli -p angular -i CHANGELOG.md -s -r 0",
     "deploy": "npm run build && npx gh-pages -d ./dist",
-    "lint": "tslint -p ./ -c tslint.json"
+    "lint": "tslint -p ./ -c tslint.json",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Axetroy",
   "license": "MIT",
@@ -38,6 +40,8 @@
     "in-view": "^0.6.1",
     "lodash.debounce": "^4.0.8",
     "lodash.throttle": "^4.1.1",
-    "reflect-metadata": "^0.1.13"
-  }
+    "reflect-metadata": "^0.1.13",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
