@@ -22,7 +22,7 @@
   ],
   "devDependencies": {
     "@types/node": "11.13.18",
-    "@types/webpack": "4.4.34",
+    "@types/webpack": "4.32.0",
     "cross-env": "5.2.0",
     "moment": "2.24.0",
     "ts-loader": "6.0.4",
@@ -30,7 +30,7 @@
     "tslint": "5.18.0",
     "tslint-config-prettier": "1.18.0",
     "typescript": "3.5.3",
-    "webpack": "4.35.2",
+    "webpack": "4.36.1",
     "webpack-cli": "3.3.6"
   },
   "dependencies": {
