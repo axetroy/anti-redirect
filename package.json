@@ -31,7 +31,7 @@
     "tslint-config-prettier": "1.18.0",
     "typescript": "3.6.2",
     "webpack": "4.39.3",
-    "webpack-cli": "3.3.7"
+    "webpack-cli": "3.3.8"
   },
   "dependencies": {
     "gm-http": "^0.1.4",
