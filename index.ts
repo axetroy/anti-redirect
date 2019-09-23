@@ -24,6 +24,7 @@ import { MozillaProvider } from "./src/sites/mozilla";
 import { JianShuProvider } from "./src/sites/jianshu";
 import { DouBanProvider } from "./src/sites/douban";
 import { PocketProvider } from "./src/sites/pocket";
+import { DogeDogeProvider } from "./src/sites/dogedoge";
 
 const app = new App();
 const isDebug: boolean = process.env.NODE_ENV !== "production";
@@ -162,6 +163,12 @@ app
       name: "Pocket",
       test: /getpocket\.com/,
       provider: PocketProvider
+    },
+    {
+      // 测试地址: https://www.dogedoge.com/results?q=chrome
+      name: "DogeDoge",
+      test: /www\.dogedoge\.com/,
+      provider: DogeDogeProvider
     }
   ])
   .bootstrap();
