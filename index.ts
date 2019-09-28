@@ -151,10 +151,9 @@ app
     },
     {
       // 测试地址: https://www.douban.com/doulist/240962/
+      // 测试地址: https://www.douban.com/search?cat=1002&q=%E9%BB%91%E9%95%9C
       name: "豆瓣",
-      test() {
-        return /www\.douban\.com\/doulist\/\d+/.test(location.href);
-      },
+      test: /douban\.com/,
       provider: DouBanProvider
     },
     {
