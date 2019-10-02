@@ -23,7 +23,7 @@
   "devDependencies": {
     "@types/node": "11.13.21",
     "@types/webpack": "4.39.2",
-    "cross-env": "6.0.2",
+    "cross-env": "6.0.3",
     "moment": "2.24.0",
     "ts-loader": "6.2.0",
     "ts-node": "8.4.1",
