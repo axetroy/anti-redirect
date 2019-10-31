@@ -21,7 +21,7 @@
     "redirect"
   ],
   "devDependencies": {
-    "@types/node": "11.15.0",
+    "@types/node": "11.15.2",
     "@types/webpack": "4.39.7",
     "cross-env": "6.0.3",
     "moment": "2.24.0",
@@ -31,7 +31,7 @@
     "tslint-config-prettier": "1.18.0",
     "typescript": "3.6.4",
     "webpack": "4.41.2",
-    "webpack-cli": "3.3.9"
+    "webpack-cli": "3.3.10"
   },
   "dependencies": {
     "gm-http": "^0.1.4",
