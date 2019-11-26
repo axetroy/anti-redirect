@@ -1,7 +1,7 @@
 {
   "name": "anti-redirect",
   "version": "2.14.0",
-  "description": "GM脚本, 去除各搜索引擎/常用网站的重定向",
+  "description": "去除重定向, 支持谷歌/百度/搜狗/360/知乎/贴吧/简书/豆瓣/微博...",
   "main": "./dist/anti-redirect.user.js",
   "scripts": {
     "test": "npm run build",
@@ -24,7 +24,7 @@
     "@types/node": "11.15.3",
     "@types/webpack": "4.41.0",
     "cross-env": "6.0.3",
-    "moment": "2.24.0",
+    "date-fns": "^2.8.1",
     "ts-loader": "6.2.1",
     "ts-node": "8.5.2",
     "tslint": "5.20.1",

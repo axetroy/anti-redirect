@@ -4,7 +4,7 @@
 
 import * as webpack from "webpack";
 import * as path from "path";
-import * as moment from "moment";
+import { format } from "date-fns";
 const pkg = require("./package.json");
 
 // webpack.config.js
@@ -18,7 +18,7 @@ const webpackConfig: webpack.Configuration = {
   },
   resolve: {
     modules: ["node_modules"],
-    extensions: [".coffee", ".js", ".ts"]
+    extensions: [".js", ".ts"]
   },
   module: {
     rules: [{ test: /\.tsx?$/, loader: "ts-loader" }]
@@ -47,7 +47,7 @@ const webpackConfig: webpack.Configuration = {
 // @collaborator      ${pkg.author}
 // @description       ${pkg.description}
 // @version           ${pkg.version}
-// @update            ${moment().format("YYYY-MM-DD HH:mm:ss")}
+// @update            ${format(new Date(), "yyyy-MM-dd HH:mm:ss")}
 // @grant             GM_xmlhttpRequest
 // @include           *www.baidu.com*
 // @include           *tieba.baidu.com*
