@@ -57,8 +57,8 @@ export class App {
     if (typeof provider.test === "function" && !provider.test(aElement)) {
       return false;
     }
-    if (provider.test instanceof Boolean && !provider.test) {
-      return false;
+    if (provider.test instanceof Boolean) {
+      return provider.test as boolean;
     }
     return true;
   }
@@ -132,7 +132,7 @@ export class App {
   public registerProvider(providers: IProviderConfig[]): this {
     for (const provideConfig of providers) {
       // test 如果是 boolean
-      if (provideConfig.test instanceof Boolean && !provideConfig.test) {
+      if (provideConfig.test === false) {
         continue;
       }
       // test 如果是正则表达式
