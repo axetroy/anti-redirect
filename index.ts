@@ -16,7 +16,7 @@ import { ZhihuProvider } from "./src/sites/zhihu";
 import { ZhihuZhuanlanProvider } from "./src/sites/zhihu.zhuanlan";
 import { ZhihuDailyProvider } from "./src/sites/zhihu.daily";
 import { SoProvider } from "./src/sites/so";
-import { WeboProvider } from "./src/sites/weobo";
+import { WeboProvider } from "./src/sites/weibo";
 import { TwitterProvider } from "./src/sites/twitter";
 import { JuejinProvider } from "./src/sites/juejin";
 import { QQMailProvider } from "./src/sites/qq.mail";
