@@ -11,9 +11,9 @@
 
 > 反馈最好能带上出问题的网页地址
 
-* https://github.com/axetroy/anti-redirect/issues/new
-* https://github.com/axetroy/anti-redirect/issues/new
-* https://github.com/axetroy/anti-redirect/issues/new
+- https://github.com/axetroy/anti-redirect/issues/new
+- https://github.com/axetroy/anti-redirect/issues/new
+- https://github.com/axetroy/anti-redirect/issues/new
 
 ### 如果这能够帮助到你, 不妨点个 star, 你的支持就是我更新的动力
 
@@ -35,29 +35,35 @@
 
 ### 支持的站点
 
-* [x] 知乎
-* [x] 知乎专栏
-* [x] 知乎日报
-* [x] Google 搜索
-* [x] Google 文档
-* [x] Google Play
-* [x] Google Gmail
-* [x] Google Youtube
-* [x] 360 搜索
-* [x] 新浪微博
-* [x] Twitter
-* [x] 搜狗搜索
-* [x] 百度搜索
-* [x] 百度视频
-* [x] 百度学术
-* [x] 百度贴吧
-* [x] 掘金
-* [x] QQ 邮箱
-* [x] Mozilla
-* [x] 简书
-* [x] 豆瓣
-* [x] Pocket
-* [x] DogeDoge
+- [x] 知乎
+- [x] 知乎专栏
+- [x] 知乎日报
+- [x] Google 搜索
+- [x] Google 文档
+- [x] Google Play
+- [x] Google Gmail
+- [x] Google Youtube
+- [x] 360 搜索
+- [x] 新浪微博
+- [x] Twitter
+- [x] 搜狗搜索
+- [x] 百度搜索
+- [x] 百度视频
+- [x] 百度学术
+- [x] 百度贴吧
+- [x] 掘金
+- [x] QQ 邮箱
+- [x] Mozilla
+- [x] 简书
+- [x] 豆瓣
+- [x] Pocket
+- [x] DogeDoge
+
+<details><summary>更多</summary>
+
+- [x] 51.ruyo.net
+
+</details>
 
 ### 我想支持更多的站点
 

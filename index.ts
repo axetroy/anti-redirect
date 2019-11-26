@@ -25,6 +25,7 @@ import { JianShuProvider } from "./src/sites/jianshu";
 import { DouBanProvider } from "./src/sites/douban";
 import { PocketProvider } from "./src/sites/pocket";
 import { DogeDogeProvider } from "./src/sites/dogedoge";
+import { RuyoProvider } from "./src/sites/ruyo";
 
 const app = new App();
 const isDebug: boolean = process.env.NODE_ENV !== "production";
@@ -168,6 +169,12 @@ app
       name: "DogeDoge",
       test: /www\.dogedoge\.com/,
       provider: DogeDogeProvider
+    },
+    {
+      // 测试地址: https://51.ruyo.net/15053.html
+      name: "Ruyo",
+      test: /51\.ruyo\.net/,
+      provider: RuyoProvider
     }
   ])
   .bootstrap();

@@ -73,6 +73,7 @@ const webpackConfig: webpack.Configuration = {
 // @include           *www.douban.com*
 // @include           *getpocket.com*
 // @include           *www.dogedoge.com*
+// @include           *51.ruyo.net*
 // @connect           *
 // @compatible        chrome  完美运行
 // @compatible        firefox  完美运行
