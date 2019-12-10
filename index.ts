@@ -145,7 +145,7 @@ app
       provider: MozillaProvider
     },
     {
-      // 测试地址: https://addons.mozilla.org/zh-CN/firefox/addon/evernote-web-clipper/
+      // 测试地址: https://www.jianshu.com/p/979776ca44b8
       name: "简书",
       test: /www\.jianshu\.com/,
       provider: JianShuProvider
