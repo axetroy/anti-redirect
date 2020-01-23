@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/axetroy/anti-redirect.svg?branch=master)](https://travis-ci.org/axetroy/anti-redirect)
+[![Build Status](https://github.com/axetroy/dvs/workflows/build/badge.svg)](https://github.com/axetroy/dvs/actions)
 [![DeepScan grade](https://deepscan.io/api/teams/5773/projects/7595/branches/79869/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=5773&pid=7595&bid=79869)
 [![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
 [![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
