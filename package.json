@@ -22,7 +22,7 @@
   ],
   "devDependencies": {
     "@types/node": "11.15.5",
-    "@types/webpack": "4.41.3",
+    "@types/webpack": "4.41.4",
     "cross-env": "7.0.0",
     "date-fns": "2.9.0",
     "ts-loader": "6.2.1",
