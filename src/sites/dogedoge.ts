@@ -24,7 +24,11 @@ export class DogeDogeProvider implements IProvider {
 
   private async handlerOneElement(aElement: HTMLAnchorElement): Promise<any> {
     try {
-      const res: Response$ = await http.get(aElement.href);
+      const res: Response$ = await http.request({
+        url: aElement.href,
+        method: "HEAD",
+        anonymous: true
+      });
       if (res.finalUrl) {
         antiRedirect(aElement, res.finalUrl);
       }

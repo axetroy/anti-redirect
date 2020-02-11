@@ -6,7 +6,11 @@ export class BaiduVideoProvider implements IProvider {
   public test = /v\.baidu\.com\/link\?url=/;
   public resolve(aElement: HTMLAnchorElement) {
     http
-      .get(aElement.href)
+      .request({
+        url: aElement.href,
+        method: "HEAD",
+        anonymous: true
+      })
       .then((res: Response$) => {
         if (res.finalUrl) {
           antiRedirect(aElement, res.finalUrl);

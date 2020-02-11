@@ -15,7 +15,11 @@ export class SoGouProvider implements IProvider {
     try {
       if (getRedirect(aElement) <= 2 && this.test.test(aElement.href)) {
         increaseRedirect(aElement);
-        const res = await http.get(aElement.href);
+        const res = await http.request({
+          url: aElement.href,
+          method: "HEAD",
+          anonymous: true
+        });
         decreaseRedirect(aElement);
         const finalUrl = res.finalUrl;
         if (finalUrl && !this.test.test(finalUrl)) {

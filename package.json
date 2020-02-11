@@ -34,7 +34,7 @@
     "webpack-cli": "3.3.10"
   },
   "dependencies": {
-    "gm-http": "^0.1.4",
+    "gm-http": "^0.2.1",
     "in-view": "^0.6.1",
     "lodash.debounce": "^4.0.8",
     "lodash.throttle": "^4.1.1",
