@@ -30,18 +30,18 @@ jobs:
       - uses: actions/upload-artifact@v1
         if: runner.os == 'linux'
         with:
-          name: package
+          name: dist
           path: ./dist
 
   release:
     runs-on: ubuntu-latest
-    name: "Release to vscode market and github"
+    name: "Release Github"
     if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/')
     needs: build
     steps:
       - uses: actions/download-artifact@v1
         with:
-          name: package
+          name: dist
 
       - name: Deploy to gh-pages branch
         uses: maxheld83/ghpages@v0.2.1
