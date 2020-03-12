@@ -27,7 +27,7 @@
     "date-fns": "2.10.0",
     "ts-loader": "6.2.1",
     "ts-node": "8.6.2",
-    "tslint": "5.20.1",
+    "tslint": "6.1.0",
     "tslint-config-prettier": "1.18.0",
     "typescript": "3.8.3",
     "webpack": "4.42.0",
