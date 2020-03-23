@@ -26,6 +26,7 @@ import { DouBanProvider } from "./src/sites/douban";
 import { PocketProvider } from "./src/sites/pocket";
 import { DogeDogeProvider } from "./src/sites/dogedoge";
 import { RuyoProvider } from "./src/sites/ruyo";
+import { SteamProvider } from "./src/sites/steam";
 
 const app = new App();
 const isDebug: boolean = process.env.NODE_ENV !== "production";
@@ -176,6 +177,12 @@ app
       name: "Ruyo",
       test: /51\.ruyo\.net/,
       provider: RuyoProvider
+    },
+    {
+      // 测试地址: https://steamcommunity.com/sharedfiles/filedetails/?id=1311535531
+      name: "Steam",
+      test: /steamcommunity\.com/,
+      provider: SteamProvider
     }
   ])
   .bootstrap();

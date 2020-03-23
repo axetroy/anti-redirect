@@ -74,6 +74,7 @@ const webpackConfig: webpack.Configuration = {
 // @include           *getpocket.com*
 // @include           *www.dogedoge.com*
 // @include           *51.ruyo.net*
+// @include           *steamcommunity.com*
 // @connect           *
 // @compatible        chrome  完美运行
 // @compatible        firefox  完美运行

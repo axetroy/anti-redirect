@@ -43,6 +43,7 @@
 - [x] Google Play
 - [x] Google Gmail
 - [x] Google Youtube
+- [x] Steam
 - [x] 360 搜索
 - [x] 新浪微博
 - [x] Twitter
