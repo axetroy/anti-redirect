@@ -146,6 +146,7 @@ app
     },
     {
       // 测试地址: https://www.jianshu.com/p/979776ca44b8
+      // https://www.jianshu.com/p/fc8abc65bbb2
       name: "简书",
       test: /www\.jianshu\.com/,
       provider: JianShuProvider

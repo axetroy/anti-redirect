@@ -1,9 +1,19 @@
-import { IProvider } from "../provider";
-import { antiRedirect } from "../utils";
+import { IProvider } from '../provider'
+import { antiRedirect } from '../utils'
 
 export class JianShuProvider implements IProvider {
-  public test = /links\.jianshu\.com\/go/;
+  public test = (aElement: HTMLAnchorElement) => {
+    const isLink1 = /links\.jianshu\.com\/go/.test(aElement.href)
+    const isLink2 = /link\.jianshu\.com(\/)?\?t=/.test(aElement.href)
+
+    if (isLink1 || isLink2) {
+      return true
+    }
+
+    return false
+  }
   public resolve(aElement: HTMLAnchorElement) {
-    antiRedirect(aElement, new URL(aElement.href).searchParams.get("to"));
+    const search = new URL(aElement.href).searchParams
+    antiRedirect(aElement, search.get('to') || search.get('t'))
   }
 }
