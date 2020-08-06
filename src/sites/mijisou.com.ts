@@ -1,5 +1,5 @@
-import { IProvider } from "../provider";
-import { antiRedirect } from "../utils";
+import { IProvider } from "@/provider";
+import { antiRedirect } from "@/utils";
 
 export class MiJiProvider implements IProvider {
   public test = /mijisou\.com\/url_proxy\?proxyurl=(.*)/;

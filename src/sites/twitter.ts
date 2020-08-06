@@ -1,5 +1,5 @@
-import { IProvider } from "../provider";
-import { antiRedirect } from "../utils";
+import { IProvider } from "@/provider";
+import { antiRedirect } from "@/utils";
 
 export class TwitterProvider implements IProvider {
   public test = /t\.co\/\w+/;

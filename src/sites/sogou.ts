@@ -1,5 +1,5 @@
 import http from "gm-http";
-import { IProvider } from "../provider";
+import { IProvider } from "@/provider";
 import {
   queryParser,
   getText,
@@ -7,7 +7,7 @@ import {
   increaseRedirect,
   decreaseRedirect,
   antiRedirect
-} from "../utils";
+} from "@/utils";
 
 export class SoGouProvider implements IProvider {
   public test = /www\.sogou\.com\/link\?url=/;

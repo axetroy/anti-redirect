@@ -1,6 +1,6 @@
 import http from "gm-http";
-import { IProvider } from "../provider";
-import { antiRedirect } from "../utils";
+import { IProvider } from "@/provider";
+import { antiRedirect } from "@/utils";
 
 export class BaiduVideoProvider implements IProvider {
   public test = /v\.baidu\.com\/link\?url=/;

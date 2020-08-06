@@ -1,12 +1,16 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "module": "none",
     "target": "ES2015",
     "lib": ["es6", "dom"],
     "moduleResolution": "node",
     "sourceMap": true,
     "typeRoots": ["node_modules/@types"],
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
   "exclude": ["node_modules"]
 }

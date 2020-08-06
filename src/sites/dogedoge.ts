@@ -1,11 +1,11 @@
 import http from "gm-http";
-import { IProvider } from "../provider";
+import { IProvider } from "@/provider";
 import {
   getRedirect,
   increaseRedirect,
   decreaseRedirect,
   antiRedirect
-} from "../utils";
+} from "@/utils";
 
 export class DogeDogeProvider implements IProvider {
   public test = /www\.dogedoge\.com\/rd\/.{1,}/;

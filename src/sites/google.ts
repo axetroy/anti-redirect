@@ -1,4 +1,4 @@
-import { IProvider } from "../provider";
+import { IProvider } from "@/provider";
 export class GoogleProvider implements IProvider {
   public test = true;
   public resolve(aElement: HTMLAnchorElement) {

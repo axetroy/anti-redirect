@@ -5,23 +5,25 @@
 import * as webpack from "webpack";
 import * as path from "path";
 import { format } from "date-fns";
+const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 const pkg = require("./package.json");
 
 // webpack.config.js
 const webpackConfig: webpack.Configuration = {
   entry: {
-    "anti-redirect": path.join(__dirname, "index.ts")
+    "anti-redirect": path.join(__dirname, "index.ts"),
   },
   output: {
     path: path.join(__dirname, "/dist"),
-    filename: "[name].user.js"
+    filename: "[name].user.js",
   },
   resolve: {
     modules: ["node_modules"],
-    extensions: [".js", ".ts"]
+    extensions: [".js", ".ts"],
+    plugins: [new TsconfigPathsPlugin({ configFile: "./tsconfig.json" })],
   },
   module: {
-    rules: [{ test: /\.tsx?$/, loader: "ts-loader" }]
+    rules: [{ test: /\.tsx?$/, loader: "ts-loader" }],
   },
   mode: "none",
   plugins: [
@@ -38,7 +40,7 @@ const webpackConfig: webpack.Configuration = {
     ),
     new webpack.LoaderOptionsPlugin({
       minimize: true,
-      debug: false
+      debug: false,
     }),
     new webpack.BannerPlugin({
       banner: `// ==UserScript==
@@ -98,9 +100,9 @@ const webpackConfig: webpack.Configuration = {
 
 `,
       entryOnly: true,
-      raw: true
-    })
-  ]
+      raw: true,
+    }),
+  ],
 };
 
 module.exports = webpackConfig;

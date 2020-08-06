@@ -1,4 +1,4 @@
-import { IProvider } from "../provider";
+import { IProvider } from "@/provider";
 
 export class QQMailProvider implements IProvider {
   public test = true;

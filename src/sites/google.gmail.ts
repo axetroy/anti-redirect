@@ -1,5 +1,5 @@
-import { IProvider } from "../provider";
-import { antiRedirect } from "../utils";
+import { IProvider } from "@/provider";
+import { antiRedirect } from "@/utils";
 export class GmailProvider implements IProvider {
   public test = true;
   private REDIRECT_PROPERTY = "data-saferedirecturl";

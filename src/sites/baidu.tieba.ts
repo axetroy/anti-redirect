@@ -1,5 +1,5 @@
-import { IProvider } from "../provider";
-import { antiRedirect } from "../utils";
+import { IProvider } from "@/provider";
+import { antiRedirect } from "@/utils";
 export class TiebaProvider implements IProvider {
   public test = /jump\d*\.bdimg\.com/;
   public resolve(aElement: HTMLAnchorElement) {

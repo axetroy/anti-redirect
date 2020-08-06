@@ -1,5 +1,5 @@
-import { IProvider } from "../provider";
-import { antiRedirect } from "../utils";
+import { IProvider } from "@/provider";
+import { antiRedirect } from "@/utils";
 
 export class YoutubeProvider implements IProvider {
   public test = /www\.youtube\.com\/redirect\?.{1,}/;
