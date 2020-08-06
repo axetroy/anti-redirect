@@ -25,7 +25,7 @@ jobs:
 
       - name: Compile
         run: |
-          yarn run build
+          yarn run build --standard --silent
 
       - uses: actions/upload-artifact@v1
         if: runner.os == 'linux'
