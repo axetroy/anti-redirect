@@ -26,7 +26,7 @@ export class BaiduProvider implements IProvider {
     try {
       const res: Response$ = await http.request({
         url: aElement.href,
-        method: "HEAD",
+        method: "GET",
         anonymous: true
       });
       if (res.finalUrl) {

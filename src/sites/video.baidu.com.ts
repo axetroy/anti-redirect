@@ -8,7 +8,7 @@ export class BaiduVideoProvider implements IProvider {
     http
       .request({
         url: aElement.href,
-        method: "HEAD",
+        method: "GET",
         anonymous: true
       })
       .then((res: Response$) => {

@@ -17,7 +17,7 @@ export class SoGouProvider implements IProvider {
         increaseRedirect(aElement);
         const res = await http.request({
           url: aElement.href,
-          method: "HEAD",
+          method: "GET",
           anonymous: true
         });
         decreaseRedirect(aElement);
