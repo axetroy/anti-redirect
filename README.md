@@ -59,6 +59,7 @@
 - [x] 豆瓣
 - [x] Pocket
 - [x] DogeDoge
+- [x] 秘迹
 
 <details><summary>更多</summary>
 
