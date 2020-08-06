@@ -19,7 +19,7 @@ import { SoProvider } from "@/sites/www.so.com";
 import { WeboProvider } from "@/sites/weibo.com";
 import { TwitterProvider } from "@/sites/twitter.com";
 import { JuejinProvider } from "@/sites/juejin.com";
-import { QQMailProvider } from "@/sites/mailqq.com";
+import { QQMailProvider } from "@/sites/mail.qq.com";
 import { MozillaProvider } from "@/sites/addons.mozilla.org";
 import { JianShuProvider } from "@/sites/www.jianshu.com";
 import { DouBanProvider } from "@/sites/www.douban.com";
