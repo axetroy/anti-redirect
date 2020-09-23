@@ -20,12 +20,10 @@ jobs:
           yarn --version
 
       - name: Install
-        run: |
-          yarn
+        run: yarn
 
       - name: Compile
-        run: |
-          yarn run build --standard --silent
+        run: yarn run build
 
       - uses: actions/upload-artifact@v2
         if: runner.os == 'linux'
