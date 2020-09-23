@@ -27,7 +27,7 @@ jobs:
         run: |
           yarn run build --standard --silent
 
-      - uses: actions/upload-artifact@v1
+      - uses: actions/upload-artifact@v2
         if: runner.os == 'linux'
         with:
           name: dist
@@ -39,7 +39,7 @@ jobs:
     if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/')
     needs: build
     steps:
-      - uses: actions/download-artifact@v1
+      - uses: actions/download-artifact@v2
         with:
           name: dist
 
