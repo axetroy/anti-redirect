@@ -17,9 +17,9 @@
 
 > 反馈最好能带上出问题的网页地址
 
-- https://github.com/axetroy/anti-redirect/issues/new
-- https://github.com/axetroy/anti-redirect/issues/new
-- https://github.com/axetroy/anti-redirect/issues/new
+- https://github.com/axetroy/anti-redirect/issues/new/choose
+- https://github.com/axetroy/anti-redirect/issues/new/choose
+- https://github.com/axetroy/anti-redirect/issues/new/choose
 
 ### 如果这能够帮助到你, 不妨点个 star, 你的支持就是我更新的动力
 
