@@ -9,7 +9,9 @@ export class TiebaProvider implements IProvider {
     let url: string = "";
     const text: string = aElement.innerText || aElement.textContent || "";
     try {
-      url = decodeURIComponent(text);
+      if (/https?:\/\//.test(text)) {
+        url = decodeURIComponent(text);
+      }
     } catch (e) {
       url = /https?:\/\//.test(text) ? text : "";
     }
