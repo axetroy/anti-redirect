@@ -40,6 +40,7 @@ jobs:
       - uses: actions/download-artifact@v2
         with:
           name: dist
+          path: ./dist
 
       - name: Deploy to gh-pages branch
         uses: maxheld83/ghpages@v0.3.0
