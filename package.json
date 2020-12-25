@@ -1,6 +1,6 @@
 {
   "name": "anti-redirect",
-  "version": "2.16.2",
+  "version": "2.17.0",
   "description": "去除重定向, 支持谷歌/百度/搜狗/360/知乎/贴吧/简书/豆瓣/微博...",
   "main": "./dist/anti-redirect.user.js",
   "scripts": {
