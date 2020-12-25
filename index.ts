@@ -1,33 +1,34 @@
 require("reflect-metadata");
-import http from "gm-http";
 import { App } from "@/app";
-
-import { GoogleProvider } from "@/sites/www.google.com";
-import { GmailProvider } from "@/sites/gmail.google.com";
-import { GoogleDocsProvider } from "@/sites/docs.google.com";
-import { GooglePlayProvider } from "@/sites/play.google.com";
-import { YoutubeProvider } from "@/sites/www.youtube.com";
-import { SoGouProvider } from "@/sites/www.sogou.com";
-import { BaiduProvider } from "@/sites/www.baidu.com";
-import { BaiduVideoProvider } from "@/sites/video.baidu.com";
-import { BaiduXueshuProvider } from "@/sites/xueshu.baidu.com";
-import { TiebaProvider } from "@/sites/tieba.baidu.com";
-import { ZhihuProvider } from "@/sites/www.zhihu.com";
-import { ZhihuZhuanlanProvider } from "@/sites/zhuanlan.zhihu.com";
+import { RuyoProvider } from "@/sites/51.ruyo.net";
+import { MozillaProvider } from "@/sites/addons.mozilla.org";
+import { CSDNProvider } from "@/sites/blog.csdn.net";
 import { ZhihuDailyProvider } from "@/sites/daily.zhihu.com";
-import { SoProvider } from "@/sites/www.so.com";
-import { WeboProvider } from "@/sites/weibo.com";
-import { TwitterProvider } from "@/sites/twitter.com";
+import { GoogleDocsProvider } from "@/sites/docs.google.com";
+import { PocketProvider } from "@/sites/getpocket.com";
+import { GmailProvider } from "@/sites/gmail.google.com";
 import { JuejinProvider } from "@/sites/juejin.com";
 import { QQMailProvider } from "@/sites/mail.qq.com";
-import { MozillaProvider } from "@/sites/addons.mozilla.org";
-import { JianShuProvider } from "@/sites/www.jianshu.com";
-import { DouBanProvider } from "@/sites/www.douban.com";
-import { PocketProvider } from "@/sites/getpocket.com";
-import { DogeDogeProvider } from "@/sites/www.dogedoge.com";
-import { RuyoProvider } from "@/sites/51.ruyo.net";
-import { SteamProvider } from "@/sites/steamcommunity.com";
 import { MiJiProvider } from "@/sites/mijisou.com";
+import { GooglePlayProvider } from "@/sites/play.google.com";
+import { SteamProvider } from "@/sites/steamcommunity.com";
+import { TiebaProvider } from "@/sites/tieba.baidu.com";
+import { TwitterProvider } from "@/sites/twitter.com";
+import { BaiduVideoProvider } from "@/sites/video.baidu.com";
+import { WeboProvider } from "@/sites/weibo.com";
+import { BaiduProvider } from "@/sites/www.baidu.com";
+import { DogeDogeProvider } from "@/sites/www.dogedoge.com";
+import { DouBanProvider } from "@/sites/www.douban.com";
+import { GoogleProvider } from "@/sites/www.google.com";
+import { JianShuProvider } from "@/sites/www.jianshu.com";
+import { SoProvider } from "@/sites/www.so.com";
+import { SoGouProvider } from "@/sites/www.sogou.com";
+import { YoutubeProvider } from "@/sites/www.youtube.com";
+import { ZhihuProvider } from "@/sites/www.zhihu.com";
+import { BaiduXueshuProvider } from "@/sites/xueshu.baidu.com";
+import { ZhihuZhuanlanProvider } from "@/sites/zhuanlan.zhihu.com";
+import http from "gm-http";
+
 
 const app = new App();
 const isDebug: boolean = process.env.NODE_ENV !== "production";
@@ -191,5 +192,10 @@ app
       test: /mijisou\.com/,
       provider: MiJiProvider,
     },
+    {
+      name: "CSDN",
+      test: /blog\.csdn\.net/,
+      provider: CSDNProvider
+    }
   ])
   .bootstrap();

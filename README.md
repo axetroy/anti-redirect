@@ -66,6 +66,7 @@
 - [x] Pocket
 - [x] DogeDoge
 - [x] 秘迹
+- [x] CSDN
 
 <details><summary>更多</summary>
 

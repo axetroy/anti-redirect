@@ -2,9 +2,9 @@
  * Created by axetroy on 16-9-15.
  */
 
-import * as webpack from "webpack";
-import * as path from "path";
 import { format } from "date-fns";
+import * as path from "path";
+import * as webpack from "webpack";
 const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 const pkg = require("./package.json");
 
@@ -79,6 +79,7 @@ const webpackConfig: webpack.Configuration = {
 // @include           *51.ruyo.net*
 // @include           *steamcommunity.com*
 // @include           *mijisou.com*
+// @include           *blog.csdn.net*
 // @connect           *
 // @compatible        chrome  完美运行
 // @compatible        firefox  完美运行
