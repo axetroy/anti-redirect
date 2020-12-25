@@ -1,11 +1,10 @@
 import { IProvider, IProviderConstructor } from "./provider";
-
 import {
-  isInView,
   debounceDecorator,
-  throttleDecorator,
   getRedirect,
-  Marker
+  isInView,
+  Marker,
+  throttleDecorator
 } from "./utils";
 
 type tester = () => boolean;
@@ -153,6 +152,7 @@ export class App {
       provider.isDebug = this.config.isDebug;
       this.provides.push(provider);
       console.info(`[Anti-redirect]: 加载引擎 ${provideConfig.name}`);
+      console.info(`当前页面: '${location.href}'`);
     }
     return this;
   }

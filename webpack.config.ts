@@ -80,6 +80,7 @@ const webpackConfig: webpack.Configuration = {
 // @include           *steamcommunity.com*
 // @include           *mijisou.com*
 // @include           *blog.csdn.net*
+// @include           *app.yinxiang.com*
 // @connect           *
 // @compatible        chrome  完美运行
 // @compatible        firefox  完美运行

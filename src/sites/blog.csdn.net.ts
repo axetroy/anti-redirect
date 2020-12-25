@@ -1,4 +1,5 @@
 import { IProvider } from "@/provider";
+import { antiRedirect } from "@/utils";
 
 export class CSDNProvider implements IProvider {
   public test = /^http:\/\//;
@@ -7,6 +8,7 @@ export class CSDNProvider implements IProvider {
     this.container = document.querySelector("#content_views");
     if (this.container && this.container.contains(aElement)) {
       if (!aElement.onclick) {
+        antiRedirect(aElement, aElement.href, { force: true });
         aElement.onclick = (e) => {
           // 阻止事件冒泡, 因为上层元素绑定的click事件会重定向
           if (e.stopPropagation) {

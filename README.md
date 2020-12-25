@@ -67,6 +67,7 @@
 - [x] DogeDoge
 - [x] 秘迹
 - [x] CSDN
+- [x] 印象笔记
 
 <details><summary>更多</summary>
 

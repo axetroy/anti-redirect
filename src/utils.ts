@@ -1,10 +1,10 @@
-import * as throttle from "lodash.throttle";
-import * as debounce from "lodash.debounce";
 import * as inView from "in-view";
+import * as debounce from "lodash.debounce";
+import * as throttle from "lodash.throttle";
 
 export enum Marker {
   RedirectCount = "redirect-count",
-  RedirectStatusDone = "anti-redirect-origin-href"
+  RedirectStatusDone = "anti-redirect-origin-href",
 }
 
 type DecoratorFunction<T> = (
@@ -46,7 +46,7 @@ class Query {
 
   private toObject(queryStr: string) {
     const obj = {};
-    queryStr.split("&").forEach(item => {
+    queryStr.split("&").forEach((item) => {
       const arr: string[] = item.split("=") || [];
       let key: string = arr[0] || "";
       let value: string = arr[1] || "";
@@ -95,10 +95,10 @@ export function throttleDecorator<T>(
         Object.defineProperty(this, name, {
           configurable: true,
           enumerable: descriptor.enumerable,
-          value: throttle(descriptor.value, wait, options)
+          value: throttle(descriptor.value, wait, options),
         });
         return this[name];
-      }
+      },
     };
   };
 }
@@ -115,10 +115,10 @@ export function debounceDecorator<T>(
         Object.defineProperty(this, name, {
           configurable: true,
           enumerable: descriptor.enumerable,
-          value: debounce(descriptor.value, wait, options)
+          value: debounce(descriptor.value, wait, options),
         });
         return this[name];
-      }
+      },
     };
   };
 }
@@ -144,7 +144,8 @@ export function decreaseRedirect(aElement: HTMLAnchorElement): void {
 }
 
 interface IAntiRedirectOption {
-  debug: boolean;
+  debug?: boolean;
+  force?: boolean;
 }
 
 /**
@@ -156,11 +157,16 @@ interface IAntiRedirectOption {
 export function antiRedirect(
   aElement: HTMLAnchorElement,
   realUrl: string,
-  options: IAntiRedirectOption = {
-    debug: process.env.NODE_ENV !== "production"
-  }
+  options: IAntiRedirectOption = {}
 ) {
-  if (!realUrl || aElement.href === realUrl) {
+  options.debug =
+    typeof options.debug === "undefined"
+      ? process.env.NODE_ENV !== "production"
+      : options.debug;
+
+  options.force = options.force || false;
+
+  if (!options.force && (!realUrl || aElement.href === realUrl)) {
     return;
   }
   if (options.debug) {

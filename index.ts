@@ -2,6 +2,7 @@ require("reflect-metadata");
 import { App } from "@/app";
 import { RuyoProvider } from "@/sites/51.ruyo.net";
 import { MozillaProvider } from "@/sites/addons.mozilla.org";
+import { YinXiangProvider } from "@/sites/app.yinxiang.com";
 import { CSDNProvider } from "@/sites/blog.csdn.net";
 import { ZhihuDailyProvider } from "@/sites/daily.zhihu.com";
 import { GoogleDocsProvider } from "@/sites/docs.google.com";
@@ -28,7 +29,6 @@ import { ZhihuProvider } from "@/sites/www.zhihu.com";
 import { BaiduXueshuProvider } from "@/sites/xueshu.baidu.com";
 import { ZhihuZhuanlanProvider } from "@/sites/zhuanlan.zhihu.com";
 import http from "gm-http";
-
 
 const app = new App();
 const isDebug: boolean = process.env.NODE_ENV !== "production";
@@ -193,9 +193,16 @@ app
       provider: MiJiProvider,
     },
     {
+      // 测试地址: https://github.com/axetroy/anti-redirect/issues/350
       name: "CSDN",
       test: /blog\.csdn\.net/,
-      provider: CSDNProvider
-    }
+      provider: CSDNProvider,
+    },
+    {
+      // 测试地址: https://github.com/axetroy/anti-redirect/issues/350
+      name: "印象笔记",
+      test: /app\.yinxiang\.com/,
+      provider: YinXiangProvider,
+    },
   ])
   .bootstrap();
