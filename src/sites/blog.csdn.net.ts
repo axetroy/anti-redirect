@@ -2,7 +2,7 @@ import { IProvider } from "@/provider";
 import { antiRedirect } from "@/utils";
 
 export class CSDNProvider implements IProvider {
-  public test = /^http:\/\//;
+  public test = /^https?:\/\//;
   private container: HTMLElement;
   public resolve(aElement: HTMLAnchorElement) {
     this.container = document.querySelector("#content_views");
