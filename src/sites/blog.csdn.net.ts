@@ -7,7 +7,7 @@ export class CSDNProvider implements IProvider {
   public resolve(aElement: HTMLAnchorElement) {
     this.container = document.querySelector("#content_views");
     if (this.container && this.container.contains(aElement)) {
-      if (!aElement.onclick) {
+      if (!aElement.onclick && aElement.origin !== window.location.origin) {
         antiRedirect(aElement, aElement.href, { force: true });
         aElement.onclick = (e) => {
           // 阻止事件冒泡, 因为上层元素绑定的click事件会重定向
@@ -15,9 +15,7 @@ export class CSDNProvider implements IProvider {
             e.stopPropagation();
           }
 
-          if (aElement.origin !== window.location.origin) {
-            aElement.setAttribute("target", "_blank");
-          }
+          aElement.setAttribute("target", "_blank");
         };
       }
     }
