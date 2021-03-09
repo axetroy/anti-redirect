@@ -14,7 +14,10 @@ export class CSDNProvider implements IProvider {
           if (e.stopPropagation) {
             e.stopPropagation();
           }
-          aElement.setAttribute("target", "_blank");
+
+          if (aElement.origin !== window.location.origin) {
+            aElement.setAttribute("target", "_blank");
+          }
         };
       }
     }
