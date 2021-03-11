@@ -24,7 +24,7 @@
     "@types/webpack": "4.41.26",
     "cross-env": "7.0.3",
     "date-fns": "2.17.0",
-    "ts-loader": "8.0.17",
+    "ts-loader": "8.0.18",
     "ts-node": "9.1.1",
     "tsconfig-paths-webpack-plugin": "3.3.0",
     "tslint": "6.1.3",
