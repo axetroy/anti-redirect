@@ -4,6 +4,7 @@ import { RuyoProvider } from "@/sites/51.ruyo.net";
 import { MozillaProvider } from "@/sites/addons.mozilla.org";
 import { YinXiangProvider } from "@/sites/app.yinxiang.com";
 import { CSDNProvider } from "@/sites/blog.csdn.net";
+import { OSChinaProvider } from "@/sites/oschina.com";
 import { ZhihuDailyProvider } from "@/sites/daily.zhihu.com";
 import { GoogleDocsProvider } from "@/sites/docs.google.com";
 import { PocketProvider } from "@/sites/getpocket.com";
@@ -197,6 +198,11 @@ app
       name: "CSDN",
       test: /blog\.csdn\.net/,
       provider: CSDNProvider,
+    },
+    {
+      name: "OS China",
+      test: /oschina\.net/,
+      provider: OSChinaProvider,
     },
     {
       // 测试地址: https://github.com/axetroy/anti-redirect/issues/350
