@@ -200,6 +200,7 @@ app
       provider: CSDNProvider,
     },
     {
+      // 测试地址：https://my.oschina.net/chipo/blog/3067672
       name: "OS China",
       test: /oschina\.net/,
       provider: OSChinaProvider,
