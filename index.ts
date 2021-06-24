@@ -213,7 +213,7 @@ app
       provider: YinXiangProvider,
     },
     {
-      // 测试地址: https://cn.bing.com/search?q=GitHub
+      // 测试地址: https://cn.bing.com/search?q=GitHub&ensearch=1
       name: "必应中国",
       test: /cn\.bing\.com/,
       provider: CnBingProvider,
