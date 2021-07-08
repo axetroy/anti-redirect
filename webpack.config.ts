@@ -70,6 +70,7 @@ const webpackConfig: webpack.Configuration = {
 // @include           *twitter.com*
 // @include           *www.sogou.com*
 // @include           *juejin.im*
+// @include           *juejin.cn*
 // @include           *mail.qq.com*
 // @include           *addons.mozilla.org*
 // @include           *www.jianshu.com*
