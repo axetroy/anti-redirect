@@ -11,7 +11,7 @@ jobs:
         os: [ubuntu-latest, macOS-latest, windows-latest]
     name: node.js ${{ matrix.node }} test in ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Environment
         run: |
