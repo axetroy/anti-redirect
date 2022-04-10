@@ -1,4 +1,3 @@
-import * as inView from "in-view";
 import * as debounce from "lodash.debounce";
 import * as throttle from "lodash.throttle";
 
@@ -124,7 +123,31 @@ export function debounceDecorator<T>(
 }
 
 export function isInView(element: HTMLElement): boolean {
-  return inView.is(element) as boolean;
+  const rect = element.getBoundingClientRect();
+
+  const vWidth = window.innerWidth || document.documentElement.clientWidth;
+  const vHeight = window.innerHeight || document.documentElement.clientHeight;
+
+  const efp = (x, y) => {
+    return document.elementFromPoint(x, y);
+  };
+
+  // Return false if it's not in the viewport
+  if (
+    rect.right < 0 ||
+    rect.bottom < 0 ||
+    rect.left > vWidth ||
+    rect.top > vHeight
+  )
+    return false;
+
+  // Return true if any of its four corners are visible
+  return (
+    element.contains(efp(rect.left, rect.top)) ||
+    element.contains(efp(rect.right, rect.top)) ||
+    element.contains(efp(rect.right, rect.bottom)) ||
+    element.contains(efp(rect.left, rect.bottom))
+  );
 }
 
 export function getRedirect(aElement: HTMLAnchorElement): number {

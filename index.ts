@@ -96,6 +96,7 @@ app
       test: /\.weibo\.com/,
       provider: WeboProvider,
     },
+    // 测试: https://twitter.com/ftium4/status/1512815116810522631
     {
       name: "Twitter",
       test: /twitter\.com/,
