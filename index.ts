@@ -29,6 +29,7 @@ import { YoutubeProvider } from "@/sites/www.youtube.com";
 import { ZhihuProvider } from "@/sites/www.zhihu.com";
 import { BaiduXueshuProvider } from "@/sites/xueshu.baidu.com";
 import { ZhihuZhuanlanProvider } from "@/sites/zhuanlan.zhihu.com";
+import { CnBingProvider } from "@/sites/cn.bing.com";
 import http from "gm-http";
 
 const app = new App();
@@ -210,6 +211,12 @@ app
       name: "印象笔记",
       test: /app\.yinxiang\.com/,
       provider: YinXiangProvider,
+    },
+    {
+      // 测试地址: https://cn.bing.com/search?q=GitHub&ensearch=1
+      name: "必应中国",
+      test: /cn\.bing\.com/,
+      provider: CnBingProvider,
     },
   ])
   .bootstrap();

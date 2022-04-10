@@ -83,6 +83,7 @@ const webpackConfig: webpack.Configuration = {
 // @include           *blog.csdn.net*
 // @include           *.oschina.net*
 // @include           *app.yinxiang.com*
+// @include           *cn.bing.com*
 // @connect           www.baidu.com
 // @connect           *
 // @compatible        chrome  完美运行
