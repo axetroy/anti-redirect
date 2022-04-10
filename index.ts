@@ -29,6 +29,7 @@ import { YoutubeProvider } from "@/sites/www.youtube.com";
 import { ZhihuProvider } from "@/sites/www.zhihu.com";
 import { BaiduXueshuProvider } from "@/sites/xueshu.baidu.com";
 import { ZhihuZhuanlanProvider } from "@/sites/zhuanlan.zhihu.com";
+import { LogonewsProvider } from "@/sites/www.logonews.cn";
 import http from "gm-http";
 
 const app = new App();
@@ -211,6 +212,12 @@ app
       name: "印象笔记",
       test: /app\.yinxiang\.com/,
       provider: YinXiangProvider,
+    },
+    {
+      // 测试地址: https://www.logonews.cn/2021073002420141.html
+      name: "标志情报局",
+      test: /www\.logonews\.cn/,
+      provider: LogonewsProvider,
     },
   ])
   .bootstrap();
