@@ -10,6 +10,7 @@
 > 注意事项：
 >
 > 重定向一般有两种目的
+>
 > 1. 追踪用户打开了哪些 URL
 > 2. 在用户跳转到站外之前进行确认地址，防止打开不明的页面
 
@@ -96,3 +97,7 @@ npm run watch
 ### 开源许可
 
 The [Anti 996 License](https://github.com/axetroy/anti-redirect/blob/master/LICENSE)
+
+请仔细阅读开源许可。
+
+简而言之： 如果你正在 996，或者你的公司/单位正在 996 ，那么请不要安装这个脚本！
