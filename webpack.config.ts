@@ -54,10 +54,10 @@ const webpackConfig: webpack.Configuration = {
 // @match             *://tieba.baidu.com/*
 // @match             *://v.baidu.com/*
 // @match             *://xueshu.baidu.com/*
-// @match             *://www.google.*
-// @match             *://docs.google.*
-// @match             *://mail.google.*
-// @match             *://play.google.*
+// @match             *://www.google.com/*
+// @match             *://docs.google.com/*
+// @match             *://mail.google.com/*
+// @match             *://play.google.com/*
 // @match             *://youtube.com/watch?v=*
 // @match             *://youtube.com/channel/*
 // @match             *://encrypted.google.com/*
