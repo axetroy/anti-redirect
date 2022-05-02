@@ -2,17 +2,17 @@
 // @name              anti-redirect
 // @author            Axetroy
 // @description       去除重定向, 支持谷歌/百度/搜狗/360/知乎/贴吧/简书/豆瓣/微博...
-// @version           2.19.5
-// @update            2022-04-10 07:47:13
+// @version           2.19.6
+// @update            2022-05-02 13:27:19
 // @grant             GM_xmlhttpRequest
 // @match             *://www.baidu.com/*
 // @match             *://tieba.baidu.com/*
 // @match             *://v.baidu.com/*
 // @match             *://xueshu.baidu.com/*
-// @match             *://www.google.*
-// @match             *://docs.google.*
-// @match             *://mail.google.*
-// @match             *://play.google.*
+// @match             *://www.google.com/*
+// @match             *://docs.google.com/*
+// @match             *://mail.google.com/*
+// @match             *://play.google.com/*
 // @match             *://youtube.com/watch?v=*
 // @match             *://youtube.com/channel/*
 // @match             *://encrypted.google.com/*
@@ -3613,9 +3613,12 @@ class GoogleProvider {
         this.test = true;
     }
     resolve(aElement) {
+        const traceProperties = ["ping", "data-jsarwt", "data-usg", "data-ved"];
         // 移除追踪
-        if (aElement.getAttribute("ping")) {
-            aElement.removeAttribute("ping");
+        for (const property of traceProperties) {
+            if (aElement.getAttribute(property)) {
+                aElement.removeAttribute(property);
+            }
         }
         // 移除多余的事件
         if (aElement.getAttribute("onmousedown")) {
@@ -3625,6 +3628,10 @@ class GoogleProvider {
         if (aElement.getAttribute("data-href")) {
             const realUrl = aElement.getAttribute("data-href");
             (0, utils_1.antiRedirect)(aElement, realUrl);
+        }
+        const url = new URL(aElement.href);
+        if (url.searchParams.get("url")) {
+            (0, utils_1.antiRedirect)(aElement, url.searchParams.get("url"));
         }
     }
 }
