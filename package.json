@@ -20,7 +20,7 @@
     "redirect"
   ],
   "devDependencies": {
-    "@types/node": "16.11.60",
+    "@types/node": "16.11.63",
     "@types/webpack": "5.28.0",
     "cross-env": "7.0.3",
     "date-fns": "2.29.3",
