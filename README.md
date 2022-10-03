@@ -71,6 +71,7 @@
 - [x] 开源中国
 - [x] 印象笔记
 - [x] 标志情报局
+- [x] 爱发电
 
 <details><summary>更多</summary>
 

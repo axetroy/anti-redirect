@@ -83,6 +83,7 @@ const webpackConfig: webpack.Configuration = {
 // @match             *://*.oschina.net/*
 // @match             *://app.yinxiang.com/*
 // @match             *://www.logonews.cn/*
+// @match             *://afdian.net/*
 // @connect           www.baidu.com
 // @connect           *
 // @compatible        chrome  完美运行

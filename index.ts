@@ -30,6 +30,7 @@ import { ZhihuProvider } from "@/sites/www.zhihu.com";
 import { BaiduXueshuProvider } from "@/sites/xueshu.baidu.com";
 import { ZhihuZhuanlanProvider } from "@/sites/zhuanlan.zhihu.com";
 import { LogonewsProvider } from "@/sites/www.logonews.cn";
+import { AfDianNetProvider } from "@/sites/afadian.net";
 import http from "gm-http";
 
 const app = new App();
@@ -218,6 +219,12 @@ app
       name: "标志情报局",
       test: /www\.logonews\.cn/,
       provider: LogonewsProvider,
+    },
+    {
+      // 测试地址: https://afdian.net/a/xiaofanEric
+      name: "爱发电",
+      test: /afdian\.net/,
+      provider: AfDianNetProvider,
     },
   ])
   .bootstrap();
