@@ -31,6 +31,7 @@ import { BaiduXueshuProvider } from "@/sites/xueshu.baidu.com";
 import { ZhihuZhuanlanProvider } from "@/sites/zhuanlan.zhihu.com";
 import { LogonewsProvider } from "@/sites/www.logonews.cn";
 import { AfDianNetProvider } from "@/sites/afadian.net";
+import { Blog51CTO } from "@/sites/blog.51cto.com";
 import http from "gm-http";
 
 const app = new App();
@@ -225,6 +226,12 @@ app
       name: "爱发电",
       test: /afdian\.net/,
       provider: AfDianNetProvider,
+    },
+    {
+      // 测试地址: https://blog.51cto.com/u_11512826/2068421
+      name: "51CTO博客",
+      test: /blog\.51cto\.com/,
+      provider: Blog51CTO,
     },
   ])
   .bootstrap();
