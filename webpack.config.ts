@@ -54,6 +54,7 @@ const webpackConfig: webpack.Configuration = {
 // @match             *://tieba.baidu.com/*
 // @match             *://v.baidu.com/*
 // @match             *://xueshu.baidu.com/*
+// @include           *://www.google*
 // @match             *://www.google.com/*
 // @match             *://docs.google.com/*
 // @match             *://mail.google.com/*
