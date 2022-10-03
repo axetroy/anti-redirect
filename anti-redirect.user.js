@@ -2,13 +2,14 @@
 // @name              anti-redirect
 // @author            Axetroy
 // @description       去除重定向, 支持谷歌/百度/搜狗/360/知乎/贴吧/简书/豆瓣/微博...
-// @version           2.19.6
-// @update            2022-05-02 13:27:19
+// @version           2.20.0
+// @update            2022-10-03 13:38:14
 // @grant             GM_xmlhttpRequest
 // @match             *://www.baidu.com/*
 // @match             *://tieba.baidu.com/*
 // @match             *://v.baidu.com/*
 // @match             *://xueshu.baidu.com/*
+// @include           *://www.google*
 // @match             *://www.google.com/*
 // @match             *://docs.google.com/*
 // @match             *://mail.google.com/*
@@ -38,6 +39,8 @@
 // @match             *://*.oschina.net/*
 // @match             *://app.yinxiang.com/*
 // @match             *://www.logonews.cn/*
+// @match             *://afdian.net/*
+// @match             *://blog.51cto.com/*
 // @connect           www.baidu.com
 // @connect           *
 // @compatible        chrome  完美运行
@@ -3903,6 +3906,58 @@ class LogonewsProvider {
 exports.LogonewsProvider = LogonewsProvider;
 
 
+/***/ }),
+/* 41 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.AfDianNetProvider = void 0;
+const utils_1 = __webpack_require__(3);
+class AfDianNetProvider {
+    constructor() {
+        this.test = /afdian\.net\/link\?target=(.*)/;
+    }
+    resolve(aElement) {
+        (0, utils_1.antiRedirect)(aElement, new URL(aElement.href).searchParams.get("target"));
+    }
+}
+exports.AfDianNetProvider = AfDianNetProvider;
+
+
+/***/ }),
+/* 42 */
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.Blog51CTO = void 0;
+class Blog51CTO {
+    constructor() {
+        this.test = true;
+    }
+    resolve(aElement) {
+        this.container = document.querySelector(".article-detail");
+        if (this.container && this.container.contains(aElement)) {
+            if (!aElement.onclick && aElement.href) {
+                aElement.onclick = function antiRedirectOnClickFn(e) {
+                    e.stopPropagation();
+                    e.preventDefault();
+                    e.stopImmediatePropagation();
+                    const $a = document.createElement("a");
+                    $a.href = aElement.href;
+                    $a.target = aElement.target;
+                    $a.click();
+                };
+            }
+        }
+    }
+}
+exports.Blog51CTO = Blog51CTO;
+
+
 /***/ })
 /******/ 	]);
 /************************************************************************/
@@ -4011,6 +4066,8 @@ const www_zhihu_com_1 = __webpack_require__(37);
 const xueshu_baidu_com_1 = __webpack_require__(38);
 const zhuanlan_zhihu_com_1 = __webpack_require__(39);
 const www_logonews_cn_1 = __webpack_require__(40);
+const afadian_net_1 = __webpack_require__(41);
+const blog_51cto_com_1 = __webpack_require__(42);
 const gm_http_1 = __webpack_require__(23);
 const app = new app_1.App();
 const isDebug = "production" !== "production";
@@ -4196,6 +4253,18 @@ app
         name: "标志情报局",
         test: /www\.logonews\.cn/,
         provider: www_logonews_cn_1.LogonewsProvider,
+    },
+    {
+        // 测试地址: https://afdian.net/a/xiaofanEric
+        name: "爱发电",
+        test: /afdian\.net/,
+        provider: afadian_net_1.AfDianNetProvider,
+    },
+    {
+        // 测试地址: https://blog.51cto.com/u_11512826/2068421
+        name: "51CTO博客",
+        test: /blog\.51cto\.com/,
+        provider: blog_51cto_com_1.Blog51CTO,
     },
 ])
     .bootstrap();
