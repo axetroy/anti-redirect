@@ -6,11 +6,7 @@ export enum Marker {
   RedirectStatusDone = "anti-redirect-origin-href",
 }
 
-type DecoratorFunction<T> = (
-  target: T,
-  property: string,
-  descriptor: PropertyDescriptor
-) => any;
+type DecoratorFunction<T> = (target: T, property: string, descriptor: PropertyDescriptor) => any;
 
 /**
  * 根据url上的路径匹配，去除重定向
@@ -18,12 +14,9 @@ type DecoratorFunction<T> = (
  * @param {RegExp} tester
  * @returns {boolean}
  */
-export function matchLinkFromUrl(
-  aElement: HTMLAnchorElement,
-  tester: RegExp
-): string {
+export function matchLinkFromUrl(aElement: HTMLAnchorElement, tester: RegExp): string {
   const matcher: string[] = tester.exec(aElement.href);
-  if (!matcher || !matcher.length || !matcher[1]) {
+  if (!(matcher?.length && matcher[1])) {
     return "";
   }
 
@@ -67,10 +60,10 @@ class Query {
     for (const key in this.object) {
       if (this.object.hasOwnProperty(key)) {
         const value = this.object[key];
-        arr.push(key + "=" + value);
+        arr.push(`${key}=${value}`);
       }
     }
-    return arr.length ? "?" + arr.join("&") : "";
+    return arr.length ? `?${arr.join("&")}` : "";
   }
 }
 
@@ -82,10 +75,7 @@ export function getText(htmlElement: HTMLElement): string {
   return (htmlElement.innerText || htmlElement.textContent).trim();
 }
 
-export function throttleDecorator<T>(
-  wait: number,
-  options = {}
-): DecoratorFunction<T> {
+export function throttleDecorator<T>(wait: number, options = {}): DecoratorFunction<T> {
   return (target, name, descriptor) => {
     return {
       configurable: true,
@@ -102,10 +92,7 @@ export function throttleDecorator<T>(
   };
 }
 
-export function debounceDecorator<T>(
-  wait: number,
-  options = {}
-): DecoratorFunction<T> {
+export function debounceDecorator<T>(wait: number, options = {}): DecoratorFunction<T> {
   return (target, name, descriptor) => {
     return {
       configurable: true,
@@ -133,13 +120,9 @@ export function isInView(element: HTMLElement): boolean {
   };
 
   // Return false if it's not in the viewport
-  if (
-    rect.right < 0 ||
-    rect.bottom < 0 ||
-    rect.left > vWidth ||
-    rect.top > vHeight
-  )
+  if (rect.right < 0 || rect.bottom < 0 || rect.left > vWidth || rect.top > vHeight) {
     return false;
+  }
 
   // Return true if any of its four corners are visible
   return (
@@ -156,13 +139,13 @@ export function getRedirect(aElement: HTMLAnchorElement): number {
 
 export function increaseRedirect(aElement: HTMLAnchorElement): void {
   const num: number = getRedirect(aElement);
-  aElement.setAttribute(Marker.RedirectCount, num + 1 + "");
+  aElement.setAttribute(Marker.RedirectCount, `${num}${1}`);
 }
 
 export function decreaseRedirect(aElement: HTMLAnchorElement): void {
   const num: number = getRedirect(aElement);
   if (num > 0) {
-    aElement.setAttribute(Marker.RedirectCount, num - 1 + "");
+    aElement.setAttribute(Marker.RedirectCount, `${num - 1}`);
   }
 }
 
@@ -177,17 +160,10 @@ interface IAntiRedirectOption {
  * @param realUrl 真实的地址
  * @param options
  */
-export function antiRedirect(
-  aElement: HTMLAnchorElement,
-  realUrl: string,
-  options: IAntiRedirectOption = {}
-) {
-  options.debug =
-    typeof options.debug === "undefined"
-      ? process.env.NODE_ENV !== "production"
-      : options.debug;
+export function antiRedirect(aElement: HTMLAnchorElement, realUrl: string, options: IAntiRedirectOption = {}) {
+  options.debug = typeof options.debug === "undefined" ? process.env.NODE_ENV !== "production" : options.debug;
 
-  options.force = options.force || false;
+  options.force = options.force;
 
   if (!options.force && (!realUrl || aElement.href === realUrl)) {
     return;

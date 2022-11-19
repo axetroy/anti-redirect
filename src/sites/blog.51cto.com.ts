@@ -5,7 +5,7 @@ export class Blog51CTO implements IProvider {
   private container: HTMLElement;
   public resolve(aElement: HTMLAnchorElement) {
     this.container = document.querySelector(".article-detail");
-    if (this.container && this.container.contains(aElement)) {
+    if (this.container?.contains(aElement)) {
       if (!aElement.onclick && aElement.href) {
         aElement.onclick = function antiRedirectOnClickFn(e) {
           e.stopPropagation();

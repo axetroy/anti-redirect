@@ -1,11 +1,5 @@
 import { IProvider, IProviderConstructor } from "./provider";
-import {
-  debounceDecorator,
-  getRedirect,
-  isInView,
-  Marker,
-  throttleDecorator
-} from "./utils";
+import { debounceDecorator, getRedirect, isInView, Marker, throttleDecorator } from "./utils";
 
 type tester = () => boolean;
 
@@ -28,14 +22,14 @@ export class App {
       'font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;font-size:64px;color:#00bbee;-webkit-text-fill-color:#00bbee;-webkit-text-stroke: 1px #00bbee;',
       "font-size:12px;color:#999999;",
       new Date().getFullYear(),
-      "\n" + "Author @Axetroy"
+      "\n" + "Author @Axetroy",
     );
     console.log("[Anti Redirect]: 如果发现页面重定向未去除，欢迎反馈!");
     console.log(
       `%c[Anti Redirect]: 支付宝搜索 "%c511118132%c" 领取红包支持作者!`,
       "font-size: 12px;",
       "font-size: 16px;color: red",
-      "font-size: 12px;"
+      "font-size: 12px;",
     );
   }
   /**
@@ -43,10 +37,7 @@ export class App {
    * @param aElement
    * @param provider
    */
-  private isMatchProvider(
-    aElement: HTMLAnchorElement,
-    provider: IProvider
-  ): boolean {
+  private isMatchProvider(aElement: HTMLAnchorElement, provider: IProvider): boolean {
     if (aElement.getAttribute(Marker.RedirectStatusDone)) {
       return false;
     }
@@ -87,11 +78,7 @@ export class App {
     const visibleElements: HTMLAnchorElement[] = [].slice
       .call(document.querySelectorAll("a[href]"))
       .filter((aElement: HTMLAnchorElement) => {
-        return (
-          aElement.href.indexOf("http") > -1 &&
-          isInView(aElement) &&
-          getRedirect(aElement) <= 2
-        );
+        return aElement.href.indexOf("http") > -1 && isInView(aElement) && getRedirect(aElement) <= 2;
       });
     // trigger scroll handler
     for (const provider of this.provides) {
@@ -135,17 +122,11 @@ export class App {
         continue;
       }
       // test 如果是正则表达式
-      if (
-        provideConfig.test instanceof RegExp &&
-        !provideConfig.test.test(document.domain)
-      ) {
+      if (provideConfig.test instanceof RegExp && !provideConfig.test.test(document.domain)) {
         continue;
       }
       // test 如果是一个function
-      if (
-        typeof provideConfig.test === "function" &&
-        provideConfig.test() === false
-      ) {
+      if (typeof provideConfig.test === "function" && provideConfig.test() === false) {
         continue;
       }
       const provider = new provideConfig.provider();

@@ -6,7 +6,7 @@ export class CSDNProvider implements IProvider {
   private container: HTMLElement;
   public resolve(aElement: HTMLAnchorElement) {
     this.container = document.querySelector("#content_views");
-    if (this.container && this.container.contains(aElement)) {
+    if (this.container?.contains(aElement)) {
       if (!aElement.onclick && aElement.origin !== window.location.origin) {
         antiRedirect(aElement, aElement.href, { force: true });
         aElement.onclick = (e) => {

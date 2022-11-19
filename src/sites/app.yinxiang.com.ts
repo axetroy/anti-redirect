@@ -36,10 +36,11 @@ export class YinXiangProvider implements IProvider {
       const tagName = dom.tagName.toUpperCase();
 
       switch (tagName) {
-        case "A":
+        case "A": {
           this.resolve(dom as HTMLAnchorElement);
           break;
-        case "IFRAME":
+        }
+        case "IFRAME": {
           if (dom.hasAttribute("anti-redirect-handled")) {
             return;
           }
@@ -49,6 +50,7 @@ export class YinXiangProvider implements IProvider {
             handler
           );
           break;
+        }
       }
     };
 

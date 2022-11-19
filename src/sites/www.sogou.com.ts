@@ -26,7 +26,7 @@ export class SoGouProvider implements IProvider {
           antiRedirect(aElement, res.finalUrl);
         } else {
           const matcher = res.responseText.match(/URL=['"]([^'"]+)['"]/);
-          if (matcher && matcher[1]) {
+          if (matcher?.[1]) {
             antiRedirect(aElement, res.finalUrl);
           }
         }
