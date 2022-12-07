@@ -4,9 +4,7 @@ import { antiRedirect } from "@/utils";
 export class WeboProvider implements IProvider {
   public test = /t\.cn\/\w+/;
   public resolve(aElement: HTMLAnchorElement) {
-    if (
-      !(this.test.test(aElement.href) &&/^https?:\/\//.test(aElement.title))
-    ) {
+    if (!(this.test.test(aElement.href) && /^https?:\/\//.test(aElement.title))) {
       return;
     }
 

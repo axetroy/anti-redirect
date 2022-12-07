@@ -29,10 +29,10 @@ export class GooglePlayProvider implements IProvider {
 
       ele.addEventListener(
         "click",
-        event => {
+        (event) => {
           event.stopPropagation();
         },
-        true
+        true,
       );
     }
   }

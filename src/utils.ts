@@ -6,7 +6,7 @@ export enum Marker {
   RedirectStatusDone = "anti-redirect-origin-href",
 }
 
-type DecoratorFunction<T> = (target: T, property: string, descriptor: PropertyDescriptor) => any;
+type DecoratorFunction<T> = (target: T, property: string, descriptor: PropertyDescriptor) => unknown;
 
 /**
  * 根据url上的路径匹配，去除重定向
@@ -30,14 +30,14 @@ export function matchLinkFromUrl(aElement: HTMLAnchorElement, tester: RegExp): s
 }
 
 class Query {
-  private object: any = {};
+  private object: Record<string, string> = {};
 
   constructor(public queryStr: string) {
     this.object = this.toObject(queryStr.replace(/^\?+/, ""));
   }
 
   private toObject(queryStr: string) {
-    const obj = {};
+    const obj: Record<string, string> = {};
     queryStr.split("&").forEach((item) => {
       const arr: string[] = item.split("=") || [];
       let key: string = arr[0] || "";

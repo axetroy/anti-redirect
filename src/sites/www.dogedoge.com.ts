@@ -1,11 +1,6 @@
 import http from "gm-http";
 import { IProvider } from "@/provider";
-import {
-  getRedirect,
-  increaseRedirect,
-  decreaseRedirect,
-  antiRedirect
-} from "@/utils";
+import { getRedirect, increaseRedirect, decreaseRedirect, antiRedirect } from "@/utils";
 
 export class DogeDogeProvider implements IProvider {
   public test = /www\.dogedoge\.com\/rd\/.{1,}/;
@@ -13,10 +8,10 @@ export class DogeDogeProvider implements IProvider {
     if (getRedirect(aElement) <= 2 && this.test.test(aElement.href)) {
       increaseRedirect(aElement);
       this.handlerOneElement(aElement)
-        .then(res => {
+        .then((res) => {
           decreaseRedirect(aElement);
         })
-        .catch(err => {
+        .catch((err) => {
           decreaseRedirect(aElement);
         });
     }
@@ -27,7 +22,7 @@ export class DogeDogeProvider implements IProvider {
       const res: Response$ = await http.request({
         url: aElement.href,
         method: "GET",
-        anonymous: true
+        anonymous: true,
       });
       if (res.finalUrl) {
         antiRedirect(aElement, res.finalUrl);

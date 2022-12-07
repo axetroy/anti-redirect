@@ -9,8 +9,8 @@
     "watch": "cross-env NODE_ENV=development webpack --progress --watch",
     "changelog": "npx conventional-changelog-cli -p angular -i CHANGELOG.md -s -r 0",
     "deploy": "npm run build && npx gh-pages -d ./dist",
-    "lint": "rome check --apply-suggested **/*.ts *.ts",
-    "format": "rome format --write **/*.ts *.ts"
+    "lint": "rome check --apply-suggested src/**/*.ts src/*.ts",
+    "format": "rome format --write src/**/*.ts src/*.ts"
   },
   "author": "Axetroy",
   "license": "MIT",

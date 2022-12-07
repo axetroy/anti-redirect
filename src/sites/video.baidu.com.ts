@@ -9,14 +9,14 @@ export class BaiduVideoProvider implements IProvider {
       .request({
         url: aElement.href,
         method: "GET",
-        anonymous: true
+        anonymous: true,
       })
       .then((res: Response$) => {
         if (res.finalUrl) {
           antiRedirect(aElement, res.finalUrl);
         }
       })
-      .catch(err => {
+      .catch((err) => {
         console.error(err);
       });
   }

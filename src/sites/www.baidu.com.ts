@@ -1,11 +1,6 @@
 import http from "gm-http";
 import { IProvider } from "@/provider";
-import {
-  getRedirect,
-  increaseRedirect,
-  decreaseRedirect,
-  antiRedirect,
-} from "@/utils";
+import { getRedirect, increaseRedirect, decreaseRedirect, antiRedirect } from "@/utils";
 import pRetry from "p-retry";
 
 export class BaiduProvider implements IProvider {

@@ -1,13 +1,6 @@
 import http from "gm-http";
 import { IProvider } from "@/provider";
-import {
-  queryParser,
-  getText,
-  getRedirect,
-  increaseRedirect,
-  decreaseRedirect,
-  antiRedirect
-} from "@/utils";
+import { queryParser, getText, getRedirect, increaseRedirect, decreaseRedirect, antiRedirect } from "@/utils";
 
 export class SoGouProvider implements IProvider {
   public test = /www\.sogou\.com\/link\?url=/;
@@ -18,7 +11,7 @@ export class SoGouProvider implements IProvider {
         const res = await http.request({
           url: aElement.href,
           method: "GET",
-          anonymous: true
+          anonymous: true,
         });
         decreaseRedirect(aElement);
         const finalUrl = res.finalUrl;
@@ -37,19 +30,14 @@ export class SoGouProvider implements IProvider {
     }
   }
   private parsePage(res: Response$): void {
-    const responseText: string = res.responseText.replace(
-      /(src=[^>]*|link=[^>])/g,
-      ""
-    );
+    const responseText: string = res.responseText.replace(/(src=[^>]*|link=[^>])/g, "");
     const html: HTMLHtmlElement = document.createElement("html");
     html.innerHTML = responseText;
 
     // let selector = '#main .results div.vrwrap>h3';
     // let selector = '#main .results h3>a';
     const selector = '#main .results a[href*="www.sogou.com/link?url="]';
-    const remotes = [].slice.call(
-      html.querySelectorAll("#main .results a[href]")
-    );
+    const remotes = [].slice.call(html.querySelectorAll("#main .results a[href]"));
     const locals = [].slice.call(document.querySelectorAll(selector));
 
     for (const localEle of locals) {
@@ -81,16 +69,16 @@ export class SoGouProvider implements IProvider {
     const query = queryParser(window.top.location.search);
 
     // 搜索使用http搜索，得到的是直接链接
-    const url: string = `${location.protocol
-      .replace(/:$/, "")
-      .replace("s", "")}://${location.host + location.pathname + query}`;
+    const url: string = `${location.protocol.replace(/:$/, "").replace("s", "")}://${
+      location.host + location.pathname + query
+    }`;
 
     http
       .get(url)
       .then((res: Response$) => {
         this.parsePage(res);
       })
-      .catch(err => {
+      .catch((err) => {
         console.error(err);
       });
     return this;

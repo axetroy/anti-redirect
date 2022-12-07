@@ -14,18 +14,12 @@ export class YinXiangProvider implements IProvider {
             e.stopPropagation();
           }
           aElement.setAttribute("target", "_blank");
-          window.top
-            ? window.top.open(aElement.href)
-            : window.open(aElement.href);
+          window.top ? window.top.open(aElement.href) : window.open(aElement.href);
         };
       }
     }
     // 分享页面
-    else if (
-      /^https:\/\/app\.yinxiang\.com\/OutboundRedirect\.action\?dest=/.test(
-        aElement.href
-      )
-    ) {
+    else if (/^https:\/\/app\.yinxiang\.com\/OutboundRedirect\.action\?dest=/.test(aElement.href)) {
       antiRedirect(aElement, new URL(aElement.href).searchParams.get("dest"));
     }
   }
@@ -45,10 +39,7 @@ export class YinXiangProvider implements IProvider {
             return;
           }
           dom.setAttribute("anti-redirect-handled", "1");
-          (dom as HTMLIFrameElement).contentWindow.document.addEventListener(
-            "mouseover",
-            handler
-          );
+          (dom as HTMLIFrameElement).contentWindow.document.addEventListener("mouseover", handler);
           break;
         }
       }
