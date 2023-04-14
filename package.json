@@ -28,7 +28,7 @@
     "rome": "^11.0.0",
     "ts-loader": "9.4.1",
     "ts-node": "10.9.1",
-    "tsconfig-paths-webpack-plugin": "4.0.0",
+    "tsconfig-paths-webpack-plugin": "4.0.1",
     "typescript": "5.0.2",
     "webpack": "5.75.0",
     "webpack-cli": "5.0.1"
