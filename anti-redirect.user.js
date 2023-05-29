@@ -3,7 +3,7 @@
 // @author            Axetroy
 // @description       去除重定向, 支持谷歌/百度/搜狗/360/知乎/贴吧/简书/豆瓣/微博...
 // @version           2.21.0
-// @update            2023-05-29 09:46:04
+// @update            2023-05-29 09:56:53
 // @grant             GM_xmlhttpRequest
 // @match             *://www.baidu.com/*
 // @match             *://tieba.baidu.com/*
@@ -1425,7 +1425,7 @@ class Query {
     toString() {
         const arr = [];
         for (const key in this.object) {
-            if (this.object.hasOwnProperty(key)) {
+            if (Object.prototype.hasOwnProperty.call(this.object, key)) {
                 const value = this.object[key];
                 arr.push(`${key}=${value}`);
             }
@@ -2813,8 +2813,8 @@ exports.TwitterProvider = TwitterProvider;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.BaiduVideoProvider = void 0;
-const gm_http_1 = __webpack_require__(23);
 const utils_1 = __webpack_require__(3);
+const gm_http_1 = __webpack_require__(23);
 class BaiduVideoProvider {
     constructor() {
         this.test = /v\.baidu\.com\/link\?url=/;
@@ -3089,8 +3089,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.BaiduProvider = void 0;
-const gm_http_1 = __webpack_require__(23);
 const utils_1 = __webpack_require__(3);
+const gm_http_1 = __webpack_require__(23);
 const p_retry_1 = __webpack_require__(26);
 class BaiduProvider {
     constructor() {
@@ -3539,8 +3539,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.DogeDogeProvider = void 0;
-const gm_http_1 = __webpack_require__(23);
 const utils_1 = __webpack_require__(3);
+const gm_http_1 = __webpack_require__(23);
 class DogeDogeProvider {
     constructor() {
         this.test = /www\.dogedoge\.com\/rd\/.{1,}/;
@@ -3710,8 +3710,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.SoGouProvider = void 0;
-const gm_http_1 = __webpack_require__(23);
 const utils_1 = __webpack_require__(3);
+const gm_http_1 = __webpack_require__(23);
 class SoGouProvider {
     constructor() {
         this.test = /www\.sogou\.com\/link\?url=/;
