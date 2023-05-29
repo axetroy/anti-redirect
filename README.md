@@ -74,6 +74,7 @@
 - [x] 爱发电
 - [x] 51 CTO
 - [x] InfoQ
+- [x] Gitee
 
 <details><summary>更多</summary>
 
