@@ -75,6 +75,7 @@
 - [x] 51 CTO
 - [x] InfoQ
 - [x] Gitee
+- [x] 少数派
 
 <details><summary>更多</summary>
 

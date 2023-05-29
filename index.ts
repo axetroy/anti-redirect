@@ -34,6 +34,7 @@ import { AfDianNetProvider } from "@/sites/afadian.net";
 import { Blog51CTO } from "@/sites/blog.51cto.com";
 import { InfoQProvider } from "@/sites/infoq.cn";
 import { GiteeProvider } from "@/sites/gitee.com";
+import { SSPaiProvider } from "@/sites/sspai.com";
 import http from "gm-http";
 
 const app = new App();
@@ -246,6 +247,12 @@ app
       name: 'Gitee',
       test: /gitee.com/,
       provider: GiteeProvider
+    },
+    {
+      // 测试地址: https://sspai.com/post/77499
+      name: '少数派',
+      test: /sspai\.com/,
+      provider: SSPaiProvider
     }
   ])
   .bootstrap();
