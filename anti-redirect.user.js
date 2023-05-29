@@ -3,7 +3,7 @@
 // @author            Axetroy
 // @description       去除重定向, 支持谷歌/百度/搜狗/360/知乎/贴吧/简书/豆瓣/微博...
 // @version           2.21.0
-// @update            2023-05-29 09:56:53
+// @update            2023-05-29 10:00:59
 // @grant             GM_xmlhttpRequest
 // @match             *://www.baidu.com/*
 // @match             *://tieba.baidu.com/*
