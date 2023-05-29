@@ -32,6 +32,7 @@ import { ZhihuZhuanlanProvider } from "@/sites/zhuanlan.zhihu.com";
 import { LogonewsProvider } from "@/sites/www.logonews.cn";
 import { AfDianNetProvider } from "@/sites/afadian.net";
 import { Blog51CTO } from "@/sites/blog.51cto.com";
+import { InfoQProvider } from "@/sites/infoq.cn";
 import http from "gm-http";
 
 const app = new App();
@@ -233,5 +234,11 @@ app
       test: /blog\.51cto\.com/,
       provider: Blog51CTO,
     },
+    {
+      // https://xie.infoq.cn/link?target=https%3A%2F%2Fwww.finclip.com%2F%3Fchannel%3Dinfoqseo
+      name: 'InfoQ',
+      test: /infoq\.cn/,
+      provider: InfoQProvider
+    }
   ])
   .bootstrap();

@@ -73,6 +73,7 @@
 - [x] 标志情报局
 - [x] 爱发电
 - [x] 51 CTO
+- [x] InfoQ
 
 <details><summary>更多</summary>
 
