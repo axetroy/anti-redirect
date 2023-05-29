@@ -81,6 +81,7 @@ const webpackConfig: webpack.Configuration = {
 // @match             *://steamcommunity.com/*
 // @match             *://mijisou.com/*
 // @match             *://blog.csdn.net/*
+// @match             *://*.blog.csdn.net/*
 // @match             *://*.oschina.net/*
 // @match             *://app.yinxiang.com/*
 // @match             *://www.logonews.cn/*
