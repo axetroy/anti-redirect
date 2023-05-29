@@ -20,7 +20,7 @@ export function matchLinkFromUrl(aElement: HTMLAnchorElement, tester: RegExp): s
     return "";
   }
 
-  let url: string = "";
+  let url = "";
   try {
     url = decodeURIComponent(matcher[1]);
   } catch (e) {
@@ -58,7 +58,7 @@ class Query {
   public toString(): string {
     const arr: string[] = [];
     for (const key in this.object) {
-      if (this.object.hasOwnProperty(key)) {
+      if (Object.prototype.hasOwnProperty.call(this.object, key)) {
         const value = this.object[key];
         arr.push(`${key}=${value}`);
       }

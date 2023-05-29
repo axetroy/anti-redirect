@@ -1,6 +1,6 @@
-import http from "gm-http";
 import { IProvider } from "@/provider";
-import { getRedirect, increaseRedirect, decreaseRedirect, antiRedirect } from "@/utils";
+import { antiRedirect, decreaseRedirect, getRedirect, increaseRedirect } from "@/utils";
+import http from "gm-http";
 import pRetry from "p-retry";
 
 export class BaiduProvider implements IProvider {
@@ -20,7 +20,7 @@ export class BaiduProvider implements IProvider {
     }
   }
 
-  private async handlerOneElement(aElement: HTMLAnchorElement): Promise<any> {
+  private async handlerOneElement(aElement: HTMLAnchorElement): Promise<unknown> {
     try {
       const res = await http.request({
         url: aElement.href,

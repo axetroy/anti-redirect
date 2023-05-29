@@ -1,5 +1,5 @@
 import { IProvider, IProviderConstructor } from "./provider";
-import { debounceDecorator, getRedirect, isInView, Marker, throttleDecorator } from "./utils";
+import { Marker, debounceDecorator, getRedirect, isInView, throttleDecorator } from "./utils";
 
 type tester = () => boolean;
 

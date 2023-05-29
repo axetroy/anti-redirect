@@ -6,7 +6,7 @@ export class TiebaProvider implements IProvider {
     if (!this.test.test(aElement.href)) {
       return;
     }
-    let url: string = "";
+    let url = "";
     const text: string = aElement.innerText || aElement.textContent || "";
     try {
       if (/https?:\/\//.test(text)) {

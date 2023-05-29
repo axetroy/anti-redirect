@@ -1,6 +1,6 @@
-import http from "gm-http";
 import { IProvider } from "@/provider";
-import { getRedirect, increaseRedirect, decreaseRedirect, antiRedirect } from "@/utils";
+import { antiRedirect, decreaseRedirect, getRedirect, increaseRedirect } from "@/utils";
+import http from "gm-http";
 
 export class DogeDogeProvider implements IProvider {
   public test = /www\.dogedoge\.com\/rd\/.{1,}/;
@@ -17,7 +17,7 @@ export class DogeDogeProvider implements IProvider {
     }
   }
 
-  private async handlerOneElement(aElement: HTMLAnchorElement): Promise<any> {
+  private async handlerOneElement(aElement: HTMLAnchorElement): Promise<unknown> {
     try {
       const res: Response$ = await http.request({
         url: aElement.href,

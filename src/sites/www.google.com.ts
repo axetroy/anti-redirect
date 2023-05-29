@@ -1,5 +1,5 @@
-import { IProvider } from "@/provider";
 import { antiRedirect } from "../utils";
+import { IProvider } from "@/provider";
 
 export class GoogleProvider implements IProvider {
   public test = true;
