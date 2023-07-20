@@ -6,7 +6,7 @@ export enum Marker {
   RedirectStatusDone = "anti-redirect-origin-href",
 }
 
-type DecoratorMethodFunction = (originMethod: Function, context: ClassMemberDecoratorContext) => any
+type DecoratorMethodFunction = (originMethod: Function, context: ClassMemberDecoratorContext) => any;
 
 /**
  * 根据url上的路径匹配，去除重定向
@@ -78,13 +78,13 @@ export function getText(htmlElement: HTMLElement): string {
 export function throttleDecorator(wait: number, options = {}): DecoratorMethodFunction {
   return (originMethod, context: ClassMemberDecoratorContext) => {
     return throttle(originMethod, wait, options);
-  }
+  };
 }
 
 export function debounceDecorator(wait: number, options = {}): DecoratorMethodFunction {
   return (originMethod, context: ClassMemberDecoratorContext) => {
     return debounce(originMethod, wait, options);
-  }
+  };
 }
 
 export function isInView(element: HTMLElement): boolean {
