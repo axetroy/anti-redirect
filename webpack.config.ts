@@ -59,12 +59,7 @@ const webpackConfig: webpack.Configuration = {
 // @match             *://docs.google.com/*
 // @match             *://mail.google.com/*
 // @match             *://play.google.com/*
-// @match             *://youtube.com/watch?v=*
-// @match             *://www.youtube.com/watch?v=*
-// @match             *://youtube.com/channel/*
-// @match             *://www.youtube.com/channel/*
-// @match             *://youtube.com/user/*
-// @match             *://www.youtube.com/user/*
+// @match             *://www.youtube.com/*
 // @match             *://encrypted.google.com/*
 // @match             *://www.so.com/*
 // @match             *://www.zhihu.com/*
