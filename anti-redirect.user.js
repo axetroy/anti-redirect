@@ -2,8 +2,8 @@
 // @name              anti-redirect
 // @author            Axetroy
 // @description       去除重定向, 支持谷歌/百度/搜狗/360/知乎/贴吧/简书/豆瓣/微博...
-// @version           2.21.0
-// @update            2023-05-29 10:05:17
+// @version           2.21.1
+// @update            2023-07-20 16:08:44
 // @grant             GM_xmlhttpRequest
 // @match             *://www.baidu.com/*
 // @match             *://tieba.baidu.com/*
@@ -15,7 +15,9 @@
 // @match             *://mail.google.com/*
 // @match             *://play.google.com/*
 // @match             *://youtube.com/watch?v=*
+// @match             *://www.youtube.com/watch?v=*
 // @match             *://youtube.com/channel/*
+// @match             *://www.youtube.com/channel/*
 // @match             *://encrypted.google.com/*
 // @match             *://www.so.com/*
 // @match             *://www.zhihu.com/*
@@ -2621,7 +2623,11 @@ class JuejinProvider {
         this.test = /link\.juejin\.(im|cn)\/\?target=(.*)/;
     }
     resolve(aElement) {
-        (0, utils_1.antiRedirect)(aElement, new URL(aElement.href).searchParams.get("target"));
+        const finalURL = new URL(aElement.href).searchParams.get("target");
+        (0, utils_1.antiRedirect)(aElement, finalURL);
+        if (this.test.test(aElement.title)) {
+            aElement.title = finalURL;
+        }
     }
 }
 exports.JuejinProvider = JuejinProvider;
