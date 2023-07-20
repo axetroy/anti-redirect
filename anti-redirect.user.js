@@ -2,8 +2,8 @@
 // @name              anti-redirect
 // @author            Axetroy
 // @description       去除重定向, 支持谷歌/百度/搜狗/360/知乎/贴吧/简书/豆瓣/微博...
-// @version           2.21.2
-// @update            2023-07-20 16:16:36
+// @version           2.21.3
+// @update            2023-07-20 16:20:07
 // @grant             GM_xmlhttpRequest
 // @match             *://www.baidu.com/*
 // @match             *://tieba.baidu.com/*
@@ -14,12 +14,7 @@
 // @match             *://docs.google.com/*
 // @match             *://mail.google.com/*
 // @match             *://play.google.com/*
-// @match             *://youtube.com/watch?v=*
-// @match             *://www.youtube.com/watch?v=*
-// @match             *://youtube.com/channel/*
-// @match             *://www.youtube.com/channel/*
-// @match             *://youtube.com/user/*
-// @match             *://www.youtube.com/user/*
+// @match             *://www.youtube.com/*
 // @match             *://encrypted.google.com/*
 // @match             *://www.so.com/*
 // @match             *://www.zhihu.com/*
