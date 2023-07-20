@@ -29,7 +29,7 @@
     "ts-loader": "9.4.1",
     "ts-node": "10.9.1",
     "tsconfig-paths-webpack-plugin": "4.0.1",
-    "typescript": "5.0.4",
+    "typescript": "^5.1.6",
     "webpack": "5.82.0",
     "webpack-cli": "5.1.0"
   },
@@ -37,7 +37,6 @@
     "gm-http": "^0.2.1",
     "lodash.debounce": "^4.0.8",
     "lodash.throttle": "^4.1.1",
-    "p-retry": "^5.1.0",
-    "reflect-metadata": "^0.1.13"
+    "p-retry": "^5.1.0"
   }
 }

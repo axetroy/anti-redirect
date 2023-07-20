@@ -1,4 +1,3 @@
-require("reflect-metadata");
 import { App } from "@/app";
 import { RuyoProvider } from "@/sites/51.ruyo.net";
 import { MozillaProvider } from "@/sites/addons.mozilla.org";

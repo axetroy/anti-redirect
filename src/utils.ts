@@ -6,7 +6,7 @@ export enum Marker {
   RedirectStatusDone = "anti-redirect-origin-href",
 }
 
-type DecoratorFunction<T> = (target: T, property: string, descriptor: PropertyDescriptor) => unknown;
+type DecoratorMethodFunction = (originMethod: Function, context: ClassMemberDecoratorContext) => any
 
 /**
  * 根据url上的路径匹配，去除重定向
@@ -75,38 +75,16 @@ export function getText(htmlElement: HTMLElement): string {
   return (htmlElement.innerText || htmlElement.textContent).trim();
 }
 
-export function throttleDecorator<T>(wait: number, options = {}): DecoratorFunction<T> {
-  return (target, name, descriptor) => {
-    return {
-      configurable: true,
-      enumerable: descriptor.enumerable,
-      get() {
-        Object.defineProperty(this, name, {
-          configurable: true,
-          enumerable: descriptor.enumerable,
-          value: throttle(descriptor.value, wait, options),
-        });
-        return this[name];
-      },
-    };
-  };
+export function throttleDecorator(wait: number, options = {}): DecoratorMethodFunction {
+  return (originMethod, context: ClassMemberDecoratorContext) => {
+    return throttle(originMethod, wait, options);
+  }
 }
 
-export function debounceDecorator<T>(wait: number, options = {}): DecoratorFunction<T> {
-  return (target, name, descriptor) => {
-    return {
-      configurable: true,
-      enumerable: descriptor.enumerable,
-      get() {
-        Object.defineProperty(this, name, {
-          configurable: true,
-          enumerable: descriptor.enumerable,
-          value: debounce(descriptor.value, wait, options),
-        });
-        return this[name];
-      },
-    };
-  };
+export function debounceDecorator(wait: number, options = {}): DecoratorMethodFunction {
+  return (originMethod, context: ClassMemberDecoratorContext) => {
+    return debounce(originMethod, wait, options);
+  }
 }
 
 export function isInView(element: HTMLElement): boolean {
