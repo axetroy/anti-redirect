@@ -6,7 +6,7 @@ export enum Marker {
   RedirectStatusDone = "anti-redirect-origin-href",
 }
 
-type DecoratorMethodFunction = (originMethod: Function, context: ClassMemberDecoratorContext) => any;
+type DecoratorMethodFunction = (originMethod: Function, context: ClassMemberDecoratorContext) => unknown;
 
 /**
  * 根据url上的路径匹配，去除重定向
