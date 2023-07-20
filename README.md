@@ -28,7 +28,7 @@
 
 [点击从 GreasyFork 安装](https://greasyfork.org/scripts/11915-anti-redirect-typescript/code/anti-redirect.user.js)
 
-[国内用户通过 CDN 安装](https://cdn.jsdelivr.net/gh/axetroy/anti-redirect@gh-pages/anti-redirect.user.js)
+[点击从 CDN 安装(国内用户)](https://cdn.jsdelivr.net/gh/axetroy/anti-redirect@gh-pages/anti-redirect.user.js)
 
 ### 工作原理
 
