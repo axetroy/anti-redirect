@@ -28,6 +28,8 @@
 
 [点击从 GreasyFork 安装](https://greasyfork.org/scripts/11915-anti-redirect-typescript/code/anti-redirect.user.js)
 
+[国内用户通过 CDN 安装](https://cdn.jsdelivr.net/gh/axetroy/anti-redirect@gh-pages/anti-redirect.user.js)
+
 ### 工作原理
 
 1.  根据 URL 上暴露出来的跳转链接，正则匹配提取真实的地址，例如知乎，Google
