@@ -37,6 +37,6 @@
     "gm-http": "^0.2.1",
     "lodash.debounce": "^4.0.8",
     "lodash.throttle": "^4.1.1",
-    "p-retry": "^5.1.0"
+    "p-retry": "^6.0.0"
   }
 }
