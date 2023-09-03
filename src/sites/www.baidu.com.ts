@@ -6,7 +6,6 @@ import pRetry from "p-retry";
 export class BaiduProvider implements IProvider {
   public test = /www\.baidu\.com\/link\?url=/;
   public resolve(aElement: HTMLAnchorElement) {
-    console.log(aElement);
     if (getRedirect(aElement) <= 2 && this.test.test(aElement.href)) {
       increaseRedirect(aElement);
 
