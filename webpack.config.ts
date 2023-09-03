@@ -116,6 +116,7 @@ const webpackConfig: webpack.Configuration = {
       raw: true,
     }),
   ],
+  devtool: 'inline-source-map',
 };
 
 module.exports = webpackConfig;
