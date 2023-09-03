@@ -22,7 +22,7 @@
   ],
   "devDependencies": {
     "@types/node": "18.16.10",
-    "@types/webpack": "5.28.1",
+    "@types/webpack": "5.28.2",
     "cross-env": "7.0.3",
     "date-fns": "2.29.3",
     "rome": "^12.1.3",
